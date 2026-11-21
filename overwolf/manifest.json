@@ -7,7 +7,7 @@
     "version": "0.1.0",
     "description": "Elite Dangerous mining reference overlay",
     "minimum-overwolf-version": "0.170.0",
-    "icon": "icon.svg"
+    "icon": "icon.png"
   },
   "permissions": [
     "Hotkeys",
