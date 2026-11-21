@@ -5,7 +5,9 @@
     "name": "Elite Mining Assistant",
     "author": "nigov3",
     "version": "0.1.0",
-    "description": "Elite Dangerous mining reference overlay"
+    "description": "Elite Dangerous mining reference overlay",
+    "minimum-overwolf-version": "0.170.0",
+    "icon": "icon.svg"
   },
   "permissions": [
     "Hotkeys",
@@ -34,8 +36,6 @@
         "transparent": true,
         "resizable": true,
         "keep_window_location": true,
-        "focus_game_takeover": "ReleaseOnHidden",
-        "focus_game_takeover_release_hotkey": "toggle_mining",
         "size": {
           "width": 720,
           "height": 650
