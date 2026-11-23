@@ -59,3 +59,5 @@ body[data-theme=light] .hero{box-shadow:0 12px 35px rgba(32,48,70,.12)}
 
 /* Compact companion layout inside Overwolf */
 body.overlay-mode main{max-width:none;padding:12px}body.overlay-mode .hero{min-height:125px;margin:12px 0;padding:15px 24px}body.overlay-mode .hero h2{font-size:27px;margin:6px 0}body.overlay-mode .hero p,body.overlay-mode .hero-orbit,body.overlay-mode .hero-metrics,body.overlay-mode .hero-coordinate{display:none}body.overlay-mode .site-header{min-height:52px;padding-bottom:9px}body.overlay-mode .brand h1{font-size:17px}body.overlay-mode .brand-subtitle{display:none}body.overlay-mode .tabs button{padding:10px}body.overlay-mode .panel{margin-top:9px}body.overlay-mode .gamepad-hint{font-size:11px;color:var(--hud);padding:8px 0}body.overlay-mode :focus-visible{outline:3px solid #ffad4c!important;outline-offset:3px;box-shadow:0 0 0 5px rgba(255,156,57,.15)}
+
+.route-summary{padding:20px 24px;border:1px solid var(--hud-border);border-radius:12px;background:rgba(var(--hud-rgb),.055);margin:18px 0}.route-summary h3{margin:0 0 10px}.route-summary p{margin:8px 0}.route-summary .muted{font-size:12px;line-height:1.6}
