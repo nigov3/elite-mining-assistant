@@ -79,10 +79,29 @@ function showTrade(){
  };
 }
 function showRoutes(){
- content.innerHTML='<h2>Планирование маршрутов · Spansh</h2><p class="muted">Оригинальный маршрутизатор Spansh прямо на сайте. Выбирай тип маршрута, исходную и конечную систему в интерфейсе Spansh.</p><div class="filters"><select id="route-mode" aria-label="Тип маршрута"><option value="https://spansh.co.uk/plotter">Neutron Router</option><option value="https://spansh.co.uk/exact-plotter">Galaxy Plotter</option><option value="https://spansh.co.uk/riches">Road to Riches</option><option value="https://spansh.co.uk/exobiology">Экзобиология</option></select><a id="route-open" href="https://spansh.co.uk/plotter" target="_blank" rel="noopener noreferrer">Открыть в Spansh ↗</a></div><iframe id="route-frame" title="Spansh Route Planner" loading="lazy" src="https://spansh.co.uk/plotter" style="width:100%;height:75vh;min-height:620px;border:1px solid #475467;border-radius:12px;background:#fff"></iframe><p class="muted">Если Spansh запрещает отображение внутри другого сайта, используй ссылку «Открыть в Spansh». Сам расчёт выполняет Spansh, а не наш сервер.</p>';
- document.getElementById('route-mode').onchange=e=>{const url=e.target.value;document.getElementById('route-frame').src=url;document.getElementById('route-open').href=url};
+ content.innerHTML='<h2>Навигационный расчёт</h2><p class="muted">Проверка расстояния между системами по координатам EDSM. Это оценка минимального количества прыжков по прямой, а не готовый маршрут по звёздам. Для точного маршрута используй Spansh.</p><form id="route-form" class="filters"><input id="route-from" value="Sol" placeholder="Откуда" aria-label="Откуда" required><input id="route-to" value="Colonia" placeholder="Куда" aria-label="Куда" required><input id="route-range" type="number" min="1" max="500" step="0.1" value="50" aria-label="Дальность прыжка в световых годах" required><button type="submit">Рассчитать</button></form><p id="route-message" class="muted" aria-live="polite">Укажи системы и дальность прыжка корабля.</p><div id="route-results"></div><div class="tool-grid" id="route-links"></div>';
+ const links=[['Neutron Router — Spansh','https://spansh.co.uk/plotter','Маршрут через нейтронные звёзды с реальными промежуточными системами'],['Galaxy Plotter — Spansh','https://spansh.co.uk/exact-plotter','Планирование прыжков с учётом характеристик корабля'],['Road to Riches — Spansh','https://spansh.co.uk/riches','Маршруты для исследования и заработка'],['Exobiology — Spansh','https://spansh.co.uk/exobiology','Поиск исследовательских маршрутов для экзобиологии']];
+ const wrap=document.getElementById('route-links');links.forEach(x=>wrap.append(makeExternalLink(...x)));
+ document.getElementById('route-form').onsubmit=async event=>{
+  event.preventDefault();const from=document.getElementById('route-from').value.trim(),to=document.getElementById('route-to').value.trim(),range=Number(document.getElementById('route-range').value),msg=document.getElementById('route-message'),out=document.getElementById('route-results'),btn=event.submitter;
+  if(!from||!to||!Number.isFinite(range)||range<=0){msg.textContent='Проверь названия систем и дальность прыжка.';return}
+  btn.disabled=true;out.replaceChildren();msg.textContent='Получаю координаты систем из EDSM…';
+  try{
+   const endpoint=name=>'https://www.edsm.net/api-v1/system?systemName='+encodeURIComponent(name)+'&showCoordinates=1';
+   const response=await Promise.all([fetch(endpoint(from),{signal:AbortSignal.timeout(12000)}),fetch(endpoint(to),{signal:AbortSignal.timeout(12000)})]);
+   if(response.some(r=>!r.ok))throw Error('EDSM вернул ошибку HTTP');
+   const [origin,dest]=await Promise.all(response.map(r=>r.json()));
+   if(!origin.coords||!dest.coords)throw Error('Для одной из систем отсутствуют координаты в EDSM');
+   const a=origin.coords,b=dest.coords;const dist=Math.hypot(a.x-b.x,a.y-b.y,a.z-b.z);const jumps=Math.ceil(dist/range);
+   const summary=document.createElement('div');summary.className='route-summary';
+   const heading=document.createElement('h3');heading.textContent=origin.name+' → '+dest.name;summary.append(heading);
+   const line=document.createElement('p');line.textContent='Расстояние по прямой: '+dist.toLocaleString('ru-RU',{maximumFractionDigits:2})+' св. лет';summary.append(line);
+   const count=document.createElement('p');count.textContent='Теоретический минимум: '+jumps.toLocaleString('ru-RU')+' прыжков при дальности '+range.toLocaleString('ru-RU')+' св. лет';summary.append(count);
+   const note=document.createElement('p');note.className='muted';note.textContent='Это нижняя оценка без учёта расположения звёзд, топлива, массы корабля, нейтронных ускорений и доступности систем. Фактический маршрут может быть значительно длиннее или недоступен.';summary.append(note);out.append(summary);
+   msg.textContent='Расчёт выполнен по координатам EDSM. Для реальной последовательности систем открой Spansh ниже.';
+  }catch(error){msg.textContent='Не удалось рассчитать: '+error.message+'. Открой Spansh по ссылкам ниже.'}finally{btn.disabled=false}
+ };
 }
-
 function showWiki(){
  const base='https://elite-dangerous.fandom.com/ru';
  content.innerHTML='<h2>База знаний Elite Dangerous</h2><p class="muted">Поиск по русскоязычной Elite Dangerous Wiki (Fandom): корабли, модули, ресурсы, инженеры, объекты и механики игры.</p><form id="wiki-form" class="filters"><input id="wiki-query" type="search" placeholder="Например: Анаконда, таргоиды, пейнит…" aria-label="Что найти на вики" required style="flex:1;min-width:200px"><button type="submit">Найти на вики</button></form><p id="wiki-status" class="muted" aria-live="polite"></p><div id="wiki-results"></div><p><a href="https://elite-dangerous.fandom.com/ru/wiki/Elite-dangerous_%D0%B2%D0%B8%D0%BA%D0%B8" target="_blank" rel="noopener noreferrer">Открыть русскую Elite Dangerous Wiki ↗</a></p>';
