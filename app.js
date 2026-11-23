@@ -50,26 +50,44 @@ async function edsmCoordinates(names){
  const result=await response.json();if(!Array.isArray(result))throw Error('EDSM response');
  return new Map(result.filter(x=>x.coords).map(x=>[x.name.toLowerCase(),x.coords]));
 }
+const ringTypes={'Металлические':'Metal Rich','Металлообогащённые':'Metallic','Каменные':'Rocky','Ледяные':'Icy'};
+function eligibleRings(resource){const entry=resources.find(r=>r[1]===resource);if(!entry)return [];return entry[3].split(',').map(x=>x.trim()).filter(Boolean).map(x=>({'Металлические':'Metallic','Металлообогащённые':'Metal Rich','Каменные':'Rocky','Ледяные':'Icy'})[x]).filter(Boolean)}
+async function fetchJson(url){const r=await fetch(url);if(!r.ok)throw Error('HTTP '+r.status);return r.json()}
+async function pooled(items,limit,fn){let index=0;const results=[];await Promise.all(Array.from({length:Math.min(limit,items.length)},async()=>{while(index<items.length){const i=index++;try{results[i]=await fn(items[i],i)}catch(e){results[i]={error:String(e)}}}}));return results}
 function showMining(){
- content.innerHTML='<h2>Точки добычи</h2><p class="muted">Ограниченный справочник известных колец. Выбор доступен для всех 35 ресурсов; для большинства ещё нет проверенных точек. Расстояния рассчитываются по координатам EDSM, если API доступен. Каталог пока ограничен выбранными кольцами.</p><div class="filters"><input id="mining-origin" value="Sol" placeholder="Система отправления" aria-label="Система отправления"><select id="mining-resource"></select><select id="mining-radius"><option value="50">До 50 св. лет</option><option value="100" selected>До 100 св. лет</option><option value="250">До 250 св. лет</option><option value="500">До 500 св. лет</option><option value="all">Любое расстояние</option></select><button id="mining-find">Найти</button></div><p id="mining-status" class="muted" aria-live="polite">Нажми «Найти», чтобы рассчитать расстояния.</p><div class="tablewrap"><table><thead><tr><th>Система / кольцо</th><th>Хотспоты</th><th>От звезды</th><th>Расстояние</th><th>Источник</th></tr></thead><tbody id="mining-results"></tbody></table></div><p><a id="mining-edtools" href="https://edtools.cc/hotspot?m=Platinum&s=Sol" target="_blank" rel="noopener noreferrer">Искать другие точки в EDTools ↗</a></p><small class="muted">Каталог не является полной или регулярно обновляемой копией EDTools. Число хотспотов не означает их пересечение или гарантированную доходность. Данные сообщества могут устаревать. Для лазерной добычи проверяй тип кольца и конкретную зону.</small>';
- const resourceSelect=document.getElementById('mining-resource');
- for(const resource of resources){const option=document.createElement('option');option.value=resource[1];option.textContent=resource[0];resourceSelect.appendChild(option)}
- resourceSelect.value='Platinum';
- const find=async()=>{
- const origin=document.getElementById('mining-origin').value.trim(),resource=document.getElementById('mining-resource').value,radius=document.getElementById('mining-radius').value,status=document.getElementById('mining-status'),tbody=document.getElementById('mining-results');
- if(!origin){status.textContent='Введи название системы отправления.';return}
- const material=resource;document.getElementById('mining-edtools').href='https://edtools.cc/hotspot?m='+encodeURIComponent(material)+'&s='+encodeURIComponent(origin);
- const key=resource==='Platinum'?'platinum':resource==='Painite'?'painite':null;const candidates=key?miningSites.filter(x=>x[key]>0):[];tbody.replaceChildren();if(!key){status.textContent='Ресурс «'+resource+'» доступен для выбора, но в нашем локальном каталоге пока нет подтверждённых точек добычи. Используй ссылку EDTools ниже для поиска по внешней базе; не все ресурсы поддерживаются EDTools.';return}status.textContent='Запрашиваю координаты EDSM…';
- let coords,originCoords;try{
- const [a,b]=await Promise.all([fetch('https://www.edsm.net/api-v1/system?systemName='+encodeURIComponent(origin)+'&showCoordinates=1').then(r=>{if(!r.ok)throw Error('origin');return r.json()}),edsmCoordinates(candidates.map(x=>x.system))]);
- originCoords=a.coords;coords=b;if(!originCoords)throw Error('no coords');
- }catch(e){status.textContent='Не удалось получить координаты EDSM. Показываю каталог без расстояний; проверь доступность API или название системы.';coords=new Map()}
- const results=candidates.map(site=>{const p=coords.get(site.system.toLowerCase());const distance=p&&originCoords?Math.hypot(p.x-originCoords.x,p.y-originCoords.y,p.z-originCoords.z):null;return {...site,distance}}).filter(x=>radius==='all'||x.distance===null||x.distance<=Number(radius)).sort((a,b)=>(a.distance??Infinity)-(b.distance??Infinity));
- for(const site of results){const tr=document.createElement('tr');const values=[site.system+' — '+site.ring,site[key],site.arrivalLs.toLocaleString('ru-RU')+' св. с.',site.distance===null?'Нет координат':site.distance.toLocaleString('ru-RU',{maximumFractionDigits:1})+' св. лет'];for(const value of values){const td=document.createElement('td');td.textContent=String(value);tr.append(td)}
- const td=document.createElement('td'),a=document.createElement('a');a.href='https://edtools.cc/hotspot?m='+encodeURIComponent(material)+'&s='+encodeURIComponent(site.system);a.target='_blank';a.rel='noopener noreferrer';a.textContent='EDTools ↗';td.append(a);tr.append(td);tbody.append(tr)}
- if(originCoords)status.textContent='Найдено '+results.length+' точек в ограниченном каталоге. Системы без координат показаны отдельно в конце списка.';else status.textContent+=' Доступно '+results.length+' записей.';
- if(!results.length)status.textContent='В выбранном радиусе нет известных точек из нашего ограниченного каталога. Попробуй увеличить радиус или открыть EDTools.';
+ content.innerHTML='<h2>Поиск мест добычи</h2><p class="muted">Поиск подходящих колец по данным EDSM для всех ресурсов справочника. Тип кольца — потенциальное место добычи, НЕ подтверждённый хотспот. Отдельно показаны известные записи нашего ограниченного каталога.</p><div class="filters"><input id="mining-origin" value="Sol" placeholder="Система отправления" aria-label="Система отправления"><select id="mining-resource"></select><select id="mining-radius"><option value="20">20 св. лет</option><option value="50" selected>50 св. лет</option><option value="100">100 св. лет (максимум EDSM)</option></select><button id="mining-find">Найти</button><button id="mining-stop" type="button" disabled>Остановить</button></div><p id="mining-status" class="muted" aria-live="polite">Выбери ресурс и нажми «Найти».</p><div class="tablewrap"><table><thead><tr><th>Система / кольцо</th><th>Тип кольца</th><th>От звезды</th><th>Расстояние</th><th>Статус</th></tr></thead><tbody id="mining-results"></tbody></table></div><p><a id="mining-edtools" href="https://edtools.cc/hotspot" target="_blank" rel="noopener noreferrer">Дополнительные сведения о хотспотах: EDTools ↗</a></p><small class="muted">Для производительности анализируется не более 60 ближайших систем с доступными координатами за один поиск. Это НЕ исчерпывающий поиск по всем системам в радиусе. EDSM может не содержать сведения обо всех телах и кольцах. Результаты не подтверждают наличие выбранного минерала в конкретном кольце.</small>';
+ const select=document.getElementById('mining-resource');for(const r of resources){const o=document.createElement('option');o.value=r[1];o.textContent=r[0];select.append(o)}select.value='Platinum';
+ let generation=0;
+ const stop=document.getElementById('mining-stop'),go=document.getElementById('mining-find'),status=document.getElementById('mining-status'),tbody=document.getElementById('mining-results');
+ stop.onclick=()=>{generation++;status.textContent+=' Поиск остановлен.';stop.disabled=true;go.disabled=false};
+ const addRow=(system,ring,type,arrival,distance,kind)=>{const tr=document.createElement('tr');const vals=[system+' — '+ring,type,arrival==null?'Неизвестно':Math.round(arrival).toLocaleString('ru-RU')+' св. с.',distance==null?'Неизвестно':distance.toLocaleString('ru-RU',{maximumFractionDigits:1})+' св. лет',kind];for(const val of vals){const td=document.createElement('td');td.textContent=val;tr.append(td)}tbody.append(tr)};
+ go.onclick=async()=>{
+ const run=++generation,origin=document.getElementById('mining-origin').value.trim(),resource=select.value,radius=Number(document.getElementById('mining-radius').value),types=eligibleRings(resource);
+ tbody.replaceChildren();if(!origin){status.textContent='Введи систему отправления.';return}if(!types.length){status.textContent='Для этого ресурса типы колец в справочнике не указаны. Автоматически подобрать подходящие кольца нельзя.';return}
+ go.disabled=true;stop.disabled=false;status.textContent='Получаю ближайшие системы из EDSM…';
+ try{
+ const list=await fetchJson('https://www.edsm.net/api-v1/sphere-systems?systemName='+encodeURIComponent(origin)+'&radius='+radius+'&showCoordinates=1');
+ if(run!==generation)return;if(!Array.isArray(list))throw Error('Некорректный ответ EDSM');
+ const nearby=list.filter(x=>x.name&&Number.isFinite(Number(x.distance))).sort((a,b)=>a.distance-b.distance).slice(0,60);
+ if(!nearby.length){status.textContent='EDSM не вернул системы. Проверь название исходной системы.';return}
+ let scanned=0,errors=0,found=0;
+ const results=await pooled(nearby,4,async sys=>{
+ if(run!==generation)return [];
+ try{
+ const data=await fetchJson('https://www.edsm.net/api-system-v1/bodies?systemName='+encodeURIComponent(sys.name));
+ if(run!==generation)return [];
+ const matches=[];for(const body of data.bodies||[]){for(const ring of body.rings||[]){const type=String(ring.type||'');if(types.some(t=>type.toLowerCase()===t.toLowerCase()))matches.push({system:sys.name,ring:ring.name||body.name+' Ring',type,arrival:body.distanceToArrival,distance:Number(sys.distance)})}}
+ return matches;
+ }finally{scanned++;if(run===generation)status.textContent='Проверено '+scanned+' из '+nearby.length+' систем; найдено колец: '+found}
+ });
+ if(run!==generation)return;
+ for(const result of results){if(result?.error){errors++;continue}for(const item of result||[]){found++;addRow(item.system,item.ring,item.type,item.arrival,item.distance,'Потенциальное кольцо')}}
+ const key=resource==='Platinum'?'platinum':resource==='Painite'?'painite':null;
+ if(key){const known=miningSites.filter(x=>x[key]>0);const names=new Set(Array.from(tbody.rows).map(row=>row.cells[0].textContent.toLowerCase()));for(const site of known){const identifier=(site.system+' — '+site.ring).toLowerCase();if(!names.has(identifier))addRow(site.system,site.ring,'По каталогу',site.arrivalLs,null,'Каталог: проверить в EDTools')}}
+ status.textContent='Готово. Проверено '+(nearby.length-errors)+' из '+nearby.length+' ближайших систем (лимит 60). Подходящих колец: '+found+'.'+(errors?' Ошибок API: '+errors+'.':'')+' Совпадение типа кольца не гарантирует ресурс или хотспот.';
+ if(!found)status.textContent+=' Попробуй увеличить радиус.';
+ }catch(e){if(run===generation)status.textContent='Поиск не выполнен: '+e.message+'. Возможны ограничения CORS или недоступность EDSM.'}
+ finally{if(run===generation){go.disabled=false;stop.disabled=true}}
  };
- document.getElementById('mining-find').onclick=find;
- document.getElementById('mining-origin').addEventListener('keydown',e=>{if(e.key==='Enter')find()});
+ document.getElementById('mining-origin').addEventListener('keydown',e=>{if(e.key==='Enter')go.click()});
 }
