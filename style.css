@@ -76,3 +76,15 @@ body.overlay-mode main{max-width:none;padding:12px}body.overlay-mode .hero{min-h
 @media(max-width:620px){.hero{min-height:92px;padding:14px 16px;margin:12px 0 15px}.hero h2{font-size:22px;letter-spacing:-.5px;margin:5px 0}.hero h2 em{margin-left:4px}.hero p{font-size:11px;line-height:1.4}.hero .eyebrow{font-size:8px}.hero-orbit,.hero-coordinate{display:none}}
 body.overlay-mode .hero{min-height:75px;padding:11px 18px}
 body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
+
+/* EDTools loading state: no white flash while cross-origin iframe loads */
+.edtools-frame-wrap{position:relative;width:100%;height:76vh;min-height:620px;border:1px solid var(--hud-border);border-radius:12px;overflow:hidden;background:#0b121b}
+#edtools-frame{display:block;width:100%;height:100%;border:0;background:#0b121b;visibility:hidden;opacity:0;transition:opacity .35s ease}
+#edtools-frame.edtools-loaded{visibility:visible;opacity:1}
+.edtools-loader{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:radial-gradient(circle at center,#172838 0%,#0b121b 65%);color:#f6a24b;text-align:center;padding:24px;transition:opacity .35s ease,visibility .35s ease}
+.edtools-loader-hidden{opacity:0;visibility:hidden;pointer-events:none}
+.edtools-loader strong{font-size:13px;letter-spacing:2px}.edtools-loader p{margin:0;color:#9cabbc;font-size:12px}
+.edtools-spinner{width:72px;height:72px;border:2px solid rgba(255,156,57,.18);border-top-color:#ff9c39;border-radius:50%;animation:edtools-spin 1.2s linear infinite;display:grid;place-items:center;box-shadow:0 0 28px rgba(255,156,57,.08)}
+.edtools-spinner span{width:42px;height:42px;border:1px dashed rgba(255,156,57,.5);border-radius:50%;animation:edtools-spin 2.5s linear infinite reverse}
+@keyframes edtools-spin{to{transform:rotate(360deg)}}
+@media(max-width:620px){.edtools-frame-wrap{height:70vh;min-height:460px}}
