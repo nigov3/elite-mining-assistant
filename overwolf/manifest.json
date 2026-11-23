@@ -2,9 +2,9 @@
   "manifest_version": 1,
   "type": "WebApp",
   "meta": {
-    "name": "Elite Mining Assistant",
+    "name": "Elite Dangerous Companion",
     "author": "nigov3",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Elite Dangerous mining reference overlay",
     "minimum-overwolf-version": "0.170.0",
     "icon": "icon.png"
@@ -37,8 +37,8 @@
         "resizable": true,
         "keep_window_location": true,
         "size": {
-          "width": 720,
-          "height": 650
+          "width": 980,
+          "height": 780
         },
         "min_size": {
           "width": 420,
