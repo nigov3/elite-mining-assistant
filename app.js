@@ -5,7 +5,8 @@ const root=document.getElementById('app');root.innerHTML='<header><div><h1>Elite
 const switcher=document.getElementById('theme-switch');if(document.body.dataset.theme==='light'){switcher.href='../dark/';switcher.textContent='🌙 Тёмная тема'}
 const content=document.getElementById('content');document.getElementById('res').onclick=()=>show('resources');document.getElementById('fire').onclick=()=>show('groups');
 const galaxyTab=document.createElement('button');galaxyTab.id='galaxy';galaxyTab.textContent='Галактика';document.querySelector('.tabs').appendChild(galaxyTab);galaxyTab.onclick=()=>show('galaxy');
-function show(which){tab=which;galaxyTab.classList.toggle('active',which==='galaxy');document.getElementById('res').classList.toggle('active',which==='resources');document.getElementById('fire').classList.toggle('active',which==='groups');if(which==='galaxy'){showGalaxy();return}if(which==='groups'){content.innerHTML='<h2>Огневые группы</h2><div class="tablewrap"><table><thead><tr><th>Группа</th><th>Основной огонь</th><th>Вспомогательный огонь</th></tr></thead><tbody>'+groups.map(g=>'<tr>'+g.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';return}
+const miningTab=document.createElement('button');miningTab.id='mining';miningTab.textContent='Точки добычи';document.querySelector('.tabs').appendChild(miningTab);miningTab.onclick=()=>show('mining');
+function show(which){tab=which;galaxyTab.classList.toggle('active',which==='galaxy');miningTab.classList.toggle('active',which==='mining');document.getElementById('res').classList.toggle('active',which==='resources');document.getElementById('fire').classList.toggle('active',which==='groups');if(which==='galaxy'){showGalaxy();return}if(which==='mining'){showMining();return}if(which==='groups'){content.innerHTML='<h2>Огневые группы</h2><div class="tablewrap"><table><thead><tr><th>Группа</th><th>Основной огонь</th><th>Вспомогательный огонь</th></tr></thead><tbody>'+groups.map(g=>'<tr>'+g.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';return}
 content.innerHTML='<h2>Справочник ресурсов</h2><input id="q" style="width:100%" placeholder="Поиск по русскому или английскому названию"><div class="filters"><select id="cat"><option value="">Все категории</option><option>Металлы</option><option>Минералы</option><option>Химикаты</option></select><select id="ring"><option value="">Все кольца</option><option>Металлические</option><option>Металлообогащённые</option><option>Каменные</option><option>Ледяные</option></select><button id="sort">Дорогие сначала</button></div><p class="muted" id="count"></p><div class="tablewrap"><table><thead><tr><th>Ресурс</th><th class="price">Кр./т</th><th>Кольца и добыча</th></tr></thead><tbody id="rows"></tbody></table></div><button id="copy" style="margin-top:18px">Скопировать таблицу</button><small class="muted">* Пометка «проверить» в исходных данных. Цены справочные, не текущие рыночные.</small>';['q','cat','ring'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));document.getElementById('sort').onclick=()=>{descending=!descending;document.getElementById('sort').textContent=descending?'Дорогие сначала':'Дешёвые сначала';render()};document.getElementById('copy').onclick=()=>{const list=filtered();navigator.clipboard.writeText(list.map(r=>r.join('\t')).join('\n')).then(()=>alert('Скопировано')).catch(()=>alert('Не удалось скопировать'))};render()}
 function filtered(){const q=document.getElementById('q').value.toLowerCase(),c=document.getElementById('cat').value,r=document.getElementById('ring').value;return resources.filter(x=>(!q||(x[0]+' '+x[1]).toLowerCase().includes(q))&&(!c||x[5]===c)&&(!r||x[3].split(', ').includes(r))).sort((a,b)=>descending?Number(b[2])-Number(a[2]):Number(a[2])-Number(b[2]))}
 function render(){const list=filtered();document.getElementById('count').textContent='Найдено: '+list.length+' из '+resources.length;document.getElementById('rows').innerHTML=list.map(x=>'<tr><td><strong>'+x[0]+'</strong><div class="sub">'+x[1]+'</div></td><td class="price"><span class="price-tag '+(Number(x[2])>=100000?'price-high':Number(x[2])>=30000?'price-mid':'price-low')+'">'+Number(x[2]).toLocaleString('ru-RU')+'</span></td><td>'+x[3]+'<div class="sub">'+(x[4]||'Не указано')+'</div></td></tr>').join('')}
@@ -24,4 +25,48 @@ function showGalaxy(){
  }catch(err){out.textContent='Не удалось получить данные EDSM. Возможно, браузер блокирует запрос (CORS) или сервис недоступен.'}};
  document.getElementById('sysfind').onclick=find;
  document.getElementById('sysname').addEventListener('keydown',e=>{if(e.key==='Enter')find()});
+}
+
+const miningSites=[
+ ['Omicron Capricorni B','B 1 A Ring',4,2,11713],
+ ['HIP 104504','12 A Ring',5,2,1859],
+ ['HIP 104549','6 A Ring',2,1,3208],
+ ['HIP 100449','5 A Ring',5,1,4780],
+ ['HIP 105066','3 A Ring',1,0,2469],
+ ['Col 285 Sector VZ-P d5-85','5 A Ring',2,4,3916],
+ ['Nipiates','2 A Ring',3,0,772],
+ ['Macua','2 A Ring',2,5,1388],
+ ['HIP 107001','2 A Ring',2,5,1694],
+ ['Col 285 Sector YQ-C c13-21','2 A Ring',8,2,474],
+ ['Col 285 Sector WP-E c12-17','1 A Ring',5,9,289],
+ ['Col 285 Sector ZK-O d6-104','7 A Ring',5,2,4079],
+ ['HIP 90565','3 A Ring',3,3,2336]
+].map(([system,ring,platinum,painite,arrivalLs])=>({system,ring,platinum,painite,arrivalLs}));
+async function edsmCoordinates(names){
+ const query=new URLSearchParams({showCoordinates:'1'});
+ names.forEach(name=>query.append('systemName[]',name));
+ const response=await fetch('https://www.edsm.net/api-v1/systems?'+query);
+ if(!response.ok)throw Error('EDSM HTTP '+response.status);
+ const result=await response.json();if(!Array.isArray(result))throw Error('EDSM response');
+ return new Map(result.filter(x=>x.coords).map(x=>[x.name.toLowerCase(),x.coords]));
+}
+function showMining(){
+ content.innerHTML='<h2>Точки добычи</h2><p class="muted">Проверенные записи о кольцах из EDTools. Расстояния рассчитываются по координатам EDSM, если API доступен. Каталог пока ограничен выбранными кольцами.</p><div class="filters"><input id="mining-origin" value="Sol" placeholder="Система отправления" aria-label="Система отправления"><select id="mining-resource"><option value="platinum">Платина</option><option value="painite">Пейнит</option></select><select id="mining-radius"><option value="50">До 50 св. лет</option><option value="100" selected>До 100 св. лет</option><option value="250">До 250 св. лет</option><option value="500">До 500 св. лет</option><option value="all">Любое расстояние</option></select><button id="mining-find">Найти</button></div><p id="mining-status" class="muted" aria-live="polite">Нажми «Найти», чтобы рассчитать расстояния.</p><div class="tablewrap"><table><thead><tr><th>Система / кольцо</th><th>Хотспоты</th><th>От звезды</th><th>Расстояние</th><th>Источник</th></tr></thead><tbody id="mining-results"></tbody></table></div><p><a id="mining-edtools" href="https://edtools.cc/hotspot?m=Platinum&s=Sol" target="_blank" rel="noopener noreferrer">Искать другие точки в EDTools ↗</a></p><small class="muted">Число хотспотов не означает их пересечение или гарантированную доходность. Данные сообщества могут устаревать. Для лазерной добычи проверяй тип кольца и конкретную зону.</small>';
+ const find=async()=>{
+ const origin=document.getElementById('mining-origin').value.trim(),resource=document.getElementById('mining-resource').value,radius=document.getElementById('mining-radius').value,status=document.getElementById('mining-status'),tbody=document.getElementById('mining-results');
+ if(!origin){status.textContent='Введи название системы отправления.';return}
+ const material=resource==='platinum'?'Platinum':'Painite';document.getElementById('mining-edtools').href='https://edtools.cc/hotspot?m='+encodeURIComponent(material)+'&s='+encodeURIComponent(origin);
+ const candidates=miningSites.filter(x=>x[resource]>0);status.textContent='Запрашиваю координаты EDSM…';tbody.replaceChildren();
+ let coords,originCoords;try{
+ const [a,b]=await Promise.all([fetch('https://www.edsm.net/api-v1/system?systemName='+encodeURIComponent(origin)+'&showCoordinates=1').then(r=>{if(!r.ok)throw Error('origin');return r.json()}),edsmCoordinates(candidates.map(x=>x.system))]);
+ originCoords=a.coords;coords=b;if(!originCoords)throw Error('no coords');
+ }catch(e){status.textContent='Не удалось получить координаты EDSM. Показываю каталог без расстояний; проверь доступность API или название системы.';coords=new Map()}
+ const results=candidates.map(site=>{const p=coords.get(site.system.toLowerCase());const distance=p&&originCoords?Math.hypot(p.x-originCoords.x,p.y-originCoords.y,p.z-originCoords.z):null;return {...site,distance}}).filter(x=>radius==='all'||x.distance===null||x.distance<=Number(radius)).sort((a,b)=>(a.distance??Infinity)-(b.distance??Infinity));
+ for(const site of results){const tr=document.createElement('tr');const values=[site.system+' — '+site.ring,site[resource],site.arrivalLs.toLocaleString('ru-RU')+' св. с.',site.distance===null?'Нет координат':site.distance.toLocaleString('ru-RU',{maximumFractionDigits:1})+' св. лет'];for(const value of values){const td=document.createElement('td');td.textContent=String(value);tr.append(td)}
+ const td=document.createElement('td'),a=document.createElement('a');a.href='https://edtools.cc/hotspot?m='+encodeURIComponent(material)+'&s='+encodeURIComponent(site.system);a.target='_blank';a.rel='noopener noreferrer';a.textContent='EDTools ↗';td.append(a);tr.append(td);tbody.append(tr)}
+ if(originCoords)status.textContent='Найдено '+results.length+' точек в ограниченном каталоге. Системы без координат показаны отдельно в конце списка.';else status.textContent+=' Доступно '+results.length+' записей.';
+ if(!results.length)status.textContent='В выбранном радиусе нет известных точек из нашего ограниченного каталога. Попробуй увеличить радиус или открыть EDTools.';
+ };
+ document.getElementById('mining-find').onclick=find;
+ document.getElementById('mining-origin').addEventListener('keydown',e=>{if(e.key==='Enter')find()});
 }
