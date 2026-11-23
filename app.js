@@ -97,3 +97,21 @@ function showWiki(){
   }catch(err){status.textContent='Встроенный поиск недоступен ('+err.message+'). Ссылка выше открывает результаты напрямую на русской вики.'}
  };
 }
+
+/* Gamepad-friendly companion mode. The overlay must be focused for browser Gamepad API input. */
+if(new URLSearchParams(location.search).has('overlay')){
+ document.body.classList.add('overlay-mode');
+ const hint=document.createElement('div');hint.className='gamepad-hint';hint.textContent='🎮 Крестовина / стик — выбор · A — открыть · B — назад · Ctrl+Shift+M — скрыть оверлей';document.querySelector('.site-header').after(hint);
+ let lastButtons=[],lastMove=0,selected=0,active=false;
+ const focusables=()=>Array.from(document.querySelectorAll('.tabs button, #content button, #content input, #content select, #content a')).filter(el=>el.getClientRects().length&&!el.disabled);
+ const updateFocus=(delta)=>{const els=focusables();if(!els.length)return;selected=(selected+delta+els.length)%els.length;els[selected].focus({preventScroll:true});els[selected].scrollIntoView({block:'nearest',behavior:'smooth'})};
+ window.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.activeElement?.tagName!=='INPUT'){document.getElementById('res').click();selected=0}});
+ function pollGamepad(time){const gp=navigator.getGamepads?.()[0];if(gp){const pressed=i=>Boolean(gp.buttons[i]?.pressed);const edge=i=>pressed(i)&&!lastButtons[i];if(!active){active=true;hint.textContent='🎮 Геймпад подключён · крестовина/стик: выбор · A: открыть · B: ресурсы'}
+ const dir=pressed(13)||gp.axes[1]<-.65?-1:pressed(12)||gp.axes[1]>.65?1:0;
+ if(dir&&time-lastMove>220){updateFocus(dir);lastMove=time}
+ if(edge(0)){const els=focusables();const el=els[selected]||document.activeElement;if(el?.tagName==='INPUT'||el?.tagName==='SELECT')el.focus();else el?.click()}
+ if(edge(1)){document.getElementById('res').click();selected=0;updateFocus(0)}
+ lastButtons=gp.buttons.map(b=>b.pressed);
+ }else{active=false;lastButtons=[]}requestAnimationFrame(pollGamepad)}
+ requestAnimationFrame(pollGamepad);
+}
