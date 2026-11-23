@@ -71,46 +71,35 @@ function makeExternalLink(label,url,description){
  const item=document.createElement('div');item.className='tool-link';const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';const p=document.createElement('p');p.className='muted';p.textContent=description;item.append(a,p);return item;
 }
 function showTrade(){
- content.innerHTML='<h2>Поиск мест продажи и станций</h2><p class="muted">Данные рынка EDDN через Ardent API. Данные зависят от сообщений игроков и могут устаревать.</p><div class="filters"><input id="trade-system" value="Sol" placeholder="Система" aria-label="Система"><select id="trade-mineral" aria-label="Минерал"></select><select id="trade-radius" aria-label="Радиус"><option value="50">50 св. лет</option><option value="100" selected>100 св. лет</option><option value="200">200 св. лет</option><option value="500">500 св. лет</option></select><button id="trade-search">Найти покупателей</button></div><p id="trade-message" class="muted" aria-live="polite">Выбери ресурс и нажми «Найти покупателей».</p><div id="trade-results"></div><div class="filters"><label for="trade-json">Если API недоступен из браузера, загрузи сохранённый JSON-ответ Ardent:</label><input id="trade-json" type="file" accept=".json,application/json"></div><p><a href="https://inara.cz/elite/commodities/" target="_blank" rel="noopener">Проверить цены на INARA ↗</a> · <a href="https://ardent-insight.com/" target="_blank" rel="noopener">Ardent Insight ↗</a></p>';
+ content.innerHTML='<h2>Поиск мест продажи и станций</h2><p class="muted">Данные рынка EDDN через Ardent API. Данные зависят от сообщений игроков и могут устаревать.</p><div class="filters"><input id="trade-system" value="Sol" placeholder="Система" aria-label="Система"><select id="trade-mineral" aria-label="Минерал"></select><select id="trade-radius" aria-label="Радиус"><option value="50">50 св. лет</option><option value="100" selected>100 св. лет</option><option value="200">200 св. лет</option><option value="500">500 св. лет</option></select><button id="trade-search">Найти покупателей</button></div><p id="trade-message" class="muted" aria-live="polite">Выбери ресурс и нажми «Найти покупателей».</p><div id="trade-results"></div><p><a href="https://inara.cz/elite/commodities/" target="_blank" rel="noopener">Проверить цены на INARA ↗</a> · <a href="https://ardent-insight.com/" target="_blank" rel="noopener">Ardent Insight ↗</a></p>';
  const sel=document.getElementById('trade-mineral');resources.forEach(r=>{const opt=document.createElement('option');opt.value=r[1];opt.textContent=r[0]+' ('+r[1]+')';sel.append(opt)});sel.value='Platinum';
- const importInput=document.getElementById('trade-json');
- importInput.onchange=async()=>{
-  const file=importInput.files?.[0];if(!file)return;
-  const msg=document.getElementById('trade-message'),out=document.getElementById('trade-results');
-  try{
-   const json=JSON.parse(await file.text());
-   const rows=Array.isArray(json)?json:Array.isArray(json.results)?json.results:Array.isArray(json.data)?json.data:null;
-   if(!rows)throw Error('Ожидается JSON-массив рыночных записей');
-   out.replaceChildren();
-   const table=document.createElement('table');table.innerHTML='<thead><tr><th>Система</th><th>Станция</th><th>Цена, CR/т</th><th>Спрос</th><th>Расстояние, св. лет</th><th>Обновление</th></tr></thead>';
-   const tbody=document.createElement('tbody');
-   rows.slice(0,100).forEach(r=>{const tr=document.createElement('tr');for(const value of [r.systemName,r.stationName,r.sellPrice,r.demand,r.distance,r.updatedAt]){const td=document.createElement('td');td.textContent=value==null?'—':String(value);tr.append(td)}tbody.append(tr)});
-   table.append(tbody);const wrap=document.createElement('div');wrap.className='tablewrap';wrap.append(table);out.append(wrap);
-   msg.textContent='Загружено из локального файла: '+rows.length+' записей. Показаны первые 100. Данные не обновляются автоматически.';
-  }catch(e){msg.textContent='Не удалось прочитать JSON: '+e.message}
- };
  const btn=document.getElementById('trade-search');
  btn.onclick=async()=>{
   const system=document.getElementById('trade-system').value.trim(),mineral=sel.value,radius=document.getElementById('trade-radius').value,msg=document.getElementById('trade-message'),out=document.getElementById('trade-results');
   if(!system){msg.textContent='Укажи исходную систему.';return}
   btn.disabled=true;out.replaceChildren();msg.textContent='Запрашиваю покупателей…';
   const endpoint='https://api.ardent-insight.com/v2/system/name/'+encodeURIComponent(system)+'/commodity/name/'+encodeURIComponent(mineral.toLowerCase().replace(/[^a-z0-9]/g,''))+'/nearby/imports?maxDistance='+radius+'&maxDaysAgo=30&minVolume=1';
-  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),30000);
+  const fetchJson=async(url,ms)=>{const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),ms);try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);return await response.json()}finally{clearTimeout(timeout)}};
   try{
-   const response=await fetch(endpoint,{signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);
-   const json=await response.json();const rows=Array.isArray(json)?json:Array.isArray(json.results)?json.results:Array.isArray(json.data)?json.data:null;
+   let json,source='Ardent';
+   try{json=await fetchJson(endpoint,12000)}
+   catch(primaryError){
+    msg.textContent='Прямой запрос не прошёл. Пробую резервное подключение…';
+    try{json=await fetchJson('https://proxy.cors.dev/'+endpoint,20000);source='Ardent через резервный прокси'}
+    catch(backupError){throw Error('Прямое подключение: '+primaryError.message+'; резервное: '+backupError.message)}
+   }const rows=Array.isArray(json)?json:Array.isArray(json.results)?json.results:Array.isArray(json.data)?json.data:null;
    if(!rows)throw Error('Неожиданный формат ответа Ardent API');
    if(!rows.length){msg.textContent='Подходящих записей за последние 30 дней нет. Попробуй другой ресурс, систему или радиус.';return}
    const table=document.createElement('table');table.innerHTML='<thead><tr><th>Система</th><th>Станция</th><th>Цена продажи, CR/т</th><th>Спрос</th><th>Расстояние</th><th>Обновление</th></tr></thead>';
    const tbody=document.createElement('tbody');const cell=(tr,value)=>{const td=document.createElement('td');td.textContent=value==null?'—':String(value);tr.append(td)};
    rows.slice(0,100).forEach(r=>{const tr=document.createElement('tr');cell(tr,r.systemName??r.starsystemName??r.system?.name);cell(tr,r.stationName??r.marketName??r.station?.name);cell(tr,r.sellPrice??r.price??r.maxSellPrice);cell(tr,r.demand??r.volume??r.stock);cell(tr,r.distance??r.distanceLy);cell(tr,r.updatedAt??r.timestamp??r.lastUpdated);tbody.append(tr)});
    table.append(tbody);const wrap=document.createElement('div');wrap.className='tablewrap';wrap.append(table);out.append(wrap);
-   msg.textContent='Получено записей: '+rows.length+'. Показаны первые 100. Источник: Ardent / EDDN.';
+   msg.textContent='Получено записей: '+rows.length+'. Показаны первые 100. Источник: '+source+' / EDDN.';
   }catch(e){
    const detail=e.name==='AbortError'?'Ardent не ответил за 30 секунд.':e instanceof TypeError?'Не удалось установить соединение с Ardent. Возможны проблемы сети, CORS или недоступность сервера.':'Ошибка Ardent: '+e.message+'.';
    msg.textContent=detail+' Можно повторить поиск или проверить данные на INARA.';
    const link=document.createElement('a');link.href=endpoint;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Проверить ответ Ardent напрямую ↗';out.append(link);
-  }finally{clearTimeout(timeout);btn.disabled=false}
+  }finally{btn.disabled=false}
  };
 }
 
