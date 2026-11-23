@@ -6,3 +6,5 @@ body[data-theme="dark"] select{color-scheme:dark;background-color:#192334;color:
 body[data-theme="dark"] select option{background-color:#192334;color:#f1f5f9}
 body[data-theme="light"] select{color-scheme:light;background-color:#fff;color:#182230}
 body[data-theme="light"] select option{background-color:#fff;color:#182230}
+
+.edsm-card{border:1px solid #cbd5e1;border-radius:12px;padding:16px;margin:16px 0;background:#f8fafc}.edsm-card h3{margin:0 0 12px;font-size:20px}.edsm-card p{line-height:1.5}body[data-theme=dark] .edsm-card{border-color:#475467;background:#192334}.edsm-card a{color:#2563eb}body[data-theme=dark] .edsm-card a{color:#93c5fd}
