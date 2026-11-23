@@ -36,7 +36,6 @@ const miningSites=[
  ['Col 285 Sector VZ-P d5-85','5 A Ring',2,4,3916],
  ['Nipiates','2 A Ring',3,0,772],
  ['Macua','2 A Ring',2,5,1388],
- ['HIP 107001','2 A Ring',2,5,1694],
  ['Col 285 Sector YQ-C c13-21','2 A Ring',8,2,474],
  ['Col 285 Sector WP-E c12-17','1 A Ring',5,9,289],
  ['Col 285 Sector ZK-O d6-104','7 A Ring',5,2,4079],
