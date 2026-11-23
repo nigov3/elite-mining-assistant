@@ -61,3 +61,18 @@ body[data-theme=light] .hero{box-shadow:0 12px 35px rgba(32,48,70,.12)}
 body.overlay-mode main{max-width:none;padding:12px}body.overlay-mode .hero{min-height:125px;margin:12px 0;padding:15px 24px}body.overlay-mode .hero h2{font-size:27px;margin:6px 0}body.overlay-mode .hero p,body.overlay-mode .hero-orbit,body.overlay-mode .hero-metrics,body.overlay-mode .hero-coordinate{display:none}body.overlay-mode .site-header{min-height:52px;padding-bottom:9px}body.overlay-mode .brand h1{font-size:17px}body.overlay-mode .brand-subtitle{display:none}body.overlay-mode .tabs button{padding:10px}body.overlay-mode .panel{margin-top:9px}body.overlay-mode .gamepad-hint{font-size:11px;color:var(--hud);padding:8px 0}body.overlay-mode :focus-visible{outline:3px solid #ffad4c!important;outline-offset:3px;box-shadow:0 0 0 5px rgba(255,156,57,.15)}
 
 .route-summary{padding:20px 24px;border:1px solid var(--hud-border);border-radius:12px;background:rgba(var(--hud-rgb),.055);margin:18px 0}.route-summary h3{margin:0 0 10px}.route-summary p{margin:8px 0}.route-summary .muted{font-size:12px;line-height:1.6}
+
+/* Compact HUD hero: prioritize tools above the fold */
+.hero{min-height:112px;padding:17px 28px;margin:14px 0 18px;align-items:center}
+.hero h2{font-size:clamp(22px,2.7vw,33px);line-height:1.13;letter-spacing:-.7px;margin:6px 0 5px}
+.hero h2 br{display:none}
+.hero h2 em{margin-left:8px}
+.hero p{font-size:12px;max-width:650px}
+.hero .eyebrow{font-size:9px}
+.hero-metrics{display:none}
+.hero-orbit{width:112px;height:112px;right:5%;opacity:.65}
+.orbit-one{inset:11px}.orbit-two{inset:25px}.orbit-three{inset:40px}.orbit-planet{inset:47px}.orbit-cross{right:0;top:0}
+.hero-coordinate{font-size:8px;right:12px;bottom:8px}
+@media(max-width:620px){.hero{min-height:92px;padding:14px 16px;margin:12px 0 15px}.hero h2{font-size:22px;letter-spacing:-.5px;margin:5px 0}.hero h2 em{margin-left:4px}.hero p{font-size:11px;line-height:1.4}.hero .eyebrow{font-size:8px}.hero-orbit,.hero-coordinate{display:none}}
+body.overlay-mode .hero{min-height:75px;padding:11px 18px}
+body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
