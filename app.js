@@ -71,8 +71,24 @@ function makeExternalLink(label,url,description){
  const item=document.createElement('div');item.className='tool-link';const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';const p=document.createElement('p');p.className='muted';p.textContent=description;item.append(a,p);return item;
 }
 function showTrade(){
- content.innerHTML='<h2>Поиск мест продажи и станций</h2><p class="muted">Данные рынка EDDN через Ardent API. Данные зависят от сообщений игроков и могут устаревать.</p><div class="filters"><input id="trade-system" value="Sol" placeholder="Система" aria-label="Система"><select id="trade-mineral" aria-label="Минерал"></select><select id="trade-radius" aria-label="Радиус"><option value="50">50 св. лет</option><option value="100" selected>100 св. лет</option><option value="200">200 св. лет</option><option value="500">500 св. лет</option></select><button id="trade-search">Найти покупателей</button></div><p id="trade-message" class="muted" aria-live="polite">Выбери ресурс и нажми «Найти покупателей».</p><div id="trade-results"></div><p><a href="https://inara.cz/elite/commodities/" target="_blank" rel="noopener">Проверить цены на INARA ↗</a> · <a href="https://ardent-insight.com/" target="_blank" rel="noopener">Ardent Insight ↗</a></p>';
+ content.innerHTML='<h2>Поиск мест продажи и станций</h2><p class="muted">Данные рынка EDDN через Ardent API. Данные зависят от сообщений игроков и могут устаревать.</p><div class="filters"><input id="trade-system" value="Sol" placeholder="Система" aria-label="Система"><select id="trade-mineral" aria-label="Минерал"></select><select id="trade-radius" aria-label="Радиус"><option value="50">50 св. лет</option><option value="100" selected>100 св. лет</option><option value="200">200 св. лет</option><option value="500">500 св. лет</option></select><button id="trade-search">Найти покупателей</button></div><p id="trade-message" class="muted" aria-live="polite">Выбери ресурс и нажми «Найти покупателей».</p><div id="trade-results"></div><div class="filters"><label for="trade-json">Если API недоступен из браузера, загрузи сохранённый JSON-ответ Ardent:</label><input id="trade-json" type="file" accept=".json,application/json"></div><p><a href="https://inara.cz/elite/commodities/" target="_blank" rel="noopener">Проверить цены на INARA ↗</a> · <a href="https://ardent-insight.com/" target="_blank" rel="noopener">Ardent Insight ↗</a></p>';
  const sel=document.getElementById('trade-mineral');resources.forEach(r=>{const opt=document.createElement('option');opt.value=r[1];opt.textContent=r[0]+' ('+r[1]+')';sel.append(opt)});sel.value='Platinum';
+ const importInput=document.getElementById('trade-json');
+ importInput.onchange=async()=>{
+  const file=importInput.files?.[0];if(!file)return;
+  const msg=document.getElementById('trade-message'),out=document.getElementById('trade-results');
+  try{
+   const json=JSON.parse(await file.text());
+   const rows=Array.isArray(json)?json:Array.isArray(json.results)?json.results:Array.isArray(json.data)?json.data:null;
+   if(!rows)throw Error('Ожидается JSON-массив рыночных записей');
+   out.replaceChildren();
+   const table=document.createElement('table');table.innerHTML='<thead><tr><th>Система</th><th>Станция</th><th>Цена, CR/т</th><th>Спрос</th><th>Расстояние, св. лет</th><th>Обновление</th></tr></thead>';
+   const tbody=document.createElement('tbody');
+   rows.slice(0,100).forEach(r=>{const tr=document.createElement('tr');for(const value of [r.systemName,r.stationName,r.sellPrice,r.demand,r.distance,r.updatedAt]){const td=document.createElement('td');td.textContent=value==null?'—':String(value);tr.append(td)}tbody.append(tr)});
+   table.append(tbody);const wrap=document.createElement('div');wrap.className='tablewrap';wrap.append(table);out.append(wrap);
+   msg.textContent='Загружено из локального файла: '+rows.length+' записей. Показаны первые 100. Данные не обновляются автоматически.';
+  }catch(e){msg.textContent='Не удалось прочитать JSON: '+e.message}
+ };
  const btn=document.getElementById('trade-search');
  btn.onclick=async()=>{
   const system=document.getElementById('trade-system').value.trim(),mineral=sel.value,radius=document.getElementById('trade-radius').value,msg=document.getElementById('trade-message'),out=document.getElementById('trade-results');
