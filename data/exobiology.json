@@ -36,7 +36,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Алеоид.webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Алеоид Arcus",
+      "ruNameVerified": true,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "175–180 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "175–180 K"
+        }
+      ]
     },
     {
       "name": "Aleoida Coronamus",
@@ -72,7 +88,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Алеоид.webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Алеоид Coronamus",
+      "ruNameVerified": true,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–190 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–190 K"
+        }
+      ]
     },
     {
       "name": "Aleoida Gravis",
@@ -108,7 +140,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Алеоид.webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Алеоид Gravis",
+      "ruNameVerified": true,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "190–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "190–195 K"
+        }
+      ]
     },
     {
       "name": "Aleoida Laminiae",
@@ -144,7 +192,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Алеоид.webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Алеоид Laminiae",
+      "ruNameVerified": true,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Aleoida Spica",
@@ -180,7 +244,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Алеоид.webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Алеоид Spica",
+      "ruNameVerified": true,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Acies",
@@ -210,7 +290,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Acies",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Alcyoneum",
@@ -247,7 +337,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Alcyoneum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Aurasus",
@@ -284,7 +390,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Aurasus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Bullaris",
@@ -314,7 +436,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Bullaris",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Метан / богатая метаном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Cerbrus",
@@ -352,7 +484,41 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Cerbrus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Ледяной / каменисто-ледяной",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Informem",
@@ -382,7 +548,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Informem",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Азот",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Nebulus",
@@ -412,7 +588,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Nebulus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Гелий",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Omentum",
@@ -442,7 +628,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Omentum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": "азотный/аммиачный вулканизм"
+        }
+      ]
     },
     {
       "name": "Bacterium Scopulum",
@@ -472,7 +668,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Scopulum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": "углеродный/метановый вулканизм"
+        }
+      ]
     },
     {
       "name": "Bacterium Tela",
@@ -502,7 +708,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Tela",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Любая",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": "гелиевый/железный/силикатный/аммиачный"
+        }
+      ]
     },
     {
       "name": "Bacterium Verrata",
@@ -532,7 +748,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Verrata",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": "водный вулканизм"
+        }
+      ]
     },
     {
       "name": "Bacterium Vesicula",
@@ -562,7 +788,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Vesicula",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Bacterium Volu",
@@ -592,7 +828,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Бактерии Volu",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Кислород",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Cactoida Cortexum",
@@ -625,7 +871,23 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кактусоиды Cortexum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        }
+      ]
     },
     {
       "name": "Cactoida Lapis",
@@ -652,7 +914,23 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кактусоиды Lapis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Cactoida Peperatis",
@@ -685,7 +963,23 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кактусоиды Peperatis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Cactoida Pullulanta",
@@ -717,7 +1011,23 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кактусоиды Pullulanta",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        }
+      ]
     },
     {
       "name": "Cactoida Vermis",
@@ -763,7 +1073,23 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кактусоиды Vermis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Clypeus Lacrimam",
@@ -795,7 +1121,35 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Клипеусы Lacrimam",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Clypeus Margaritus",
@@ -827,7 +1181,35 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Клипеусы Margaritus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Clypeus Speculumi",
@@ -859,7 +1241,35 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Клипеусы Speculumi",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K, >2500 св. сек."
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ">190 K, >2500 св. сек."
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ">2500 св. сек."
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ">2500 св. сек."
+        }
+      ]
     },
     {
       "name": "Concha Aureolas",
@@ -893,7 +1303,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Моллюски (англ. Concha).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Моллюски Aureolas",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Concha Biconcavis",
@@ -923,7 +1349,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Моллюски (англ. Concha).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Моллюски Biconcavis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Азот",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Concha Labiata",
@@ -957,7 +1393,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Моллюски (англ. Concha).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Моллюски Labiata",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "<190 K"
+        }
+      ]
     },
     {
       "name": "Concha Renibus",
@@ -987,7 +1439,35 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Моллюски (англ. Concha).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Моллюски Renibus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Electricae Pluma",
@@ -1017,7 +1497,29 @@
       ],
       "sampleDistanceM": 1000,
       "imagePath": "exobiology/Электрики (англ. Electricae).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Электрики Pluma",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Гелий",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "звезда A V+"
+        },
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "звезда A V+"
+        },
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "звезда A V+"
+        }
+      ]
     },
     {
       "name": "Electricae Radialem",
@@ -1047,7 +1549,29 @@
       ],
       "sampleDistanceM": 1000,
       "imagePath": "exobiology/Электрики (англ. Electricae).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Электрики Radialem",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Гелий",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "туманности"
+        },
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "туманности"
+        },
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "туманности"
+        }
+      ]
     },
     {
       "name": "Fonticulua Campestris",
@@ -1085,7 +1609,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Campestris",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "аргон, ледяные/каменисто-ледяные"
+        }
+      ]
     },
     {
       "name": "Fonticulua Digitos",
@@ -1123,7 +1657,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Digitos",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Метан / богатая метаном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "ледяные/каменисто-ледяные"
+        }
+      ]
     },
     {
       "name": "Fonticulua Fluctus",
@@ -1161,7 +1705,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Fluctus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Кислород",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "ледяные/каменисто-ледяные"
+        }
+      ]
     },
     {
       "name": "Fonticulua Lapida",
@@ -1199,7 +1753,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Lapida",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Азот",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "ледяные/каменисто-ледяные"
+        }
+      ]
     },
     {
       "name": "Fonticulua Segmentatus",
@@ -1237,7 +1801,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Segmentatus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Неон / богатая неоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Fonticulua Upupam",
@@ -1275,7 +1849,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фонтикулы Upupam",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "богатая аргоном, ледяные/каменисто-ледяные"
+        }
+      ]
     },
     {
       "name": "Frutexa Acus",
@@ -1308,7 +1892,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Acus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Collum",
@@ -1341,7 +1935,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Collum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Fera",
@@ -1374,7 +1978,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Fera",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Flabellum",
@@ -1407,7 +2021,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Flabellum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Flammasis",
@@ -1440,7 +2064,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Flammasis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Metallicum",
@@ -1473,7 +2107,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Metallicum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Frutexa Sponsae",
@@ -1506,7 +2156,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Кустарники Sponsae",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Fumerola Aquatis",
@@ -1536,7 +2196,17 @@
       ],
       "sampleDistanceM": 100,
       "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дымники Aquatis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Любая",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "водный"
+        }
+      ]
     },
     {
       "name": "Fumerola Carbosis",
@@ -1566,7 +2236,17 @@
       ],
       "sampleDistanceM": 100,
       "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дымники Carbosis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Любая",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "углеродный/метановый"
+        }
+      ]
     },
     {
       "name": "Fumerola Extremus",
@@ -1596,7 +2276,17 @@
       ],
       "sampleDistanceM": 100,
       "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дымники Extremus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Любая",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "силикатный/железный/каменистый"
+        }
+      ]
     },
     {
       "name": "Fumerola Nitris",
@@ -1626,7 +2316,17 @@
       ],
       "sampleDistanceM": 100,
       "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дымники Nitris",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Любая",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "азотный/аммиачный"
+        }
+      ]
     },
     {
       "name": "Fungoida Bullarum",
@@ -1656,7 +2356,17 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фунгоиды Bullarum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Fungoida Gelata",
@@ -1686,7 +2396,35 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фунгоиды Gelata",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Fungoida Setisis",
@@ -1716,7 +2454,29 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фунгоиды Setisis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Метан / богатая метаном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Fungoida Stabitis",
@@ -1746,7 +2506,35 @@
       ],
       "sampleDistanceM": 300,
       "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Фунгоиды Stabitis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Osseus Cornibus",
@@ -1777,7 +2565,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Cornibus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–195 K"
+        }
+      ]
     },
     {
       "name": "Osseus Discus",
@@ -1807,7 +2611,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Discus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Osseus Fractus",
@@ -1838,7 +2658,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Fractus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–190 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "180–190 K"
+        }
+      ]
     },
     {
       "name": "Osseus Pellebantus",
@@ -1869,7 +2705,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Pellebantus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "190–195 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "190–195 K"
+        }
+      ]
     },
     {
       "name": "Osseus Pumice",
@@ -1899,7 +2751,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Pumice",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Метан / богатая метаном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Osseus Spiralis",
@@ -1930,7 +2798,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Оссии (англ. Osseus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Оссии Spiralis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Recepta Conditivus",
@@ -1960,7 +2844,17 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Рецептоиды Conditivus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Ледяной / каменисто-ледяной",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Recepta Deltahedronix",
@@ -1990,7 +2884,23 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Рецептоиды Deltahedronix",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Recepta Umbrux",
@@ -2023,7 +2933,29 @@
       ],
       "sampleDistanceM": 150,
       "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Рецептоиды Umbrux",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Ледяной / каменисто-ледяной",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Stratum Araneamus",
@@ -2048,7 +2980,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Araneamus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        }
+      ]
     },
     {
       "name": "Stratum Cucumisis",
@@ -2081,7 +3023,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Cucumisis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">190 K"
+        }
+      ]
     },
     {
       "name": "Stratum Excutitus",
@@ -2114,7 +3072,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Excutitus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": "165–190 K"
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": "165–190 K"
+        }
+      ]
     },
     {
       "name": "Stratum Frigus",
@@ -2147,7 +3121,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Frigus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">190 K"
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">190 K"
+        }
+      ]
     },
     {
       "name": "Stratum Laminamus",
@@ -2180,7 +3170,17 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Laminamus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        }
+      ]
     },
     {
       "name": "Stratum Limaxus",
@@ -2213,7 +3213,23 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Limaxus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": "165–190 K"
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": "165–190 K"
+        }
+      ]
     },
     {
       "name": "Stratum Paleas",
@@ -2246,7 +3262,29 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Paleas",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        }
+      ]
     },
     {
       "name": "Stratum Tectonicas",
@@ -2279,7 +3317,41 @@
       ],
       "sampleDistanceM": 500,
       "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Стратумы Tectonicas",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Кислород",
+          "world": "",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K, высокое содержание металлов"
+        },
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        },
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        },
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Высокое содержание металлов",
+          "gravity": "Любая по ED-DSN",
+          "extra": ">165 K"
+        }
+      ]
     },
     {
       "name": "Tubus Cavas",
@@ -2315,7 +3387,17 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Тубусы (Tubus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Тубусы Cavas",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "160–190 K, g < 0,15"
+        }
+      ]
     },
     {
       "name": "Tubus Compagibus",
@@ -2351,7 +3433,17 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Тубусы (Tubus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Тубусы Compagibus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "160–190 K, g < 0,15"
+        }
+      ]
     },
     {
       "name": "Tubus Conifer",
@@ -2387,7 +3479,17 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Тубусы (Tubus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Тубусы Conifer",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "160–190 K, g < 0,15"
+        }
+      ]
     },
     {
       "name": "Tubus Rosarium",
@@ -2423,7 +3525,17 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Тубусы (Tubus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Тубусы Rosarium",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "g < 0,15"
+        }
+      ]
     },
     {
       "name": "Tubus Sororibus",
@@ -2459,7 +3571,23 @@
       ],
       "sampleDistanceM": 800,
       "imagePath": "exobiology/Тубусы (Tubus).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Тубусы Sororibus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "g < 0,15"
+        },
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Высокое содержание металлов",
+          "gravity": "< 0,27 g",
+          "extra": "160–190 K, g < 0,15"
+        }
+      ]
     },
     {
       "name": "Tussock Albata",
@@ -2492,7 +3620,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Albata",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "175–180 K"
+        }
+      ]
     },
     {
       "name": "Tussock Capillum",
@@ -2525,7 +3663,23 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Capillum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аргон / богатая аргоном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "каменистый"
+        },
+        {
+          "atmosphere": "Метан / богатая метаном",
+          "world": "",
+          "gravity": "< 0,27 g",
+          "extra": "каменистый"
+        }
+      ]
     },
     {
       "name": "Tussock Caputus",
@@ -2558,7 +3712,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Caputus",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "180–190 K"
+        }
+      ]
     },
     {
       "name": "Tussock Catena",
@@ -2591,7 +3755,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Catena",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Cultro",
@@ -2624,7 +3798,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Cultro",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Divisa",
@@ -2657,7 +3841,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Divisa",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Аммиак",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Ignis",
@@ -2690,7 +3884,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Ignis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "160–170 K"
+        }
+      ]
     },
     {
       "name": "Tussock Pennata",
@@ -2723,7 +3927,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Pennata",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "145–155 K"
+        }
+      ]
     },
     {
       "name": "Tussock Pennatis",
@@ -2756,7 +3970,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Pennatis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Propagito",
@@ -2789,7 +4013,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Propagito",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Serrati",
@@ -2822,7 +4056,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Serrati",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "170–175 K"
+        }
+      ]
     },
     {
       "name": "Tussock Stigmasis",
@@ -2855,7 +4099,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Stigmasis",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Диоксид серы",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     },
     {
       "name": "Tussock Triticum",
@@ -2888,7 +4142,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Triticum",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "190–195 K"
+        }
+      ]
     },
     {
       "name": "Tussock Ventusa",
@@ -2921,7 +4185,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Ventusa",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "CO₂ / богатая CO₂",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": "155–160 K"
+        }
+      ]
     },
     {
       "name": "Tussock Virgam",
@@ -2954,7 +4228,17 @@
       ],
       "sampleDistanceM": 200,
       "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
-      "imageScope": "genus"
+      "imageScope": "genus",
+      "ruName": "Дерновина Virgam",
+      "ruNameVerified": false,
+      "dsn": [
+        {
+          "atmosphere": "Вода / богатая водой",
+          "world": "Каменистый",
+          "gravity": "< 0,27 g",
+          "extra": ""
+        }
+      ]
     }
   ],
   "referenceTables": {
@@ -4931,5 +6215,6 @@
       ]
     ]
   },
-  "distanceSource": "https://elite-dangerous.fandom.com/wiki/Genetic_Sampler"
+  "distanceSource": "https://elite-dangerous.fandom.com/wiki/Genetic_Sampler",
+  "habitatSource": "https://ed-dsn.net/en/conditions-of-emergence-of-exobiological-species-on-planets-a-atmosphere-fine/"
 }
