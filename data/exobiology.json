@@ -34,7 +34,9 @@
         "Аметист-Y",
         "Индиго-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Алеоид.webp",
+      "imageScope": "genus"
     },
     {
       "name": "Aleoida Coronamus",
@@ -68,7 +70,9 @@
         "Аметист-Y",
         "Индиго-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Алеоид.webp",
+      "imageScope": "genus"
     },
     {
       "name": "Aleoida Gravis",
@@ -102,7 +106,9 @@
         "Аметист-Y",
         "Индиго-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Алеоид.webp",
+      "imageScope": "genus"
     },
     {
       "name": "Aleoida Laminiae",
@@ -136,7 +142,9 @@
         "Аметист-Y",
         "Индиго-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Алеоид.webp",
+      "imageScope": "genus"
     },
     {
       "name": "Aleoida Spica",
@@ -170,7 +178,9 @@
         "Аметист-Y",
         "Индиго-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Алеоид.webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Acies",
@@ -198,7 +208,9 @@
         "Сине-зеленый-сурьма",
         "Аквамарин-иттрий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Alcyoneum",
@@ -233,7 +245,9 @@
         "Сирень-Y",
         "D-охра"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Aurasus",
@@ -268,7 +282,9 @@
         "Сирень-Y",
         "D-охра"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Bullaris",
@@ -296,7 +312,9 @@
         "Кобальт-сурьма",
         "Красный-иттрий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Cerbrus",
@@ -332,7 +350,9 @@
         "D-охра",
         "Оранжевый-Ae/Be"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Informem",
@@ -360,7 +380,9 @@
         "Красный-сурьма",
         "Кобальт-иттрий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Nebulus",
@@ -388,7 +410,9 @@
         "Оранжевый-рутений",
         "Сине-зеленый-технеций"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Omentum",
@@ -416,7 +440,9 @@
         "Синий-олово",
         "Аквамарин-молибден"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Scopulum",
@@ -444,7 +470,9 @@
         "Лайм-молибден",
         "Белый-кадмий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Tela",
@@ -472,7 +500,9 @@
         "Желтый-молибден",
         "Золото-кадмий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Verrata",
@@ -500,7 +530,9 @@
         "Персик-кадмий",
         "Красный-ртуть"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Vesicula",
@@ -528,7 +560,9 @@
         "Сине-зеленый-сурьма",
         "Лайм-иттрий"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Bacterium Volu",
@@ -556,7 +590,9 @@
         "Кобальт-рутений",
         "Красный=сурьма"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Бактерии (англ. Bacterium).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Cactoida Cortexum",
@@ -587,7 +623,9 @@
         "Шалфей-N",
         "Охра-Y"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Cactoida Lapis",
@@ -612,7 +650,9 @@
         "Шалфей-N",
         "Охра-Y"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Cactoida Peperatis",
@@ -643,7 +683,9 @@
         "Шалфей-N",
         "Охра-Y"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Cactoida Pullulanta",
@@ -673,7 +715,9 @@
         "Шалфей-N",
         "Охра-Y"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Cactoida Vermis",
@@ -717,7 +761,9 @@
         "Охра-Y",
         "Зеленый-А"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Кактусоиды (англ. Cactoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Clypeus Lacrimam",
@@ -747,7 +793,9 @@
         "Бирюзовый-L",
         "Желтый-N"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Clypeus Margaritus",
@@ -777,7 +825,9 @@
         "Бирюзовый-L",
         "Желтый-N"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Clypeus Speculumi",
@@ -807,7 +857,9 @@
         "Бирюзовый-L",
         "Желтый-N"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Клипеусы (англ. Clypeus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Concha Aureolas",
@@ -839,7 +891,9 @@
         "Желтый-Y",
         "Зеленый-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Моллюски (англ. Concha).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Concha Biconcavis",
@@ -867,7 +921,9 @@
         "Белый-технеций",
         "Красный-полоний"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Моллюски (англ. Concha).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Concha Labiata",
@@ -899,7 +955,9 @@
         "Желтый-Y",
         "Зеленый-D"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Моллюски (англ. Concha).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Concha Renibus",
@@ -927,7 +985,9 @@
         "Персик-молибден",
         "Красный-кадмий"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Моллюски (англ. Concha).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Electricae Pluma",
@@ -955,7 +1015,9 @@
         "Кобальт-сурьма",
         "Шелковица-иттрий"
       ],
-      "sampleDistanceM": 1000
+      "sampleDistanceM": 1000,
+      "imagePath": "exobiology/Электрики (англ. Electricae).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Electricae Radialem",
@@ -983,7 +1045,9 @@
         "Сине-зеленый-сурьма",
         "Зеленый-иттрий"
       ],
-      "sampleDistanceM": 1000
+      "sampleDistanceM": 1000,
+      "imagePath": "exobiology/Электрики (англ. Electricae).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Campestris",
@@ -1019,7 +1083,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Digitos",
@@ -1055,7 +1121,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Fluctus",
@@ -1091,7 +1159,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Lapida",
@@ -1127,7 +1197,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Segmentatus",
@@ -1163,7 +1235,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fonticulua Upupam",
@@ -1199,7 +1273,9 @@
         "Бирюза-D",
         "AE/BE -бордо"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Фонтикулы (англ. Fonticulua).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Acus",
@@ -1230,7 +1306,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Collum",
@@ -1261,7 +1339,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Fera",
@@ -1292,7 +1372,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Flabellum",
@@ -1323,7 +1405,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Flammasis",
@@ -1354,7 +1438,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Metallicum",
@@ -1385,7 +1471,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Frutexa Sponsae",
@@ -1416,7 +1504,9 @@
         "оранжевый-W",
         "D-индиго"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Кустарники (англ. Frutexa, также Shrubs).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fumerola Aquatis",
@@ -1444,7 +1534,9 @@
         "Сине-зеленый-молибден",
         "Зеленый-Кадмий"
       ],
-      "sampleDistanceM": 100
+      "sampleDistanceM": 100,
+      "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fumerola Carbosis",
@@ -1472,7 +1564,9 @@
         "Золото-Молибден",
         "Оранжевый-Кадмий"
       ],
-      "sampleDistanceM": 100
+      "sampleDistanceM": 100,
+      "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fumerola Extremus",
@@ -1500,7 +1594,9 @@
         "Аквамарин-кадмий",
         "Синий-молибден"
       ],
-      "sampleDistanceM": 100
+      "sampleDistanceM": 100,
+      "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fumerola Nitris",
@@ -1528,7 +1624,9 @@
         "Лайм-молибден",
         "Белый-кадмий"
       ],
-      "sampleDistanceM": 100
+      "sampleDistanceM": 100,
+      "imagePath": "exobiology/Дымники (англ. Fumerola).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fungoida Bullarum",
@@ -1556,7 +1654,9 @@
         "Красный-сурьма",
         "Оранжевый-иттрий"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fungoida Gelata",
@@ -1584,7 +1684,9 @@
         "Шелковица-молибден",
         "Сине-зеленый-Кадмий"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fungoida Setisis",
@@ -1612,7 +1714,9 @@
         "Персик-сурьма",
         "Оранжевый-иттрий"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Fungoida Stabitis",
@@ -1640,7 +1744,9 @@
         "Маджента-молибден",
         "Синий-Кадмий"
       ],
-      "sampleDistanceM": 300
+      "sampleDistanceM": 300,
+      "imagePath": "exobiology/Фунгоиды (англ. Fungoida).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Cornibus",
@@ -1669,7 +1775,9 @@
         "Зеленый-TTS",
         "Бордо-Y"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Discus",
@@ -1697,7 +1805,9 @@
         "Персик-молибден",
         "Белый-кадмий"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Fractus",
@@ -1726,7 +1836,9 @@
         "Зеленый-TTS",
         "Бордо-Y"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Pellebantus",
@@ -1755,7 +1867,9 @@
         "Зеленый-TTS",
         "Бордо-Y"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Pumice",
@@ -1783,7 +1897,9 @@
         "Белый-сурьма",
         "Желтый-иттрий"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Osseus Spiralis",
@@ -1812,7 +1928,9 @@
         "Зеленый-TTS",
         "Бордо-Y"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Оссии (англ. Osseus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Recepta Conditivus",
@@ -1840,7 +1958,9 @@
         "Аквамарин-технеций",
         "Белый-полоний"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Recepta Deltahedronix",
@@ -1868,7 +1988,9 @@
         "Сине-зеленый-ртуть",
         "Золото-молибден"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Recepta Umbrux",
@@ -1899,7 +2021,9 @@
         "Бирюзовый-T",
         "шалфей-TTS"
       ],
-      "sampleDistanceM": 150
+      "sampleDistanceM": 150,
+      "imagePath": "exobiology/Рецептоиды (англ. Recepta).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Araneamus",
@@ -1922,7 +2046,9 @@
       "variants": [
         "Изумруд-A, B"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Cucumisis",
@@ -1953,7 +2079,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Excutitus",
@@ -1984,7 +2112,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Frigus",
@@ -2015,7 +2145,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Laminamus",
@@ -2046,7 +2178,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Limaxus",
@@ -2077,7 +2211,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Paleas",
@@ -2108,7 +2244,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Stratum Tectonicas",
@@ -2139,7 +2277,9 @@
         "Индиго-Y",
         "D-сирень"
       ],
-      "sampleDistanceM": 500
+      "sampleDistanceM": 500,
+      "imagePath": "exobiology/Стратумы (англ. Stratum).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tubus Cavas",
@@ -2173,7 +2313,9 @@
         "Лайм-W или D",
         "D-желтый"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Тубусы (Tubus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tubus Compagibus",
@@ -2207,7 +2349,9 @@
         "Лайм-W или D",
         "D-желтый"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Тубусы (Tubus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tubus Conifer",
@@ -2241,7 +2385,9 @@
         "Лайм-W или D",
         "D-желтый"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Тубусы (Tubus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tubus Rosarium",
@@ -2275,7 +2421,9 @@
         "Лайм-W или D",
         "D-желтый"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Тубусы (Tubus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tubus Sororibus",
@@ -2309,7 +2457,9 @@
         "Лайм-W или D",
         "D-желтый"
       ],
-      "sampleDistanceM": 800
+      "sampleDistanceM": 800,
+      "imagePath": "exobiology/Тубусы (Tubus).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Albata",
@@ -2340,7 +2490,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Capillum",
@@ -2371,7 +2523,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Caputus",
@@ -2402,7 +2556,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Catena",
@@ -2433,7 +2589,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Cultro",
@@ -2464,7 +2622,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Divisa",
@@ -2495,7 +2655,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Ignis",
@@ -2526,7 +2688,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Pennata",
@@ -2557,7 +2721,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Pennatis",
@@ -2588,7 +2754,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Propagito",
@@ -2619,7 +2787,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Serrati",
@@ -2650,7 +2820,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Stigmasis",
@@ -2681,7 +2853,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Triticum",
@@ -2712,7 +2886,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Ventusa",
@@ -2743,7 +2919,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     },
     {
       "name": "Tussock Virgam",
@@ -2774,7 +2952,9 @@
         "D-бордо",
         "Y-красный"
       ],
-      "sampleDistanceM": 200
+      "sampleDistanceM": 200,
+      "imagePath": "exobiology/Дерновина (англ. Tussock).webp",
+      "imageScope": "genus"
     }
   ],
   "referenceTables": {
