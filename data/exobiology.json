@@ -1,0 +1,4664 @@
+{
+  "schemaVersion": 1,
+  "source": "Community spreadsheet supplied by user; observations not verified spawn limits",
+  "species": [
+    {
+      "name": "Aleoida Arcus",
+      "genus": "Aleoida",
+      "price": 7252500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2, rocky",
+          "temperature": "170-180",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2, rocky, HMC",
+          "temperature": "175-179",
+          "gravity": "0,09-0,21"
+        }
+      ],
+      "variants": [
+        "Желтый-B",
+        "Зеленый - A",
+        "Бирюзовый - F",
+        "Бирюза - K",
+        "Изумруд - M",
+        "Лайм - L",
+        "Шалфей - T",
+        "Сирень-TTS",
+        "Oхра - N",
+        "Серый - W",
+        "Аметист-Y",
+        "Индиго-D"
+      ]
+    },
+    {
+      "name": "Aleoida Coronamus",
+      "genus": "Aleoida",
+      "price": 6284600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2, rocky, HMC",
+          "temperature": "180-190",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2, rocky, HMC",
+          "temperature": "180-190",
+          "gravity": "HMC(0.18-0.25) rocky(0.07-0.24)"
+        }
+      ],
+      "variants": [
+        "Желтый-B",
+        "Зеленый - A",
+        "Бирюзовый - F",
+        "Бирюза - K",
+        "Изумруд - M",
+        "Лайм - L",
+        "Шалфей - T",
+        "Сирень-TTS",
+        "Oхра - N",
+        "Серый - W",
+        "Аметист-Y",
+        "Индиго-D"
+      ]
+    },
+    {
+      "name": "Aleoida Gravis",
+      "genus": "Aleoida",
+      "price": 12934900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2, HMC, rocky",
+          "temperature": "190-195",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2, HMC, rocky",
+          "temperature": "191-195",
+          "gravity": "rocky body(0.05-0.23) HMC(0.2-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-B",
+        "Зеленый - A",
+        "Бирюзовый - F",
+        "Бирюза - K",
+        "Изумруд - M",
+        "Лайм - L",
+        "Шалфей - T",
+        "Сирень-TTS",
+        "Oхра - N",
+        "Серый - W",
+        "Аметист-Y",
+        "Индиго-D"
+      ]
+    },
+    {
+      "name": "Aleoida Laminiae",
+      "genus": "Aleoida",
+      "price": 3385200,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3. rocky, HMC",
+          "temperature": "157-174",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3. rocky, HMC",
+          "temperature": "153-174",
+          "gravity": "0.04-0.27"
+        }
+      ],
+      "variants": [
+        "Желтый-B",
+        "Зеленый - A",
+        "Бирюзовый - F",
+        "Бирюза - K",
+        "Изумруд - M",
+        "Лайм - L",
+        "Шалфей - T",
+        "Сирень-TTS",
+        "Oхра - N",
+        "Серый - W",
+        "Аметист-Y",
+        "Индиго-D"
+      ]
+    },
+    {
+      "name": "Aleoida Spica",
+      "genus": "Aleoida",
+      "price": 3385200,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3, rocky, HMC",
+          "temperature": "170-174",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3, rocky, HMC",
+          "temperature": "170-176",
+          "gravity": "0.05-0.27"
+        }
+      ],
+      "variants": [
+        "Желтый-B",
+        "Зеленый - A",
+        "Бирюзовый - F",
+        "Бирюза - K",
+        "Изумруд - M",
+        "Лайм - L",
+        "Шалфей - T",
+        "Сирень-TTS",
+        "Oхра - N",
+        "Серый - W",
+        "Аметист-Y",
+        "Индиго-D"
+      ]
+    },
+    {
+      "name": "Bacterium Acies",
+      "genus": "Bacterium",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin neon. Ice body.",
+          "temperature": "20-59",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin neon. Ice body.",
+          "temperature": "20-60",
+          "gravity": "0.26-0.58"
+        }
+      ],
+      "variants": [
+        "Лайм-технеций",
+        "Белый-теллур",
+        "Маджента-полоний",
+        "Кобальт-рутений",
+        "Сине-зеленый-сурьма",
+        "Аквамарин-иттрий"
+      ]
+    },
+    {
+      "name": "Bacterium Alcyoneum",
+      "genus": "Bacterium",
+      "price": 1658500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin ammonia",
+          "temperature": "153-175",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin ammonia",
+          "temperature": "153-175",
+          "gravity": "0.04-0.37"
+        }
+      ],
+      "variants": [
+        "Серый - B",
+        "Желтый - A",
+        "Лайм - F",
+        "Изумруд - G",
+        "Зеленый - K",
+        "Бирюзовый - M",
+        "Шалфей - L",
+        "Красный - T",
+        "Бордо - TTS",
+        "Индиго - N",
+        "Аметист-W",
+        "Сирень-Y",
+        "D-охра"
+      ]
+    },
+    {
+      "name": "Bacterium Aurasus",
+      "genus": "Bacterium",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.rocky.HMC",
+          "temperature": "150-380",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.rocky.HMC",
+          "temperature": "147-396",
+          "gravity": "0.04-0.6"
+        }
+      ],
+      "variants": [
+        "Серый - B",
+        "Желтый - A",
+        "Лайм - F",
+        "Изумруд - G",
+        "Зеленый - K",
+        "Бирюзовый - M",
+        "Шалфей - L",
+        "Красный - T",
+        "Бордо - TTS",
+        "Индиго - N",
+        "Аметист-W",
+        "Сирень-Y",
+        "D-охра"
+      ]
+    },
+    {
+      "name": "Bacterium Bullaris",
+      "genus": "Bacterium",
+      "price": 1152000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin methane",
+          "temperature": "85-103",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin methane",
+          "temperature": "73-122",
+          "gravity": "0.025-032, thin methane-rich HMC 0.44-0.59"
+        }
+      ],
+      "variants": [
+        "Золото-технеций",
+        "Лайм-теллур",
+        "Желтый-полоний",
+        "Аквамарин-рутений",
+        "Кобальт-сурьма",
+        "Красный-иттрий"
+      ]
+    },
+    {
+      "name": "Bacterium Cerbrus",
+      "genus": "Bacterium",
+      "price": 1689800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin sulfur dioxide. Thin water",
+          "temperature": "133-493",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin sulfur dioxide. Thin water",
+          "temperature": "133-493",
+          "gravity": "0.04-0.59"
+        }
+      ],
+      "variants": [
+        "Серый - B",
+        "Желтый - A",
+        "Лайм - F",
+        "Изумруд - G",
+        "Зеленый - K",
+        "Бирюзовый - M",
+        "Шалфей - L",
+        "Красный - T",
+        "Бордо - TTS",
+        "Индиго - N",
+        "Аметист-W",
+        "Сирень-Y",
+        "D-охра",
+        "Оранжевый-Ae/Be"
+      ]
+    },
+    {
+      "name": "Bacterium Informem",
+      "genus": "Bacterium",
+      "price": 8418000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin nitrogen.",
+          "temperature": "51-141",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin nitrogen.",
+          "temperature": "50-148",
+          "gravity": "0.19-0.55"
+        }
+      ],
+      "variants": [
+        "Аквамарин-технеций",
+        "Желтый - Теллур",
+        "Лайм - Полоний",
+        "Золото-рутений",
+        "Красный-сурьма",
+        "Кобальт-иттрий"
+      ]
+    },
+    {
+      "name": "Bacterium Nebulus",
+      "genus": "Bacterium",
+      "price": 5289900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin helium. Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin helium. Ice body",
+          "temperature": "20",
+          "gravity": "0.49-0.5, возможно 0.43-0.5"
+        }
+      ],
+      "variants": [
+        "Зеленый-теллур",
+        "Кобальт-иттрий",
+        "Маджента-сурьма",
+        "Золото-полоний",
+        "Оранжевый-рутений",
+        "Сине-зеленый-технеций"
+      ]
+    },
+    {
+      "name": "Bacterium Omentum",
+      "genus": "Bacterium",
+      "price": 4638900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin neon. neon-rich.Ammonia ,nitrogen magma.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin neon. neon-rich.Ammonia ,nitrogen magma.",
+          "temperature": "20-90",
+          "gravity": "0,03-0,58"
+        }
+      ],
+      "variants": [
+        "Белый-ртуть",
+        "Персик-ниобий",
+        "Красный-олово",
+        "Лайм-кадмий",
+        "Синий-олово",
+        "Аквамарин-молибден"
+      ]
+    },
+    {
+      "name": "Bacterium Scopulum",
+      "genus": "Bacterium",
+      "price": 4934500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin neon.neon-rich. Ice body. methane, СО2 magma",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin neon.neon-rich. Ice body. methane, СО2 magma",
+          "temperature": "20-49",
+          "gravity": "0,35-0,59"
+        }
+      ],
+      "variants": [
+        "Персик-ртуть",
+        "Красный-ниобий",
+        "шелковица-олово",
+        "Аквамарин-вольфрам",
+        "Лайм-молибден",
+        "Белый-кадмий"
+      ]
+    },
+    {
+      "name": "Bacterium Tela",
+      "genus": "Bacterium",
+      "price": 1949000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "High temp(300 K),volcanism!!!",
+          "temperature": "20-452",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "High temp(300 K),volcanism!!!",
+          "temperature": "20-483",
+          "gravity": "0,02-0,6"
+        }
+      ],
+      "variants": [
+        "Оранжевый-ртуть",
+        "Маджента-ниобий",
+        "Кобальт-олово",
+        "Зеленый - Вольфрам",
+        "Желтый-молибден",
+        "Золото-кадмий"
+      ]
+    },
+    {
+      "name": "Bacterium Verrata",
+      "genus": "Bacterium",
+      "price": 3897000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin neon. Thin nitrogen.Thin neon-rich.Water magma.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin neon. Thin nitrogen.Thin neon-rich.Water magma.",
+          "temperature": "20-88",
+          "gravity": "0,18-0,6"
+        }
+      ],
+      "variants": [
+        "Шелковица-ниобий",
+        "Синий-олово",
+        "Лайм-Вольфрам",
+        "Белый-молибден",
+        "Персик-кадмий",
+        "Красный-ртуть"
+      ]
+    },
+    {
+      "name": "Bacterium Vesicula",
+      "genus": "Bacterium",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.Ice body.Rocky Ice body.HMC.",
+          "temperature": "50-226",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.Ice body.Rocky Ice body.HMC.",
+          "temperature": "50-226",
+          "gravity": "-"
+        }
+      ],
+      "variants": [
+        "Золото-технеций",
+        "Красный-теллур",
+        "Оранжевый-полоний",
+        "Шелковица-рутений",
+        "Сине-зеленый-сурьма",
+        "Лайм-иттрий"
+      ]
+    },
+    {
+      "name": "Bacterium Volu",
+      "genus": "Bacterium",
+      "price": 7774700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin oxygen.",
+          "temperature": "150-380",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin oxygen.",
+          "temperature": "150-380",
+          "gravity": "-"
+        }
+      ],
+      "variants": [
+        "Лайм-технеций",
+        "Сине-зеленый-Теллур",
+        "Аквамарин-полоний",
+        "Золото-иттрий",
+        "Кобальт-рутений",
+        "Красный=сурьма"
+      ]
+    },
+    {
+      "name": "Cactoida Cortexum",
+      "genus": "Cactoida",
+      "price": 3667600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.rocky.HMC t 180-200",
+          "temperature": "180-190",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.rocky.HMC",
+          "temperature": "180-194",
+          "gravity": "0.05-0.27"
+        }
+      ],
+      "variants": [
+        "Зеленый-А",
+        "Желтый-F",
+        "Бирюзовый - G",
+        "Аметист - M",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей-N",
+        "Охра-Y"
+      ]
+    },
+    {
+      "name": "Cactoida Lapis",
+      "genus": "Cactoida",
+      "price": 2483600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin ammonia.Rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        }
+      ],
+      "variants": [
+        "Зеленый-А",
+        "Желтый-F",
+        "Бирюзовый - G",
+        "Аметист - M",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей-N",
+        "Охра-Y"
+      ]
+    },
+    {
+      "name": "Cactoida Peperatis",
+      "genus": "Cactoida",
+      "price": 2483600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin ammonia.Rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin ammonia.Rocky.HMC",
+          "temperature": "",
+          "gravity": "0.05-0.27"
+        }
+      ],
+      "variants": [
+        "Зеленый-А",
+        "Желтый-F",
+        "Бирюзовый - G",
+        "Аметист - M",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей-N",
+        "Охра-Y"
+      ]
+    },
+    {
+      "name": "Cactoida Pullulanta",
+      "genus": "Cactoida",
+      "price": 3667600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.rocky.HMC t 180-200",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.rocky.HMC t 180-200",
+          "temperature": "181-190",
+          "gravity": "0.05-0.25"
+        }
+      ],
+      "variants": [
+        "Желтый-F",
+        "Бирюзовый - G",
+        "Аметист - M",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей-N",
+        "Охра-Y"
+      ]
+    },
+    {
+      "name": "Cactoida Vermis",
+      "genus": "Cactoida",
+      "price": 16202800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin water.HMC.Rocky t400+",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.HMC.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin water.HMC.Rocky t400+",
+          "temperature": "",
+          "gravity": "0.04-0.06"
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.HMC.",
+          "temperature": "",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Зеленый-А",
+        "Желтый-F",
+        "Бирюзовый - G",
+        "Аметист - M",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей-N",
+        "Охра-Y",
+        "Зеленый-А"
+      ]
+    },
+    {
+      "name": "Clypeus Lacrimam",
+      "genus": "Clypeus",
+      "price": 8418000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.Thin water.Rocky !!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.Thin water.Rocky.HMC/ !!!",
+          "temperature": "190-195 CO2",
+          "gravity": "Rocky,HMC CO2 (0.1-0.23)  rocky thin water(0.04-0.06)"
+        }
+      ],
+      "variants": [
+        "Бордо-B",
+        "Оранжевый-A",
+        "Сирень-F",
+        "Аметист-G",
+        "Серый-K",
+        "Бирюза-M",
+        "Бирюзовый-L",
+        "Желтый-N"
+      ]
+    },
+    {
+      "name": "Clypeus Margaritus",
+      "genus": "Clypeus",
+      "price": 11873200,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.Thin water.HMC!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.Thin water.HMC!!!",
+          "temperature": "190-195 CO2",
+          "gravity": "HMC CO2 (0.1-0.26) HMC thin water (0.04-0.05)"
+        }
+      ],
+      "variants": [
+        "Бордо-B",
+        "Оранжевый-A",
+        "Сирень-F",
+        "Аметист-G",
+        "Серый-K",
+        "Бирюза-M",
+        "Бирюзовый-L",
+        "Желтый-N"
+      ]
+    },
+    {
+      "name": "Clypeus Speculumi",
+      "genus": "Clypeus",
+      "price": 16202800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.Thin water.Rocky !!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.Thin water.Rocky !!!",
+          "temperature": "190-195 CO2",
+          "gravity": "Rocky CO2 (0.13-0.23) rocky thin water(0.04-0.05)"
+        }
+      ],
+      "variants": [
+        "Бордо-B",
+        "Оранжевый-A",
+        "Сирень-F",
+        "Аметист-G",
+        "Серый-K",
+        "Бирюза-M",
+        "Бирюзовый-L",
+        "Желтый-N"
+      ]
+    },
+    {
+      "name": "Concha Aureolas",
+      "genus": "Concha",
+      "price": 7774700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin ammonia.Rocky !!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin ammonia.Rocky.HMC.",
+          "temperature": "160-176",
+          "gravity": "Rocky.HMC (0.05-0.25)"
+        }
+      ],
+      "variants": [
+        "Индиго-В",
+        "Бирюзовый - A",
+        "Серый - F",
+        "Бирюза-G",
+        "Красный-К",
+        "оранжевый-L",
+        "Изумруд - N",
+        "лайм-W",
+        "Желтый-Y",
+        "Зеленый-D"
+      ]
+    },
+    {
+      "name": "Concha Biconcavis",
+      "genus": "Concha",
+      "price": 19010800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin nitrogen.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin nitrogen.Rocky",
+          "temperature": "45-49",
+          "gravity": "Rocky (0.15-0.27)"
+        }
+      ],
+      "variants": [
+        "Желтый-теллур",
+        "Оранжевый-рутений",
+        "Персик-сурьма",
+        "Золото-иттрий",
+        "Белый-технеций",
+        "Красный-полоний"
+      ]
+    },
+    {
+      "name": "Concha Labiata",
+      "genus": "Concha",
+      "price": 2352400,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.Rocky !!! T <180К",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.Rocky.HMC",
+          "temperature": "150-190",
+          "gravity": "Rocky.HMC (0.03-0.21) Rocky.HMC Thin water(0.04-0.05)"
+        }
+      ],
+      "variants": [
+        "Индиго-В",
+        "Бирюзовый - A",
+        "Серый - F",
+        "Бирюза-G",
+        "Красный-К",
+        "оранжевый-L",
+        "Изумруд - N",
+        "лайм-W",
+        "Желтый-Y",
+        "Зеленый-D"
+      ]
+    },
+    {
+      "name": "Concha Renibus",
+      "genus": "Concha",
+      "price": 4572400,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin carbon dioxide.Thin water",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin carbon dioxide.Thin water",
+          "temperature": "180-195 CO2",
+          "gravity": "Rocky.HMC CO2(0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "Шелковица-ртуть",
+        "Синий-ниобий",
+        "Аквамарин-олово",
+        "Белый-вольфрам",
+        "Персик-молибден",
+        "Красный-кадмий"
+      ]
+    },
+    {
+      "name": "Electricae Pluma",
+      "genus": "Electricae",
+      "price": 6284600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.Ice body. D,N stars !!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.Neon-rich.Ice body.",
+          "temperature": "50-148",
+          "gravity": "0.03-0.27"
+        }
+      ],
+      "variants": [
+        "Маджента-технеций",
+        "Красный-теллур",
+        "Сине-зеленый-полоний",
+        "Синий-рутений",
+        "Кобальт-сурьма",
+        "Шелковица-иттрий"
+      ]
+    },
+    {
+      "name": "Electricae Radialem",
+      "genus": "Electricae",
+      "price": 6284600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.Ice body/туманности",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.Ice body/туманности",
+          "temperature": "50-148",
+          "gravity": "0.03-0.27"
+        }
+      ],
+      "variants": [
+        "Аквамарин-технеций",
+        "Маджента-теллур",
+        "Кобальт-полоний",
+        "Синий-рутений",
+        "Сине-зеленый-сурьма",
+        "Зеленый-иттрий"
+      ]
+    },
+    {
+      "name": "Fonticulua Campestris",
+      "genus": "Fonticulua",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.Ice body",
+          "temperature": "-",
+          "gravity": "0.03-0.27"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Fonticulua Digitos",
+      "genus": "Fonticulua",
+      "price": 1804100,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Methane.Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Methane.Ice body",
+          "temperature": "83-108",
+          "gravity": "0.027-0.057"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Fonticulua Fluctus",
+      "genus": "Fonticulua",
+      "price": 20000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Oxygen.Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Oxygen.Ice body",
+          "temperature": "144-177",
+          "gravity": "0.24-0.27"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Fonticulua Lapida",
+      "genus": "Fonticulua",
+      "price": 3111000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Nitrogen.Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Nitrogen.Ice body",
+          "temperature": "-",
+          "gravity": "0.19-0.27"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Fonticulua Segmentatus",
+      "genus": "Fonticulua",
+      "price": 19010800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin neon-rich,ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Neon-rich.Ice body",
+          "temperature": "60-68",
+          "gravity": "0.2-0.27"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Fonticulua Upupam",
+      "genus": "Fonticulua",
+      "price": 5727600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Argon-rich.Ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Argon-rich.Ice body",
+          "temperature": "71-110",
+          "gravity": "0.21-0.27"
+        }
+      ],
+      "variants": [
+        "Лайм-B",
+        "Зеленый-A",
+        "Желтый-F",
+        "Бирюзовый-G",
+        "Изумруд-K",
+        "Аметист-М",
+        "Сирень-L",
+        "Оранжевый-T",
+        "Красный-TTS",
+        "Шалфей - N",
+        "Индиго - W",
+        "Охра - Y",
+        "Бирюза-D",
+        "AE/BE -бордо"
+      ]
+    },
+    {
+      "name": "Frutexa Acus",
+      "genus": "Frutexa",
+      "price": 7774700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky",
+          "temperature": "147-194",
+          "gravity": "Rocky. (0.04-0.22)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Collum",
+      "genus": "Frutexa",
+      "price": 1639800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2.rocky,HMC",
+          "temperature": "133-153",
+          "gravity": "Rocky.HMC (0.05-0.27)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Fera",
+      "genus": "Frutexa",
+      "price": 1632500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky",
+          "temperature": "147-194",
+          "gravity": "Rocky. (0.04-0.22)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Flabellum",
+      "genus": "Frutexa",
+      "price": 1808900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky body",
+          "temperature": "152-175",
+          "gravity": "Rocky. (0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Flammasis",
+      "genus": "Frutexa",
+      "price": 10326000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky body",
+          "temperature": "150-175",
+          "gravity": "Rocky. (0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Metallicum",
+      "genus": "Frutexa",
+      "price": 1632500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.NH3. only HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.NH3. only HMC",
+          "temperature": "150-192",
+          "gravity": "HMC (0.06-0.26)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Frutexa Sponsae",
+      "genus": "Frutexa",
+      "price": 5988000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "H2O, rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "H2O, rocky",
+          "temperature": "412-444",
+          "gravity": "Rocky. (0.04-0.05)"
+        }
+      ],
+      "variants": [
+        "лайм-В",
+        "Зеленый - F",
+        "Изумруд-G",
+        "Серый - M",
+        "Бирюзовый - L",
+        "сирень-TTS",
+        "красный-N",
+        "оранжевый-W",
+        "D-индиго"
+      ]
+    },
+    {
+      "name": "Fumerola Aquatis",
+      "genus": "Fumerola",
+      "price": 6284600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Major Water Geysers,Major Water Magma",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Major Water Geysers,Major Water Magma.ice",
+          "temperature": "thin argon.nitrogen.ammonia.sulfur.methane",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Желтый-ртуть",
+        "Золото-ниобий",
+        "Оранжевый-олово",
+        "Кобальт-вольфрам",
+        "Сине-зеленый-молибден",
+        "Зеленый-Кадмий"
+      ]
+    },
+    {
+      "name": "Fumerola Carbosis",
+      "genus": "Fumerola",
+      "price": 6284600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Carbon Dioxide Geysers,Minor Methane Magma",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Carbon Dioxide Geysers,Minor Methane Magma.ice",
+          "temperature": "thin methane.argon.sulfur dioxide",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Маджента-ртуть",
+        "Кобальт-ниобий",
+        "Сине-зеленый-олово",
+        "Желтый-Вольфрам",
+        "Золото-Молибден",
+        "Оранжевый-Кадмий"
+      ]
+    },
+    {
+      "name": "Fumerola Extremus",
+      "genus": "Fumerola",
+      "price": 16202800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Major Silicate Vapour Geysers,Metallic Magma",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Major Silicate Vapour Geysers,Metallic Magma.rocky",
+          "temperature": "thin methane, thin ammonia ( rocky-ice body)",
+          "gravity": "0.02-0.045 , rocky-ice body- 0,04-0,06"
+        }
+      ],
+      "variants": [
+        "Лайм-ртуть",
+        "Белый-ниобий",
+        "Персик-олово",
+        "Шелковица-вольфрам",
+        "Аквамарин-кадмий",
+        "Синий-молибден"
+      ]
+    },
+    {
+      "name": "Fumerola Nitris",
+      "genus": "Fumerola",
+      "price": 7500900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Minor Ammonia,Nitrogen Magma.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Minor Ammonia,Nitrogen Magma.ice",
+          "temperature": "thin methane.argon.nitrogen.sulfur dioxide",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Персик-ртуть",
+        "Красный-ниобий",
+        "Шелковица-олово",
+        "Аквамарин-вольфрам",
+        "Лайм-молибден",
+        "Белый-кадмий"
+      ]
+    },
+    {
+      "name": "Fungoida Bullarum",
+      "genus": "Fungoida",
+      "price": 3703200,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Argon.Rocky Ice world",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Argon.Rocky Ice world",
+          "temperature": "",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Персик-Технеций",
+        "Золото-Теллур",
+        "Шелковица-полоний",
+        "Маджента-рутений",
+        "Красный-сурьма",
+        "Оранжевый-иттрий"
+      ]
+    },
+    {
+      "name": "Fungoida Gelata",
+      "genus": "Fungoida",
+      "price": 3330300,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Carbon dioxide.Thin Water.Rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Carbon dioxide.Thin Water.Rocky.HMC",
+          "temperature": "",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Лайм-ртуть",
+        "Зеленый-ниобий",
+        "Красный-олово",
+        "Оранжевый-Вольфрам",
+        "Шелковица-молибден",
+        "Сине-зеленый-Кадмий"
+      ]
+    },
+    {
+      "name": "Fungoida Setisis",
+      "genus": "Fungoida",
+      "price": 1670100,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Ammonia.Thin Methane..Rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Ammonia.Thin Methane..Rocky.HMC",
+          "temperature": "",
+          "gravity": ""
+        }
+      ],
+      "variants": [
+        "Лайм-технеций",
+        "Желтый-теллур",
+        "Белый-полоний",
+        "Золото-рутений",
+        "Персик-сурьма",
+        "Оранжевый-иттрий"
+      ]
+    },
+    {
+      "name": "Fungoida Stabitis",
+      "genus": "Fungoida",
+      "price": 2680300,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3 ?CO 2.Thin Water.Rocky.Ice rocky .",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO 2.Thin Water. Methane(Rare) Rocky.Ice rocky .",
+          "temperature": "Water(396-450), CO2(180-196), Methane(82-94)",
+          "gravity": "Water(0.041-0.062), CO2(0.12-0.27),Methane(0.04-0.1)"
+        }
+      ],
+      "variants": [
+        "Зеленый-ртуть",
+        "Белый-ниобий",
+        "Оранжевый-олово",
+        "Персик-Вольфрам",
+        "Маджента-молибден",
+        "Синий-Кадмий"
+      ]
+    },
+    {
+      "name": "Osseus Cornibus",
+      "genus": "Osseus",
+      "price": 1483000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "180-195,3",
+          "gravity": "Rocky(0.043-0.236).HMC (0.145-0.27)"
+        }
+      ],
+      "variants": [
+        "Лайм-A",
+        "Бирюза - F",
+        "Серый-G",
+        "Индиго-K",
+        "Изумруд-T",
+        "Зеленый-TTS",
+        "Бордо-Y"
+      ]
+    },
+    {
+      "name": "Osseus Discus",
+      "genus": "Osseus",
+      "price": 12934900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Water.Rocky.(Methane rocky.Вулканизм!!)",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Water.Rocky.(Methane rocky.Вулканизм!!)",
+          "temperature": "-",
+          "gravity": "Thin water rocky(0.04-0.05) thin methane volcanizm (0.06-0.12)"
+        }
+      ],
+      "variants": [
+        "Лайм-ртуть",
+        "Аквамарин-ниобий",
+        "Синий-олово",
+        "Красный-вольфрам",
+        "Персик-молибден",
+        "Белый-кадмий"
+      ]
+    },
+    {
+      "name": "Osseus Fractus",
+      "genus": "Osseus",
+      "price": 4027800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "180-194",
+          "gravity": "Rocky(0.05-0.22).HMC (0.16-0.26)"
+        }
+      ],
+      "variants": [
+        "Лайм-A",
+        "Бирюза - F",
+        "Серый-G",
+        "Индиго-K",
+        "Изумруд-T",
+        "Зеленый-TTS",
+        "Бордо-Y"
+      ]
+    },
+    {
+      "name": "Osseus Pellebantus",
+      "genus": "Osseus",
+      "price": 9739000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Carbon dioxide.Rocky body.HMC",
+          "temperature": "190-195",
+          "gravity": "Rocky.HMC (0.06-0.26)"
+        }
+      ],
+      "variants": [
+        "Лайм-A",
+        "Бирюза - F",
+        "Серый-G",
+        "Индиго-K",
+        "Изумруд-T",
+        "Зеленый-TTS",
+        "Бордо-Y"
+      ]
+    },
+    {
+      "name": "Osseus Pumice",
+      "genus": "Osseus",
+      "price": 3156300,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.Nitrogenrocky.Methane.Rocky Ice world!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.Nitrogenrocky.Methane.Rocky Ice world!!!",
+          "temperature": "Thin argon(51-128)Methane(69-107) Nitrogen(rocky-ice 54-65.Rocky body(43-57)",
+          "gravity": "Thin argon(0,05-0.27)Methane(rocky-ice 0.04-0.06, rocky 0.03-0.27. HMC 0.15-0.26) Nitrogen (rocky-ice 0.24-0.26,rocky 0.1-0.26) \\_"
+        }
+      ],
+      "variants": [
+        "Лайм-технеций",
+        "Зеленый-теллур",
+        "Персик-полоний",
+        "Золото-рутений",
+        "Белый-сурьма",
+        "Желтый-иттрий"
+      ]
+    },
+    {
+      "name": "Osseus Spiralis",
+      "genus": "Osseus",
+      "price": 2404700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Ammonia.Rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Rocky (0.37-0.45)",
+          "temperature": "160-175",
+          "gravity": "Rocky.HMC (0.04-0.27)"
+        }
+      ],
+      "variants": [
+        "Лайм-A",
+        "Бирюза - F",
+        "Серый-G",
+        "Индиго-K",
+        "Изумруд-T",
+        "Зеленый-TTS",
+        "Бордо-Y"
+      ]
+    },
+    {
+      "name": "Recepta Conditivus",
+      "genus": "Recepta",
+      "price": 14313700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2.Icy body.Ice world",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2.Icy body.Ice world",
+          "temperature": "132-271",
+          "gravity": "Ice body(0.19-0.27).Rocky. (0.05-0.26) Rocky-Ice world(0.23-0.27)"
+        }
+      ],
+      "variants": [
+        "Сине-зел-теллур",
+        "Желтый-рутений",
+        "Лайм-сурьма",
+        "Зеленый-иттрий",
+        "Аквамарин-технеций",
+        "Белый-полоний"
+      ]
+    },
+    {
+      "name": "Recepta Deltahedronix",
+      "genus": "Recepta",
+      "price": 16202800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Sulphur.Carbon dioxide.rocky .HMC.",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Sulphur.Carbon dioxide.rocky .HMC.",
+          "temperature": "132-271",
+          "gravity": "Ice body(0.19-0.27).Rocky. (0.05-0.26) Rocky-Ice world(0.23-0.27)"
+        }
+      ],
+      "variants": [
+        "Шелковица-ниобий",
+        "Оранжевый-олово",
+        "Красный-Вольфрам",
+        "Лайм-кадмий",
+        "Сине-зеленый-ртуть",
+        "Золото-молибден"
+      ]
+    },
+    {
+      "name": "Recepta Umbrux",
+      "genus": "Recepta",
+      "price": 12934900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin Sulphur.rocky ,ice body",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin Sulphur.rocky ,ice body",
+          "temperature": "132-271",
+          "gravity": "Ice body(0.19-0.27).Rocky. (0.05-0.26) Rocky-Ice world(0.23-0.27)"
+        }
+      ],
+      "variants": [
+        "Бирюза-B",
+        "Аметист-A",
+        "Сирень-F",
+        "Оранжевый-G",
+        "Красный-K",
+        "Бордо-M",
+        "Охра-L",
+        "Бирюзовый-T",
+        "шалфей-TTS"
+      ]
+    },
+    {
+      "name": "Stratum Araneamus",
+      "genus": "Stratum",
+      "price": 2448900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2 , rocky. Звезды A.B.N.!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2 , rocky. Звезды A.B.N.!!!",
+          "temperature": "168-372",
+          "gravity": "Rocky (0.3-0.54)"
+        }
+      ],
+      "variants": [
+        "Изумруд-A, B"
+      ]
+    },
+    {
+      "name": "Stratum Cucumisis",
+      "genus": "Stratum",
+      "price": 16202800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2. CO2 rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2. CO2 rocky",
+          "temperature": "191-371",
+          "gravity": "Rocky (0.19-0.53)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Excutitus",
+      "genus": "Stratum",
+      "price": 2448900,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2. CO2 rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2. CO2 rocky",
+          "temperature": "165-189",
+          "gravity": "Rocky (0.06-0.37)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Frigus",
+      "genus": "Stratum",
+      "price": 2637500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2. CO2 rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2. CO2 rocky,oxygen volcanizm",
+          "temperature": "191-331",
+          "gravity": "Rocky SO2 (0.296-0.513) . Rocky CO2 (0.045-0.53)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Laminamus",
+      "genus": "Stratum",
+      "price": 2788300,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky",
+          "temperature": "166-175",
+          "gravity": "Rocky (0.04-0.31)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Limaxus",
+      "genus": "Stratum",
+      "price": 1362000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2. CO2 . rocky !!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2. CO2 . rocky !!",
+          "temperature": "165-188",
+          "gravity": "Rocky (0.06-0.37)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Paleas",
+      "genus": "Stratum",
+      "price": 1362000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "only rocky!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "only rocky!!! Thin carbon.Ammonia.Water",
+          "temperature": "165-446",
+          "gravity": "Rocky (0.04-0.57)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Stratum Tectonicas",
+      "genus": "Stratum",
+      "price": 19010800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "only HMC!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "only HMC!!!",
+          "temperature": "Ammonia(165-175) CO2(165-420)Oxygen(165-244) SO2(165-440)",
+          "gravity": "HMC--Ammonia(0.07-0.36), Carbon dioxide(0.06-0.6)Oxygen(0.44-0.48)SO2(0.3-0.59)"
+        }
+      ],
+      "variants": [
+        "Изумруд-F",
+        "Лайм-K",
+        "Зеленый-M",
+        "Бирюза-L",
+        "Серый-T",
+        "Аметист-TTS",
+        "Красный-W",
+        "Индиго-Y",
+        "D-сирень"
+      ]
+    },
+    {
+      "name": "Tubus Cavas",
+      "genus": "Tubus",
+      "price": 11873200,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky",
+          "temperature": "160-183",
+          "gravity": "rocky0.04-0.14"
+        }
+      ],
+      "variants": [
+        "изумруд-В",
+        "индиго-А",
+        "F-серый",
+        "красный-G",
+        "бордо-K",
+        "бирюзовый-M",
+        "бирюза-L",
+        "сирень-T",
+        "охра-TTS",
+        "аметист-N",
+        "Лайм-W или D",
+        "D-желтый"
+      ]
+    },
+    {
+      "name": "Tubus Compagibus",
+      "genus": "Tubus",
+      "price": 7774700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky",
+          "temperature": "160-195",
+          "gravity": "rocky0.04-0.14"
+        }
+      ],
+      "variants": [
+        "изумруд-В",
+        "индиго-А",
+        "F-серый",
+        "красный-G",
+        "бордо-K",
+        "бирюзовый-M",
+        "бирюза-L",
+        "сирень-T",
+        "охра-TTS",
+        "аметист-N",
+        "Лайм-W или D",
+        "D-желтый"
+      ]
+    },
+    {
+      "name": "Tubus Conifer",
+      "genus": "Tubus",
+      "price": 2415500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky",
+          "temperature": "160-183",
+          "gravity": "rocky 0.04-0.14"
+        }
+      ],
+      "variants": [
+        "изумруд-В",
+        "индиго-А",
+        "F-серый-F",
+        "красный-G",
+        "бордо-K",
+        "бирюзовый-M",
+        "бирюза-L",
+        "сирень-T",
+        "охра-TTS",
+        "аметист-N",
+        "Лайм-W или D",
+        "D-желтый"
+      ]
+    },
+    {
+      "name": "Tubus Rosarium",
+      "genus": "Tubus",
+      "price": 2637500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3. rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3. rocky",
+          "temperature": "160-175",
+          "gravity": "rocky0.04-0.14"
+        }
+      ],
+      "variants": [
+        "изумруд-В",
+        "индиго-А",
+        "F-серый",
+        "красный-G",
+        "бордо-K",
+        "бирюзовый-M",
+        "бирюза-L",
+        "сирень-T",
+        "охра-TTS",
+        "аметист-N",
+        "Лайм-W или D",
+        "D-желтый"
+      ]
+    },
+    {
+      "name": "Tubus Sororibus",
+      "genus": "Tubus",
+      "price": 5727600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2. NH3. only HMC !!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2. NH3. only HMC !!!",
+          "temperature": "160-178",
+          "gravity": "HMC 0.04-0.14"
+        }
+      ],
+      "variants": [
+        "изумруд-В",
+        "индиго-А",
+        "F-серый",
+        "красный-G",
+        "бордо-K",
+        "бирюзовый-M",
+        "бирюза-L",
+        "сирень-T",
+        "охра-TTS",
+        "аметист-N",
+        "Лайм-W или D",
+        "D-желтый"
+      ]
+    },
+    {
+      "name": "Tussock Albata",
+      "genus": "Tussock",
+      "price": 3252500,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "175-190",
+          "gravity": "Rocky.HMC (0.06-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Capillum",
+      "genus": "Tussock",
+      "price": 7025800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "Thin argon.methane.Rocky methane, rocky-ice!!!",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "Thin argon.methane.Rocky methane, rocky-ice!!!",
+          "temperature": "84-120",
+          "gravity": "thin methane rocky-ice world(0.04-0.1) thin argon rocky-ice world(0.25-0.27)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Caputus",
+      "genus": "Tussock",
+      "price": 3472400,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "181-190",
+          "gravity": "Rocky.HMC (0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Catena",
+      "genus": "Tussock",
+      "price": 1766600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky,HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky,HMC",
+          "temperature": "153-174",
+          "gravity": "Rocky.HMC (0.04-0.27)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Cultro",
+      "genus": "Tussock",
+      "price": 1766600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky,HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky,HMC",
+          "temperature": "152-175",
+          "gravity": "Rocky.HMC (0.04-0.27)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Divisa",
+      "genus": "Tussock",
+      "price": 1766600,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "NH3.rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "NH3.rocky.HMC",
+          "temperature": "152-173",
+          "gravity": "Rocky.HMC (0.04-0.27)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Ignis",
+      "genus": "Tussock",
+      "price": 1849000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "160-170",
+          "gravity": "Rocky.HMC (0.04-0.19)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Pennata",
+      "genus": "Tussock",
+      "price": 5853800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "147-153",
+          "gravity": "Rocky.HMC (0.04-0.07)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Pennatis",
+      "genus": "Tussock",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "150-193",
+          "gravity": "Rocky.HMC (0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Propagito",
+      "genus": "Tussock",
+      "price": 1000000,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "148-194",
+          "gravity": "Rocky.HMC (0.04-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Serrati",
+      "genus": "Tussock",
+      "price": 4447100,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "171-173",
+          "gravity": "Rocky.HMC (0.08-0.19)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Stigmasis",
+      "genus": "Tussock",
+      "price": 19010800,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "SO2.rocky. Gravity <0.3G ?",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "SO2.rocky. Gravity <0.3G ?",
+          "temperature": "133-153",
+          "gravity": "Rocky. (0.2-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Triticum",
+      "genus": "Tussock",
+      "price": 7774700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2 rocky, HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2 rocky, HMC",
+          "temperature": "191-195",
+          "gravity": "Rocky.HMC (0.19-0.26)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Ventusa",
+      "genus": "Tussock",
+      "price": 3227700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "CO2.rocky , HMC",
+          "temperature": "155-159",
+          "gravity": "Rocky.HMC (0.04-0.12)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    },
+    {
+      "name": "Tussock Virgam",
+      "genus": "Tussock",
+      "price": 14313700,
+      "observations": [
+        {
+          "source": "variants",
+          "conditions": "H2O.rocky.HMC",
+          "temperature": "",
+          "gravity": null
+        },
+        {
+          "source": "habitat",
+          "conditions": "H2O.rocky.HMC",
+          "temperature": "403-444",
+          "gravity": "Rocky.HMC (0.04-0.06)"
+        }
+      ],
+      "variants": [
+        "Желтый-F,N",
+        "Лайм-G",
+        "Зеленый-K",
+        "Изумруд-M",
+        "шалфей-L",
+        "бирюзовый-T",
+        "оранжевый-W",
+        "D-бордо",
+        "Y-красный"
+      ]
+    }
+  ],
+  "referenceTables": {
+    "classification": [
+      [
+        "",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      [
+        "--",
+        "------",
+        "----------------------------------------------",
+        "-----------------------------",
+        "--------------------------",
+        "---------------------",
+        "------------------------",
+        "---------------------",
+        "-----------------",
+        "---------------"
+      ],
+      [
+        "1",
+        "",
+        "",
+        "",
+        "Классификатор родов.",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "Rocky body",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3",
+        "",
+        "Углеродная",
+        "Аммиачная",
+        "Метановая",
+        "Азотная",
+        "Серная",
+        "Водная",
+        "Кислородная",
+        ""
+      ],
+      [
+        "4",
+        "",
+        "1) Bacterium Aurasus",
+        "1) Bacterium Alcyoneum",
+        "1) Bacterium Bullaris",
+        "1) Bacterium Informem",
+        "1) Bacterium Cerbrus",
+        "1) Bacterium Cerbrus",
+        "1) Bacterium Volu",
+        ""
+      ],
+      [
+        "5",
+        "",
+        "2)Aleoida Coronamus t 180-190",
+        "2) Aleoida Laminiae t 157-174",
+        "2) Fungoida Bullarum",
+        "2) Concha Biconcavis",
+        "2) Stratum Excutitus",
+        "2) Cactoida Vermis",
+        "",
+        ""
+      ],
+      [
+        "6",
+        "",
+        "Aleoida Arcus t 170-180",
+        "Aleoida Spica t 170-174",
+        "3) Osseus Pumice",
+        "3) Fungoida Setisis",
+        "Stratum Araneamus(А,В,N)",
+        "3) Clypeus Lacrimam",
+        "",
+        ""
+      ],
+      [
+        "7",
+        "",
+        "Aleoida Gravis t 190-195",
+        "3) Cactoida Lapis",
+        "Osseus Discus",
+        "4) Osseus Pumice",
+        "Stratum Limaxus",
+        "Clypeus Speculumi",
+        "",
+        ""
+      ],
+      [
+        "8",
+        "",
+        "3)Cactoida Cortexum",
+        "Cactoida Peperatis",
+        "4) Tussock Capillum",
+        "",
+        "Stratum Cucumisis",
+        "4) Concha Renibus",
+        "",
+        ""
+      ],
+      [
+        "9",
+        "",
+        "Cactoida Pullulanta",
+        "4) Concha Aureolas",
+        "",
+        "",
+        "Stratum Frigus",
+        "5) Fungoida Stabitis",
+        "",
+        ""
+      ],
+      [
+        "10",
+        "",
+        "Cactoida Vermis(только в А)",
+        "5) Fungoida Setisis",
+        "",
+        "",
+        "3) Frutexa Collum",
+        "Fungoida Gelata",
+        "",
+        ""
+      ],
+      [
+        "11",
+        "",
+        "4)Clypeus Lacrimam",
+        "6) Osseus Spiralis",
+        "",
+        "",
+        "4) Tussock Stigmasis",
+        "6) Osseus Discus",
+        "",
+        ""
+      ],
+      [
+        "12",
+        "",
+        "Clypeus Speculumi",
+        "7) Stratum Laminamus",
+        "",
+        "",
+        "5)Recepta Umbrux",
+        "7) Frutexa Sponsae",
+        "",
+        ""
+      ],
+      [
+        "13",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "14",
+        "",
+        "5)Concha Renibus t 181-200",
+        "8) Tubus Rosarium",
+        "",
+        "",
+        "Recepta Condivitus",
+        "8) Tussock Virgam",
+        "",
+        ""
+      ],
+      [
+        "15",
+        "",
+        "Concha Labiata t 150-181",
+        "9) Frutexa Flabellum",
+        "",
+        "",
+        "Recepta Deltahedronix",
+        "9) Stratum Paleas",
+        "",
+        ""
+      ],
+      [
+        "16",
+        "",
+        "6)Fungoida Stabitis t 180-",
+        "Frutexa Flammasis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "17",
+        "",
+        "Fungoida Gelata t 180-",
+        "10) Tussock Cultro",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "18",
+        "",
+        "7)Osseus Fractus t 180-190",
+        "Tussock Catena",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "19",
+        "",
+        "Osseus Cornibus t 180-195",
+        "Tussock Divisa",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "Osseus Pellebantus t 190-195",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "21",
+        "",
+        "8)Stratum Excutitus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "22",
+        "",
+        "Stratum Paleas",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "23",
+        "",
+        "Stratum Limaxus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "24",
+        "",
+        "Stratum Cucumisis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "25",
+        "",
+        "Stratum Frigus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "26",
+        "",
+        "9)Tubus Conifer g 0-0.15 t 160-180",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "27",
+        "",
+        "Tubus Cavas  g 0-0.15",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "28",
+        "",
+        "Tubus Compagibus  g 0-0.15",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "29",
+        "",
+        "10)Frutexa Acus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "30",
+        "",
+        "Frutexa Fera",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "31",
+        "",
+        "11)Tussock Pennata",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "32",
+        "",
+        "Tussock Ventusa",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "33",
+        "",
+        "Tussock Ignis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "34",
+        "",
+        "Tussock Pennatis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "35",
+        "",
+        "Tussock Serrati",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "36",
+        "",
+        "Tussock Albata",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "37",
+        "",
+        "Tussock Propagito",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "38",
+        "",
+        "Tussock Caputus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "39",
+        "",
+        "Tussock Triticum",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "40",
+        "",
+        "",
+        "",
+        "HMC",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "41",
+        "",
+        "Углеродная",
+        "Аммиачная",
+        "Серная",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "42",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "43",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "44",
+        "",
+        "1) Bacterium Aurasus",
+        "1) Bacterium Alcyoneum",
+        "1) Bacterium Cerbrus",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "45",
+        "",
+        "2) Cactoida Cortexum",
+        "2) Cactoida Lapis",
+        "2) Stratum Tectonicas",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "46",
+        "",
+        "Cactoida Pullulanta",
+        "Cactoida Peperatis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "47",
+        "",
+        "3) Concha Renibus t 181-200",
+        "3) Fungoida Setisis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "48",
+        "",
+        "Concha Labiata t 150-181",
+        "4) Osseum Spiralis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "49",
+        "",
+        "4) Fungoida Stabitis t 180-",
+        "5) Frutexa Metallicum",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "50",
+        "",
+        "Fungoida Gelata",
+        "6) Stratum Tectonicas",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "51",
+        "",
+        "5) Osseus Fractus",
+        "7) Tubus Sororibus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "52",
+        "",
+        "Osseus Cornibus",
+        "8)Tussock Cultro",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "53",
+        "",
+        "Osseus Pellebantus",
+        "Tussock Catena",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "54",
+        "",
+        "6) Stratum Tectonicas",
+        "Tussock Divisa",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "55",
+        "",
+        "7) Tubus Sororibus",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "56",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "57",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "58",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "59",
+        "",
+        "",
+        "",
+        "Ice body",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "60",
+        "",
+        "Аргоновая",
+        "Неоновая",
+        "Азотная",
+        "Метановая",
+        "Серная",
+        "Кислородная",
+        "Богатая неоном",
+        "Богатая аргоном"
+      ],
+      [
+        "61",
+        "",
+        "1) Bacterium Vesicula",
+        "1) Bacterium Acies",
+        "1) Bacterium Informem",
+        "1) Bacterium Bullaris",
+        "1) Recepta Conditivus",
+        "1) Bacterium Volu",
+        "",
+        ""
+      ],
+      [
+        "62",
+        "",
+        "2) Fonticulua Campestris",
+        "Bacterium Scopulum",
+        "2) Fonticulua Lapida",
+        "2) Fonticulua Digitos",
+        "Recepta Deltahedronix",
+        "2) Fonticulua Fluctus",
+        "",
+        ""
+      ],
+      [
+        "63",
+        "",
+        "3) Electricae Pluma",
+        "Bacterium Omentum",
+        "",
+        "",
+        "Recepta Conditivus",
+        "",
+        "",
+        ""
+      ],
+      [
+        "64",
+        "",
+        "Electricae Radialem(туманн.)",
+        "Bacterium Verrata",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "profitableWorlds": [
+      [
+        "",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U"
+      ],
+      [
+        "--",
+        "---------------------------------",
+        "------------------------------------",
+        "----------------",
+        "-",
+        "--------------------------",
+        "------------------------",
+        "-",
+        "--------------------------",
+        "----------------------",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "----------------------",
+        "----------"
+      ],
+      [
+        "1",
+        "",
+        "Экзобиология.Планеты.(самые дорогие)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "3",
+        "Thin water rocky(hmc)",
+        "",
+        "",
+        "",
+        "Rocky . Thin SO2",
+        "",
+        "",
+        "Ice . Thin SO2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "4",
+        "роды(возможные)",
+        "стоимость.",
+        "Итого(с бонусом)",
+        "",
+        "роды(возможные)",
+        "стоимость.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "5",
+        "",
+        "",
+        "",
+        "",
+        "1.Tussock Stigmasis",
+        "19010800",
+        "",
+        "1.Recepta Conditivus",
+        "14313700",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "6",
+        "1.Cactoida Vermis",
+        "16202800",
+        "81014000",
+        "",
+        "2.Bacterium Cerbrus",
+        "1689800",
+        "",
+        "или Recepta Deltahedronix",
+        "16202800",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "7",
+        "2.Tussock Virgam",
+        "14313700",
+        "71568500",
+        "",
+        "3.Recepta Conditivus",
+        "14313700",
+        "",
+        "или Recepta Umbrux",
+        "12934900",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "8",
+        "3.Osseus Discus",
+        "12934900",
+        "64674500",
+        "",
+        "или Recepta Deltahedronix",
+        "16202800",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "9",
+        "4.Concha Renibus",
+        "4572400",
+        "22862000",
+        "",
+        "или Recepta Umbrux",
+        "12934900",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "10",
+        "5.Frutexa Sponsae",
+        "5988000",
+        "29940000",
+        "",
+        "4.Frutexa Collum",
+        "1639800",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "11",
+        "6.Bacterium Cerbrus",
+        "1689800",
+        "8449000",
+        "",
+        "",
+        "Встречается 4 вида",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "12",
+        "7.Fungoida Gelata",
+        "6346900",
+        "31734500",
+        "",
+        "Итого",
+        "36654100",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "13",
+        "или Fungoida Stabitis",
+        "2680300",
+        "13401500",
+        "",
+        "С бонусом",
+        "183270500",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "14",
+        "8. Stratum Paleas",
+        "1362000",
+        "6810000",
+        "",
+        "Rocky.Thin CO2. t 190-195K",
+        "",
+        "",
+        "Rocky.Thin CO2. t 180-190K",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "виды(возможные)",
+        "стоимость."
+      ],
+      [
+        "15",
+        "9.Clypeus Lacrimam",
+        "8418000",
+        "42090000",
+        "",
+        "роды(возможные)",
+        "стоимость.",
+        "",
+        "роды(возможные)",
+        "стоимость.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "16",
+        "или Clypeus Margaritus",
+        "11873200",
+        "59366000",
+        "",
+        "1.Bacterium Aurasus",
+        "1000000",
+        "",
+        "1.Bacterium Aurasus",
+        "1000000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1.Cactoida Vermis",
+        "16202800"
+      ],
+      [
+        "17",
+        "или Clypeus Speculumi",
+        "16777215",
+        "83886075",
+        "",
+        "2.Aleoida Gravis",
+        "12934900",
+        "",
+        "2.Aleoida Coronamus",
+        "6284600",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2.Tussock Virgam",
+        "14313700"
+      ],
+      [
+        "18",
+        "",
+        "Встречается от 5 до 9 видов.",
+        "",
+        "",
+        "3.Cactoida Cortexum",
+        "3667600",
+        "",
+        "3.Cactoida Pullulanta",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "3.Osseus Discus",
+        "12934900"
+      ],
+      [
+        "19",
+        "Итого.",
+        "68161900",
+        "",
+        "",
+        "4.Clypeus Lacrimam",
+        "8418000",
+        "",
+        "или Cactoida Cortexum",
+        "3667600",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "4.Concha Renibus",
+        "4572400"
+      ],
+      [
+        "20",
+        "С бонусом",
+        "340809500",
+        "",
+        "",
+        "или Clypeus Speculumi",
+        "16202800",
+        "",
+        "4.Concha Renibus",
+        "4572400",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "5.Frutexa Sponsae",
+        "5988000"
+      ],
+      [
+        "21",
+        "Равнина",
+        "собирать на вездеходе",
+        "",
+        "",
+        "5.Concha Renibus",
+        "4572400",
+        "",
+        "или Concha Labiata",
+        "2352400",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "6.Bacterium Cerbrus",
+        "1689800"
+      ],
+      [
+        "22",
+        "Гористая местность(темных цветов)",
+        "малый корабль,пешком",
+        "",
+        "",
+        "6.Fungoida Stabitis",
+        "2680300",
+        "",
+        "5.Fungoida Stabitis",
+        "2680300",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "7.Fungoida Gelata",
+        "6346900"
+      ],
+      [
+        "23",
+        "",
+        "",
+        "",
+        "",
+        "или Fungoida Gelata",
+        "3330300",
+        "",
+        "6.Osseus Fractus",
+        "4027800",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "или Fungoida Stabitis",
+        "2680300"
+      ],
+      [
+        "24",
+        "",
+        "",
+        "",
+        "",
+        "7.Osseus Pellebantus",
+        "9739000",
+        "",
+        "7.Tussock Caputus",
+        "3472400",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "8. Stratum Paleas",
+        "1362000"
+      ],
+      [
+        "25",
+        "",
+        "",
+        "",
+        "",
+        "8.Tussock Triticum",
+        "7774700",
+        "",
+        "8.Frutexa Acus",
+        "7774700",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "9.Clypeus Lacrimam",
+        "8418000"
+      ],
+      [
+        "26",
+        "Rocky.Thin NH3",
+        "",
+        "",
+        "",
+        "9.Frutexa Acus",
+        "7774700",
+        "",
+        "9.Stratum Paleas",
+        "1362000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "или Clypeus Margaritus",
+        "11873200"
+      ],
+      [
+        "27",
+        "роды(возможные)",
+        "стоимость.",
+        "",
+        "",
+        "10.Stratum Paleas",
+        "1362000",
+        "",
+        "",
+        "Встречается до 9 видов",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "или Clypeus Speculumi",
+        "16777215"
+      ],
+      [
+        "28",
+        "",
+        "",
+        "",
+        "",
+        "Stratum Сucumisis",
+        "16202800",
+        "",
+        "Итого.",
+        "34841800",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "29",
+        "1) Bacterium Alcyoneum",
+        "1658500",
+        "",
+        "",
+        "",
+        "Встречается до 10 видов.",
+        "",
+        "С бонусом",
+        "174209000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "30",
+        "2) Aleoida Laminiae t 157-174",
+        "3385200",
+        "",
+        "",
+        "Итого.",
+        "59923600",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "31",
+        "Aleoida Spica t 170-174",
+        "",
+        "",
+        "",
+        "С бонусом",
+        "299618000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "32",
+        "3) Cactoida Lapis",
+        "2483600",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "33",
+        "Cactoida Peperatis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "34",
+        "4) Concha Aureolas",
+        "7774700",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "35",
+        "5) Fungoida Setisis",
+        "1670100",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "36",
+        "6) Osseus Spiralis",
+        "2404700",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "37",
+        "7) Stratum Laminamus",
+        "2788300",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "38",
+        "Stratum Paleas",
+        "1362000",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "39",
+        "8) Tubus Rosarium",
+        "2637500",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "40",
+        "9) Frutexa Flabellum",
+        "1808900",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "41",
+        "Frutexa Flammasis",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "42",
+        "10) Tussock Cultro",
+        "1766600",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "43",
+        "Tussock Catena",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "44",
+        "Tussock Divisa",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "45",
+        "",
+        "Встречается до 10 видов",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "46",
+        "Итого",
+        "29740100",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "47",
+        "С бонусом",
+        "148700500",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  }
+}
