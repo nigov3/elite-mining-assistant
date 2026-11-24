@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title | E:D Black Box</title>
+<link rel="icon" type="image/png" href="/ed-blackbox/images/logos/favicon.png">
+
+<!-- ============================================================
+     1. LINK THE DESIGN SYSTEM. This is the ONLY stylesheet.
+        Adjust the path to ed-blackbox.css for THIS page's depth, OR use
+        the published root-relative path (recommended on GitHub Pages):
+          /ed-blackbox/design-system/css/ed-blackbox.css
+        Fonts are pulled in automatically by the CSS @import — no font
+        <link> needed.
+     ============================================================ -->
+<link rel="stylesheet" href="/ed-blackbox/design-system/css/ed-blackbox.css">
+
+<!-- ============================================================
+     2. (OPTIONAL) PER-PAGE THEME. Override ONLY the --accent* group.
+        Delete this block to use the amber default. Examples in
+        docs/02-tokens.md. Combat shown below:
+     ============================================================ -->
+<style>
+  :root{
+    --accent:var(--maroon-lt); --accent-lt:var(--maroon-lt); --accent-deep:#5e0f1a;
+    --accent-soft:rgba(177,49,64,.45); --accent-glow:rgba(177,49,64,.12);
+  }
+</style>
+
+<!-- ============================================================
+     3. SITE ANALYTICS (Google Analytics / GA4). Required on every page —
+        single shared tag, no per-page config. Match the path to
+        analytics.js as in step 1 (depth-relative or the published
+        root-relative /ed-blackbox/design-system/js/analytics.js).
+     ============================================================ -->
+<script src="/ed-blackbox/design-system/js/analytics.js" defer></script>
+
+<!-- ============================================================
+     4. SCROLL-PROGRESS INDICATOR. Required on every page — single shared,
+        DOM-independent tag (like analytics.js); injects the amber hairline
+        that fills under the site-header on scroll. Match the path as in step 1.
+     ============================================================ -->
+<script src="/ed-blackbox/design-system/js/scroll-progress.js" defer></script>
+</head>
+<body>
+
+<!-- ---- GLOBAL HEADER (required) — brand · nav (left) · in-page quick-nav (right) ---- -->
+<header class="site-header">
+  <div class="hdr-inner">
+    <a class="brand" href="/ed-blackbox/guides/index.html" aria-label="E:D Black Box — home">
+      <img src="/ed-blackbox/images/logos/logo.png" alt="">
+      <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
+    </a>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/ed-blackbox/guides/index.html">Home</a>
+      <a href="/ed-blackbox/guides/index.html#section-dossiers">Ships</a>
+      <a href="/ed-blackbox/guides/index.html#section-engineering">Engineering</a>
+      <a href="/ed-blackbox/guides/index.html#section-systems">Systems</a>
+    </nav>
+    <!-- OPTIONAL in-page jump: keep only on pages with anchored sections/records.
+         Each .qn-item href must match an id on THIS page. -->
+    <div class="header-qn">
+      <!-- ---- CRUMB (required) — set the trail for THIS page. Title = current page;
+           trail = parent links (relative, same-tab), NO Home. Top-level page: add
+           class="hdr-crumb solo" and drop the trail span. ---- -->
+      <div class="hdr-crumb">
+        <span class="hdr-crumb-title">Page Title</span>
+        <span class="hdr-crumb-trail">
+          <a href="../index.html#section-dossiers">Section</a>
+        </span>
+      </div>
+      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
+      </button>
+      <div class="qn-dd" id="qn-dd">
+        <div class="qn-field">
+          <span class="qn-ico">⌕</span>
+          <input class="qn-input" id="qn-search" type="text" placeholder="Jump to a section…"
+                 autocomplete="off" role="combobox" aria-expanded="false" aria-controls="qn-panel">
+          <button class="qn-clear" id="qn-clear" hidden aria-label="Clear">×</button>
+        </div>
+        <div class="qn-panel" id="qn-panel" role="listbox">
+          <a class="qn-item" href="#section-first-section"><span class="qn-dot amber"></span><span class="qn-nm">First Section</span><span class="qn-side">01</span></a>
+          <div class="qn-empty" hidden>No match.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ---- MASTHEAD (required) ---- -->
+  <header class="masthead">
+    <div class="kicker">Series Label <span class="sep">//</span> Part N <span class="sep">//</span> Section</div>
+    <h1 class="title">Page <span>Title</span></h1>
+    <p class="subtitle">One-sentence scope statement with the <b>key phrase</b> in bright ink.</p>
+    <div class="masthead-meta">
+      <span>Part <b>N of M</b></span>
+      <span>Updated <b>YYYY-MM-DD</b></span>
+    </div>
+  </header>
+
+  <!-- ---- VERDICT (optional but common) ---- -->
+  <div class="verdict">
+    <div class="v-eyebrow">Field Briefing</div>
+    <h2>The single big idea, with one <em>accent phrase</em>.</h2>
+    <p>Two-to-four sentences framing the whole page.</p>
+  </div>
+
+  <!-- ---- SECTIONS (number sequentially) ---- -->
+  <section id="section-first-section">
+    <div class="sec-head"><span class="sec-num">01</span><h2>First Section</h2><span class="tag">Tag</span></div>
+    <p class="lead">Lead paragraph.</p>
+    <!-- Drop in components from the gallery: .stat-grid, .rec-list, table.data,
+         .ratebox, .specgrid, .cards, .pickgrid, ol.steps, .callout, .loc-card … -->
+  </section>
+
+  <!-- ---- PER-PAGE CREDITS (required) — the LAST numbered section, ABOVE the footer.
+       A normal section (.sec-head): set .sec-num to the next running number. List the
+       authoritative sources THIS page's facts were verified against: one .cr-row per
+       source (name · what it provided · link). ---- -->
+  <section class="credits" id="section-credits">
+    <div class="sec-head"><span class="sec-num">NN</span><h2>Sources</h2></div>
+    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="cr-rows">
+      <div class="cr-row"><span class="cr-src">Source name</span><span class="cr-what">What this source provided for this page.</span><a class="cr-link" href="https://example.com">example.com</a></div>
+      <div class="cr-row"><span class="cr-src">Another source</span><span class="cr-what">What it provided.</span><a class="cr-link" href="https://example.com">example.com</a></div>
+    </div>
+  </section>
+
+  <!-- ---- FOOTER (required) — two fine-print lines (.ft-fine): a single &middot;-joined
+       line (copyright · CMDR Ka0s · part label · issue tracker), then the Frontier
+       disclaimer. Set the part label; the rest is identical site-wide. ---- -->
+  <footer>
+    <div class="ft-fine">
+      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Part N &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues">Report an issue</a></span>
+      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ============================================================
+     3. LINK THE BEHAVIOURS. Safe to include always (each module is
+        null-safe). Match the path to ed-blackbox.js as in step 1.
+     ============================================================ -->
+<script src="/ed-blackbox/design-system/js/ed-blackbox.js" defer></script>
+</body>
+</html>

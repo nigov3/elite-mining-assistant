@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keelback &middot; Trading &middot; Ship Dossier | E:D Black Box</title>
+<link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
+<link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
+<script src="../../../design-system/js/scroll-progress.js" defer></script>
+</head>
+<body>
+
+<!-- ---- GLOBAL HEADER ---- -->
+<header class="site-header">
+  <div class="hdr-inner">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+      <img src="../../../images/logos/logo.png" alt="">
+      <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
+    </a>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#section-dossiers" class="active">Ships</a>
+      <a href="../../index.html#section-engineering">Engineering</a>
+      <a href="../../index.html#section-systems">Systems</a>
+    </nav>
+    <div class="header-qn">
+      <div class="hdr-crumb">
+        <span class="hdr-crumb-title">Keelback · Trading</span>
+        <span class="hdr-crumb-trail">
+          <a href="../../index.html#section-dossiers">Ships</a>
+          <span class="sep">›</span>
+          <a href="../../index.html#section-ship-dossiers">Ship Dossiers</a>
+        </span>
+      </div>
+      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
+      </button>
+      <div class="qn-dd" id="qn-dd">
+        <div class="qn-field">
+          <span class="qn-ico" aria-hidden="true">⌕</span>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+        </div>
+        <div class="qn-panel" id="qn-panel" role="listbox">
+          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Role &amp; Overview</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-key-stats-what-makes-it-haul"><span class="qn-dot amber"></span><span class="qn-nm">Key Stats &amp; What Makes It Haul</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">Why This Rating</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">How It Compares</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Cost &amp; Access</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">3-State Loadout</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Initial Loadout &mdash; Buy-Only Plan</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">A-Rated Loadout &mdash; Upgrade Plan</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">Engineering Plan</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Key Stat Upgrades</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Key Activities &amp; Where To Do Them</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Field Notes &mdash; What Else To Know</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">13</span></a>
+          <div class="qn-empty" hidden>No matching sections</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">Ship Dossier <span class="sep">//</span> Lakon Spaceways</div>
+    <h1 class="title"><span>Keelback</span><span class="role ac-role-trading">Trading</span></h1>
+    <div class="masthead-meta">
+      <span>Series <b>Ships</b></span>
+      <span>Updated <b>2026-07-01</b></span>
+    </div>
+  </header>
+
+  <div class="verdict has-render">
+    <div class="v-body">
+      <div class="v-eyebrow">Briefing</div>
+      <h2>The budget hauler that <em>fights</em> back</h2>
+      <p>The Keelback gives up cargo versus the cheaper <a href="type-6-transporter-trading.html">Type-6</a> in exchange for one thing no rival at this price offers: a ship-launched fighter bay. Deploy an SLF to defend your hold against pirates rather than fleeing. If the fighter doesn't appeal, a plain freighter hauls more for less money.</p>
+    </div>
+    <figure class="ship-figure">
+      <img src="../../../images/ships/keelback.jpg" alt="Keelback" width="160" height="90">
+      <figcaption><b>Keelback</b> &middot; Lakon Spaceways</figcaption>
+    </figure>
+    <div class="stat-grid">
+      <div class="stat"><div class="n">52<small>/100</small></div><div class="bar mini"><i style="--pct:52"></i></div></div>
+      <div class="stat"><div class="n">~98 t</div><div class="l">Max cargo</div></div>
+      <div class="stat"><div class="n">303 m/s</div><div class="l">Boost speed</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">Utility mounts</div></div>
+      <div class="stat"><div class="n">~2.95M Cr</div><div class="l">Hull price</div></div>
+    </div>
+  </div>
+
+  <div class="callout"><span class="lbl">Rating methodology</span><p>This ship's <span class="acc">1&ndash;100 suitability rating</span> reflects its fully-engineered fit for this role, scored against every ship in the role. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  <!-- s1 -->
+  <section id="section-role-overview">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Role &amp; Overview</h2></div>
+    <p>The Keelback is Lakon's combat-capable take on the <a href="type-6-transporter-trading.html">Type-6</a>: a cheap medium freighter that gives up a little cargo in exchange for a ship-launched fighter bay and a tougher hull. That fighter is the whole point &mdash; a cheap hauler that, when a pirate interdicts, can launch an SLF (or have a crewmate fly it) to fight back, rather than simply running or dying.</p>
+    <p>Its cargo is genuinely modest &mdash; around 98 tonnes, actually less than the cheaper <a href="type-6-transporter-mining.html">Type-6</a>, since slots go to the fighter bay and defences. So as a pure hauler it's poor value. But for a budget trader who'd rather deploy a fighter than flee, or who wants a cheap ship that can dabble in light combat and mining too, the Keelback's defensive trick gives it a niche the plain freighters can't match.</p>
+    <div class="callout"><span class="lbl">Where this hull shines</span><p>Defended budget trading: cheap hauling through pirate-prone space with an SLF for protection, mixed trade-and-light-combat play, and a versatile cheap hull that hauls, fights a little, or mines.</p></div>
+    <div class="nolink">
+      <h3 class="subhead">Other role builds of this ship</h3>
+      <div class="vchips">
+        <a class="vchip r-mining" href="keelback-mining.html"><span class="vrole">Mining</span><span class="vrate">68<small>/100</small></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- s2 -->
+  <section id="section-key-stats-what-makes-it-haul">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Key Stats &amp; What Makes It Haul</h2></div>
+    <div class="specgrid">
+      <div class="cell"><div class="k">Max cargo</div><div class="v">~98 <small>t</small></div></div>
+      <div class="cell"><div class="k">Top speed / boost</div><div class="v">202 / 303 <small>m/s</small></div></div>
+      <div class="cell"><div class="k">Utility mounts</div><div class="v">3</div></div>
+      <div class="cell"><div class="k">Hull mass</div><div class="v">180 <small>t</small></div></div>
+      <div class="cell"><div class="k">Fighter bay</div><div class="v">Yes <small>(SLF for defence)</small></div></div>
+      <div class="cell"><div class="k">Optional internals</div><div class="v">5&middot;5&middot;4&middot;3&middot;2&middot;2&middot;1</div></div>
+      <div class="cell"><div class="k"><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power plant</a></div><div class="v">Class 4</div></div>
+      <div class="cell"><div class="k">Pad</div><div class="v">Medium <small>(most stations)</small></div></div>
+      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+    </div>
+    <p>Four things define the Keelback as a trader:</p>
+    <ul class="bullets">
+      <li><b>A fighter bay.</b> Unique at its price &mdash; launch an SLF to defend your cargo against pirates instead of fleeing.</li>
+      <li><b>Tougher than a <a href="type-6-transporter-trading.html">Type-6</a>.</b> A more durable hull better suited to standing its ground.</li>
+      <li><b>Medium-pad access.</b> Lands at most stations, including outposts.</li>
+      <li><b>Cheap and versatile.</b> Under 3M credits, and the same hull can fight a little or mine.</li>
+    </ul>
+    <div class="callout"><span class="lbl">The ceiling, stated honestly</span><p>Its cargo is small &mdash; less than the cheaper <a href="type-6-transporter-trading.html">Type-6</a> &mdash; because slots go to the fighter bay and defences, so as a pure hauler it's poor value. It's slow, and the fighter needs crew or NPC piloting to use well. The Keelback only makes sense if you specifically want a cheap hauler with an SLF; for tonnage-per-credit, the <a href="type-6-transporter-trading.html">Type-6</a> or <a href="type-8-transporter-trading.html">Type-8</a> win easily.</p></div>
+  </section>
+
+  <!-- s3 -->
+  <!-- Why This Rating -->
+  <section id="section-why-this-rating">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Why This Rating</h2><span class="tag">Scorecard</span></div>
+    <p class="lead">A medium-pad hull made survivable for trading by a unique cheap fighter bay, but capped by ~98t cargo — the smallest of the medium traders, below even the <a href="type-6-transporter-trading.html">Type-6</a>.</p>
+    <p>The <b>52/100</b> headline is a verdict against the trading role's priority-ordered factors. Each factor carries a <b>weight</b> (its share of 100); this hull earns part of each based on how it performs against the whole field. The points <b>sum to the rating</b>.</p>
+    <div class="tbl-scroll">
+    <table class="data scorecard">
+      <colgroup><col style="width:190px"><col style="width:150px"><col></colgroup>
+      <thead><tr><th>Role factor</th><th class="sc">Score</th><th>Why this score</th></tr></thead>
+      <tbody>
+      <tr><td class="fct">Maximum cargo</td><td class="sc"><span class="scval">10</span><span class="den">/35</span><div class="bar mini"><i style="--pct:29"></i></div></td><td class="wcell">Engineered cargo is ~98t, the least of any medium trader and below the cheaper Type-6 (~110t), since slots go to the class-5 fighter hangar, bi-weave and defences; Type-8 (~406t) and Python (~294t) more than triple it.</td></tr>
+      <tr><td class="fct">Pad class &amp; market reach</td><td class="sc"><span class="scval">13</span><span class="den">/20</span><div class="bar mini"><i style="--pct:65"></i></div></td><td class="wcell">Medium pad lands at most stations including outposts, ample market reach with no rank or permit gate; no access to large-pad-only trade hubs but no station is locked out.</td></tr>
+      <tr><td class="fct">Laden jump range</td><td class="sc"><span class="scval">8</span><span class="den">/15</span><div class="bar mini"><i style="--pct:53"></i></div></td><td class="wcell">Laden jump runs ~24 LY A-rated and ~30 LY engineered (G5 Increased Range + Mass Manager on the 4A FSD) against 180t hull mass — workable mid-field range, well short of a Krait Phantom but adequate for budget loops.</td></tr>
+      <tr><td class="fct">Survivability</td><td class="sc"><span class="scval">15</span><span class="den">/20</span><div class="bar mini"><i style="--pct:75"></i></div></td><td class="wcell">Its trading standout: a class-5 SLF bay plus a 3C bi-weave (Reinforced + Hi-Cap), Heavy-Duty shield booster and a 2A shield cell bank on a hull tougher than the Type-6 — it can fight a pirate off rather than flee.</td></tr>
+      <tr><td class="fct">Speed &amp; cost</td><td class="sc"><span class="scval">6</span><span class="den">/10</span><div class="bar mini"><i style="--pct:60"></i></div></td><td class="wcell">Cheap at ~2.95M Cr hull / ~12M all-in with no rank gate, but slow — 202 m/s cruise, 303 boost (~340 engineered) — leaving it the slowest-and-cheapest tradeoff among medium traders.</td></tr>
+      <tr class="totalrow"><td class="fct"><b>Weighted total</b></td><td class="sc"><span class="scval">52</span><span class="den">/100</span><div class="bar mini"><i style="--pct:52"></i></div></td><td class="wcell"><em>Matches the headline suitability rating for this ship in this role.</em></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout"><span class="lbl">How to read it</span><p>Weights are an editorial decomposition of the role's stated priority order &mdash; not an in-game formula. Bar length shows how fully each factor is earned; the longest factors carried the score, the shortest are where it gave points away. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  </section>
+  <section id="section-how-it-compares">
+    <div class="sec-head"><span class="sec-num">04</span><h2>How It Compares</h2></div>
+    <p>Every table rates ships <em>for trading specifically</em>, split by landing-pad class. The <b>Max cargo</b> column is maximum cargo tonnage behind a shield; the rating is the same 1&ndash;100 suitability verdict used across the site.</p>
+    <h3 class="subhead">Same class &mdash; medium trading ships</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="type-8-transporter-trading.html">Type-8 Transporter</a></td><td><span class="pill pad-medium">Medium</span></td><td>~406 t</td><td class="pcc"><span class="p">Higher-rated; reach; speed/value</span><span class="c">Laden range</span></td><td><span class="rscore">76</span><div class="bar mini"><i style="--pct:76"></i></div></td></tr>
+        <tr><td class="mod"><a href="corsair-trading.html">Corsair</a></td><td><span class="pill pad-medium">Medium</span></td><td>~318 t</td><td class="pcc"><span class="p">Higher-rated; reach; speed/value</span><span class="c">Laden range</span></td><td><span class="rscore">74</span><div class="bar mini"><i style="--pct:74"></i></div></td></tr>
+        <tr><td class="mod"><a href="python-trading.html">Python</a></td><td><span class="pill pad-medium">Medium</span></td><td>~294 t</td><td class="pcc"><span class="p">Higher-rated; reach; survivability</span><span class="c">Speed/value</span></td><td><span class="rscore">72</span><div class="bar mini"><i style="--pct:72"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-6-transporter-trading.html">Type-6 Transporter</a></td><td><span class="pill pad-medium">Medium</span></td><td>~114 t</td><td class="pcc"><span class="p">Higher-rated; reach; speed/value</span><span class="c">Survivability</span></td><td><span class="rscore">65</span><div class="bar mini"><i style="--pct:65"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-mk-ii-trading.html">Krait Mk II</a></td><td><span class="pill pad-medium">Medium</span></td><td>~230 t</td><td class="pcc"><span class="p">Higher-rated; survivability; reach</span><span class="c">Laden range</span></td><td><span class="rscore">64</span><div class="bar mini"><i style="--pct:64"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-phantom-trading.html">Krait Phantom</a></td><td><span class="pill pad-medium">Medium</span></td><td>~190 t</td><td class="pcc"><span class="p">Higher-rated; laden range; reach</span><span class="c">Survivability</span></td><td><span class="rscore">62</span><div class="bar mini"><i style="--pct:62"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-11-prospector-trading.html">Type-11 Prospector</a></td><td><span class="pill pad-medium">Medium</span></td><td>~288 t</td><td class="pcc"><span class="p">Higher-rated; reach; survivability</span><span class="c">Speed/value</span></td><td><span class="rscore">60</span><div class="bar mini"><i style="--pct:60"></i></div></td></tr>
+        <tr><td class="mod"><a href="asp-explorer-trading.html">Asp Explorer</a></td><td><span class="pill pad-medium">Medium</span></td><td>~130 t</td><td class="pcc"><span class="p">Higher-rated; laden range; reach</span><span class="c">Survivability</span></td><td><span class="rscore">58</span><div class="bar mini"><i style="--pct:58"></i></div></td></tr>
+        <tr><td class="mod">Keelback <span class="pill md">this</span></td><td><span class="pill pad-medium">Medium</span></td><td>~98 t</td><td class="pcc"><span class="base">&mdash; this hull (baseline)</span></td><td><span class="rscore">52</span><div class="bar mini"><i style="--pct:52"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">9 medium-pad trading hulls carry a rating, led by <b><a href="type-8-transporter-trading.html">Type-8 Transporter</a></b> (76). Every same-pad rival lands where this one does &mdash; the direct field to shop.</p>
+    <h3 class="subhead">Other classes &mdash; the bulk freighters</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="panther-clipper-mk-ii-trading.html">Panther Clipper Mk II</a></td><td><span class="pill pad-large">Large</span></td><td>~662 t</td><td class="pcc"><span class="p">Higher-rated; cargo; reach</span><span class="c">Speed/value</span></td><td><span class="rscore">98</span><div class="bar mini"><i style="--pct:98"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-cutter-trading.html">Imperial Cutter</a></td><td><span class="pill pad-large">Large</span></td><td>~794 t</td><td class="pcc"><span class="p">Higher-rated; survivability; reach</span><span class="c">Speed/value</span></td><td><span class="rscore">95</span><div class="bar mini"><i style="--pct:95"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-9-heavy-trading.html">Type-9 Heavy</a></td><td><span class="pill pad-large">Large</span></td><td>~790 t</td><td class="pcc"><span class="p">Higher-rated; cargo; reach</span><span class="c">Survivability</span></td><td><span class="rscore">94</span><div class="bar mini"><i style="--pct:94"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-7-transporter-trading.html">Type-7 Transporter</a></td><td><span class="pill pad-large">Large</span></td><td>~310 t</td><td class="pcc"><span class="p">Higher-rated; laden range; cargo</span><span class="c">Survivability</span></td><td><span class="rscore">78</span><div class="bar mini"><i style="--pct:78"></i></div></td></tr>
+        <tr><td class="mod"><a href="anaconda-trading.html">Anaconda</a></td><td><span class="pill pad-large">Large</span></td><td>~470 t</td><td class="pcc"><span class="p">Higher-rated; laden range; survivability</span><span class="c">Speed/value</span></td><td><span class="rscore">76</span><div class="bar mini"><i style="--pct:76"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-clipper-trading.html">Imperial Clipper</a></td><td><span class="pill pad-large">Large</span></td><td>~250 t</td><td class="pcc"><span class="p">Higher-rated; speed/value; survivability</span><span class="c">Cargo</span></td><td><span class="rscore">74</span><div class="bar mini"><i style="--pct:74"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-corvette-trading.html">Federal Corvette</a></td><td><span class="pill pad-large">Large</span></td><td>~618 t</td><td class="pcc"><span class="p">Higher-rated; survivability; cargo</span><span class="c">Speed/value</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-10-defender-trading.html">Type-10 Defender</a></td><td><span class="pill pad-large">Large</span></td><td>~534 t</td><td class="pcc"><span class="p">Higher-rated; survivability; reach</span><span class="c">Laden range</span></td><td><span class="rscore">68</span><div class="bar mini"><i style="--pct:68"></i></div></td></tr>
+        <tr><td class="mod"><a href="caspian-explorer-trading.html">Caspian Explorer</a></td><td><span class="pill pad-large">Large</span></td><td>~434 t</td><td class="pcc"><span class="p">Higher-rated; reach; survivability</span><span class="c">Laden range</span></td><td><span class="rscore">66</span><div class="bar mini"><i style="--pct:66"></i></div></td></tr>
+        <tr><td class="mod"><a href="beluga-liner-trading.html">Beluga Liner</a></td><td><span class="pill pad-large">Large</span></td><td>~370 t</td><td class="pcc"><span class="p">Higher-rated; reach; survivability</span><span class="c">Laden range</span></td><td><span class="rscore">58</span><div class="bar mini"><i style="--pct:58"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">The large-pad trading field (10 rated), led by <b><a href="panther-clipper-mk-ii-trading.html">Panther Clipper Mk II</a></b> (98) &mdash; bigger pads and bankrolls. They out-muscle this hull on the numbers, but sit a pad class away.</p>
+    <h3 class="subhead">Other classes &mdash; the small-pad haulers</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="cobra-mk-iv-trading.html">Cobra Mk IV</a></td><td><span class="pill pad-small">Small</span></td><td>~92 t</td><td class="pcc"><span class="p">Speed/value; reach</span><span class="c">Survivability</span></td><td><span class="rscore">52</span><div class="bar mini"><i style="--pct:52"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-v-trading.html">Cobra Mk V</a></td><td><span class="pill pad-small">Small</span></td><td>~110 t</td><td class="pcc"><span class="p">Reach; speed/value</span><span class="c">Survivability</span></td><td><span class="rscore">52</span><div class="bar mini"><i style="--pct:52"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-iii-trading.html">Cobra Mk III</a></td><td><span class="pill pad-small">Small</span></td><td>~64 t</td><td class="pcc"><span class="p">Speed/value; reach</span><span class="c">Lower-rated; cargo</span></td><td><span class="rscore">48</span><div class="bar mini"><i style="--pct:48"></i></div></td></tr>
+        <tr><td class="mod"><a href="dolphin-trading.html">Dolphin</a></td><td><span class="pill pad-small">Small</span></td><td>~88 t</td><td class="pcc"><span class="p">Reach; laden range</span><span class="c">Lower-rated; survivability</span></td><td><span class="rscore">46</span><div class="bar mini"><i style="--pct:46"></i></div></td></tr>
+        <tr><td class="mod"><a href="hauler-trading.html">Hauler</a></td><td><span class="pill pad-small">Small</span></td><td>~26 t</td><td class="pcc"><span class="p">Reach; speed/value</span><span class="c">Lower-rated; cargo</span></td><td><span class="rscore">42</span><div class="bar mini"><i style="--pct:42"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">The small-pad trading field (5 rated), led by <b><a href="cobra-mk-iv-trading.html">Cobra Mk IV</a></b> (52) &mdash; cheaper hulls and tighter pads. They undercut this hull on the numbers, but sit a pad class away.</p>
+  </section>
+
+  <!-- s4 -->
+  <section id="section-cost-access">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Cost &amp; Access</h2></div>
+    <div class="specgrid">
+      <div class="cell"><div class="k">Hull</div><div class="v">~2.95M Cr</div></div>
+      <div class="cell"><div class="k">A-rated trader</div><div class="v">~6M Cr</div></div>
+      <div class="cell"><div class="k">Engineered</div><div class="v">~12M Cr</div></div>
+      <div class="cell"><div class="k">Pad</div><div class="v">Medium</div></div>
+      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+    </div>
+    <p>At ~2.95M Cr the Keelback is cheap, with no rank gate, though a fighter bay plus a hangar and SLF add to the fit. The all-in cost lands around 12M Cr with a defended, fighter-equipped build.</p>
+    <p>It's a niche-and-novelty pick. For pure cargo the cheaper <a href="type-6-transporter-trading.html">Type-6</a> carries more; for fighting, the <a href="python-trading.html">Python</a> is better. The Keelback makes sense only if the cheap fighter bay specifically appeals.</p>
+    <div class="callout"><span class="lbl">Cheap fighter bay, little else</span><p>Around 12M Cr for a budget hauler that can launch an SLF &mdash; a fun, niche trick, but the <a href="type-6-transporter-trading.html">Type-6</a> hauls more and the <a href="python-trading.html">Python</a> fights better.</p></div>
+  </section>
+
+  <!-- s6 -->
+  <section id="section-3-state-loadout">
+    <div class="sec-head"><span class="sec-num">06</span><h2>3-State Loadout</h2></div>
+    <p>A defended budget trade fit built around the fighter bay. Initial is buy-only; A-rated is the trade baseline; Engineered balances modest cargo, a shield and the SLF.</p>
+    <div class="tbl-scroll">
+    <table class="l3">
+<thead><tr><th>Slot</th><th>Initial · buy-only</th><th>A-Rated · no eng</th><th>Engineered</th><th>Notes</th></tr></thead>
+<tbody>
+<tr class="grouprow"><td colspan="5">Hardpoints</td></tr>
+<tr><td class="slot">Medium 1</td><td class="st">—</td><td class="st">2F <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">Multi-Cannon</a> (Gimballed)</td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-multi-cannon-overcharged">Overcharged</a> + <span class="nolink">Corrosive Shell</span></td><td class="note">A single gimballed <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">multi-cannon</a> is token self-defence; Overcharged &amp; Corrosive Shell let the mothership chip in while the SLF does the work.</td></tr>
+<tr class="grouprow"><td colspan="5">Utility Mounts</td></tr>
+<tr><td class="slot">Utility 1</td><td class="st">—</td><td class="st">0A <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">Shield Booster</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-shield-booster-heavy-duty">Heavy Duty</a> + <span class="nolink">Super Capacitors</span></td><td class="note">Heavy-Duty <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">shield booster</a> multiplies the small bi-weave's raw MJ — the cheapest survivability gain on the hull.</td></tr>
+<tr><td class="slot">Utility 2</td><td class="st">—</td><td class="st">0I <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">Point Defence</a></td><td class="eng">G1 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-point-defence-ammo-capacity">Ammo Capacity</a> (no experimental effect)</td><td class="note">Optional / low-priority — Ammo Capacity adds rounds. <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">Point Defence</a> shoots down incoming missiles and torpedoes.</td></tr>
+<tr><td class="slot">Utility 3</td><td class="st">—</td><td class="st">0I <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">Heat Sink Launcher</a></td><td class="eng">G1 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-heat-sink-launcher-ammo-capacity">Ammo Capacity</a> (no experimental effect)</td><td class="note">Optional / low-priority — Ammo Capacity adds heat-sink charges. Dumps heat for silent running and Thermal-Vent resets.</td></tr>
+<tr class="grouprow"><td colspan="5">Core Internals</td></tr>
+<tr><td class="slot">Bulkheads</td><td class="st"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Lightweight Alloy</a></td><td class="st"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Lightweight Alloy</a></td><td class="eng">G5 Lightweight + <span class="nolink">Deep Plating</span></td><td class="note"></td></tr>
+<tr><td class="slot">Power Plant</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a></td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-plant-low-emissions">Low Emissions</a> + <span class="nolink">Thermal Spread</span></td><td class="note">4A plant runs the hangar, shield and modules; Low Emissions plus Thermal Spread keep heat and signature low.</td></tr>
+<tr><td class="slot">Thrusters</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a></td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drive Tuning</a> + <span class="nolink">Drag Drives</span></td><td class="note">A-rated <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a> move the laden hull; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drives</a> plus Drag Drives add the speed to reposition or run.</td></tr>
+<tr><td class="slot">Frame Shift Drive</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a></td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> + <span class="nolink">Mass Manager</span></td><td class="note">A-rated <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> for laden range; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> plus Mass Manager stretch the jump on a heavy little freighter.</td></tr>
+<tr><td class="slot">Life Support</td><td class="st">1E <a href="../../engineering/engineering-manuals/modules.html#module-life-support">Life Support</a></td><td class="st">1D <a href="../../engineering/engineering-manuals/modules.html#module-life-support">Life Support</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-life-support-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">D-rate to save mass; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-life-support-lightweight">Lightweight</a> trims more — <a href="../../engineering/engineering-manuals/modules.html#module-life-support">life support</a> needs no rating for a hauler and has no experimental.</td></tr>
+<tr><td class="slot">Power Distributor</td><td class="st">3E <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a></td><td class="st">3A <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-distributor-engine-focused">Engine Focused</a> (no experimental effect)</td><td class="note">A-rated so boost and the hangar stay fed; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-distributor-engine-focused">Engine Focused</a> recharges the ENG capacitor faster for escapes.</td></tr>
+<tr><td class="slot">Sensors</td><td class="st">2E <a href="../../engineering/engineering-manuals/modules.html#module-sensors">Sensors</a></td><td class="st">2D <a href="../../engineering/engineering-manuals/modules.html#module-sensors">Sensors</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-sensors-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">D-rate and go Lightweight; a trader needs no sensor range, so save the mass.</td></tr>
+<tr><td class="slot">Fuel Tank</td><td class="st">4C <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">Fuel Tank</a></td><td class="st">4C <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">Fuel Tank</a></td><td class="eng">(No blueprint available)</td><td class="note">Stock C-rated tank; fuel capacity is fixed and cannot be engineered.</td></tr>
+<tr class="grouprow"><td colspan="5">Optional Internals</td></tr>
+<tr><td class="slot">Size 5</td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="st">5D <a href="../../engineering/engineering-manuals/modules.html#module-flight-assists">Fighter Hangar</a></td><td class="eng">(No blueprint available)</td><td class="note">The class-5 fighter hangar — the Keelback's whole reason to exist; SLF bays carry no blueprint.</td></tr>
+<tr><td class="slot">Size 5</td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="eng">(No blueprint available)</td><td class="note">Optional — adds cargo space; worth it for dedicated haulers. <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> aren't engineerable.</td></tr>
+<tr><td class="slot">Size 4</td><td class="st">—</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="eng">(No blueprint available)</td><td class="note">Optional — adds cargo space; worth it for dedicated haulers. <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> aren't engineerable.</td></tr>
+<tr><td class="slot">Size 3</td><td class="st">—</td><td class="st">3C <a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Bi-Weave Shield Generator</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bi-weave-shield-generator-reinforced">Reinforced</a> + <span class="nolink">Hi-Cap</span></td><td class="note">Bi-weave regenerates fast under fire; Reinforced plus Hi-Cap maximise its MJ so it outlasts a pirate.</td></tr>
+<tr><td class="slot">Size 2</td><td class="st">—</td><td class="st">2E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="eng">(No blueprint available)</td><td class="note">Optional — adds cargo space; worth it for dedicated haulers. <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> aren't engineerable.</td></tr>
+<tr><td class="slot">Size 2</td><td class="st">—</td><td class="st">2A <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">Shield Cell Bank</a></td><td class="eng">G4 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-shield-cell-bank-specialised">Specialised</a> + <span class="nolink">Flow Control</span></td><td class="note">Optional / low-priority — Specialised cuts the cell bank's heat and power spike. Burst shield healing for emergencies.</td></tr>
+<tr><td class="slot">Size 1</td><td class="st">—</td><td class="st">1I <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-detailed-surface-scanner-expanded-probe-scanning-radius">Expanded Probe Scanning Radius</a> (no experimental effect)</td><td class="note">Optional / low-priority — Expanded Probe Scanning widens probe coverage. Maps planets for exploration data.</td></tr>
+<tr class="grouprow lex-foot"><td colspan="5">Open in planner / Export</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Open in Coriolis</td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F63QQUvDMBQH8O%2BScw92c5fehCkMNi3Wm0iIzWsXTJPwkkzm2Hc3SYeuY4cWdirv%2F5If6f9AYAfKkYKsNePaO5KRaitMCITiYEBxphx1yDjgaffMOgj707Ti%2Ff0wbjT3Eiwp3g%2BkkjqmD9hpHy%2BuHHRXUcrSEdrGKQ8nXxQpHHrISIlCo3B7UuTH7I8s9TdgKYNwzjpqYm5iTq34gXtaS2btGHHDhHpUrVDh7QMSUjiVe8JQUKimcUsUOxiS270B5DGfyq5FA5U3RuPFj8uwsP0imfl4M3W5FNah%2BPRO45VG%2Bf826fPx%2Bivj7IK0oKxGm6TZhEo9yDemvoZYE1IX0vMm5yO0%2BLnLaRVuLYZizbDVyOqeXIx%2FYCJnNyA%2Fjr%2FmUU0bkwMAAA%3D%3D&amp;bn=Keelback" target="_blank" rel="noopener noreferrer" title="Open the Initial build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F53UUW%2BbMBAA4P%2Fi5zwUSFYpb5O6apWaNVr6Nk3owAecYmx0tjtlVf%2F7jOnWgtII9oR8hz8d58PPAp9QO7EV9wak8U6sxKGhLgRIS%2BxQS9AudwwS%2BTX3DVoM%2BdfVnRz2h%2BXOSK%2FQiu2PZ3FQpo9%2B5tb4fuOdw%2FYsmkN8Ja%2F7VRLefNBi69jjSuyZDJM7iW3ysvpH7lCSb78Cy86Qdskb3nQub71yVILWRuc1tQWovI0bZsiPpE8fubYhVLIwxrpQs6XfeJWXCqzdLIXTMdwFpIWYkVihLjF3nhlDf8KupXg2xhsEZ0kfFXhdNqHwZfTe%2FELeq3BY708w1NzHuz4eO7Ge34kdkP6ia9JhTEYkxuBS7pbDLIYprNwN0xOOyebUIcs%2BvpS9pwoPvusMTz5chYQdEtFMBjOd28sbso6p8M7wmY7Kt2zUs%2FkVfwcJE9KitoZtlNL5dd56VI%2Bgj2OsClEXou87mc3Q%2BsdVkh%2FCrs1EpLoJv1IBp2huBjOZa6bnzBK4Ngzl8b%2FILJLrS%2BR6IbmOZDY5mHiV1KiRYXLUWV6BdXP1TdTTSwWnCwv%2BdI4cCi5RqeLvCKTzRzO619FNxq5EB6RQWs8VlGj7a7u%2Foy5dTj9f%2FgDvnU1dswYAAA%3D%3D&amp;bn=Keelback" target="_blank" rel="noopener noreferrer" title="Open the A-Rated build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F62WXU%2FbMBSG%2F0uuq4l%2BbVLvgMJAKoMRJC6myTq1TxILx45sp1uH%2Bt937BRoSmEj7U0r2%2FHr9zk%2Bx%2FZjggvUPpkkMwPC1D7pJWkhK%2BqQWmCFWoD2zFsQaNdj36BEGl%2B3LkUzn5pXRtQKXTL58ZikyoTeY1uaOky89FjuFGUQP2F5aPXpy2udTLytsZfcWGms9Mtk0u8lZzqXGtFKnSeTx%2BRE1VhRw6%2FdNAuxY7EAzVGQzozIVDIZ95LvNahG5tMRCf2uSKUk16DOsgx58Okq5BLUkxle1PphmaxWvWeSKxSyLi%2FAisrQsv0XpqLyrKyVlxy0NprlspyTVBkndAa6R6hI7HqBlhdg8%2B5M3FhrnFwgcwUq1aK6k3r5FpMrJCoxN8Z52iYn%2F%2BAR4wqcG3eGSqPkyVryAmGxnNY0tSNZ2%2BGOTWvhDdp4FaGUEEcEZkhZw3xtLVJi0qzOiFfScXYTVKdB1eEpVMDlJmS%2FDfmm4WHbcIHgndQPCmrNCwI%2BmF3aCJ%2BS8oes3phfaG8UVfJmeVNcQ38V%2BmPOjPbNmZd1WOoRlC%2B6psuGM26MoopqFThI3VhxbSCMnYeBaYbZVNruWb%2F2Y%2BhkUHRob2GcW1qJ6izzU0s130YplqQrbDwLDoFznk7ZzOj8FnSOXXkyJ0JuL9qlO5MZpnVVGbuVX4oGXDMQIfoNxKAzxMZKbCbzwt9j%2BH0T51URTKXzVs5rb%2ByOUhAvo9Hv8CAFsbEme5r8kr3%2FNn4LArbcOjqtjHXR5GDfoKZR7MPxPK9R3YF%2BaDvLqNdT72bSDt%2BytqEW%2Fo76LKVZ4y3F4AjtHJZRc9xo9v9Xc7BLk9MtbSzwh06Swyg5ek9y9EHJUZQcbu1yvDNz1GhhKyWHLAPn97zcvz4r36LUmbF7vMYar%2BFwCKf%2BaptvHPkG74Vs8MGQfd4l2djg9HaaPyXh4DAvoVPSPAmaaUMs3WawRh2CFVwyzDLJZXiXv4rZlwjYbwMK9CDpPnS1zYCjCw%2FZ8L7Y52GxPgDIMmjxTgqsVj9XfwHh4L5ThgwAAA%3D%3D&amp;bn=Keelback" target="_blank" rel="noopener noreferrer" title="Open the Engineered build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="note">One-click open at coriolis.io.</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Open in EDSY</td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F63QQUvDMBQH8O%2BScw92c5fehCkMNi3Wm0iIzWsXTJPwkkzm2Hc3SYeuY4cWdirv%2F5If6f9AYAfKkYKsNePaO5KRaitMCITiYEBxphx1yDjgaffMOgj707Ti%2Ff0wbjT3Eiwp3g%2BkkjqmD9hpHy%2BuHHRXUcrSEdrGKQ8nXxQpHHrISIlCo3B7UuTH7I8s9TdgKYNwzjpqYm5iTq34gXtaS2btGHHDhHpUrVDh7QMSUjiVe8JQUKimcUsUOxiS270B5DGfyq5FA5U3RuPFj8uwsP0imfl4M3W5FNah%2BPRO45VG%2Bf826fPx%2Bivj7IK0oKxGm6TZhEo9yDemvoZYE1IX0vMm5yO0%2BLnLaRVuLYZizbDVyOqeXIx%2FYCJnNyA%2Fjr%2FmUU0bkwMAAA%3D%3D" target="_blank" rel="noopener noreferrer" title="Open the Initial build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F53UUW%2BbMBAA4P%2Fi5zwUSFYpb5O6apWaNVr6Nk3owAecYmx0tjtlVf%2F7jOnWgtII9oR8hz8d58PPAp9QO7EV9wak8U6sxKGhLgRIS%2BxQS9AudwwS%2BTX3DVoM%2BdfVnRz2h%2BXOSK%2FQiu2PZ3FQpo9%2B5tb4fuOdw%2FYsmkN8Ja%2F7VRLefNBi69jjSuyZDJM7iW3ysvpH7lCSb78Cy86Qdskb3nQub71yVILWRuc1tQWovI0bZsiPpE8fubYhVLIwxrpQs6XfeJWXCqzdLIXTMdwFpIWYkVihLjF3nhlDf8KupXg2xhsEZ0kfFXhdNqHwZfTe%2FELeq3BY708w1NzHuz4eO7Ge34kdkP6ia9JhTEYkxuBS7pbDLIYprNwN0xOOyebUIcs%2BvpS9pwoPvusMTz5chYQdEtFMBjOd28sbso6p8M7wmY7Kt2zUs%2FkVfwcJE9KitoZtlNL5dd56VI%2Bgj2OsClEXou87mc3Q%2BsdVkh%2FCrs1EpLoJv1IBp2huBjOZa6bnzBK4Ngzl8b%2FILJLrS%2BR6IbmOZDY5mHiV1KiRYXLUWV6BdXP1TdTTSwWnCwv%2BdI4cCi5RqeLvCKTzRzO619FNxq5EB6RQWs8VlGj7a7u%2Foy5dTj9f%2FgDvnU1dswYAAA%3D%3D" target="_blank" rel="noopener noreferrer" title="Open the A-Rated build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F62WXU%2FbMBSG%2F0uuq4l%2BbVLvgMJAKoMRJC6myTq1TxILx45sp1uH%2Bt937BRoSmEj7U0r2%2FHr9zk%2Bx%2FZjggvUPpkkMwPC1D7pJWkhK%2BqQWmCFWoD2zFsQaNdj36BEGl%2B3LkUzn5pXRtQKXTL58ZikyoTeY1uaOky89FjuFGUQP2F5aPXpy2udTLytsZfcWGms9Mtk0u8lZzqXGtFKnSeTx%2BRE1VhRw6%2FdNAuxY7EAzVGQzozIVDIZ95LvNahG5tMRCf2uSKUk16DOsgx58Okq5BLUkxle1PphmaxWvWeSKxSyLi%2FAisrQsv0XpqLyrKyVlxy0NprlspyTVBkndAa6R6hI7HqBlhdg8%2B5M3FhrnFwgcwUq1aK6k3r5FpMrJCoxN8Z52iYn%2F%2BAR4wqcG3eGSqPkyVryAmGxnNY0tSNZ2%2BGOTWvhDdp4FaGUEEcEZkhZw3xtLVJi0qzOiFfScXYTVKdB1eEpVMDlJmS%2FDfmm4WHbcIHgndQPCmrNCwI%2BmF3aCJ%2BS8oes3phfaG8UVfJmeVNcQ38V%2BmPOjPbNmZd1WOoRlC%2B6psuGM26MoopqFThI3VhxbSCMnYeBaYbZVNruWb%2F2Y%2BhkUHRob2GcW1qJ6izzU0s130YplqQrbDwLDoFznk7ZzOj8FnSOXXkyJ0JuL9qlO5MZpnVVGbuVX4oGXDMQIfoNxKAzxMZKbCbzwt9j%2BH0T51URTKXzVs5rb%2ByOUhAvo9Hv8CAFsbEme5r8kr3%2FNn4LArbcOjqtjHXR5GDfoKZR7MPxPK9R3YF%2BaDvLqNdT72bSDt%2BytqEW%2Fo76LKVZ4y3F4AjtHJZRc9xo9v9Xc7BLk9MtbSzwh06Swyg5ek9y9EHJUZQcbu1yvDNz1GhhKyWHLAPn97zcvz4r36LUmbF7vMYar%2BFwCKf%2BaptvHPkG74Vs8MGQfd4l2djg9HaaPyXh4DAvoVPSPAmaaUMs3WawRh2CFVwyzDLJZXiXv4rZlwjYbwMK9CDpPnS1zYCjCw%2FZ8L7Y52GxPgDIMmjxTgqsVj9XfwHh4L5ThgwAAA%3D%3D" target="_blank" rel="noopener noreferrer" title="Open the Engineered build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="note">One-click open at edsy.org.</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Copy SLEF</td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;initial&quot;}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Keelback&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;independant_trader_armour_grade1&quot;},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size4_class1&quot;},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class1&quot;},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class1&quot;},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size1_class1&quot;},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class1&quot;},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class1&quot;},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot02_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;}]}}]" title="Copy the Initial SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;arated&quot;}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Keelback&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;independant_trader_armour_grade1&quot;},{&quot;Slot&quot;:&quot;MediumHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_multicannon_gimbal_medium&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_shieldbooster_size0_class5&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_plasmapointdefence_turret_tiny&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint3&quot;,&quot;Item&quot;:&quot;hpt_heatsinklauncher_turret_tiny&quot;},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size4_class5&quot;},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class5&quot;},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class5&quot;},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size1_class2&quot;},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class5&quot;},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class2&quot;},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_fighterbay_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot02_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot03_Size4&quot;,&quot;Item&quot;:&quot;int_cargorack_size4_class1&quot;},{&quot;Slot&quot;:&quot;Slot04_Size3&quot;,&quot;Item&quot;:&quot;int_shieldgenerator_size3_class3_fast&quot;},{&quot;Slot&quot;:&quot;Slot05_Size2&quot;,&quot;Item&quot;:&quot;int_cargorack_size2_class1&quot;},{&quot;Slot&quot;:&quot;Slot06_Size2&quot;,&quot;Item&quot;:&quot;int_shieldcellbank_size2_class5&quot;},{&quot;Slot&quot;:&quot;Slot07_Size1&quot;,&quot;Item&quot;:&quot;int_detailedsurfacescanner_tiny&quot;}]}}]" title="Copy the A-Rated SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;engineered&quot;,&quot;edbb&quot;:{&quot;role&quot;:&quot;trading&quot;,&quot;intro&quot;:&quot;A defended budget trade fit built around the fighter bay. Initial is buy-only; A-rated is the trade baseline; Engineered balances modest cargo, a shield and the SLF.&quot;,&quot;callout&quot;:{&quot;label&quot;:&quot;The fighter is the point&quot;,&quot;text&quot;:&quot;A class-5 fighter hangar is the Keelback's reason to exist — deploy an SLF (yourself, a crewmate or an NPC) to fight off pirates while the freighter survives. The cargo it costs you is the price of that defence; if you don't want the fighter, buy a Type-6 instead.&quot;},&quot;notes&quot;:{&quot;MediumHardpoint1&quot;:&quot;A single gimballed multi-cannon is token self-defence; Overcharged &amp; Corrosive Shell let the mothership chip in while the SLF does the work.&quot;,&quot;TinyHardpoint1&quot;:&quot;Heavy-Duty shield booster multiplies the small bi-weave's raw MJ — the cheapest survivability gain on the hull.&quot;,&quot;TinyHardpoint2&quot;:&quot;Optional / low-priority — Ammo Capacity adds rounds. Point Defence shoots down incoming missiles and torpedoes.&quot;,&quot;TinyHardpoint3&quot;:&quot;Optional / low-priority — Ammo Capacity adds heat-sink charges. Dumps heat for silent running and Thermal-Vent resets.&quot;,&quot;PowerPlant&quot;:&quot;4A plant runs the hangar, shield and modules; Low Emissions plus Thermal Spread keep heat and signature low.&quot;,&quot;MainEngines&quot;:&quot;A-rated thrusters move the laden hull; Dirty Drives plus Drag Drives add the speed to reposition or run.&quot;,&quot;FrameShiftDrive&quot;:&quot;A-rated FSD for laden range; Increased Range plus Mass Manager stretch the jump on a heavy little freighter.&quot;,&quot;LifeSupport&quot;:&quot;D-rate to save mass; Lightweight trims more — life support needs no rating for a hauler and has no experimental.&quot;,&quot;PowerDistributor&quot;:&quot;A-rated so boost and the hangar stay fed; Engine Focused recharges the ENG capacitor faster for escapes.&quot;,&quot;Radar&quot;:&quot;D-rate and go Lightweight; a trader needs no sensor range, so save the mass.&quot;,&quot;FuelTank&quot;:&quot;Stock C-rated tank; fuel capacity is fixed and cannot be engineered.&quot;,&quot;Slot01_Size5&quot;:&quot;The class-5 fighter hangar — the Keelback's whole reason to exist; SLF bays carry no blueprint.&quot;,&quot;Slot02_Size5&quot;:&quot;Optional — adds cargo space; worth it for dedicated haulers. Cargo racks aren't engineerable.&quot;,&quot;Slot03_Size4&quot;:&quot;Optional — adds cargo space; worth it for dedicated haulers. Cargo racks aren't engineerable.&quot;,&quot;Slot04_Size3&quot;:&quot;Bi-weave regenerates fast under fire; Reinforced plus Hi-Cap maximise its MJ so it outlasts a pirate.&quot;,&quot;Slot05_Size2&quot;:&quot;Optional — adds cargo space; worth it for dedicated haulers. Cargo racks aren't engineerable.&quot;,&quot;Slot06_Size2&quot;:&quot;Optional / low-priority — Specialised cuts the cell bank's heat and power spike. Burst shield healing for emergencies.&quot;,&quot;Slot07_Size1&quot;:&quot;Optional / low-priority — Expanded Probe Scanning widens probe coverage. Maps planets for exploration data.&quot;},&quot;engineeringPlan&quot;:[{&quot;module&quot;:&quot;Power Plant&quot;,&quot;size&quot;:4,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Low Emissions&quot;,&quot;experimental&quot;:&quot;Thermal Spread&quot;,&quot;engineer&quot;:&quot;Hera Tani&quot;},{&quot;module&quot;:&quot;Frame Shift Drive&quot;,&quot;size&quot;:4,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Increased Range&quot;,&quot;experimental&quot;:&quot;Mass Manager&quot;,&quot;engineer&quot;:&quot;Felicity Farseer&quot;},{&quot;module&quot;:&quot;Thrusters&quot;,&quot;size&quot;:4,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Dirty Drive Tuning&quot;,&quot;experimental&quot;:&quot;Drag Drives&quot;,&quot;engineer&quot;:&quot;Professor Palin / Mel Brandon&quot;},{&quot;module&quot;:&quot;Bi-Weave Shield&quot;,&quot;size&quot;:3,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Reinforced&quot;,&quot;experimental&quot;:&quot;Hi-Cap&quot;,&quot;engineer&quot;:&quot;Lei Cheung&quot;},{&quot;module&quot;:&quot;Multi-Cannon&quot;,&quot;size&quot;:2,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Overcharged&quot;,&quot;experimental&quot;:&quot;Corrosive Shell&quot;,&quot;engineer&quot;:&quot;Tod McQuinn&quot;},{&quot;module&quot;:&quot;Shield Booster&quot;,&quot;size&quot;:0,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Heavy Duty&quot;,&quot;experimental&quot;:&quot;Super Capacitors&quot;,&quot;engineer&quot;:&quot;Didi Vatermann&quot;},{&quot;module&quot;:&quot;Bulkheads&quot;,&quot;blueprint&quot;:&quot;Lightweight&quot;,&quot;grade&quot;:&quot;G5&quot;,&quot;engineer&quot;:&quot;Selene Jean&quot;,&quot;experimental&quot;:&quot;Deep Plating&quot;}]}}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Keelback&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;independant_trader_armour_grade1&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Armour_Advanced&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_armour_chunky&quot;}},{&quot;Slot&quot;:&quot;MediumHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_multicannon_gimbal_medium&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Weapon_Overcharged&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_corrosive_shell&quot;}},{&quot;Slot&quot;:&quot;TinyHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_shieldbooster_size0_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ShieldBooster_HeavyDuty&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_shieldbooster_chunky&quot;}},{&quot;Slot&quot;:&quot;TinyHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_plasmapointdefence_turret_tiny&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Misc_PointDefenseCapacity&quot;,&quot;Level&quot;:1,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;TinyHardpoint3&quot;,&quot;Item&quot;:&quot;hpt_heatsinklauncher_turret_tiny&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Misc_HeatSinkCapacity&quot;,&quot;Level&quot;:1,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;PowerPlant_Stealth&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_powerplant_cooled&quot;}},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Engine_Dirty&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_engine_overloaded&quot;}},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;FSD_LongRange&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_fsd_heavy&quot;}},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size1_class2&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;LifeSupport_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;PowerDistributor_PriorityEngines&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class2&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Sensor_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_fighterbay_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot02_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot03_Size4&quot;,&quot;Item&quot;:&quot;int_cargorack_size4_class1&quot;},{&quot;Slot&quot;:&quot;Slot04_Size3&quot;,&quot;Item&quot;:&quot;int_shieldgenerator_size3_class3_fast&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ShieldGenerator_Reinforced&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_shield_health&quot;}},{&quot;Slot&quot;:&quot;Slot05_Size2&quot;,&quot;Item&quot;:&quot;int_cargorack_size2_class1&quot;},{&quot;Slot&quot;:&quot;Slot06_Size2&quot;,&quot;Item&quot;:&quot;int_shieldcellbank_size2_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ShieldCellBank_Specialised&quot;,&quot;Level&quot;:4,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_shieldcell_efficient&quot;}},{&quot;Slot&quot;:&quot;Slot07_Size1&quot;,&quot;Item&quot;:&quot;int_detailedsurfacescanner_tiny&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Sensor_Expanded&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}}]}}]" title="Copy the Engineered SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="note">Copies the raw Ship Loadout Export Format for that state.</td></tr>
+</tbody>
+</table>
+    </div>
+    <div class="callout"><span class="lbl">The fighter is the point</span><p>A class-5 fighter hangar is the Keelback's reason to exist — deploy an SLF (yourself, a crewmate or an NPC) to fight off pirates while the freighter survives. The cargo it costs you is the price of that defence; if you don't want the fighter, buy a <a href="type-6-transporter-trading.html">Type-6</a> instead.</p></div>
+  </section>
+
+  <!-- s7 -->
+  <section id="section-initial-loadout-buy-only-plan">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Initial Loadout &mdash; Buy-Only Plan</h2></div>
+    <p>Buy the hull (~2.95M Cr) stock: E-rated core internals across the board, the free Lightweight Alloy <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a>, and two class-5 <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">cargo racks</a> filling the largest optional slots. That is the whole buy-only state.</p>
+    <p>Every other slot starts empty &mdash; no hardpoint, no utility mounts, no shield, and crucially no fighter bay yet. The 5D fighter hangar, a 3C bi-weave shield and a gimballed <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">multi-cannon</a> all arrive at the A-rated stage.</p>
+    <p>This bare chassis hauls a little but can't defend itself; the fighter bay and shield are the first upgrades that make the Keelback worth choosing over a plain <a href="type-6-transporter-trading.html">Type-6</a>.</p>
+  </section>
+
+  <!-- s8 -->
+  <section id="section-a-rated-loadout-upgrade-plan">
+    <div class="sec-head"><span class="sec-num">08</span><h2>A-Rated Loadout &mdash; Upgrade Plan</h2></div>
+    <p>A-rating priority for a defended budget hauler. <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Bulkheads</a> stay stock <b>Lightweight Alloy</b> &mdash; a freighter guards its jump range, not its plating, so the hull mass stays low:</p>
+    <ul class="bullets">
+      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a> &rarr; 4A</b> &mdash; Power for the fighter bay, shield and modules. <span class="acc">~1.5M Cr</span></li>
+      <li><span class="stepnum">2</span><b>Fighter Hangar &rarr; 5D</b> &mdash; Swap a class-5 <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">cargo rack</a> for the SLF bay &mdash; the ship's reason to exist.</li>
+      <li><span class="stepnum">3</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> &rarr; 4A</b> &mdash; Laden jump range for route efficiency. <span class="acc">~1.5M Cr</span></li>
+      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a> &rarr; 4A</b> &mdash; Move the laden hull and reposition. <span class="acc">~1.5M Cr</span></li>
+      <li><span class="stepnum">5</span><b><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Shield Generator</a> &rarr; 3C bi-weave</b> &mdash; Survive while the fighter does its work. <span class="acc">~1M Cr</span></li>
+      <li><span class="stepnum">6</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a> &rarr; 3A</b> &mdash; Sustain boost and the fighter bay. <span class="acc">~1M Cr</span></li>
+      <li><span class="stepnum">7</span><b>Hardpoint &amp; utilities</b> &mdash; A 2F gimballed <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">multi-cannon</a>, a 0A <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">shield booster</a>, <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">point defence</a> and a heat-sink launcher round out the mothership's own defence.</li>
+      <li><span class="stepnum">8</span><b><a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">Shield Cell Bank</a> &rarr; 2A</b> &mdash; A class-2 cell bank for burst shield healing when the bi-weave dips under a pirate's fire. <span class="acc">low priority</span></li>
+    </ul>
+    <div class="callout"><span class="lbl">Power the fighter</span><p>The fighter bay is power-hungry &mdash; A-rate the plant so you can run the hangar, a shield and the SLF together when a pirate strikes. The cell bank and the heat-sink launcher cover the <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">SCB</a>'s heat-and-power spike on this low-signature hull.</p></div>
+  </section>
+
+  <!-- s9 -->
+  <section id="section-engineering-plan">
+    <div class="sec-head"><span class="sec-num">09</span><h2>Engineering Plan</h2></div>
+    <p>A defended trade engineering pattern. <a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a> (maxed) carries the <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>; pin blueprints for remote G1&rarr;G5 application.</p>
+    <div class="tbl-scroll">
+    <table class="data">
+<thead><tr><th>Module</th><th>Blueprint</th><th>Experimental</th><th>Engineer</th></tr></thead>
+<tbody>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a> (4)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-plant-low-emissions">Low Emissions</a> (G5)</td><td><span class="nolink">Thermal Spread</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-hera-tani">Hera Tani</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a> (4)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> (G5)</td><td><span class="nolink">Mass Manager</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a> (4)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drive Tuning</a> (G5)</td><td><span class="nolink">Drag Drives</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-professor-palin">Professor Palin</a> / <a href="../../engineering/engineering-manuals/engineers.html#engineer-mel-brandon">Mel Brandon</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Bi-Weave Shield</a> (3)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bi-weave-shield-generator-reinforced">Reinforced</a> (G5)</td><td><span class="nolink">Hi-Cap</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-lei-cheung">Lei Cheung</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-kinetic">Multi-Cannon</a> (2)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-multi-cannon-overcharged">Overcharged</a> (G5)</td><td><span class="nolink">Corrosive Shell</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-tod-mcquinn">Tod McQuinn</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">Shield Booster</a> (0)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-shield-booster-heavy-duty">Heavy Duty</a> (G5)</td><td><span class="nolink">Super Capacitors</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-didi-vatermann">Didi Vatermann</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Bulkheads</a></td><td>Lightweight (G5)</td><td><span class="nolink">Deep Plating</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-selene-jean">Selene Jean</a></td></tr>
+</tbody>
+</table>
+    </div>
+    <h3 class="subhead">Recommended order</h3>
+    <ul class="bullets">
+      <li><span class="stepnum">1</span>Plant to G5 so the fighter bay, shield and modules run together.</li>
+      <li><span class="stepnum">2</span><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> and <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a> for range and mobility.</li>
+      <li><span class="stepnum">3</span>Bi-weave shield to survive while the SLF fights.</li>
+      <li><span class="stepnum">4</span>A light <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">multi-cannon</a> so the mothership contributes to its own defence.</li>
+    </ul>
+    <div class="callout"><span class="lbl">Material intensity (qualitative)</span><p>Light &mdash; trade and a little combat engineering on modest modules. With a complete inventory this is spend, not farm. Ask for exact per-blueprint counts if needed.</p></div>
+  </section>
+
+  <!-- s10 -->
+  <section id="section-key-stat-upgrades">
+    <div class="sec-head"><span class="sec-num">10</span><h2>Key Stat Upgrades</h2></div>
+    <p>Approximate progression across the three states (figures are representative, not exact rolls):</p>
+    <div class="tbl-scroll">
+    <table class="data">
+      <thead><tr><th>Stat</th><th>Initial</th><th>A-rated</th><th>Engineered</th></tr></thead>
+      <tbody>
+        <tr><td class="mod">Max cargo (t)</td><td>~64</td><td>~90</td><td class="acc">~98</td></tr>
+        <tr><td class="mod">Armour (HP)</td><td>~270</td><td>~270</td><td class="acc">~700</td></tr>
+        <tr><td class="mod">Self-defence</td><td>none</td><td>SLF</td><td class="acc">SLF + guns</td></tr>
+        <tr><td class="mod">Laden jump (LY)</td><td>~16</td><td>~24</td><td class="acc">~30</td></tr>
+        <tr><td class="mod">Speed (boost)</td><td>303 m/s</td><td>303 m/s</td><td class="acc">~340 m/s</td></tr>
+        <tr><td class="mod">Cargo-per-credit</td><td>poor</td><td>poor</td><td class="acc">poor</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Engineered, the Keelback hauls a modest ~98t, launches a fighter to defend it, and rides on a Heavy-Duty Lightweight hull that roughly 2.5&times;s its armour to ~700 HP without costing jump range &mdash; a cheap hauler that needn't flee. Its cargo-per-credit is still poor; the SLF is the entire reason to choose it over a plain, roomier freighter.</p>
+  </section>
+
+  <!-- s11 -->
+  <section id="section-key-activities-where-to-do-them">
+    <div class="sec-head"><span class="sec-num">11</span><h2>Key Activities &amp; Where To Do Them</h2></div>
+    <div class="cards two">
+      <div class="card"><span class="ico">Getting started</span><ul class="bullets">
+      <li><b>Defended budget runs.</b> Haul through pirate-prone space with an SLF to fight back.</li>
+      <li><b>Mixed trade-and-light-combat.</b> Deploy the fighter for bounties or defence between deliveries.</li>
+      <li><b>Mission cargo with protection.</b> Run delivery missions safely on a budget.</li>
+    </ul></div>
+      <div class="card"><span class="ico">Advanced</span><ul class="bullets">
+      <li><b>Crewed hauling.</b> A friend or NPC flies the SLF while you fly the freighter &mdash; cheap teamwork.</li>
+      <li><b>Versatile budget hull.</b> The same cheap ship hauls, fights a little, or mines.</li>
+      <li><b>Learning SLF tactics.</b> An affordable way to learn fighter-bay operation.</li>
+    </ul></div>
+    </div>
+    <div class="callout"><span class="lbl">Generic example routes</span><p>Any budget loop through risky space suits a fighter-defended Keelback. From your home base it's a cheap way to haul with a measure of self-defence.</p></div>
+  </section>
+
+  <!-- s12 -->
+  <section id="section-field-notes-what-else-to-know">
+    <div class="sec-head"><span class="sec-num">12</span><h2>Field Notes &mdash; What Else To Know</h2></div>
+    <ul class="bullets">
+      <li>The fighter bay is the whole point &mdash; if you don't want it, a <a href="type-6-transporter-trading.html">Type-6</a> hauls more for less.</li>
+      <li>An NPC or crewmate must fly the SLF for it to defend you while you pilot the freighter.</li>
+      <li>Cargo-per-credit is poor &mdash; choose the Keelback for the novelty and self-defence, not capacity.</li>
+      <li>It re-roles to light combat or mining too &mdash; a cheap, versatile niche hull.</li>
+    </ul>
+    <div class="callout"><span class="lbl">Verdict</span><p>The Keelback is the freighter that fights back: a cheap medium hauler with a ship-launched fighter bay, unique at its price. Its hold is small &mdash; smaller than the cheaper <a href="type-6-transporter-mining.html">Type-6</a> &mdash; so as a pure trader it's poor value. But for a budget hauler that can deploy a fighter rather than flee, and dabble in combat or mining besides, the Keelback's one trick gives it a charm and a niche all its own.</p></div>
+  </section>
+
+  <!-- Sources -->
+  <section class="credits" id="section-credits">
+    <div class="sec-head"><span class="sec-num">13</span><h2>Sources</h2></div>
+    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="cr-rows">
+      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Interactive outfitting &amp; build planner, preloaded for this ship.</span><a class="cr-link" href="https://coriolis.io/outfit/keelback" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/keelback</a></div>
+      <div class="cr-row"><span class="cr-src">Elite Dangerous (official)</span><span class="cr-what">Frontier's official Keelback ship page &mdash; manufacturer specs, feature overview, and the ship render used on this page.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/keelback" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../keelback</a></div>
+      <div class="cr-row"><span class="cr-src">EDCD coriolis-data</span><span class="cr-what">Ship slot layout, module variants, and engineering blueprint data.</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/blob/master/ships/keelback.json" target="_blank" rel="noopener noreferrer">coriolis-data/ships/keelback.json</a></div>
+      <div class="cr-row"><span class="cr-src">Inara &mdash; Keelback</span><span class="cr-what">Per-ship page: base stats, price, and outfitting reference for the Keelback.</span><a class="cr-link" href="https://inara.cz/elite/ship/33/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/33</a></div>
+      <div class="cr-row"><span class="cr-src">Fandom wiki</span><span class="cr-what">Keelback hull profile, cargo capacity, hardpoints, and role notes.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Keelback" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Keelback</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="ft-fine">
+      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Ship &times; Role Dossier &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
+      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../../../design-system/js/ed-blackbox.js" defer></script>
+</body>
+</html>

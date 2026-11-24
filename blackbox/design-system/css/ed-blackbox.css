@@ -1,0 +1,922 @@
+/*! ed-blackbox design system v1.3.0 | E:D Black Box field-manual house style
+   Single source of truth. Link this file; never inline or fork per page.
+   Theme a page by overriding the --accent* group in a page-level <style>. */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Saira:wght@300;400;500;600&family=Saira+Condensed:wght@500;600;700&display=swap');
+
+:root{
+  /* ============================================================
+     ed-blackbox DESIGN TOKENS  ·  v1.3.0
+     Colour + accent are the LOCKED palette (never edit values).
+     Scales below are the system standard — author with these,
+     don't hardcode raw px. Per-page theming = override the ACCENT
+     group only (see docs/02-tokens.md).
+     ============================================================ */
+
+  /* ---- surfaces ---- */
+  --bg:#0a0708;--bg2:#0e0a0b;--panel:#140d0f;--panel2:#1a1113;
+  --grid:rgba(180,70,60,.045);
+  /* ---- brand ---- */
+  --maroon:#8b2332;--maroon-lt:#b13140;--amber:#e0913a;--amber-lt:#f4b15f;
+  --fed:#4f9fd6;--fed-lt:#7cc0ee;
+  /* ---- action types (step-card rails & badges) ---- */
+  --at-prep:#c0564e;--at-farm:#cf8649;--at-travel:#c6a94f;--at-grind:#5fa86f;--at-unlock:#4f93cf;--at-climb:#7866cc;--at-build:#a868c0;
+  /* ---- status ---- */
+  --danger:#d8423b;--good:#5fb37a;--good-lt:#7fce98;
+  /* ---- ship-role chips (one distinct hue per role, RED→VIOLET; used by the index ship grid) ---- */
+  --role-combat:#b13140;--role-ax:#e07d3c;--role-mining:#e1cb5c;--role-trading:#7fce98;--role-exploration:#7cc0ee;--role-passenger:#8f8ce0;--role-multipurpose:#c386d8;
+  --role-combat-soft:rgba(177,49,64,.45);--role-ax-soft:rgba(224,125,60,.45);--role-mining-soft:rgba(225,203,92,.45);--role-trading-soft:rgba(127,206,152,.45);--role-exploration-soft:rgba(124,192,238,.45);--role-passenger-soft:rgba(143,140,224,.45);--role-multipurpose-soft:rgba(195,134,216,.45);
+  /* ---- ink ---- */
+  --ink:#ece4df;--ink-dim:#a89a93;--ink-faint:#6e615c;
+  /* ---- hairlines ---- */
+  --hair:rgba(190,120,110,.16);--hair-strong:rgba(190,120,110,.32);
+
+  /* ---- spacing scale (fine HUD rhythm; lossless) ---- */
+  --space-1:2px;--space-2:4px;--space-3:6px;--space-4:8px;--space-5:10px;--space-6:12px;
+  --space-7:14px;--space-8:16px;--space-9:18px;--space-10:20px;--space-11:22px;--space-12:24px;
+  --space-13:26px;--space-14:30px;--space-section:56px;--space-footer:70px;
+
+  /* ---- radius ---- */
+  --radius-xs:2px;--radius-sm:3px;--radius-md:4px;--radius-lg:6px;--radius-pill:10px;--radius-round:50%;
+  --radius:var(--radius-md);
+
+  /* ---- type scale ---- */
+  --fs-micro:10px;--fs-2xs:10.5px;--fs-xs:11px;--fs-xs2:11.5px;--fs-sm:12px;--fs-sm2:12.5px;
+  --fs-base:13.5px;--fs-body:14px;--fs-md:15px;--fs-md2:15.5px;--fs-lg:16px;--fs-h3:17px;
+  --fs-xl:18px;--fs-2xl:22px;--fs-3xl:26px;--fs-4xl:30px;
+  /* fluid display sizes (responsive clamp) */
+  --fs-title:clamp(34px,6vw,62px);--fs-h2:clamp(21px,3.4vw,30px);--fs-verdict:clamp(22px,4vw,32px);
+  --fs-scope:clamp(15px,2.2vw,18px);
+  --lh-tight:1.1;--lh-body:1.62;
+
+  /* ---- elevation / z-index ---- */
+  --z-base:1;--z-sticky:40;--z-nav:50;--z-overlay:60;
+
+  /* ---- motion ---- */
+  --motion-fast:.14s;--motion-base:.18s;--ease:ease;
+
+  /* ---- layout ---- */
+  --wrap-max:1140px;--gutter:22px;
+  /* breakpoints — documented only (media queries can't read var()):
+     --bp-sm 480px · --bp-md 560px · --bp-lg 720px */
+
+  /* ---- PAGE ACCENT (per-page theme — override THESE five) ----
+     The page accent themes ONLY the masthead .role title tag. Every component paints with
+     the COMPONENT ACCENT below (brand amber); flip one to the page accent — without any
+     page-level CSS — by adding class="accent-page" to it (or any ancestor). */
+  --accent:var(--amber);--accent-lt:var(--amber-lt);--accent-deep:var(--maroon);
+  --accent-soft:rgba(224,145,58,.4);--accent-glow:rgba(224,145,58,.10);
+
+  /* ---- COMPONENT ACCENT (brand amber — what every DS component paints with) ---- */
+  --c-accent:var(--amber);--c-accent-lt:var(--amber-lt);
+  --c-accent-soft:rgba(224,145,58,.4);--c-accent-glow:rgba(224,145,58,.10);
+
+  /* ---- meta ---- */
+  --ds-version:"1.3.0";
+}
+/* Opt any component or subtree into the page accent — no page-level CSS required.
+   Re-points the component-accent tokens at the page accent for this element's subtree. */
+.accent-page{--c-accent:var(--accent);--c-accent-lt:var(--accent-lt);--c-accent-soft:var(--accent-soft);--c-accent-glow:var(--accent-glow)}
+
+/* ============================================================
+   E:D BLACK BOX — GUIDE HOUSE STYLE  ·  v2 template
+   Single-file, self-contained. Copy this whole <style> block
+   verbatim into any new guide / dossier page.
+   Fonts: Chakra Petch (display + labels), Saira (body),
+          Saira Condensed (meta, tags, footer).
+   Palette: maroon + amber, with a federal-blue secondary accent.
+   ============================================================ */
+
+/* ---- 1. DESIGN TOKENS  (do not edit values; this is the locked palette) ---- */
+
+
+/* ---- 2. BASE / RESET ---- */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Saira',sans-serif;font-weight:300;line-height:1.62;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* grid overlay */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:42px 42px}
+/* radial gradient glows: amber top-right, maroon top-left, fed-blue bottom */
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(900px 600px at 78% -8%,rgba(224,145,58,.10),transparent 60%),radial-gradient(1000px 700px at 10% 4%,rgba(139,35,50,.16),transparent 62%),radial-gradient(1200px 900px at 50% 120%,rgba(79,159,214,.07),transparent 60%)}
+.wrap{position:relative;z-index:var(--z-base);max-width:1140px;margin:0 auto;padding:0 var(--space-11) 120px}
+a{color:var(--amber-lt)}
+.muted{color:var(--ink-faint)}
+/* body paragraphs directly in a content section — dim ink, comfortable inter-paragraph
+   rhythm. Scoped to direct children so nested component paragraphs (.callout p, .card p,
+   …) keep their own rules. */
+section > p{margin:0 0 var(--space-10);color:var(--ink-dim);line-height:var(--lh-body)}
+
+/* ---- 2b. GLOBAL HEADER + BREADCRUMBS  (v1.1.0) ----
+   Sits OUTSIDE .wrap, directly under <body>. The inner row is .hdr-inner,
+   NOT .bar — the rating progress bar (.bar) is overflow:hidden and would clip
+   the quick-nav dropdown. */
+.site-header{position:sticky;top:0;z-index:var(--z-nav);background:var(--bg);border-bottom:1px solid var(--hair-strong)}
+.site-header .hdr-inner{max-width:1140px;margin:0 auto;padding:0 var(--space-11);height:62px;display:flex;align-items:center;gap:var(--space-9)}
+.brand{display:flex;align-items:center;gap:var(--space-6);text-decoration:none;flex:none}
+.brand img{width:34px;height:34px;display:block;filter:drop-shadow(0 0 7px rgba(224,145,58,.35))}
+.brand .wordmark{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-sm);letter-spacing:2.5px;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+.brand .wordmark .hl{color:var(--amber)}
+.brand:hover .wordmark{color:#fff}
+.nav-sep{width:1px;height:26px;background:var(--hair-strong);flex:none;margin:0 var(--space-3)}
+.site-nav{display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap}
+.site-nav a{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-sm);letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-dim);text-decoration:none;padding:8px 4px;position:relative;transition:color var(--motion-base)}
+.site-nav a:hover{color:var(--amber-lt)}
+.site-nav a.active{color:var(--amber)}
+.site-nav a.active::after{content:"";position:absolute;left:4px;right:4px;bottom:0;height:2px;background:var(--amber);border-radius:2px}
+/* in-page quick-nav, pinned right (reuses the #qn-* component + ed-blackbox.js) */
+.header-qn{margin-left:auto;flex:none;display:flex;align-items:center;gap:var(--space-6)}
+.header-qn .qn-eyebrow{font-size:var(--fs-2xs);white-space:nowrap}
+.header-qn .qn-field{min-width:208px}
+.header-qn .qn-input{padding-top:7px;padding-bottom:7px}
+.header-qn .qn-panel{left:auto;right:0;width:min(440px,92vw);z-index:var(--z-overlay)}
+/* scroll-to-top button — sits in .header-qn between the eyebrow and the search field
+   (double-chevron SVG; behaviour from ed-blackbox.js module 4) */
+.qn-totop{flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:var(--panel2);border:1px solid var(--hair-strong);border-radius:var(--radius-md);color:var(--ink-dim);cursor:pointer;transition:color var(--motion-fast),border-color var(--motion-fast),background var(--motion-fast)}
+.qn-totop:hover{color:var(--amber-lt);border-color:var(--amber);background:var(--panel)}
+.qn-totop svg{width:15px;height:15px;display:block;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+/* in-header crumb — the site's only breadcrumb (the standalone .breadcrumbs nav was retired):
+   current page as the title, navigable parent trail beneath it (links, no Home) */
+.hdr-crumb{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;height:30px;line-height:1;white-space:nowrap;text-align:right}
+.hdr-crumb.solo{justify-content:center}
+.hdr-crumb.solo .hdr-crumb-title{top:0}
+.hdr-crumb-title{position:relative;top:2px;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-2xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--amber)}
+.hdr-crumb-trail{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-2xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--ink-faint);display:flex;align-items:center;gap:var(--space-4)}
+.hdr-crumb-trail .sep{opacity:.45}
+.hdr-crumb-trail a{color:inherit;text-decoration:none;transition:color .12s}
+.hdr-crumb-trail a:hover,.hdr-crumb-trail a:focus-visible{color:var(--amber-lt)}
+@media (max-width:560px){.hdr-crumb{display:none}}
+
+/* ---- 3. MASTHEAD ---- */
+header.masthead{padding:var(--space-13) 0;border-bottom:1px solid var(--hair-strong);margin-bottom:var(--space-4)}
+.kicker{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-sm);letter-spacing:5px;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:var(--space-6);margin-bottom:var(--space-9);flex-wrap:wrap}
+.kicker::before{content:"";width:34px;height:1px;background:var(--amber);opacity:.7}
+.kicker .sep{color:var(--ink-faint);opacity:.8}
+.kicker .id{margin-left:auto;color:var(--ink-faint);letter-spacing:3px;font-weight:500}
+h1.title{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(34px,6vw,62px);line-height:.98;letter-spacing:1px;color:var(--ink);text-transform:uppercase}
+h1.title span{color:var(--amber)}
+/* optional one-line role suffix on the title (ship × role dossiers) */
+h1.title .role{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:.32em;letter-spacing:3px;text-transform:uppercase;color:var(--accent);vertical-align:middle;margin-left:var(--space-7);border:1px solid var(--accent-soft);border-radius:var(--radius-sm);padding:5px 11px}
+.subtitle,.lede{margin-top:var(--space-8);font-size:clamp(15px,2.2vw,18px);color:var(--ink-dim);font-weight:300}
+.subtitle b,.lede b{color:var(--ink);font-weight:500}
+.masthead-meta{margin-top:var(--space-13);display:flex;flex-wrap:wrap;gap:var(--space-5) var(--space-13);font-family:'Saira Condensed',sans-serif;font-size:var(--fs-sm2);letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint)}
+.masthead-meta b{color:var(--amber-lt);font-weight:600}
+header.masthead .chips{margin-top:var(--space-9)}
+
+/* ---- 4. VERDICT / FIELD-BRIEFING CALLOUT ---- */
+/* Briefing box chrome is always AMBER, independent of the page's --accent group. */
+.verdict{margin:34px 0 var(--space-7);border:1px solid rgba(224,145,58,.4);border-radius:var(--radius-md);background:linear-gradient(180deg,rgba(224,145,58,.12),rgba(20,13,15,.6));padding:var(--space-14) var(--space-14) var(--space-13);position:relative;overflow:hidden}
+.verdict::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--amber),transparent)}
+.verdict .v-eyebrow{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:4px;text-transform:uppercase;color:var(--amber-lt);margin-bottom:var(--space-5)}
+.verdict h2{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(22px,4vw,32px);line-height:1.05;text-transform:uppercase;letter-spacing:.5px;color:var(--ink);margin-bottom:var(--space-3)}
+.verdict h2 em{font-style:normal;color:var(--amber-lt)}
+.verdict p{font-size:var(--fs-md2);color:var(--ink-dim);margin-top:var(--space-6);max-width:980px}
+/* optional "why" reason sub-grid inside the verdict box */
+.verdict .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-7);margin-top:var(--space-11)}
+.verdict .why > div{background:rgba(10,7,8,.5);border:1px solid var(--hair);border-radius:var(--radius-sm);padding:13px 15px}
+.verdict .why h4{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-xs2);letter-spacing:2px;text-transform:uppercase;color:var(--amber-lt);margin-bottom:5px}
+.verdict .why p{font-size:var(--fs-base);color:var(--ink-dim);margin:0;max-width:none}
+
+/* ---- 5. STAT GRID ---- */
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-7);margin:var(--space-11) 0 var(--space-2);align-items:stretch}
+.stat{background:rgba(10,7,8,.5);border:1px solid var(--hair);border-radius:var(--radius-md);padding:var(--space-6) var(--space-8);display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;height:100%}
+.stat .n{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-3xl);color:var(--amber-lt);line-height:1}
+.stat .n.fed{color:var(--fed-lt)}.stat .n.mar{color:var(--maroon-lt)}.stat .n.good{color:var(--good-lt)}
+.stat .l{font-size:var(--fs-sm2);color:var(--ink-dim);margin-top:var(--space-3);letter-spacing:.3px}
+/* roster stat tiles (by-role §02): bold name on the first line, descriptor on its
+   own line below, left-aligned. Only affects .l tiles that carry a <small>. */
+.stat .l b{font-weight:700;color:var(--ink)}
+.stat .l small{display:block;margin-top:2px;font-weight:400;color:var(--ink-dim)}
+/* ship-dossier rating card: standard .n number with a smaller dim "/100", plus a
+   ladder rating bar (.bar.mini) as the 2nd row, nudged down onto the label row.
+   Scoped to .stat so the ladder table's own .bar.mini is untouched. */
+.stat .n small{font-size:var(--fs-sm2);font-weight:600;color:var(--ink-dim);margin-left:2px}
+.stat .bar.mini{margin-top:var(--space-6)}
+/* ship render: framed 16:9 hull image. On a dossier it rides at the right of the
+   briefing (.verdict.has-render) — a two-column grid with the stat-grid spanning full
+   width beneath. Source renders are 160x90, so the frame is shown at native 160px to
+   stay pixel-sharp (upscaling blurs them). */
+.ship-figure{margin:0;border:1px solid var(--hair);border-radius:var(--radius-md);background:#000;overflow:hidden;line-height:0;box-shadow:0 2px 14px rgba(0,0,0,.4)}
+.ship-figure img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.ship-figure figcaption{line-height:1.3;padding:7px 10px;background:rgba(20,13,15,.85);font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:1px;font-size:var(--fs-sm2);color:var(--ink-faint)}
+.ship-figure figcaption b{color:var(--amber-lt);font-weight:600}
+.verdict.has-render{display:grid;grid-template-columns:1fr 160px;column-gap:var(--space-13);align-items:start}
+.verdict.has-render .stat-grid{grid-column:1 / -1}
+.verdict.has-render .ship-figure{width:160px}
+@media(max-width:760px){.verdict.has-render{grid-template-columns:1fr}.verdict.has-render .ship-figure{width:100%;max-width:160px}}
+
+/* ---- 6. SECTION + HEADING ---- */
+section{margin-top:var(--space-section);scroll-margin-top:74px}
+.sec-head{display:flex;align-items:center;gap:var(--space-8);margin-bottom:var(--space-4);border-bottom:1px solid var(--hair);padding-bottom:14px}
+/* box hugs the heading's cap height; the number rides smaller inside it */
+.sec-num{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(11px,1.8vw,15px);line-height:1;letter-spacing:1px;color:var(--bg);background:var(--amber);padding:.22em .42em;border-radius:var(--radius-xs);flex:none}
+.sec-head h2{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(21px,3.4vw,30px);text-transform:uppercase;letter-spacing:.6px;color:var(--ink);line-height:1.05}
+.sec-head .tag{margin-left:auto;font-family:'Saira Condensed',sans-serif;font-size:var(--fs-sm);letter-spacing:2px;text-transform:uppercase;color:var(--ink-faint);flex:none;align-self:center}
+p.lead{font-size:var(--fs-md);color:var(--ink-dim);margin:var(--space-7) 0 var(--space-2)}
+h3.subhead{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-h3);letter-spacing:.5px;text-transform:uppercase;color:var(--amber-lt);margin:var(--space-13) 0 var(--space-5)}
+/* sub-section header inside a section block (e.g. "The Case for X" / a playbook label) —
+   smaller than .subhead, ink (so an inline .sp-* keeps its colour); .play adds a gap above. */
+.case-hd{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-md);letter-spacing:.3px;color:var(--ink);margin:var(--space-8) 0 var(--space-5)}
+.case-hd.play{margin-top:var(--space-10)}
+
+/* ---- 7. LEGEND GRID ---- */
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-7);margin:var(--space-9) 0}
+.legend .lg{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius-md);padding:var(--space-8) var(--space-9)}
+.legend h4{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-sm);letter-spacing:2px;text-transform:uppercase;color:var(--amber-lt);margin-bottom:var(--space-6)}
+.legend .row{display:flex;align-items:baseline;gap:var(--space-5);font-size:var(--fs-base);color:var(--ink-dim);padding:var(--space-4) 0}
+.legend .row + .row{border-top:1px solid var(--hair)}.legend .row b{color:var(--ink);font-weight:600}
+.legend .row.tx{display:block;line-height:1.5}
+/* key–value rows (definition list in legend / term cards): a fixed key column + value
+   column with clear separation, top-aligned so multi-line values never push the key around.
+   Markup: .kv-row > .kv-k (optional .swatch + <b>key</b>) + .kv-v (value). */
+.kv-row{display:grid;grid-template-columns:minmax(56px,max-content) 1fr;column-gap:var(--space-7);align-items:baseline;padding:var(--space-4) 0;font-size:var(--fs-base);color:var(--ink-dim);line-height:1.5}
+.kv-row + .kv-row{border-top:1px solid var(--hair)}
+.kv-row .kv-k{display:inline-flex;align-items:center;gap:var(--space-4);color:var(--ink);font-weight:600;white-space:nowrap}
+.kv-row .kv-k b{font-weight:600}
+.kv-row .kv-v{min-width:0}
+/* Each .kv-row is its own grid, so a per-row max-content key column sizes independently and
+   the value columns don't line up across rows. When kv-rows share a legend card, promote the
+   card to the grid and let the rows adopt its tracks via subgrid, so every value aligns to one
+   column (a real table look, desktop + mobile). Graceful fallback where :has()/subgrid absent. */
+.legend .lg:has(> .kv-row){display:grid;grid-template-columns:minmax(56px,max-content) 1fr;column-gap:var(--space-7);align-content:start}
+.legend .lg:has(> .kv-row) > h4{grid-column:1/-1}
+.legend .lg > .kv-row{grid-column:1/-1;grid-template-columns:subgrid}
+@media (max-width:560px){.legend .lg:has(> .kv-row){column-gap:var(--space-6)}.kv-row .kv-k{white-space:normal}}
+/* table description — a table's caption moved below it (bold; sits where a footnote would) */
+.tbl-desc{font-weight:600;font-size:var(--fs-sm2);color:var(--ink-dim);margin:var(--space-5) 0 var(--space-9);line-height:1.5}
+.swatch{display:inline-block;vertical-align:middle;width:22px;height:10px;border-radius:var(--radius-xs);flex:none;margin-right:var(--space-4)}
+.sw-amber{background:var(--amber)}.sw-fed{background:var(--fed)}.sw-maroon{background:var(--maroon-lt)}.sw-good{background:var(--good)}
+
+/* ---- 8. CHIPS ---- */
+.chips{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+.chip{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-2xs);letter-spacing:.8px;text-transform:uppercase;padding:var(--space-1) 9px;border-radius:var(--radius-pill);border:1px solid var(--hair-strong);white-space:nowrap;color:var(--ink-dim)}
+.chip.amber{color:var(--amber-lt);border-color:rgba(224,145,58,.4)}
+.chip.fed{color:var(--fed-lt);border-color:rgba(79,159,214,.4)}
+.chip.maroon{color:var(--maroon-lt);border-color:rgba(177,49,64,.5);background:rgba(177,49,64,.10)}
+.chip.good{color:var(--good-lt);border-color:rgba(95,179,122,.45)}
+.chip.faint{color:var(--ink-faint)}
+/* superpower (allegiance) colour-coding — Federation red · Empire blue · Alliance green · Independent amber.
+   .sp-* tints power-name text; .chip.sp-* tints the allegiance chip. */
+.sp-fed{color:var(--maroon-lt)}.sp-emp{color:var(--fed-lt)}.sp-all{color:var(--good-lt)}.sp-ind{color:var(--amber-lt)}
+.chip.sp-fed{color:var(--maroon-lt);border-color:rgba(177,49,64,.45)}
+.chip.sp-emp{color:var(--fed-lt);border-color:rgba(79,159,214,.4)}
+.chip.sp-all{color:var(--good-lt);border-color:rgba(95,179,122,.45)}
+.chip.sp-ind{color:var(--amber-lt);border-color:rgba(224,145,58,.4)}
+/* role-variant pills — a row of links to the same hull's other role dossiers (used in a
+   dossier's §Role & Overview, under a .subhead). Each pill: role name in its role hue +
+   headline-style rating (big number, small /100). Add .r-<role> for the role colour. */
+.vchips{display:flex;flex-wrap:wrap;gap:var(--space-3);margin:var(--space-4) 0 var(--space-2)}
+.vchip{display:inline-flex;align-items:baseline;gap:7px;text-decoration:none;padding:5px 12px;border:1px solid var(--hair-strong);border-radius:var(--radius-pill);background:rgba(255,255,255,.015);transition:background .15s}
+.vchip:hover{background:rgba(255,255,255,.06)}
+.vchip .vrole{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-xs);letter-spacing:.8px;text-transform:uppercase;font-weight:600;line-height:1}
+.vchip .vrate{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-sm2);line-height:1;color:var(--ink)}
+.vchip .vrate small{font-size:var(--fs-2xs);font-weight:600;color:var(--ink-dim);margin-left:1px}
+.vchip.r-combat{border-color:var(--role-combat-soft)}.vchip.r-combat .vrole{color:var(--role-combat)}
+.vchip.r-ax{border-color:var(--role-ax-soft)}.vchip.r-ax .vrole{color:var(--role-ax)}
+.vchip.r-exploration{border-color:var(--role-exploration-soft)}.vchip.r-exploration .vrole{color:var(--role-exploration)}
+.vchip.r-mining{border-color:var(--role-mining-soft)}.vchip.r-mining .vrole{color:var(--role-mining)}
+.vchip.r-multipurpose{border-color:var(--role-multipurpose-soft)}.vchip.r-multipurpose .vrole{color:var(--role-multipurpose)}
+.vchip.r-passenger{border-color:var(--role-passenger-soft)}.vchip.r-passenger .vrole{color:var(--role-passenger)}
+.vchip.r-trading{border-color:var(--role-trading-soft)}.vchip.r-trading .vrole{color:var(--role-trading)}
+
+/* ---- 9. PERMALINK ANCHOR ---- */
+.permalink{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--ink-faint);text-decoration:none;font-size:var(--fs-md);line-height:1;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);flex:none;opacity:.5;transition:opacity var(--motion-fast),color var(--motion-fast)}
+.permalink:hover{opacity:1;color:var(--amber-lt)}
+
+/* ---- 10. RECORD CARD  (generalised from the engineer row card) ----
+   A two-column data record: identity rail (banner + name + chips + meta)
+   on the left, a field grid on the right, with optional note + description
+   strips spanning the full width. Accent edge set per record. */
+.rec-list{display:flex;flex-direction:column;gap:var(--space-7);margin-top:var(--space-10)}
+.rec{display:grid;grid-template-columns:248px 1fr;background:var(--panel);border:1px solid var(--hair);border-left:3px solid var(--c-accent);border-radius:var(--radius-md);overflow:hidden;scroll-margin-top:74px;transition:border-color var(--motion-base),background var(--motion-base)}
+.rec:hover{background:var(--panel2)}
+.rec:target{box-shadow:0 0 0 1px var(--c-accent-soft),0 0 26px var(--c-accent-glow)}
+/* accent variants — set the left edge + banner top glow */
+.rec.ac-amber{border-left-color:var(--amber)}
+.rec.ac-fed{border-left-color:var(--fed)}
+.rec.ac-maroon{border-left-color:var(--maroon-lt)}
+.rec.ac-good{border-left-color:var(--good)}
+.rec-id{grid-column:1;grid-row:1;padding:0;border-right:1px solid var(--hair);background:rgba(8,5,6,.55);display:flex;flex-direction:column}
+.rec-banner{position:relative;width:100%;height:148px;overflow:hidden;border-bottom:1px solid var(--hair)}
+.rec-banner img{width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block;filter:saturate(.92) contrast(1.02)}
+.rec-banner::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 55%,rgba(8,5,6,.78))}
+.rec.ac-amber .rec-banner{box-shadow:inset 0 3px 0 rgba(224,145,58,.55)}
+.rec.ac-fed .rec-banner{box-shadow:inset 0 3px 0 rgba(79,159,214,.55)}
+.rec.ac-maroon .rec-banner{box-shadow:inset 0 3px 0 rgba(177,49,64,.6)}
+.rec.ac-good .rec-banner{box-shadow:inset 0 3px 0 rgba(95,179,122,.55)}
+/* banner placeholder when no image is supplied */
+.rec-banner.ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(139,35,50,.25),rgba(224,145,58,.12));color:var(--ink-faint);font-family:'Chakra Petch',sans-serif;letter-spacing:3px;font-size:var(--fs-xs);text-transform:uppercase}
+.rec-id-body{padding:15px var(--space-9) var(--space-8);display:flex;flex-direction:column;flex:1}
+.rec-name{display:flex;align-items:flex-start;gap:var(--space-4)}
+.rec h3{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-xl);letter-spacing:.4px;color:var(--ink);line-height:1.1;flex:1}
+.rec-head{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-sm);letter-spacing:.7px;text-transform:uppercase;color:var(--amber-lt);margin:5px 0 var(--space-6)}
+.rec.ac-fed .rec-head{color:var(--fed-lt)}
+.rec.ac-maroon .rec-head{color:var(--maroon-lt)}
+.rec-id .chips{margin-bottom:var(--space-6)}
+.rec-name + .chips{margin-top:var(--space-8)}
+.rec-meta{margin-top:auto;font-size:var(--fs-sm2);color:var(--ink-faint);font-style:italic}
+.rec-meta a{text-decoration:none;border-bottom:1px solid rgba(224,145,58,.3)}
+/* right-side field grid — areas are illustrative; relabel per page */
+.rec-body{grid-column:2;grid-row:1;padding:17px var(--space-10);display:grid;grid-template-columns:1fr 1fr 1.15fr;grid-template-areas:"a b e" "c d e";gap:15px var(--space-12);align-content:start}
+.area-a{grid-area:a}.area-b{grid-area:b}.area-c{grid-area:c}.area-d{grid-area:d}.area-e{grid-area:e}
+.rc .rcl{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:var(--space-2)}
+.rc .rcv{font-size:var(--fs-base);color:var(--ink-dim);line-height:1.5}.rc .rcv b{color:var(--ink);font-weight:600}
+.rc .rcv a{text-decoration:none;border-bottom:1px solid rgba(224,145,58,.3)}
+/* key/value mini-grid (e.g. Location › System/Body/Settlement) */
+.kvgrid{display:grid;grid-template-columns:auto 1fr;gap:5px 11px;align-items:baseline;margin-top:var(--space-2)}
+.kvgrid .lk{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-5);font-family:'Chakra Petch',sans-serif;font-size:var(--fs-xs2);font-weight:600;letter-spacing:0;text-transform:none;color:var(--fed-lt);white-space:nowrap;text-align:left}
+.kvgrid .lk::after{content:"›";color:var(--ink-faint);font-weight:400}
+.kvgrid .lv{font-size:var(--fs-base);color:var(--ink);line-height:1.4}
+.kvgrid .lv b{color:var(--ink);font-weight:600}
+.kvgrid .pmt{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-micro);font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--maroon-lt);border:1px solid rgba(177,49,64,.5);border-radius:var(--radius-xs);padding:1px 5px;margin-left:5px;vertical-align:middle;white-space:nowrap}
+/* power-profile card variant (.rec.pw): three equal columns — Ethos | Signature perk | Best for —
+   with gold field labels and the portrait framed from the top so the head is never cropped */
+/* Ethos block on top, then a 50%-gold split line, then the three fields below */
+.rec.pw .rec-body{grid-template-columns:1fr 1fr 1fr;grid-template-areas:"e e e" "a b c";gap:var(--space-8) var(--space-10)}
+.rec.pw .rc .rcl{color:var(--amber-lt)}
+.rec.pw .rcv{font-size:var(--fs-sm2);line-height:1.5}
+.rec.pw .area-e{border-bottom:1px solid var(--hair);padding-bottom:var(--space-8)}
+.rec.pw .rec-banner img{object-position:center top}
+.rec.pw .ethos-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-8);margin-top:var(--space-4)}
+/* aspect labels: ink, Chakra, sentence-case — visually distinct from the gold uppercase "Ethos" */
+.rec.pw .et-asp{font-family:'Chakra Petch',sans-serif;font-weight:600;letter-spacing:.2px;text-transform:none;font-size:var(--fs-sm2);color:var(--ink)}
+.rec.pw .et-asp b{color:var(--ink);font-weight:600}
+.rec.pw .et p{font-size:var(--fs-sm2);color:var(--ink-dim);line-height:1.5;margin-top:var(--space-3)}
+/* ethos-type value: a distinct palette colour per type (Combat / Finance / Social / Covert) */
+.et-v{font-weight:600;white-space:nowrap}
+.et-combat{color:var(--maroon-lt)}
+.et-finance{color:#b388e6}
+.et-social{color:var(--fed-lt)}
+.et-covert{color:var(--good-lt)}
+@media (max-width:680px){.rec.pw .rec-body{grid-template-columns:1fr;grid-template-areas:"e" "a" "b" "c"}.rec.pw .ethos-cols{grid-template-columns:1fr;gap:var(--space-6)}}
+/* even-width tick-matrix table — equal check columns, centred ticks */
+table.data.matrix{table-layout:fixed}
+table.data.matrix th:first-child,table.data.matrix td:first-child{width:40%}
+table.data.matrix th:not(:first-child),table.data.matrix td:not(:first-child){width:20%;text-align:center}
+.kv-tbd{color:var(--ink-faint);font-style:italic;opacity:.7}
+/* bullet list inside a record */
+ul.reclist{list-style:none;margin:0;padding:0}
+ul.reclist li{font-size:var(--fs-base);color:var(--ink-dim);line-height:1.55;padding-left:14px;text-indent:-14px}
+ul.reclist li::before{content:"· ";color:var(--amber-lt);font-weight:600}
+ul.reclist a{color:var(--amber-lt);text-decoration:none;border-bottom:1px solid rgba(244,177,95,.30)}
+ul.reclist a:hover{color:var(--amber);border-bottom-color:var(--amber-lt)}
+/* full-width note + description strips */
+.rec-note{grid-column:1 / -1;border-top:1px solid var(--hair);padding:13px var(--space-10) var(--space-7);background:rgba(8,5,6,.25)}
+.rec-note .rn-eyebrow{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-micro);font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:7px}
+.rec-note .rn-body{font-size:var(--fs-base);color:var(--ink-dim);line-height:1.55}
+.rec-desc{grid-column:1 / -1;border-top:1px solid var(--hair);padding:13px var(--space-10) var(--space-7);background:rgba(10,7,8,.32)}
+.rec-desc .dq-eyebrow{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-micro);font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:7px}
+.rec-desc .dq{font-size:var(--fs-base);color:var(--ink-dim);font-style:italic;line-height:1.58}
+.rec-desc.nobio .dq{color:var(--ink-faint);opacity:.7}
+@media (max-width:720px){
+  .rec{grid-template-columns:1fr}
+  .rec-id{grid-column:1;grid-row:auto;border-right:none;border-bottom:1px solid var(--hair)}
+  .rec-body{grid-column:1;grid-row:auto;grid-template-columns:1fr 1fr;grid-template-areas:"a b" "c d" "e e"}
+  .rec-meta{margin-top:var(--space-4)}
+}
+@media (max-width:480px){.rec-body{grid-template-columns:1fr;grid-template-areas:"a" "b" "c" "d" "e"}}
+
+/* ---- 11. DATA / COMPARISON TABLE ---- */
+/* The wrapper is NOT a scroll container on desktop — that lets the header pin to the
+   viewport on PAGE scroll (a scroll container would trap position:sticky). Horizontal
+   scroll is added only on narrow viewports, mirroring ship-role-matrix's .mx-wrap. */
+.tbl-scroll{position:relative;margin:var(--space-9) 0;border:1px solid var(--hair);border-radius:var(--radius-md)}
+@media(max-width:920px){.tbl-scroll{overflow-x:auto}}
+/* DS default: pinned table headers, sticky UNDER the 62px site-header. Each table family's
+   thead th carries an opaque background (var(--bg2)) so scrolled rows don't bleed through.
+   On narrow viewports the .tbl-scroll becomes an overflow-x scroll container, which TRAPS
+   position:sticky (it would then pin to the container, not the viewport, and float mid-table) —
+   and overflow-x:auto forces overflow-y:auto, so this can't be undone in CSS. So below the
+   horizontal-scroll breakpoint the native sticky is un-pinned here, and ed-blackbox.js module 6
+   re-creates a viewport-pinned header via a fixed .sthc clone (synced to the wrapper's h-scroll). */
+.tbl-scroll thead th{position:sticky;top:62px;z-index:var(--z-sticky)}
+@media(max-width:920px){.tbl-scroll thead th{position:static}}
+/* Mobile sticky-header clone (JS module 6): a fixed copy of the thead, pinned under the
+   site-header while the table is in view and horizontally synced to the scroll wrapper.
+   Purely presentational (pointer-events:none); only ever shown <=920px by the script. */
+.sthc{position:fixed;overflow:hidden;pointer-events:none;z-index:var(--z-sticky);display:none;background:var(--bg);box-shadow:0 6px 14px rgba(0,0,0,.34)}
+.sthc table{margin:0}
+.sthc thead th{position:static !important;top:auto !important}
+@media(min-width:921px){.sthc{display:none !important}}
+table.data{width:100%;border-collapse:collapse;font-size:var(--fs-base);min-width:560px}
+table.data thead th{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--amber-lt);text-align:left;padding:11px var(--space-7);background:var(--bg2);border-bottom:1px solid var(--hair-strong);white-space:nowrap}
+/* Header alignment follows the column's data alignment: a right-aligned (.num) or
+   centered (.center) column carries that class on BOTH its <td> and its <th>, so the
+   header sits over the figures it labels. Applies to every table family — data, l3, cmp.
+   Sweep that keeps headers in sync: scripts/align-table-headers.py */
+table.data thead th.num,table.l3 thead th.num,table.cmp thead th.num{text-align:right}
+table.data thead th.center,table.l3 thead th.center,table.cmp thead th.center,
+table.data td.center,table.l3 td.center,table.cmp td.center{text-align:center}
+table.data tbody td{padding:var(--space-5) var(--space-7);border-bottom:1px solid var(--hair);color:var(--ink-dim);vertical-align:top}
+table.data tbody tr:hover{background:var(--panel2)}
+table.data tbody tr:last-child td{border-bottom:none}
+table.data td b{color:var(--ink);font-weight:600}
+table.data td.num,table.l3 td.num,table.cmp td.num{font-family:'Chakra Petch',sans-serif;text-align:right;color:var(--ink)}
+table.data .row-rank{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--amber-lt)}
+table.data tr.hl td{background:rgba(224,145,58,.06)}
+
+/* ---- 12. RATING BAR  (linear 1–100 suitability meter) ---- */
+.rating{display:flex;align-items:center;gap:var(--space-6);margin:var(--space-3) 0}
+.rating .score{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-2xl);color:var(--amber-lt);line-height:1;min-width:54px}
+.rating .score small{font-size:var(--fs-sm);color:var(--ink-faint);font-weight:500}
+.bar{flex:1;height:8px;background:rgba(8,5,6,.6);border:1px solid var(--hair);border-radius:var(--radius-md);overflow:hidden}
+/* fill width AND colour both derive from --pct (0–100): a single solid hue per bar,
+   red at 100 → yellow at 50 → green at 0 (hue 0→60→120). */
+.bar > i{display:block;height:100%;width:calc(var(--pct,0)*1%);background:hsl(calc((120 - var(--pct,0)*1.2)*1deg) 70% 48%);border-radius:var(--radius-md)}
+.bar.fed > i{background:linear-gradient(90deg,var(--fed),var(--fed-lt))}
+.bar.good > i{background:linear-gradient(90deg,var(--good),var(--good-lt))}
+.bar.mini{height:6px;border:none;flex:none;width:100%;margin-top:5px}
+
+/* ---- 13. CORNER-BRACKET HUD PANEL  (house-style framed box) ---- */
+.hud{position:relative;background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius-md);padding:var(--space-11) var(--space-12);margin-top:var(--space-9);margin-bottom:var(--space-9)}
+.hud::before,.hud::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--c-accent);pointer-events:none}
+.hud::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.hud::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
+.hud .hud-c1,.hud .hud-c2{position:absolute;width:16px;height:16px;border:2px solid var(--c-accent);pointer-events:none}
+.hud .hud-c1{top:-1px;right:-1px;border-left:none;border-bottom:none}
+.hud .hud-c2{bottom:-1px;left:-1px;border-right:none;border-top:none}
+.hud h4{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-sm2);letter-spacing:2px;text-transform:uppercase;color:var(--amber-lt);margin-bottom:var(--space-5)}
+.hud p{font-size:var(--fs-body);color:var(--ink-dim)}
+
+/* ---- 14. CALLOUT / ASIDE  (tip / warning / danger) ---- */
+.callout{border:1px solid var(--hair);border-left:3px solid var(--c-accent);border-radius:var(--radius-md);padding:var(--space-8) var(--space-10);margin-top:var(--space-8);background:rgba(10,7,8,.4)}
+.callout.tip{border-left-color:var(--good)}
+.callout.warn{border-left-color:var(--amber)}
+.callout.danger{border-left-color:var(--danger)}
+.callout .co-eyebrow,.callout .lbl{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-2xs);letter-spacing:2.5px;text-transform:uppercase;color:var(--c-accent-lt);margin-bottom:var(--space-3);display:block}
+.callout.tip .co-eyebrow,.callout.tip .lbl{color:var(--good-lt)}
+.callout.warn .co-eyebrow,.callout.warn .lbl{color:var(--amber-lt)}
+.callout.danger .co-eyebrow,.callout.danger .lbl{color:var(--danger)}
+.callout p{font-size:var(--fs-body);color:var(--ink-dim)}
+/* a section paragraph that resumes right after a callout — .callout has no
+   bottom margin and section>p has no top margin, so restore the inter-block gap */
+section > .callout + p{margin-top:var(--space-10)}
+/* icon variant — leading glyph in the accent colour */
+.callout.icon{position:relative;padding-left:48px}
+.callout.icon::before{content:"\25C8";position:absolute;left:18px;top:15px;font-size:var(--fs-lg);color:var(--c-accent)}
+.callout.icon.tip::before{content:"\2605";color:var(--good)}
+.callout.icon.warn::before{content:"\25B2";color:var(--amber)}
+.callout.icon.danger::before{content:"\25B2";color:var(--danger)}
+
+/* ---- 15. QUICK-NAV  (in-page jump module — lives in the global header via
+   .header-qn; the #qn-* dropdown parts below are shared by it. The standalone
+   nav.quicknav bar + its .qn-hint were removed when the header gained the quick-nav.) ---- */
+.qn-eyebrow{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-2xs);letter-spacing:3px;text-transform:uppercase;color:var(--amber);flex:none}
+.qn-dd{position:relative}
+.qn-field{position:relative;display:inline-flex;align-items:center;min-width:268px;background:var(--panel2);border:1px solid var(--hair-strong);border-radius:var(--radius-md);transition:border-color var(--motion-fast)}
+.qn-field:focus-within{border-color:var(--amber)}
+.qn-ico{position:absolute;left:11px;color:var(--ink-faint);font-size:var(--fs-md);pointer-events:none}
+.qn-input{flex:1;width:100%;background:transparent;border:none;outline:none;color:var(--ink);font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-sm2);letter-spacing:.4px;padding:var(--space-4) var(--space-4) var(--space-4) 33px}
+.qn-input::placeholder{color:var(--ink-faint);font-weight:500}
+.qn-clear{background:transparent;border:none;color:var(--ink-faint);font-size:var(--fs-xl);line-height:1;cursor:pointer;padding:var(--space-1) 11px;transition:color var(--motion-fast)}
+.qn-clear:hover{color:var(--amber)}
+.qn-panel{position:absolute;top:calc(100% + 6px);left:0;width:380px;max-height:62vh;overflow-y:auto;background:rgba(16,10,12,.99);border:1px solid var(--hair-strong);border-radius:var(--radius-lg);box-shadow:0 20px 56px rgba(0,0,0,.6);padding:var(--space-3);display:none}
+.qn-dd.open .qn-panel{display:block}
+.qn-item{display:flex;align-items:center;gap:var(--space-5);padding:7px var(--space-5);border-radius:var(--radius-md);font-family:'Saira',sans-serif;font-size:var(--fs-base);color:var(--ink-dim);text-decoration:none}
+.qn-item:hover{background:var(--panel2);color:var(--ink)}
+.qn-dot{width:7px;height:7px;border-radius:var(--radius-round);flex:none;background:var(--amber)}
+.qn-dot.amber{background:var(--amber)}.qn-dot.fed{background:var(--fed)}.qn-dot.maroon{background:var(--maroon-lt)}.qn-dot.good{background:var(--good)}
+.qn-nm{flex:1}
+.qn-side{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-micro);letter-spacing:.8px;text-transform:uppercase;color:var(--ink-faint);flex:none}
+.qn-item.qn-active{background:var(--panel2);color:var(--ink)}
+.qn-sec{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:var(--fs-micro);letter-spacing:2px;text-transform:uppercase;color:var(--ink-faint);padding:var(--space-5) var(--space-5) var(--space-2)}
+.qn-empty{padding:var(--space-5) var(--space-6);color:var(--ink-faint);font-size:var(--fs-sm2);font-style:italic}
+.qn-panel::-webkit-scrollbar{width:9px}
+.qn-panel::-webkit-scrollbar-thumb{background:var(--hair-strong);border-radius:var(--radius-md)}
+@media (max-width:560px){.qn-field{min-width:0;flex:1}.qn-eyebrow{display:none}}
+
+/* ============================================================
+   EXTENDED COMPONENT KIT  (drawn from the wider field-manual set
+   — ship × role dossiers, role ladders, activity & site guides —
+   and re-themed onto the locked tokens above)
+   ============================================================ */
+
+/* ---- 16. STICKY TOC  (horizontal section nav) ---- */
+nav.toc{position:sticky;top:0;z-index:var(--z-sticky);display:flex;gap:var(--space-2);overflow-x:auto;flex-wrap:nowrap;margin:var(--space-9) -22px 0;padding:11px var(--space-11);background:rgba(10,7,8,.9);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);border-bottom:1px solid var(--hair-strong)}
+nav.toc a{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-xs);font-weight:600;letter-spacing:.4px;color:var(--ink-faint);text-decoration:none;padding:5px 9px;border:1px solid transparent;border-radius:var(--radius-sm);white-space:nowrap;transition:color var(--motion-fast),border-color var(--motion-fast),background var(--motion-fast)}
+nav.toc a:hover,nav.toc a.active{color:var(--amber-lt);border-color:var(--hair-strong);background:var(--panel)}
+nav.toc::-webkit-scrollbar{height:0}
+
+/* ---- 17. RATING DIAL  (conic-gradient suitability gauge) ---- */
+.ratebox{margin-top:var(--space-13);display:flex;align-items:center;gap:var(--space-11);flex-wrap:wrap;border:1px solid var(--hair-strong);border-radius:var(--radius-md);background:linear-gradient(180deg,rgba(224,145,58,.10),rgba(20,13,15,.5));padding:var(--space-11) var(--space-12)}
+.dial{--v:78;width:96px;height:96px;border-radius:var(--radius-round);flex:0 0 auto;position:relative;display:flex;align-items:center;justify-content:center;background:conic-gradient(var(--c-accent) calc(var(--v)*1%),rgba(255,255,255,.06) 0)}
+.dial::after{content:"";position:absolute;inset:9px;border-radius:var(--radius-round);background:var(--bg2);border:1px solid var(--hair)}
+.dial .num{position:relative;z-index:var(--z-base);font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-4xl);color:var(--ink)}
+.dial .num small{font-size:var(--fs-sm2);color:var(--ink-faint);font-weight:500}
+.ratebox .rl{flex:1;min-width:240px}
+.ratebox .rl .t{font-family:'Saira Condensed',sans-serif;letter-spacing:.34em;text-transform:uppercase;font-size:var(--fs-sm);color:var(--amber);font-weight:600}
+.ratebox .rl .d{font-size:var(--fs-md2);color:var(--ink-dim);margin-top:5px}
+
+/* ---- 18. SPEC GRID  (seamless technical readout, 1px gridlines) ---- */
+.specgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:var(--radius-md);overflow:hidden;margin:var(--space-9) 0}
+.specgrid .cell{background:var(--panel);padding:13px 15px}
+.specgrid .k{font-family:'Saira Condensed',sans-serif;letter-spacing:.18em;text-transform:uppercase;font-size:var(--fs-xs);color:var(--amber-lt)}
+.specgrid .v{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-xl);color:var(--ink);margin-top:3px}
+.specgrid .v small{font-size:var(--fs-sm);color:var(--ink-faint);font-weight:400}
+
+/* ---- 19. LOADOUT TABLE  (grouped multi-state build table) ---- */
+table.l3{width:100%;border-collapse:collapse;font-size:var(--fs-base);min-width:680px}
+table.l3 thead th{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--amber-lt);text-align:left;padding:var(--space-5) var(--space-6);background:var(--bg2);border-bottom:1px solid var(--hair-strong)}
+table.l3 td{padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--hair);vertical-align:top}
+table.l3 tr:last-child td{border-bottom:none}
+table.l3 td.slot{font-family:'Saira Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;font-size:var(--fs-sm);color:var(--ink-dim);white-space:nowrap}
+table.l3 td.st{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-sm2);color:var(--ink)}
+table.l3 td.eng{font-size:var(--fs-sm2);color:var(--amber-lt)}
+table.l3 td.note{font-size:var(--fs-xs2);color:var(--ink-dim);line-height:1.5;min-width:200px}
+table.l3 .grouprow td{background:linear-gradient(90deg,rgba(168,109,44,.5),transparent);color:var(--ink);font-family:'Saira Condensed',sans-serif;letter-spacing:.16em;text-transform:uppercase;font-size:var(--fs-xs2);font-weight:600}
+
+/* loadout EXPORT rows (§3-State Loadout footer): per-state "Open in Coriolis / EDSY" links
+   + "Copy SLEF" clipboard button. Cells are left-aligned (table.l3 default). The lex-* classes
+   are export-specific so no rating/loadout tooling parses these rows. Toast is global chrome. */
+table.l3 tr.lex-foot td{background:linear-gradient(90deg,rgba(79,159,214,.32),transparent)}
+table.l3 td.lex-lbl{font-family:'Chakra Petch',sans-serif;color:var(--ink);white-space:nowrap}
+.lex-btn{display:inline-flex;align-items:center;gap:5px;font-family:'Chakra Petch',sans-serif;font-size:var(--fs-sm2);color:var(--amber-lt);text-decoration:none;background:none;border:1px solid var(--hair-strong);border-radius:var(--radius-md);padding:3px 9px;cursor:pointer;transition:border-color var(--motion-base),color var(--motion-base)}
+.lex-btn:hover{border-color:var(--amber);color:var(--amber-lt)}
+.lex-ico{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.lex-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);background:var(--panel);border:1px solid var(--hair-strong);border-left:3px solid var(--good);color:var(--ink);font-size:var(--fs-sm);padding:11px 18px;border-radius:var(--radius-lg);box-shadow:0 8px 30px rgba(0,0,0,.5);opacity:0;transition:opacity var(--motion-base),transform var(--motion-base);z-index:200;display:flex;align-items:center;gap:9px}
+.lex-toast.show{opacity:1;transform:translate(-50%,0)}
+.lex-toast svg{width:16px;height:16px;fill:none;stroke:var(--good);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---- 20. COMPARISON TABLE w/ PROS-CONS CELLS ---- */
+table.cmp{width:100%;border-collapse:collapse;font-size:var(--fs-base);min-width:620px;table-layout:fixed}
+table.cmp thead th{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--amber-lt);text-align:left;padding:var(--space-5) var(--space-6);background:var(--bg2);border-bottom:1px solid var(--hair-strong)}
+table.cmp td{padding:9px var(--space-6);border-bottom:1px solid var(--hair);vertical-align:top;color:var(--ink-dim)}
+table.cmp tr:last-child td{border-bottom:none}
+table.cmp td.mod{font-family:'Chakra Petch',sans-serif;color:var(--ink);font-size:var(--fs-base)}
+table.cmp td.pcc{font-size:var(--fs-sm2);line-height:1.45}
+table.cmp td.pcc span{display:block;margin:1px 0}
+table.cmp td.pcc .p{color:var(--good)}
+table.cmp td.pcc .c{color:var(--amber-lt)}
+table.cmp td.pcc .p::before{content:"+ ";font-weight:700}
+table.cmp td.pcc .c::before{content:"\2212 ";font-weight:700}
+table.cmp td.pcc .base{color:var(--ink-faint);font-style:italic}
+.rscore{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--ink)}
+
+/* rating-rationale SCORECARD — a table.data variant used by the dossier "Why This
+   Rating" section. Columns: Role factor | Score (earned/weight + .bar.mini) | Why.
+   Widths come from an inline <colgroup> (190px / 150px / auto). The amber .totalrow
+   shows the weighted total, which equals the ship's headline suitability rating.
+   NOTE: uses its OWN classes (td.fct / span.scval), never the rating-table classes
+   (td.mod / span.rscore), so the ratings tooling (compute/reconcile/audit) ignores it. */
+table.data.scorecard{table-layout:fixed}
+table.data.scorecard td.fct{font-family:'Chakra Petch',sans-serif;color:var(--ink);font-size:var(--fs-base)}
+table.data.scorecard th.sc,table.data.scorecard td.sc{text-align:center}
+table.data.scorecard td.sc{white-space:nowrap;vertical-align:middle}
+table.data.scorecard .scval{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--ink)}
+table.data.scorecard td.sc .bar.mini{margin:6px auto 0;max-width:120px}
+table.data.scorecard td.wcell{font-size:var(--fs-sm2);line-height:1.5;color:var(--ink-dim)}
+.scorecard .den{color:var(--ink-faint);font-weight:400;font-size:.78em;margin-left:1px}
+table.data.scorecard tr.totalrow td{background:rgba(224,145,58,.06)}
+table.data.scorecard tr.totalrow td,
+table.data.scorecard tr.totalrow td.fct b,
+table.data.scorecard tr.totalrow .scval,
+table.data.scorecard tr.totalrow em{color:var(--amber-lt)}
+table.data.scorecard tr.totalrow .den{color:var(--amber);opacity:.7}
+
+/* ---- 21. CARD GRID ---- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--space-7);margin:var(--space-9) 0}
+/* Column count — how many cards share one content-width row, set on the whole container.
+   Pick by the LARGEST card's word count (longer cards want fewer, wider columns):
+   <75 words → .four (~4/row) · 3 light cards → .three · 75–150 → .two (half width) ·
+   150+ → .one (full content width). Plain .cards (no count) keeps an adaptive ~3–4/row grid. */
+.cards.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards.one{grid-template-columns:1fr}
+@media (max-width:980px){.cards.four,.cards.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.cards.four,.cards.three,.cards.two{grid-template-columns:1fr}}
+/* Cards paint with the component accent — amber on every page (NOT the page accent).
+   Override one card's top border with .ac-fed / .ac-maroon / .ac-good / .ac-amber, or use
+   the page accent with class="accent-page" on the card (or its .cards container). */
+.card{border:1px solid var(--hair-strong);border-top:3px solid var(--c-accent);border-radius:var(--radius-sm);padding:var(--space-8) var(--space-9);background:linear-gradient(180deg,rgba(28,18,20,.55),rgba(10,7,8,.4))}
+.card .ico{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-sm);letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:var(--space-3);display:block}
+.card h4{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-lg);letter-spacing:.4px;color:var(--ink);margin-bottom:var(--space-3)}
+.card p{font-size:var(--fs-body);color:var(--ink-dim);margin:var(--space-2) 0}
+.card.ac-amber{border-top-color:var(--amber)}.card.ac-fed{border-top-color:var(--fed)}.card.ac-maroon{border-top-color:var(--maroon-lt)}.card.ac-good{border-top-color:var(--good)}
+/* ship-role accents — top border + eyebrow/title follow the per-role --role-* hue (same
+   palette as the index ship-grid role tags). Use .ac-role-<role> to colour a card by role. */
+.card.ac-role-combat{border-top-color:var(--role-combat)}.card.ac-role-ax{border-top-color:var(--role-ax)}.card.ac-role-mining{border-top-color:var(--role-mining)}.card.ac-role-trading{border-top-color:var(--role-trading)}.card.ac-role-exploration{border-top-color:var(--role-exploration)}.card.ac-role-passenger{border-top-color:var(--role-passenger)}.card.ac-role-multipurpose{border-top-color:var(--role-multipurpose)}
+.card.ac-role-combat .c-eyebrow,.card.ac-role-combat .ico{color:var(--role-combat)}.card.ac-role-ax .c-eyebrow,.card.ac-role-ax .ico{color:var(--role-ax)}.card.ac-role-mining .c-eyebrow,.card.ac-role-mining .ico{color:var(--role-mining)}.card.ac-role-trading .c-eyebrow,.card.ac-role-trading .ico{color:var(--role-trading)}.card.ac-role-exploration .c-eyebrow,.card.ac-role-exploration .ico{color:var(--role-exploration)}.card.ac-role-passenger .c-eyebrow,.card.ac-role-passenger .ico{color:var(--role-passenger)}.card.ac-role-multipurpose .c-eyebrow,.card.ac-role-multipurpose .ico{color:var(--role-multipurpose)}
+/* role-coloured masthead h1 .role tag — same palette as the index ship-grid role tags. Add .ac-role-<role> beside .role. */
+h1.title .role.ac-role-combat{color:var(--role-combat);border-color:var(--role-combat-soft)}h1.title .role.ac-role-ax{color:var(--role-ax);border-color:var(--role-ax-soft)}h1.title .role.ac-role-mining{color:var(--role-mining);border-color:var(--role-mining-soft)}h1.title .role.ac-role-trading{color:var(--role-trading);border-color:var(--role-trading-soft)}h1.title .role.ac-role-exploration{color:var(--role-exploration);border-color:var(--role-exploration-soft)}h1.title .role.ac-role-passenger{color:var(--role-passenger);border-color:var(--role-passenger-soft)}h1.title .role.ac-role-multipurpose{color:var(--role-multipurpose);border-color:var(--role-multipurpose-soft)}
+/* titled-card header (h3 + right-aligned eyebrow) + micro footnote — alt to .ico+h4 */
+.card .c-head{display:flex;align-items:baseline;gap:var(--space-6);flex-wrap:wrap;margin-bottom:var(--space-2)}
+.card h3{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-h3);letter-spacing:.4px;color:var(--ink);line-height:1.15}
+.card .c-eyebrow{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--amber-lt);flex-basis:100%;margin-top:var(--space-1)}
+.card.ac-good .c-eyebrow{color:var(--good-lt)}.card.ac-maroon .c-eyebrow{color:var(--maroon-lt)}.card.ac-fed .c-eyebrow{color:var(--fed-lt)}
+/* .ico eyebrow follows the card accent too (default amber) */
+.card.ac-good .ico{color:var(--good-lt)}.card.ac-maroon .ico{color:var(--maroon-lt)}.card.ac-fed .ico{color:var(--fed-lt)}
+/* card kvgrid labels follow the card accent (base .kvgrid .lk is fed-blue) */
+.card.ac-maroon .kvgrid .lk{color:var(--maroon-lt)}.card.ac-good .kvgrid .lk{color:var(--good-lt)}
+.card .micro{font-size:var(--fs-sm2);color:var(--ink-faint);font-style:italic;margin-top:var(--space-5);border-top:1px solid var(--hair);padding-top:var(--space-5)}
+.card .micro b{color:var(--amber-lt);font-weight:600;font-style:normal}
+/* external-link glyph (↗) sitting inline right after a card title */
+.card h3 .cb-ext{color:var(--amber-lt);text-decoration:none;font-weight:400;font-size:.72em;margin-left:.35em;white-space:nowrap}
+.card h3 .cb-ext:hover{color:var(--amber)}
+/* tag row under a card title — left-aligned pills */
+.card-tags{display:flex;flex-wrap:wrap;gap:var(--space-3);margin:0 0 var(--space-5)}
+
+/* FAQ — two-column glossary: question (bright ink, bold, left) + answer (dim, right), hairline-separated.
+   Stacks to one column under 760px. A lighter alternative to a stack of .card boxes. */
+.faq>.faq-row{display:grid;grid-template-columns:300px 1fr;gap:var(--space-9);padding:var(--space-7) 0;border-top:1px solid var(--hair)}
+.faq>.faq-row:first-child{border-top:0}
+.faq>.faq-row:last-child{border-bottom:1px solid var(--hair)}
+.faq .faq-q{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-body);letter-spacing:.3px;line-height:1.4;color:var(--ink);margin:0}
+.faq .faq-a{font-size:var(--fs-body);line-height:1.6;color:var(--ink-dim);margin:0}
+@media (max-width:760px){.faq>.faq-row{grid-template-columns:1fr;gap:var(--space-2)}}
+
+/* ---- 22. PICK / RECOMMENDATION CARDS ---- */
+.pickgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-7);margin:var(--space-8) 0}
+.pickcard{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--hair);border-left:3px solid var(--c-accent);border-radius:var(--radius-md);padding:var(--space-8) var(--space-9)}
+.pickcard .who{font-family:'Saira Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:var(--fs-sm);color:var(--amber);font-weight:600}
+/* Ship name reads like a card title (white, .ink); the score/cost <small> drops to its own row. */
+.pickcard .pick{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-xl);color:var(--ink);margin:5px 0 7px;font-weight:600}
+.pickcard .pick small{display:block;margin-top:var(--space-2);color:var(--ink-faint);font-size:var(--fs-sm);font-weight:400}
+.pickcard p{margin:0;font-size:var(--fs-base);color:var(--ink-dim)}
+.pickcard .alt{margin-top:var(--space-4);font-size:var(--fs-sm2);color:var(--ink-faint)}
+.pickcard .alt b{color:var(--ink-dim);font-weight:500}
+
+/* ---- 23. STEP TIMELINE  (numbered vertical procedure) ---- */
+ol.steps,ul.steps{counter-reset:step;list-style:none;margin:var(--space-10) 0;padding:0}
+.steps>li{counter-increment:step;position:relative;padding:0 0 var(--space-10) 52px;border-left:1px solid var(--hair);margin-left:var(--space-9)}
+.steps>li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps>li::before{content:counter(step,decimal-leading-zero);position:absolute;left:-18px;top:-4px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-round);background:var(--panel);border:1px solid rgba(224,145,58,.4);font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-sm2);color:var(--amber-lt)}
+.steps>li .st{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-lg);color:var(--ink);display:block;margin-bottom:3px}
+.steps>li p{margin:5px 0;font-size:var(--fs-body);color:var(--ink-dim)}
+
+/* ---- step cards — a numbered, action-typed task card (rail + fields + what-to-do).
+   Container .step-cards > article.step-card.ac-<type>. Accent the left rail/badge with
+   ac-prep|farm|travel|grind|unlock|climb|build. Field labels (.rcl) render amber here. ---- */
+.step-cards{display:flex;flex-direction:column;gap:var(--space-6);margin-top:var(--space-10)}
+.step-card{display:grid;grid-template-columns:104px 1fr;background:var(--panel);border:1px solid var(--hair);border-left:3px solid var(--c-accent);border-radius:var(--radius-sm);overflow:hidden;scroll-margin-top:74px;transition:border-color .18s,background .18s}
+.step-card:hover{background:var(--panel2)}
+.step-card:target{box-shadow:0 0 0 1px rgba(224,145,58,.32),0 0 26px rgba(224,145,58,.12)}
+.step-card.ac-prep{border-left-color:var(--at-prep)}
+.step-card.ac-farm{border-left-color:var(--at-farm)}
+.step-card.ac-travel{border-left-color:var(--at-travel)}
+.step-card.ac-grind{border-left-color:var(--at-grind)}
+.step-card.ac-unlock{border-left-color:var(--at-unlock)}
+.step-card.ac-climb{border-left-color:var(--at-climb)}
+.step-card.ac-build{border-left-color:var(--at-build)}
+.step-rail{background:rgba(8,5,6,.5);border-right:1px solid var(--hair);display:flex;flex-direction:column;align-items:center;gap:9px;padding:15px 8px}
+.step-no{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-sm2);letter-spacing:1px;color:var(--ink-faint);line-height:1;text-align:center}
+.step-no b{display:block;font-size:var(--fs-2xl);color:var(--ink);letter-spacing:0;margin-top:2px}
+.step-body{padding:15px 19px 16px;min-width:0}
+.step-head{display:flex;align-items:flex-start;gap:var(--space-5)}
+.step-action{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-lg);letter-spacing:.2px;color:var(--ink);line-height:1.32;flex:1}
+.step-action a{text-decoration:none;border-bottom:1px solid rgba(224,145,58,.45)}
+.step-action .sub{color:var(--ink-dim);font-weight:400}
+.step-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:13px 24px;margin-top:14px;align-items:start}
+.step-card .rcl{color:var(--amber-lt)}
+.step-do{margin-top:14px;font-size:var(--fs-base);color:var(--ink-dim);line-height:1.62;border-top:1px solid var(--hair);padding-top:12px}
+.step-do b{color:var(--ink-em);font-weight:600}.step-do b.wd{color:var(--ink)}
+.step-do a{text-decoration:none;border-bottom:1px solid rgba(224,145,58,.35)}
+.step-flag{display:block;margin-top:12px;font-size:var(--fs-sm2);color:var(--ink-dim);background:rgba(224,145,58,.06);border:1px solid rgba(224,145,58,.22);border-radius:var(--radius-sm);padding:10px 13px;line-height:1.58}
+.step-flag .ff{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-micro);letter-spacing:2px;text-transform:uppercase;color:var(--amber-lt);display:block;margin-bottom:5px}
+.step-flag b{color:var(--ink-em);font-weight:600}
+.step-flag a{text-decoration:none;border-bottom:1px solid rgba(224,145,58,.35)}
+/* action badges — used on step rails and in the legend */
+.badge{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:var(--fs-2xs);letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:10px;border:1px solid;line-height:1.1;flex:none;white-space:nowrap}
+.b-prep{color:#d97f78;border-color:rgba(192,86,78,.6);background:rgba(192,86,78,.13)}
+.b-farm{color:#dba06a;border-color:rgba(207,134,73,.6);background:rgba(207,134,73,.13)}
+.b-travel{color:#d6c074;border-color:rgba(198,169,79,.6);background:rgba(198,169,79,.13)}
+.b-grind{color:#80c493;border-color:rgba(95,168,111,.6);background:rgba(95,168,111,.13)}
+.b-unlock{color:#79b3e0;border-color:rgba(79,147,207,.6);background:rgba(79,147,207,.13)}
+.b-climb{color:#9b8cdb;border-color:rgba(120,102,204,.6);background:rgba(120,102,204,.13)}
+.b-build{color:#c089d4;border-color:rgba(168,104,192,.6);background:rgba(168,104,192,.13)}
+@media(max-width:680px){.step-card{grid-template-columns:1fr}.step-rail{flex-direction:row;justify-content:flex-start;border-right:none;border-bottom:1px solid var(--hair);padding:9px 14px}.step-no b{display:inline;font-size:var(--fs-md);margin-left:4px;margin-top:0}}
+
+/* ---- 24. PILLS  (bold status tags w/ severity) ---- */
+.pill{font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:var(--fs-xs);letter-spacing:1px;text-transform:uppercase;padding:var(--space-1) var(--space-4);border-radius:var(--radius-xs);white-space:nowrap;display:inline-block}
+.pill.lo{background:rgba(95,179,122,.16);color:var(--good-lt)}
+.pill.md{background:rgba(224,145,58,.16);color:var(--amber-lt)}
+.pill.hi{background:rgba(216,66,59,.16);color:var(--danger)}
+.pill.fed{background:rgba(79,159,214,.16);color:var(--fed-lt)}
+.pill.neutral{background:rgba(190,120,110,.12);color:var(--ink-dim)}
+/* ship pad-class tags: Large=red · Medium=amber/yellow · Small=green */
+.pill.pad-large{background:rgba(216,66,59,.16);color:var(--danger)}
+.pill.pad-medium{background:rgba(224,145,58,.16);color:var(--amber-lt)}
+.pill.pad-small{background:rgba(95,179,122,.16);color:var(--good-lt)}
+
+/* ---- 25. KBD  (keyboard / control key cap) ---- */
+.kbd{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-xs2);font-weight:600;letter-spacing:.5px;color:var(--ink);background:var(--panel2);border:1px solid var(--hair-strong);border-bottom-width:2px;border-radius:var(--radius-md);padding:var(--space-1) 7px;white-space:nowrap}
+
+/* ---- 26. ACCENT TEXT  (inline emphasis) ---- */
+.acc{color:var(--amber-lt);font-weight:500}
+/* semantic-good inline emphasis (green) — for "strong/positive" callouts in prose/tables.
+   A genuine semantic colour (good vs weak), not decorative — hence not gold. */
+.gd{color:var(--good-lt)}
+/* semantic-bad inline emphasis (red) — the negative counterpart to .gd. */
+.bad{color:var(--danger)}
+/* secondary inline emphasis (fed-blue) — completes the inline set .acc/.gd/.bad/.bl. */
+.bl{color:var(--fed-lt);font-weight:500}
+
+/* ---- 27. LOCATION / COORDINATE READOUT ---- */
+.loc-card{border:1px solid var(--hair-strong);border-radius:var(--radius-lg);background:linear-gradient(180deg,var(--panel),var(--bg2));padding:var(--space-3) var(--space-9);margin-top:var(--space-9)}
+.loc-row{display:flex;justify-content:space-between;align-items:center;gap:var(--space-8);padding:9px 0;border-bottom:1px dashed var(--hair)}
+.loc-row:last-child{border-bottom:none}
+.loc-k{font-family:'Saira Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:var(--fs-sm);color:var(--ink-faint)}
+.loc-v{color:var(--ink);font-weight:400;text-align:right}
+/* loc-card has no bottom margin and section>p has no top margin, so restore the gap before following prose */
+.loc-card + p{margin-top:var(--space-10)}
+.coord{display:inline-flex;align-items:center;gap:var(--space-4);cursor:pointer;font-family:'Chakra Petch',monospace;font-size:var(--fs-sm2);color:var(--good-lt);background:rgba(95,179,122,.08);border:1px solid rgba(95,179,122,.3);border-radius:var(--radius-md);padding:var(--space-1) 9px;transition:background var(--motion-fast),border-color var(--motion-fast)}
+.coord:hover{background:rgba(95,179,122,.16);border-color:var(--good)}
+.coord .cp{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-micro);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.coord.copied{background:rgba(95,179,122,.2);border-color:var(--good);color:var(--good)}
+.coord.copied .cp{color:var(--good)}
+
+/* ---- 28. FOOTER ----
+   Three stacked fine-print lines (.ft-fine): copyright + byline→INARA · part label +
+   issue-tracker link · Frontier fan-content disclaimer. */
+footer{margin-top:var(--space-footer);padding-top:24px;border-top:1px solid var(--hair-strong)}
+footer .ft-fine{font-family:'Saira',sans-serif;font-weight:300;font-size:var(--fs-xs);letter-spacing:.3px;line-height:1.6;color:var(--ink-faint);display:flex;flex-direction:column;gap:var(--space-2)}
+footer .ft-fine a{color:var(--ink-dim);text-decoration:underline;text-underline-offset:2px;transition:color var(--motion-fast)}
+footer .ft-fine a:hover{color:var(--amber-lt)}
+footer b{color:var(--amber-lt);font-weight:700}
+
+/* ---- 29. PER-PAGE CREDITS / SOURCES  (the .cr-rows table) ----
+   Drop .cr-rows into a NORMAL numbered <section> as the LAST section on the page, above
+   the footer: `.sec-head` (.sec-num + h2 "Sources" + .tag) → `p.lead` → .cr-rows.
+   One .cr-row per authoritative source for THIS page: name · what it provided · link.
+   This is where per-page sourcing lives now that the masthead has no Sources line. */
+.cr-rows{margin-top:var(--space-9);border:1px solid var(--hair-strong);border-radius:var(--radius-md);background:linear-gradient(180deg,var(--panel),var(--bg2));padding:var(--space-3) var(--space-9)}
+.cr-row{display:grid;grid-template-columns:170px 1fr minmax(180px,220px);align-items:start;gap:var(--space-8);padding:11px 0;border-bottom:1px dashed var(--hair)}
+.cr-row:last-child{border-bottom:none}
+.cr-src{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:var(--fs-md);color:var(--ink)}
+.cr-what{font-size:var(--fs-base);color:var(--ink-dim)}
+.cr-link{font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:var(--fs-sm);letter-spacing:.6px;text-transform:uppercase;color:var(--amber-lt);text-decoration:none;overflow-wrap:anywhere}
+.cr-link::after{content:"\00A0\2197"}
+.cr-link:hover{color:var(--amber)}
+@media (max-width:560px){.cr-rows{padding:var(--space-3) var(--space-8)}.cr-row{grid-template-columns:1fr;gap:var(--space-3)}.cr-src,.cr-what,.cr-link{min-width:0}.cr-link{justify-self:start}}
+
+/* ---- 30. GENERIC GAP COMPONENTS  (added v1.2.0 for the legacy-guide migration) ----
+   Four generic primitives the legacy corpus needs but the DS lacked. Plain .chip and
+   .reclist are unchanged; these are additive. Use these instead of inlining CSS. */
+
+/* PANEL — generic bordered info container */
+
+/* MULTI-COLUMN LAYOUT — responsive; collapses on narrow */
+.cols-2,.cols-3{display:grid;gap:var(--space-8);margin:var(--space-8) 0}
+.cols-2{grid-template-columns:repeat(2,1fr)}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:680px){.cols-2,.cols-3{grid-template-columns:1fr}}
+
+/* KEY-VALUE CHIP — masthead label+value chip (plain .chip unchanged) */
+.chip.kv{display:inline-flex;align-items:baseline;gap:var(--space-3);text-transform:none}
+.chip.kv span{color:var(--ink-faint);text-transform:uppercase;letter-spacing:.5px;font-size:var(--fs-micro)}
+.chip.kv b{color:var(--amber-lt);font-weight:600}
+
+/* GENERAL BULLET LIST — body list (.reclist stays record-scoped) */
+ul.bullets{list-style:none;margin:var(--space-6) 0;padding:0}
+ul.bullets li{position:relative;padding:var(--space-3) 0 var(--space-3) 22px;color:var(--ink-dim);line-height:1.55}
+ul.bullets li::before{content:"\25B8";position:absolute;left:2px;top:var(--space-3);color:var(--amber);font-size:var(--fs-sm)}
+ul.bullets li b{color:var(--ink);font-weight:500}
+
+/* Minor reconciles (spec §3) surfaced by the gold-reference migration:
+   generalize the module-name cell to the data table, and the inline step number. */
+table.data td.mod{font-family:'Chakra Petch',sans-serif;color:var(--ink);font-size:var(--fs-base)}
+.stepnum{font-family:'Chakra Petch',sans-serif;color:var(--amber);font-weight:700;margin-right:var(--space-3)}
+
+/* FIGURE — diagrams/images: left-aligned (no UA 40px indent), vertical rhythm, dim caption */
+figure{margin:var(--space-9) 0}
+figure svg,figure img{display:block;max-width:100%;height:auto}
+figcaption{margin-top:var(--space-5);font-size:var(--fs-sm2);color:var(--ink-dim);line-height:1.55}
+figcaption b{color:var(--ink);font-weight:600}
+
+/* CODE / CONFIG BLOCK + inline code (config-heavy guides) ----
+   .codebox = framed block w/ a terminal .cb-head (.dot + label + right-aligned .path) and
+   a <pre>; syntax tints inside the pre: .tag (markup), .val (values), .cm (comments),
+   .str (strings). Inline: <code> / .mono. */
+code,.mono{font-family:'JetBrains Mono',ui-monospace,'Consolas',monospace;font-size:.9em}
+code{color:var(--amber-lt);background:rgba(224,145,58,.09);border:1px solid var(--hair);border-radius:var(--radius-xs);padding:.04em .4em}
+.mono{color:var(--ink)}
+.codebox{margin:var(--space-9) 0;border:1px solid var(--hair-strong);border-radius:var(--radius-md);background:rgba(6,4,5,.78);overflow:hidden}
+.codebox .cb-head{display:flex;align-items:center;gap:var(--space-5);padding:var(--space-5) var(--space-9);border-bottom:1px solid var(--hair);background:rgba(0,0,0,.35);font-family:'Saira Condensed',sans-serif;font-size:var(--fs-xs);letter-spacing:1.4px;text-transform:uppercase;color:var(--ink-dim)}
+.codebox .cb-head .dot{width:9px;height:9px;border-radius:var(--radius-round);background:var(--amber);flex:none}
+.codebox .cb-head .path{margin-left:auto;text-transform:none;letter-spacing:.3px;color:var(--amber-lt);font-weight:700;font-family:'JetBrains Mono',ui-monospace,'Consolas',monospace}
+.codebox pre{margin:0;padding:var(--space-9);overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,'Cascadia Code','Consolas',monospace;font-size:var(--fs-sm2);line-height:1.7;color:var(--ink-dim)}
+.codebox pre .tag{color:var(--fed-lt)}
+.codebox pre .val{color:var(--good-lt)}
+.codebox pre .cm{color:var(--ink-faint)}
+.codebox pre .str{color:var(--amber-lt)}
+
+/* COLOUR-MATRIX display grid (a small labelled numeric matrix) ---- */
+.mx-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-8);margin:var(--space-9) 0}
+.mx{border:1px solid var(--hair);border-radius:var(--radius-md);background:var(--panel);padding:var(--space-8) var(--space-9)}
+.mx-t{font-family:'Saira Condensed',sans-serif;letter-spacing:.16em;text-transform:uppercase;font-size:var(--fs-xs);color:var(--amber-lt);margin-bottom:var(--space-6)}
+.mx table{width:100%;border-collapse:collapse;font-family:'JetBrains Mono',ui-monospace,'Consolas',monospace;font-size:var(--fs-sm2)}
+.mx td{padding:var(--space-3) var(--space-5);text-align:center;color:var(--ink-dim)}
+.mx .collbl{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.mx .rowlbl{text-align:left;font-family:'Saira Condensed',sans-serif;letter-spacing:.04em;color:var(--ink)}
+.mx .rowlbl.r{color:var(--maroon-lt)}.mx .rowlbl.g{color:var(--good-lt)}.mx .rowlbl.b{color:var(--fed-lt)}
+.mx .v1{color:var(--ink);font-weight:700}.mx .v0{color:var(--ink-faint)}
+.mx-cap{margin-top:var(--space-6);font-size:var(--fs-sm);color:var(--ink-dim);line-height:1.5}
+.mx-cap b{color:var(--ink)}
+
+/* ---- 31. RESPONSIVE / MOTION ---- */
+@media (max-width:560px){.sec-head .tag{display:none}}
+@media (max-width:820px){.site-header .hdr-inner{height:auto;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;gap:var(--space-6)}.header-qn{width:100%}.header-qn .qn-field{flex:1;min-width:0}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+/* ---- styleguide-only annotation chrome (delete in real pages) ---- */
+.note-sg{font-family:'Saira Condensed',sans-serif;font-size:var(--fs-xs2);letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint);border:1px dashed var(--hair-strong);border-radius:var(--radius-sm);padding:var(--space-3) var(--space-5);margin:var(--space-9) 0 0;display:inline-block}
+.note-sg b{color:var(--amber-lt)}
+
+/* ============================================================
+   ACCESSIBILITY BASELINE  (part of the system, not optional)
+   ============================================================ */
+a:focus-visible,button:focus-visible,.coord:focus-visible,.qn-item:focus-visible,
+nav.toc a:focus-visible,.permalink:focus-visible,[tabindex]:focus-visible{
+  outline:2px solid var(--c-accent-lt);outline-offset:2px;border-radius:var(--radius-xs)}
+.coord{outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition-duration:.001ms!important;animation-duration:.001ms!important}
+}
+
+/* ============================================================
+   BLUEPRINT REFERENCE — collapsible accordion components.
+   A module group (.bp-modgroup) holds blueprint cards (.bp-card) that
+   fold open to reveal a 3-panel context block and a per-grade material
+   table. Amber-accented; raw/man/enc category colours are kept.
+   Used by guides/engineering/engineering-manuals/blueprints.html.
+   ============================================================ */
+:root{--bp-raw:var(--fed);--bp-man:var(--amber);--bp-enc:#b48ad6;}
+
+/* quick-nav: support the blueprints panel toggle + a clickable group row */
+.qn-panel.open{display:block}
+.qn-item.qn-group{background:rgba(224,145,58,.10);border-bottom:1px solid var(--hair-strong);cursor:pointer}
+.qn-item.qn-group .qn-nm{color:var(--amber-lt);font-family:'Saira Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:var(--fs-sm2)}
+.qn-item.qn-group .qn-side{color:var(--amber)}
+.qn-item.active{background:var(--panel2);color:var(--ink)}.qn-item.active .qn-nm{color:var(--amber-lt)}
+
+/* legend (raw / manufactured / encoded swatches) */
+.bp-legend{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-9);margin:var(--space-9) 0 var(--space-11);font-family:'Saira Condensed',sans-serif;font-size:var(--fs-sm2);letter-spacing:.04em;color:var(--ink-dim)}
+.bp-legend .lg{display:flex;align-items:center;gap:7px;text-transform:uppercase}
+.bp-legend .dot{width:11px;height:11px;border-radius:2px;display:inline-block}
+.bp-legend .dot.raw{background:var(--bp-raw)}.bp-legend .dot.man{background:var(--bp-man)}.bp-legend .dot.enc{background:var(--bp-enc)}
+.bp-legend .lg-note{margin-left:auto;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.1em;font-size:var(--fs-xs)}
+
+/* module group header + per-group expand / collapse controls */
+.bp-modgroup{margin-top:var(--space-11)}
+.bp-mod-head{display:flex;gap:var(--space-5);align-items:center;margin:var(--space-11) 0 var(--space-5);flex-wrap:wrap}
+.bp-mod-label{font-family:'Saira Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.10em;font-size:var(--fs-xl);color:var(--amber);margin:0;flex:1 1 56%;min-width:0;display:flex;align-items:baseline;gap:var(--space-6)}
+.bp-mod-count{color:var(--ink-faint);font-size:var(--fs-xs);letter-spacing:.1em;font-weight:400}
+.bp-grp-bulk{flex:0 1 auto;min-height:24px;background:rgba(10,7,8,.5);color:var(--ink-dim);border:1px solid var(--hair-strong);border-radius:var(--radius-sm);cursor:pointer;font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:var(--fs-2xs);display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 10px;transition:border-color var(--motion-fast),color var(--motion-fast)}
+.bp-grp-bulk:hover{border-color:var(--amber);color:var(--ink)}
+.bp-grp-bulk span{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--amber);font-size:var(--fs-sm);line-height:1}
+
+/* the collapsible card */
+/* overflow:clip (not hidden) clips the rounded corners the same way but does NOT create a
+   scroll container, so a sticky <thead> inside pins to the viewport instead of being trapped
+   by the card (applies to the blueprint cards AND the modules.html spec cards, same component). */
+.bp-card{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius-sm);margin:var(--space-4) 0;overflow:clip}
+.bp-card-head{display:flex;align-items:center;gap:var(--space-6);padding:13px 16px;cursor:pointer;user-select:none;outline:none}
+.bp-card-head:focus-visible{box-shadow:inset 0 0 0 2px var(--amber)}
+.bp-fold{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:none;border-radius:var(--radius-sm);color:var(--amber-lt);font-size:11px;background:rgba(224,145,58,.12);transition:transform .18s ease,background var(--motion-fast)}
+.bp-card.open .bp-fold{transform:rotate(90deg)}
+.bp-card-title{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:var(--fs-h3);color:var(--ink);letter-spacing:.01em;flex:1}
+.bp-card.open .bp-card-title{color:var(--amber-lt)}
+.bp-card-tag{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:var(--fs-xs);color:var(--ink-faint);border:1px solid var(--hair);border-radius:20px;padding:3px 11px;white-space:nowrap}
+.bp-card-body{display:none;padding:0 16px 18px}
+.bp-card.open .bp-card-body{display:block}
+
+.bp-effect{border-top:1px solid var(--hair);padding-top:14px;margin-top:2px;color:var(--ink);font-size:var(--fs-md);line-height:1.55}
+.bp-suit{display:flex;flex-wrap:wrap;gap:var(--space-4);margin:var(--space-6) 0 14px}
+.bp-tag{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:var(--fs-xs);padding:4px 11px;border-radius:20px;border:1px solid var(--hair)}
+.bp-tag.fleet{color:var(--amber);border-color:var(--amber);background:rgba(224,145,58,.08)}
+.bp-tag.ship{color:var(--ink-dim);background:rgba(224,145,58,.07);border-color:var(--hair-strong)}
+
+/* 3-panel context (what it does / who it's for / experimental pick) */
+.bp-ctx{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);margin:var(--space-3) 0 var(--space-2)}
+.bp-ctx .bp-panel{background:rgba(10,7,8,.5);border:1px solid var(--hair);border-top:2px solid var(--amber);border-radius:var(--radius-sm);padding:12px 14px}
+.bp-ctx .bp-panel h6{font-family:'Chakra Petch',sans-serif;font-size:var(--fs-2xs);letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:0 0 6px;font-weight:600;display:flex;align-items:center;gap:7px}
+.bp-ctx .bp-panel h6 .ic{color:var(--amber);font-size:13px}
+.bp-ctx .bp-panel p{margin:0;font-size:var(--fs-sm2);color:var(--ink-dim);line-height:1.55}
+.bp-ctx .bp-panel p b{color:var(--ink);font-weight:500}
+
+/* per-grade material table */
+.bp-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:var(--fs-base);table-layout:fixed}
+.bp-table col.c-num{width:14%}.bp-table col.c-cat{width:18%}.bp-table col.c-mat{width:auto}
+/* sticky header: pins under the 62px site-header on desktop (opaque bg so scrolled rows don't
+   bleed through). On mobile the header is un-pinned and sticky-tables.js pins a synced clone
+   instead — matching the .tbl-scroll family (the mobile site-header is taller than 62px). */
+.bp-table thead th{position:sticky;top:62px;z-index:var(--z-sticky);background:var(--panel);font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:var(--fs-2xs);color:var(--amber);text-align:left;padding:6px 10px;border-bottom:1px solid var(--hair);font-weight:600}
+.bp-table thead th.r{text-align:right}
+@media(max-width:920px){.bp-table thead th{position:static}}
+.bp-table .gh td{background:rgba(224,145,58,.18);border-top:1px solid var(--amber);padding:9px 10px}
+.bp-table .eh td{background:rgba(79,159,214,.18);border-top:1px solid var(--fed);padding:9px 10px}
+.bp-table .gh .gnum{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--amber-lt);font-size:var(--fs-base)}
+.bp-table .eh .enum{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--fed-lt);font-size:var(--fs-base)}
+.bp-table .eng{color:var(--ink-dim);font-size:var(--fs-sm2)}
+.bp-table .eng a{color:var(--amber);font-size:var(--fs-sm2);text-decoration:none;border-bottom:1px dotted var(--amber)}
+.bp-table .eng a:hover{color:var(--amber-lt);border-bottom-color:var(--amber-lt)}
+.bp-rec{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:var(--fs-micro);color:var(--amber-lt);border:1px solid var(--amber);border-radius:12px;padding:1px 7px;margin-left:4px}
+.bp-exp-tag{font-family:'Saira Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:var(--fs-micro);color:var(--fed-lt);background:rgba(79,159,214,.16);border:1px solid var(--fed);border-radius:var(--radius-xs);padding:1px 6px;margin-right:6px}
+.bp-table .exp-desc{color:var(--ink-dim);font-size:var(--fs-sm2)}
+.bp-table .mr td,.bp-table .er td{padding:6px 10px;border-bottom:1px solid rgba(224,145,58,.07);color:var(--ink)}
+.bp-table td.r{text-align:right;font-variant-numeric:tabular-nums}
+.bp-table td.cat{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:var(--fs-sm)}
+.bp-table td.cat.raw{color:var(--bp-raw)}.bp-table td.cat.man{color:var(--bp-man)}.bp-table td.cat.enc{color:var(--bp-enc)}
+.bp-table .total{color:var(--amber);font-weight:500}
+.bp-table .matname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:680px){.bp-ctx{grid-template-columns:1fr}.bp-card-tag{display:none}.bp-table col.c-num{width:16%}.bp-table col.c-cat{width:22%}}

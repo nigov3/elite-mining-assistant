@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Type-6 Transporter &middot; Mining &middot; Ship Dossier | E:D Black Box</title>
+<link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
+<link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
+<script src="../../../design-system/js/scroll-progress.js" defer></script>
+</head>
+<body>
+
+<!-- ---- GLOBAL HEADER ---- -->
+<header class="site-header">
+  <div class="hdr-inner">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+      <img src="../../../images/logos/logo.png" alt="">
+      <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
+    </a>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#section-dossiers" class="active">Ships</a>
+      <a href="../../index.html#section-engineering">Engineering</a>
+      <a href="../../index.html#section-systems">Systems</a>
+    </nav>
+    <div class="header-qn">
+      <div class="hdr-crumb">
+        <span class="hdr-crumb-title">Type-6 Transporter · Mining</span>
+        <span class="hdr-crumb-trail">
+          <a href="../../index.html#section-dossiers">Ships</a>
+          <span class="sep">›</span>
+          <a href="../../index.html#section-ship-dossiers">Ship Dossiers</a>
+        </span>
+      </div>
+      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
+      </button>
+      <div class="qn-dd" id="qn-dd">
+        <div class="qn-field">
+          <span class="qn-ico" aria-hidden="true">⌕</span>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+        </div>
+        <div class="qn-panel" id="qn-panel" role="listbox">
+          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Role &amp; Overview</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-key-stats-what-makes-it-mine"><span class="qn-dot amber"></span><span class="qn-nm">Key Stats &amp; What Makes It Mine</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">Why This Rating</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">How It Compares</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Cost &amp; Access</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">3-State Loadout</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Initial Loadout &mdash; Buy-Only Plan</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">A-Rated Loadout &mdash; Upgrade Plan</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">Engineering Plan</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Key Stat Upgrades</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Key Activities &amp; Where To Do Them</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Field Notes &mdash; What Else To Know</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">13</span></a>
+          <div class="qn-empty" hidden>No matching sections</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">Ship Dossier <span class="sep">//</span> Lakon Spaceways</div>
+    <h1 class="title"><span>Type-6 Transporter</span><span class="role ac-role-mining">Mining</span></h1>
+    <div class="masthead-meta">
+      <span>Series <b>Ships</b></span>
+      <span>Updated <b>2026-07-01</b></span>
+    </div>
+  </header>
+
+  <div class="verdict has-render">
+    <div class="v-body">
+      <div class="v-eyebrow">Briefing</div>
+      <h2>The <em>cheapest</em> way into mining — a tool-cramped budget laser miner</h2>
+      <p>The Type-6 Transporter is the most affordable medium hull you can turn into a working miner: a refinery, <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">limpet controllers</a>, ore racks and a small shield all fit, and it lands at most ring systems on a medium pad for under a million credits. But it has only two small hardpoints &mdash; no room for the full core-mining trio &mdash; and a small ore hold. It's a laser-mining starter that teaches the loop cheaply, not a hull you keep once the credits roll in.</p>
+    </div>
+    <figure class="ship-figure">
+      <img src="../../../images/ships/type-6-transporter.jpg" alt="Type-6 Transporter" width="160" height="90">
+      <figcaption><b>Type-6 Transporter</b> &middot; Lakon Spaceways</figcaption>
+    </figure>
+    <div class="stat-grid">
+      <div class="stat"><div class="n">62<small>/100</small></div><div class="bar mini"><i style="--pct:62"></i></div></div>
+      <div class="stat"><div class="n">~110 t</div><div class="l">Max cargo</div></div>
+      <div class="stat"><div class="n">2S</div><div class="l">Hardpoints</div></div>
+      <div class="stat"><div class="n">Medium</div><div class="l">Pad class</div></div>
+      <div class="stat"><div class="n">~867k Cr</div><div class="l">Hull price</div></div>
+    </div>
+  </div>
+
+  <div class="callout"><span class="lbl">Rating methodology</span><p>This ship's <span class="acc">1&ndash;100 suitability rating</span> reflects its fully-engineered fit for this role, scored against every ship in the role. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  <!-- s1 -->
+  <section id="section-role-overview">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Role &amp; Overview</h2></div>
+    <p>Mining is the trade where a cheap hull can still earn well, and the Type-6 is the cheapest medium ship that fits a real mining suite. Its eight optional internals take a refinery, a prospector controller, collector controllers, a <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">detailed surface scanner</a> and a couple of ore racks, while a class-3 shield slot keeps a small bubble of protection around you during the exposed minutes of working a rock. On a medium pad it reaches almost every ring system, and its good laden range gets you out to the pristine hotspots that pay.</p>
+    <p>The catch is its hardpoints: just two small mounts. That fits a <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining laser</a> and an abrasion blaster for surface and laser mining comfortably, but there is no room for the full seismic-charge-plus-sub-surface-missile-plus-abrasion-blaster trio that efficient core cracking wants. The ore hold is small too &mdash; a fraction of what a <a href="type-8-transporter-mining.html">Type-8</a> or a capital miner carries. The Type-6's case is simple: get mining cheaply, learn the loop, and bank the profit toward a hull built for it.</p>
+    <div class="callout"><span class="lbl">Where this hull shines</span><p>Budget laser mining: a first dedicated miner, learning prospecting and refining, working accessible painite/platinum/tritium hotspots on a medium pad, and building capital toward a <a href="type-8-transporter-mining.html">Type-8</a> or a capital miner.</p></div>
+    <div class="nolink">
+      <h3 class="subhead">Other role builds of this ship</h3>
+      <div class="vchips">
+        <a class="vchip r-exploration" href="type-6-transporter-exploration.html"><span class="vrole">Exploration</span><span class="vrate">68<small>/100</small></span></a>
+        <a class="vchip r-multipurpose" href="type-6-transporter-multipurpose.html"><span class="vrole">Multipurpose</span><span class="vrate">44<small>/100</small></span></a>
+        <a class="vchip r-trading" href="type-6-transporter-trading.html"><span class="vrole">Trading</span><span class="vrate">65<small>/100</small></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- s2 -->
+  <section id="section-key-stats-what-makes-it-mine">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Key Stats &amp; What Makes It Mine</h2></div>
+    <div class="specgrid">
+      <div class="cell"><div class="k">Ore hold (practical)</div><div class="v">~64 <small>t</small></div></div>
+      <div class="cell"><div class="k">Max cargo</div><div class="v">~110 <small>t</small></div></div>
+      <div class="cell"><div class="k">Hardpoints</div><div class="v">2S <small>(tools only)</small></div></div>
+      <div class="cell"><div class="k">Utility mounts</div><div class="v">3</div></div>
+      <div class="cell"><div class="k">Base shield</div><div class="v">~90 <small>MJ (light)</small></div></div>
+      <div class="cell"><div class="k">Optional internals</div><div class="v">5&middot;5&middot;4&middot;4&middot;3&middot;2&middot;2&middot;1</div></div>
+      <div class="cell"><div class="k">Pad</div><div class="v">Medium <small>(most stations)</small></div></div>
+      <div class="cell"><div class="k">Self-defence</div><div class="v">Minimal <small>(flee, don't fight)</small></div></div>
+      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+    </div>
+    <p>Four things make the Type-6 a workable budget miner:</p>
+    <ul class="bullets">
+      <li><b>Cheapest way into <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining</a>.</b> Under a million credits and no rank gate &mdash; the most affordable medium hull that fits a real mining suite.</li>
+      <li><b>Internals for a full laser suite.</b> Eight optional slots take a refinery, prospector and collector controllers, a surface scanner and ore racks.</li>
+      <li><b>Medium-pad and good range.</b> Reaches almost every ring system and lands at outposts; the laden jump gets you to the paying hotspots.</li>
+      <li><b>Light and nimble.</b> Quick to line up on rocks and quick to high-wake away when a pirate interdicts the haul.</li>
+    </ul>
+    <div class="callout"><span class="lbl">The ceiling, stated honestly</span><p>Two small hardpoints mean no full core-mining trio &mdash; this is a laser miner first. The ~64t practical ore hold is a fraction of a <a href="type-8-transporter-mining.html">Type-8</a>'s, and a ~90 MJ base shield with no real guns means you run from pirates, you don't fight them. It earns honestly while you learn, but it's outclassed the moment you can afford a purpose-built miner.</p></div>
+  </section>
+
+  <!-- s3 -->
+  <!-- Why This Rating -->
+  <section id="section-why-this-rating">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Why This Rating</h2><span class="tag">Scorecard</span></div>
+    <p class="lead">A medium-pad, no-rank, sub-million-credit hull that fits a full laser-mining suite cheaply, but ~64t practical ore and only two small hardpoints cap it as a starter.</p>
+    <p>The <b>62/100</b> headline is a verdict against the mining role's priority-ordered factors. Each factor carries a <b>weight</b> (its share of 100); this hull earns part of each based on how it performs against the whole field. The points <b>sum to the rating</b>.</p>
+    <div class="tbl-scroll">
+    <table class="data scorecard">
+      <colgroup><col style="width:190px"><col style="width:150px"><col></colgroup>
+      <thead><tr><th>Role factor</th><th class="sc">Score</th><th>Why this score</th></tr></thead>
+      <tbody>
+      <tr><td class="fct">Effective ore capacity</td><td class="sc"><span class="scval">18</span><span class="den">/35</span><div class="bar mini"><i style="--pct:51"></i></div></td><td class="wcell">~110t max cargo and only ~64t practical ore once refinery and limpet controllers are fitted — functional but a fraction of the Type-8 (~406t), Cutter (~794t) or Type-9 (~790t); the budget floor among medium miners.</td></tr>
+      <tr><td class="fct">Tool &amp; slot fit</td><td class="sc"><span class="scval">15</span><span class="den">/25</span><div class="bar mini"><i style="--pct:60"></i></div></td><td class="wcell">Eight optional internals (5·5·4·4·3·2·2·1) seat a refinery, prospector/collector controllers, surface scanner and ore racks, but just 2 small hardpoints fit only a mining laser plus abrasion blaster — no room for the full seismic/sub-surface/abrasion core-cracking trio; 3 utility mounts.</td></tr>
+      <tr><td class="fct">Survivability</td><td class="sc"><span class="scval">7</span><span class="den">/15</span><div class="bar mini"><i style="--pct:47"></i></div></td><td class="wcell">~90 MJ base shield, ~300 MJ engineered with a 3C bi-weave and Heavy Duty booster, and no real weapons — you flee interdictions rather than fight; minimal self-defence on a lightly-built hull.</td></tr>
+      <tr><td class="fct">Pad class &amp; access</td><td class="sc"><span class="scval">13</span><span class="den">/15</span><div class="bar mini"><i style="--pct:87"></i></div></td><td class="wcell">Medium pad reaches almost every ring system and lands at outposts, with no rank or permit gate and good laden FSD range to pristine hotspots — only the small-pad hulls land in more places.</td></tr>
+      <tr><td class="fct">Cost &amp; specialisation</td><td class="sc"><span class="scval">9</span><span class="den">/10</span><div class="bar mini"><i style="--pct:90"></i></div></td><td class="wcell">~867k Cr hull, ~6M Cr all-in engineered — cheaper than a bare Python — with no rank requirement; the cheapest functional way into a real mining suite, though entirely outclassed once purpose-built miners are affordable.</td></tr>
+      <tr class="totalrow"><td class="fct"><b>Weighted total</b></td><td class="sc"><span class="scval">62</span><span class="den">/100</span><div class="bar mini"><i style="--pct:62"></i></div></td><td class="wcell"><em>Matches the headline suitability rating for this ship in this role.</em></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout"><span class="lbl">How to read it</span><p>Weights are an editorial decomposition of the role's stated priority order &mdash; not an in-game formula. Bar length shows how fully each factor is earned; the longest factors carried the score, the shortest are where it gave points away. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  </section>
+  <section id="section-how-it-compares">
+    <div class="sec-head"><span class="sec-num">04</span><h2>How It Compares</h2></div>
+    <p>Every table rates ships <em>for mining specifically</em>, split by landing-pad class. The <b>Max cargo</b> column is maximum ore-hold tonnage; the rating is the same 1&ndash;100 suitability verdict used across the site.</p>
+    <h3 class="subhead">Same class &mdash; medium mining ships</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="type-11-prospector-mining.html">Type-11 Prospector</a></td><td><span class="pill pad-medium">Medium</span></td><td>~288 t</td><td class="pcc"><span class="p">Higher-rated; tool fit; pad access</span><span class="c">Value</span></td><td><span class="rscore">95</span><div class="bar mini"><i style="--pct:95"></i></div></td></tr>
+        <tr><td class="mod"><a href="python-mining.html">Python</a></td><td><span class="pill pad-medium">Medium</span></td><td>~294 t</td><td class="pcc"><span class="p">Higher-rated; tool fit; survivability</span><span class="c">Ore hold</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-mk-ii-mining.html">Krait Mk II</a></td><td><span class="pill pad-medium">Medium</span></td><td>~230 t</td><td class="pcc"><span class="p">Higher-rated; survivability; pad access</span><span class="c">Ore hold</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-8-transporter-mining.html">Type-8 Transporter</a></td><td><span class="pill pad-medium">Medium</span></td><td>~406 t</td><td class="pcc"><span class="p">Higher-rated; ore hold; tool fit</span><span class="c">Survivability</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-phantom-mining.html">Krait Phantom</a></td><td><span class="pill pad-medium">Medium</span></td><td>~190 t</td><td class="pcc"><span class="p">Higher-rated; pad access; tool fit</span><span class="c">Survivability</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
+        <tr><td class="mod"><a href="corsair-mining.html">Corsair</a></td><td><span class="pill pad-medium">Medium</span></td><td>~318 t</td><td class="pcc"><span class="p">Higher-rated; survivability; pad access</span><span class="c">Value</span></td><td><span class="rscore">68</span><div class="bar mini"><i style="--pct:68"></i></div></td></tr>
+        <tr><td class="mod"><a href="keelback-mining.html">Keelback</a></td><td><span class="pill pad-medium">Medium</span></td><td>~98 t</td><td class="pcc"><span class="p">Higher-rated; survivability; pad access</span><span class="c">Ore hold</span></td><td><span class="rscore">68</span><div class="bar mini"><i style="--pct:68"></i></div></td></tr>
+        <tr><td class="mod"><a href="asp-explorer-mining.html">Asp Explorer</a></td><td><span class="pill pad-medium">Medium</span></td><td>~130 t</td><td class="pcc"><span class="p">Higher-rated; tool fit; pad access</span><span class="c">Survivability</span></td><td><span class="rscore">64</span><div class="bar mini"><i style="--pct:64"></i></div></td></tr>
+        <tr><td class="mod">Type-6 Transporter <span class="pill md">this</span></td><td><span class="pill pad-medium">Medium</span></td><td>~114 t</td><td class="pcc"><span class="base">&mdash; this hull (baseline)</span></td><td><span class="rscore">62</span><div class="bar mini"><i style="--pct:62"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">9 medium-pad mining hulls carry a rating, led by <b><a href="type-11-prospector-mining.html">Type-11 Prospector</a></b> (95). Every same-pad rival lands where this one does &mdash; the direct field to shop.</p>
+    <h3 class="subhead">Other classes &mdash; the capital barges</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="imperial-cutter-mining.html">Imperial Cutter</a></td><td><span class="pill pad-large">Large</span></td><td>~794 t</td><td class="pcc"><span class="p">Higher-rated; tool fit; survivability</span><span class="c">Pad access</span></td><td><span class="rscore">92</span><div class="bar mini"><i style="--pct:92"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-9-heavy-mining.html">Type-9 Heavy</a></td><td><span class="pill pad-large">Large</span></td><td>~790 t</td><td class="pcc"><span class="p">Higher-rated; ore hold; value</span><span class="c">Survivability</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
+        <tr><td class="mod"><a href="anaconda-mining.html">Anaconda</a></td><td><span class="pill pad-large">Large</span></td><td>~470 t</td><td class="pcc"><span class="p">Higher-rated; tool fit; survivability</span><span class="c">Pad access</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-7-transporter-mining.html">Type-7 Transporter</a></td><td><span class="pill pad-large">Large</span></td><td>~310 t</td><td class="pcc"><span class="p">Higher-rated; value; tool fit</span><span class="c">Survivability</span></td><td><span class="rscore">78</span><div class="bar mini"><i style="--pct:78"></i></div></td></tr>
+        <tr><td class="mod"><a href="panther-clipper-mk-ii-mining.html">Panther Clipper Mk II</a></td><td><span class="pill pad-large">Large</span></td><td>~662 t</td><td class="pcc"><span class="p">Higher-rated; ore hold; tool fit</span><span class="c">Value</span></td><td><span class="rscore">77</span><div class="bar mini"><i style="--pct:77"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-clipper-mining.html">Imperial Clipper</a></td><td><span class="pill pad-large">Large</span></td><td>~250 t</td><td class="pcc"><span class="p">Higher-rated; value; survivability</span><span class="c">Pad access</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-10-defender-mining.html">Type-10 Defender</a></td><td><span class="pill pad-large">Large</span></td><td>~534 t</td><td class="pcc"><span class="p">Higher-rated; survivability; tool fit</span><span class="c">Value</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-corvette-mining.html">Federal Corvette</a></td><td><span class="pill pad-large">Large</span></td><td>~618 t</td><td class="pcc"><span class="p">Higher-rated; survivability; ore hold</span><span class="c">Value</span></td><td><span class="rscore">64</span><div class="bar mini"><i style="--pct:64"></i></div></td></tr>
+        <tr><td class="mod"><a href="caspian-explorer-mining.html">Caspian Explorer</a></td><td><span class="pill pad-large">Large</span></td><td>~434 t</td><td class="pcc"><span class="p">Tool fit; survivability</span><span class="c">Lower-rated; value</span></td><td><span class="rscore">60</span><div class="bar mini"><i style="--pct:60"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">The large-pad mining field (9 rated), led by <b><a href="imperial-cutter-mining.html">Imperial Cutter</a></b> (92) &mdash; bigger pads and bankrolls. They out-muscle this hull on the numbers, but sit a pad class away.</p>
+    <h3 class="subhead">Other classes &mdash; the small-pad prospectors</h3>
+    <div class="tbl-scroll nolink">
+    <table class="cmp">
+      <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
+      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td class="mod"><a href="cobra-mk-v-mining.html">Cobra Mk V</a></td><td><span class="pill pad-small">Small</span></td><td>~110 t</td><td class="pcc"><span class="p">Pad access; tool fit</span><span class="c">Lower-rated; ore hold</span></td><td><span class="rscore">58</span><div class="bar mini"><i style="--pct:58"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-iii-mining.html">Cobra Mk III</a></td><td><span class="pill pad-small">Small</span></td><td>~64 t</td><td class="pcc"><span class="p">Pad access; value</span><span class="c">Lower-rated; survivability</span></td><td><span class="rscore">52</span><div class="bar mini"><i style="--pct:52"></i></div></td></tr>
+        <tr><td class="mod"><a href="adder-mining.html">Adder</a></td><td><span class="pill pad-small">Small</span></td><td>~30 t</td><td class="pcc"><span class="p">Pad access; value</span><span class="c">Lower-rated; survivability</span></td><td><span class="rscore">48</span><div class="bar mini"><i style="--pct:48"></i></div></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="nolink">The small-pad mining field (3 rated), led by <b><a href="cobra-mk-v-mining.html">Cobra Mk V</a></b> (58) &mdash; cheaper hulls and tighter pads. They undercut this hull on the numbers, but sit a pad class away.</p>
+  </section>
+
+  <!-- s4 -->
+  <section id="section-cost-access">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Cost &amp; Access</h2></div>
+    <div class="specgrid">
+      <div class="cell"><div class="k">Hull</div><div class="v">~867k Cr</div></div>
+      <div class="cell"><div class="k">A-rated miner</div><div class="v">~3M Cr</div></div>
+      <div class="cell"><div class="k">Engineered</div><div class="v">~6M Cr</div></div>
+      <div class="cell"><div class="k">Pad</div><div class="v">Medium</div></div>
+      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+    </div>
+    <p>At ~867k Cr the Type-6 is cheap, with no rank gate. A working mining fit &mdash; tools, refinery, prospector and collector controllers, ore racks and a small shield &mdash; brings the all-in figure to around 6M Cr, less than a bare <a href="python-mining.html">Python</a> hull.</p>
+    <p>That low cost is the whole point: mining profits in a Type-6 compound fast into a <a href="type-8-transporter-mining.html">Type-8</a> or a capital miner. For maximum ore per trip or any real self-defence, a purpose-built miner wins easily; for getting into mining for almost nothing, nothing is cheaper.</p>
+    <div class="callout"><span class="lbl">The first miner</span><p>Around 6M Cr all-in for a functional laser miner &mdash; the ship that teaches prospecting and refining and banks the credits toward a hull built for the job.</p></div>
+  </section>
+
+  <!-- s6 -->
+  <section id="section-3-state-loadout">
+    <div class="sec-head"><span class="sec-num">06</span><h2>3-State Loadout</h2></div>
+    <p>A complete laser-mining fit on a budget, with a small shield to survive a pirate long enough to flee. Initial is buy-only; A-rated is the mining baseline; Engineered focuses on range, mobility and a tougher shield — the mining tools themselves are not meaningfully engineered.</p>
+    <div class="tbl-scroll">
+    <table class="l3">
+<thead><tr><th>Slot</th><th>Initial · buy-only</th><th>A-Rated · no eng</th><th>Engineered</th><th>Notes</th></tr></thead>
+<tbody>
+<tr class="grouprow"><td colspan="5">Hardpoints</td></tr>
+<tr><td class="slot">Small 1</td><td class="st">1D <a href="../../engineering/engineering-manuals/modules.html#module-mining">Mining Laser</a> (Fixed)</td><td class="st">1D <a href="../../engineering/engineering-manuals/modules.html#module-mining">Mining Laser</a> (Fixed)</td><td class="eng">(No blueprint available)</td><td class="note">Primary <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining laser</a> fractures the rock; <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining lasers</a> come in one rating only and aren't worth engineering.</td></tr>
+<tr><td class="slot">Small 2</td><td class="st">—</td><td class="st">1D <a href="../../engineering/engineering-manuals/modules.html#module-mining">Abrasion Blaster</a> (Fixed)</td><td class="eng">(No blueprint available)</td><td class="note">Abrasion Blaster knocks surface deposits loose for the collectors; left stock like all mining tools.</td></tr>
+<tr class="grouprow"><td colspan="5">Utility Mounts</td></tr>
+<tr><td class="slot">Utility 1</td><td class="st">—</td><td class="st">0A <a href="../../engineering/engineering-manuals/modules.html#module-mining">Pulse Wave Analyser</a></td><td class="eng">(No blueprint available)</td><td class="note">A-rated Pulse Wave Analyser highlights mineral-rich rocks across the ring; analysers carry no blueprint.</td></tr>
+<tr><td class="slot">Utility 2</td><td class="st">—</td><td class="st">0A <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">Shield Booster</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-shield-booster-heavy-duty">Heavy Duty</a> + <span class="nolink">Super Capacitors</span></td><td class="note">Heavy Duty booster multiplies the small bi-weave's MJ — the cheapest survivability gain on the hull.</td></tr>
+<tr><td class="slot">Utility 3</td><td class="st">—</td><td class="st">0I <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">Heat Sink Launcher</a></td><td class="eng">G1 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-heat-sink-launcher-ammo-capacity">Ammo Capacity</a> (no experimental effect)</td><td class="note">Optional / low-priority — Ammo Capacity adds heat-sink charges. Dumps heat for silent running and Thermal-Vent resets.</td></tr>
+<tr class="grouprow"><td colspan="5">Core Internals</td></tr>
+<tr><td class="slot">Bulkheads</td><td class="st"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Lightweight Alloy</a></td><td class="st"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Lightweight Alloy</a></td><td class="eng">G5 Lightweight (no experimental effect)</td><td class="note"></td></tr>
+<tr><td class="slot">Power Plant</td><td class="st">3E <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a></td><td class="st">3A <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-plant-low-emissions">Low Emissions</a> + <span class="nolink">Thermal Spread</span></td><td class="note">A-rated class-3 plant runs <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a>, limpets and a shield together; Low Emissions keeps it cool and quiet through long sessions.</td></tr>
+<tr><td class="slot">Thrusters</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a></td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drive Tuning</a> + <span class="nolink">Drag Drives</span></td><td class="note">A-rated <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a> with <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drives</a> give the speed to reposition on rocks and flee an interdiction.</td></tr>
+<tr><td class="slot">Frame Shift Drive</td><td class="st">4E <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a></td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> + <span class="nolink">Mass Manager</span></td><td class="note">A-rated <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> with <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> reaches distant pristine hotspots and hauls the ore home.</td></tr>
+<tr><td class="slot">Life Support</td><td class="st">2E <a href="../../engineering/engineering-manuals/modules.html#module-life-support">Life Support</a></td><td class="st">2D <a href="../../engineering/engineering-manuals/modules.html#module-life-support">Life Support</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-life-support-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">D-rate to save mass; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-life-support-lightweight">Lightweight</a> trims more — <a href="../../engineering/engineering-manuals/modules.html#module-life-support">life support</a> has no experimental effect.</td></tr>
+<tr><td class="slot">Power Distributor</td><td class="st">3E <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a></td><td class="st">3A <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a></td><td class="eng">G3 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-distributor-engine-focused">Engine Focused</a> + <span class="nolink">Stripped Down</span></td><td class="note">A-rate this first — <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> and limpets are power-hungry; <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-distributor-engine-focused">Engine Focused</a> keeps the boost charged for escapes.</td></tr>
+<tr><td class="slot">Sensors</td><td class="st">2E <a href="../../engineering/engineering-manuals/modules.html#module-sensors">Sensors</a></td><td class="st">2D <a href="../../engineering/engineering-manuals/modules.html#module-sensors">Sensors</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-sensors-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">Drop to D and go Lightweight; mining needs no sensor range, so save the mass.</td></tr>
+<tr><td class="slot">Fuel Tank</td><td class="st">4C <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">Fuel Tank</a></td><td class="st">4C <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">Fuel Tank</a></td><td class="eng">(No blueprint available)</td><td class="note">Stock class-4 tank; fuel capacity is fixed and cannot be engineered.</td></tr>
+<tr class="grouprow"><td colspan="5">Optional Internals</td></tr>
+<tr><td class="slot">Size 5</td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="eng">(No blueprint available)</td><td class="note">Optional — adds cargo space; worth it for dedicated haulers. <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> aren't engineerable.</td></tr>
+<tr><td class="slot">Size 5</td><td class="st">—</td><td class="st">5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a></td><td class="eng">(No blueprint available)</td><td class="note">Optional — adds cargo space; worth it for dedicated haulers. <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> aren't engineerable.</td></tr>
+<tr><td class="slot">Size 4</td><td class="st">—</td><td class="st">4A <a href="../../engineering/engineering-manuals/modules.html#module-refinery">Refinery</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-refinery-shielded">Shielded</a> (no experimental effect)</td><td class="note">Optional / low-priority — Shielded hardens the refinery. Processes mined fragments.</td></tr>
+<tr><td class="slot">Size 4</td><td class="st">—</td><td class="st">3A <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">Collector Limpet Controller</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-collector-limpet-controller-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">Optional / low-priority — Lightweight trims the controller's mass. Deploys collector limpets.</td></tr>
+<tr><td class="slot">Size 3</td><td class="st">—</td><td class="st">3C <a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Bi-Weave Shield Generator</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bi-weave-shield-generator-reinforced">Reinforced</a> + <span class="nolink">Fast Charge</span></td><td class="note">Class-3 bi-weave regenerates fast under fire; Reinforced maxes its MJ and Fast Charge speeds the recharge.</td></tr>
+<tr><td class="slot">Size 2</td><td class="st">—</td><td class="st">1A <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">Prospector Limpet Controller</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-prospector-limpet-controller-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">Optional / low-priority — Lightweight trims the controller's mass. Deploys prospector limpets.</td></tr>
+<tr><td class="slot">Size 2</td><td class="st">—</td><td class="st">1A <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">Collector Limpet Controller</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-collector-limpet-controller-lightweight">Lightweight</a> (no experimental effect)</td><td class="note">Optional / low-priority — Lightweight trims the controller's mass. Deploys collector limpets.</td></tr>
+<tr><td class="slot">Size 1</td><td class="st">—</td><td class="st">1I <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a></td><td class="eng">G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-detailed-surface-scanner-expanded-probe-scanning-radius">Expanded Probe Scanning Radius</a> (no experimental effect)</td><td class="note">Optional / low-priority — Expanded Probe Scanning widens probe coverage. Maps planets for exploration data.</td></tr>
+<tr class="grouprow lex-foot"><td colspan="5">Open in planner / Export</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Open in Coriolis</td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F5WSwU4CMRCG36VnDq6Ih72ZIJEElLjejGkqnV0mdttm2qJIeHdnFxSXmLicmvn%2B9svsn90KWIONIhczp7RLUQxEsULPIG48XB%2FGe1UDo8M01fsnPM6dTgaCyJ%2B3ojCuoTdUu0ScTSPU3x6pWiorUhoyDh%2BsyCMlGIgFoSOMG5Fnu8GPpaiVMXeKtHdoY3bUrXyUNVq0lVEBSJb4AVqG5noP7cK9Ay2MsvFoZL%2F0DfcNlwE%2FYSiXbA99Fp0rtLe2QsstdJTQwlZ31V83Ia6aSy7jmHANXeWKqyTd8HO1MyyhSN47Ovlww0HYB63zsr%2Bz7XKMIRK%2Bpujoj0b1MT2310el1YkygA2Owrl7ThKYJ2XfurKSaWT6u8lhnx%2BTj4tMFvxq1DUuFVWO1HKvHP234MvuC5kJURV9AwAA&amp;bn=Type-6%20Transporter" target="_blank" rel="noopener noreferrer" title="Open the Initial build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F62U0W%2FTMBDG%2Fxc%2F92Fp2oH6hjQmJm1Q0b0hZF3jS2LNtaPzZVCm%2Fe9cnY6SqIxE8BT5u%2Fj3fTlf%2FKTwET2rlboNYELLaqY2tW1E4H2Dl8flR9ihSMfVjem2yPIumNZhVKsvT2rjwkF9R7vQktRuGHcvHA1J1RWBwUyKn7xaMbU4U2uygSzv1Sp7nv2ibHbg3Acg0wTrOTvh6ob1znrrKwcRSZf2OxodD69Pxs7PYTVsaesiT0XfW7%2F%2FY2CCWID3kjfaH3ihCwkfl1Opg7yxtujMNoTI%2FwjO%2B%2BAagaP1Dw5aX9TC5pYIWbPsGYFeh29IaweeT1gx0c1Bbw56CpuPD3sH1r%2F3lfUyaj0kJjHhFuNx1yTzLJNc8hXZR%2Bwja5lXMgd9KvbWlrhpmybQ4MOdFGJXSMx5x5yP7eWVlXG025YDnemoOVWn9vUzGBggI%2FoYKE7Ned2iuwf%2F0IeVorKov3cyH%2FObyuMi0xvZtewTC6AqEBQdctkhs7HI%2Bf9H5gm56CMJSxlL2k%2BdoERcnCMaCh6L4JmC00VwDgu2wU898GSwTAb54NzTZVKhxIbBJOW6hMhj6ZeJPn8lfkMhNpL%2F6JJNjP%2FmrwaD%2Fkw1eJsMsoEBMliHJrZUQoEv1%2FmrV%2BLX55%2FWwcuqYAcAAA%3D%3D&amp;bn=Type-6%20Transporter" target="_blank" rel="noopener noreferrer" title="Open the A-Rated build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://coriolis.io/import?data=H4sIAAAAAAAC%2F81WTU%2FbQBD9Lz5HFU4IrXIDAgUptDRG6qGqVhN7bK%2FY7Fqz60CK8t87%2FghxXAL5OvRCtDPs2%2Fd23oz3xcMZaucNvJGByOTO63hBKjMOuHmGZ%2FXyG0yRQ%2FXqNqq28PLORLlC6w1%2BvXiBMkX0nKYmJ87dOpwucQSUUZEQROhz8rv2Bo5y7Hj3JA1JN%2FcGfse70onUiCR14g1evAuVY8YLVxOosMV5NAMdYsQ4I%2BavvEG%2F4%2F3IQVUwn04Wi84rn2AKSt0ARZlhIH9FLM2cmErNRymwSCKWzxgJW%2Fz7JoIbYbtvwQqY0ERZtyv0g9TzjYQJbAhaM18r%2F%2BCJCJm87e%2BK2uJrU4kqmhhj3ZbAH5YqKCEvasgbhNl8mPPWTSVjwOeM0absLVBXcYxhwdpmGEpQLYZhmuvHubfYJK%2B3Li9FcFbqRwW5DlPe73IidMLxnr0F3kkbFrpcwMiXkEEom%2FL8zY68N09I9wq0W9FkXJEV8ayIlyXoHVqC1TkicAjKpfvefoNZaIzizmvquQOpKyp2XRCWwVLM6aFiqrQYStrfRDUfM0NSPO5aMq6JT2Lbxm5IcobrUlKeYhQV8ePIuQ6GYmR0Mgad4L56YhsV3p6td8JIxhjkWWao5S%2FFCVslShHdSkR3bxGNk8RIJqn7icXfrcZyac6h5OkoJ7kz9EYrRKvsERuicaZYbl65tybe2709mmxVcQ1P1WU0RY8hgpZSi9oasscpSFCC7VyL6xzVA%2BjHdWYxRx1Hm4bvbfNl5J8TXwS8q7%2BOGAIlhiCsIPsVpL8tZPf4kL0S8nQdkjDmO6b5cRp9XKFJtKL6JG77bCn4nb7FLyKjMTTakVE8jpViM0qjj9Mil694IznNcPe%2BLnn3S969ltNL%2BQnybUCrpXsiBusOfGt8fUUeo9SxofdeiFs9N9gKNd3ie%2FCPyrNSZfed6mRkCsSlWv%2FgAVbjcfqQ8nz%2BkHjLVv7%2FYasvJW%2B%2FxRsdSH6S2JxiCHH5Oj7obVfPUbYI6Pcb9vfiLwDJE85DDQAA&amp;bn=Type-6%20Transporter" target="_blank" rel="noopener noreferrer" title="Open the Engineered build in Coriolis"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="note">One-click open at coriolis.io.</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Open in EDSY</td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F5WSwU4CMRCG36VnDq6Ih72ZIJEElLjejGkqnV0mdttm2qJIeHdnFxSXmLicmvn%2B9svsn90KWIONIhczp7RLUQxEsULPIG48XB%2FGe1UDo8M01fsnPM6dTgaCyJ%2B3ojCuoTdUu0ScTSPU3x6pWiorUhoyDh%2BsyCMlGIgFoSOMG5Fnu8GPpaiVMXeKtHdoY3bUrXyUNVq0lVEBSJb4AVqG5noP7cK9Ay2MsvFoZL%2F0DfcNlwE%2FYSiXbA99Fp0rtLe2QsstdJTQwlZ31V83Ia6aSy7jmHANXeWKqyTd8HO1MyyhSN47Ovlww0HYB63zsr%2Bz7XKMIRK%2Bpujoj0b1MT2310el1YkygA2Owrl7ThKYJ2XfurKSaWT6u8lhnx%2BTj4tMFvxq1DUuFVWO1HKvHP234MvuC5kJURV9AwAA" target="_blank" rel="noopener noreferrer" title="Open the Initial build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F62U0W%2FTMBDG%2Fxc%2F92Fp2oH6hjQmJm1Q0b0hZF3jS2LNtaPzZVCm%2Fe9cnY6SqIxE8BT5u%2Fj3fTlf%2FKTwET2rlboNYELLaqY2tW1E4H2Dl8flR9ihSMfVjem2yPIumNZhVKsvT2rjwkF9R7vQktRuGHcvHA1J1RWBwUyKn7xaMbU4U2uygSzv1Sp7nv2ibHbg3Acg0wTrOTvh6ob1znrrKwcRSZf2OxodD69Pxs7PYTVsaesiT0XfW7%2F%2FY2CCWID3kjfaH3ihCwkfl1Opg7yxtujMNoTI%2FwjO%2B%2BAagaP1Dw5aX9TC5pYIWbPsGYFeh29IaweeT1gx0c1Bbw56CpuPD3sH1r%2F3lfUyaj0kJjHhFuNx1yTzLJNc8hXZR%2Bwja5lXMgd9KvbWlrhpmybQ4MOdFGJXSMx5x5yP7eWVlXG025YDnemoOVWn9vUzGBggI%2FoYKE7Ned2iuwf%2F0IeVorKov3cyH%2FObyuMi0xvZtewTC6AqEBQdctkhs7HI%2Bf9H5gm56CMJSxlL2k%2BdoERcnCMaCh6L4JmC00VwDgu2wU898GSwTAb54NzTZVKhxIbBJOW6hMhj6ZeJPn8lfkMhNpL%2F6JJNjP%2FmrwaD%2Fkw1eJsMsoEBMliHJrZUQoEv1%2FmrV%2BLX55%2FWwcuqYAcAAA%3D%3D" target="_blank" rel="noopener noreferrer" title="Open the A-Rated build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="lex-cell"><a class="lex-btn" href="https://edsy.org/#/I=H4sIAAAAAAAC%2F81WTU%2FbQBD9Lz5HFU4IrXIDAgUptDRG6qGqVhN7bK%2FY7Fqz60CK8t87%2FghxXAL5OvRCtDPs2%2Fd23oz3xcMZaucNvJGByOTO63hBKjMOuHmGZ%2FXyG0yRQ%2FXqNqq28PLORLlC6w1%2BvXiBMkX0nKYmJ87dOpwucQSUUZEQROhz8rv2Bo5y7Hj3JA1JN%2FcGfse70onUiCR14g1evAuVY8YLVxOosMV5NAMdYsQ4I%2BavvEG%2F4%2F3IQVUwn04Wi84rn2AKSt0ARZlhIH9FLM2cmErNRymwSCKWzxgJW%2Fz7JoIbYbtvwQqY0ERZtyv0g9TzjYQJbAhaM18r%2F%2BCJCJm87e%2BK2uJrU4kqmhhj3ZbAH5YqKCEvasgbhNl8mPPWTSVjwOeM0absLVBXcYxhwdpmGEpQLYZhmuvHubfYJK%2B3Li9FcFbqRwW5DlPe73IidMLxnr0F3kkbFrpcwMiXkEEom%2FL8zY68N09I9wq0W9FkXJEV8ayIlyXoHVqC1TkicAjKpfvefoNZaIzizmvquQOpKyp2XRCWwVLM6aFiqrQYStrfRDUfM0NSPO5aMq6JT2Lbxm5IcobrUlKeYhQV8ePIuQ6GYmR0Mgad4L56YhsV3p6td8JIxhjkWWao5S%2FFCVslShHdSkR3bxGNk8RIJqn7icXfrcZyac6h5OkoJ7kz9EYrRKvsERuicaZYbl65tybe2709mmxVcQ1P1WU0RY8hgpZSi9oasscpSFCC7VyL6xzVA%2BjHdWYxRx1Hm4bvbfNl5J8TXwS8q7%2BOGAIlhiCsIPsVpL8tZPf4kL0S8nQdkjDmO6b5cRp9XKFJtKL6JG77bCn4nb7FLyKjMTTakVE8jpViM0qjj9Mil694IznNcPe%2BLnn3S969ltNL%2BQnybUCrpXsiBusOfGt8fUUeo9SxofdeiFs9N9gKNd3ie%2FCPyrNSZfed6mRkCsSlWv%2FgAVbjcfqQ8nz%2BkHjLVv7%2FYasvJW%2B%2FxRsdSH6S2JxiCHH5Oj7obVfPUbYI6Pcb9vfiLwDJE85DDQAA" target="_blank" rel="noopener noreferrer" title="Open the Engineered build in EDSY"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7"/><path d="M8 7h9v9"/></svg><span>open</span></a></td><td class="note">One-click open at edsy.org.</td></tr>
+<tr class="lex-row"><td class="slot lex-lbl">Copy SLEF</td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;initial&quot;}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Type-6 Transporter&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;type6_armour_grade1&quot;},{&quot;Slot&quot;:&quot;SmallHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_mininglaser_fixed_small&quot;},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size3_class1&quot;},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class1&quot;},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class1&quot;},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size2_class1&quot;},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class1&quot;},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class1&quot;},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;}]}}]" title="Copy the Initial SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;arated&quot;}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Type-6 Transporter&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;type6_armour_grade1&quot;},{&quot;Slot&quot;:&quot;SmallHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_mininglaser_fixed_small&quot;},{&quot;Slot&quot;:&quot;SmallHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_mining_abrblstr_fixed_small&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_mrascanner_size0_class5&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_shieldbooster_size0_class5&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint3&quot;,&quot;Item&quot;:&quot;hpt_heatsinklauncher_turret_tiny&quot;},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size3_class5&quot;},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class5&quot;},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class5&quot;},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size2_class2&quot;},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class5&quot;},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class2&quot;},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot02_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot03_Size4&quot;,&quot;Item&quot;:&quot;int_refinery_size4_class5&quot;},{&quot;Slot&quot;:&quot;Slot04_Size4&quot;,&quot;Item&quot;:&quot;int_dronecontrol_collection_size3_class5&quot;},{&quot;Slot&quot;:&quot;Slot05_Size3&quot;,&quot;Item&quot;:&quot;int_shieldgenerator_size3_class3_fast&quot;},{&quot;Slot&quot;:&quot;Slot06_Size2&quot;,&quot;Item&quot;:&quot;int_dronecontrol_prospector_size1_class5&quot;},{&quot;Slot&quot;:&quot;Slot07_Size2&quot;,&quot;Item&quot;:&quot;int_dronecontrol_collection_size1_class5&quot;},{&quot;Slot&quot;:&quot;Slot08_Size1&quot;,&quot;Item&quot;:&quot;int_detailedsurfacescanner_tiny&quot;}]}}]" title="Copy the A-Rated SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="lex-cell"><button type="button" class="lex-btn lex-copy" data-slef="[{&quot;header&quot;:{&quot;appName&quot;:&quot;E:D Black Box&quot;,&quot;appVersion&quot;:&quot;1.0&quot;,&quot;appURL&quot;:&quot;https://github.com/tusharsaxena/ed-blackbox&quot;,&quot;appCustomProperties&quot;:{&quot;state&quot;:&quot;engineered&quot;,&quot;edbb&quot;:{&quot;role&quot;:&quot;mining&quot;,&quot;intro&quot;:&quot;A complete laser-mining fit on a budget, with a small shield to survive a pirate long enough to flee. Initial is buy-only; A-rated is the mining baseline; Engineered focuses on range, mobility and a tougher shield — the mining tools themselves are not meaningfully engineered.&quot;,&quot;callout&quot;:{&quot;label&quot;:&quot;A laser suite plus a small shield&quot;,&quot;text&quot;:&quot;Two small hardpoints fit a mining laser and an abrasion blaster — a clean laser-mining setup. A Pulse Wave Analyser finds the rocks, a refinery and prospector/collector limpets work the loop, and a class-3 bi-weave keeps a small shield up. Core mining is possible by swapping a seismic launcher in, but with only two mounts you give up another tool to do it.&quot;},&quot;notes&quot;:{&quot;SmallHardpoint1&quot;:&quot;Primary mining laser fractures the rock; mining lasers come in one rating only and aren't worth engineering.&quot;,&quot;SmallHardpoint2&quot;:&quot;Abrasion Blaster knocks surface deposits loose for the collectors; left stock like all mining tools.&quot;,&quot;TinyHardpoint1&quot;:&quot;A-rated Pulse Wave Analyser highlights mineral-rich rocks across the ring; analysers carry no blueprint.&quot;,&quot;TinyHardpoint2&quot;:&quot;Heavy Duty booster multiplies the small bi-weave's MJ — the cheapest survivability gain on the hull.&quot;,&quot;TinyHardpoint3&quot;:&quot;Optional / low-priority — Ammo Capacity adds heat-sink charges. Dumps heat for silent running and Thermal-Vent resets.&quot;,&quot;PowerPlant&quot;:&quot;A-rated class-3 plant runs lasers, limpets and a shield together; Low Emissions keeps it cool and quiet through long sessions.&quot;,&quot;MainEngines&quot;:&quot;A-rated thrusters with Dirty Drives give the speed to reposition on rocks and flee an interdiction.&quot;,&quot;FrameShiftDrive&quot;:&quot;A-rated FSD with Increased Range reaches distant pristine hotspots and hauls the ore home.&quot;,&quot;LifeSupport&quot;:&quot;D-rate to save mass; Lightweight trims more — life support has no experimental effect.&quot;,&quot;PowerDistributor&quot;:&quot;A-rate this first — lasers and limpets are power-hungry; Engine Focused keeps the boost charged for escapes.&quot;,&quot;Radar&quot;:&quot;Drop to D and go Lightweight; mining needs no sensor range, so save the mass.&quot;,&quot;FuelTank&quot;:&quot;Stock class-4 tank; fuel capacity is fixed and cannot be engineered.&quot;,&quot;Slot01_Size5&quot;:&quot;Optional — adds cargo space; worth it for dedicated haulers. Cargo racks aren't engineerable.&quot;,&quot;Slot02_Size5&quot;:&quot;Optional — adds cargo space; worth it for dedicated haulers. Cargo racks aren't engineerable.&quot;,&quot;Slot03_Size4&quot;:&quot;Optional / low-priority — Shielded hardens the refinery. Processes mined fragments.&quot;,&quot;Slot04_Size4&quot;:&quot;Optional / low-priority — Lightweight trims the controller's mass. Deploys collector limpets.&quot;,&quot;Slot05_Size3&quot;:&quot;Class-3 bi-weave regenerates fast under fire; Reinforced maxes its MJ and Fast Charge speeds the recharge.&quot;,&quot;Slot06_Size2&quot;:&quot;Optional / low-priority — Lightweight trims the controller's mass. Deploys prospector limpets.&quot;,&quot;Slot07_Size2&quot;:&quot;Optional / low-priority — Lightweight trims the controller's mass. Deploys collector limpets.&quot;,&quot;Slot08_Size1&quot;:&quot;Optional / low-priority — Expanded Probe Scanning widens probe coverage. Maps planets for exploration data.&quot;},&quot;engineeringPlan&quot;:[{&quot;module&quot;:&quot;Frame Shift Drive&quot;,&quot;size&quot;:4,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Increased Range&quot;,&quot;experimental&quot;:&quot;Mass Manager&quot;,&quot;engineer&quot;:&quot;Felicity Farseer&quot;},{&quot;module&quot;:&quot;Power Distributor&quot;,&quot;size&quot;:3,&quot;grade&quot;:&quot;G3&quot;,&quot;blueprint&quot;:&quot;Engine Focused&quot;,&quot;experimental&quot;:&quot;—&quot;,&quot;engineer&quot;:&quot;The Dweller&quot;},{&quot;module&quot;:&quot;Power Plant&quot;,&quot;size&quot;:3,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Low Emissions&quot;,&quot;experimental&quot;:&quot;Thermal Spread&quot;,&quot;engineer&quot;:&quot;Hera Tani&quot;},{&quot;module&quot;:&quot;Bi-Weave Shield&quot;,&quot;size&quot;:3,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Reinforced&quot;,&quot;experimental&quot;:&quot;Fast Charge&quot;,&quot;engineer&quot;:&quot;Lei Cheung&quot;},{&quot;module&quot;:&quot;Thrusters&quot;,&quot;size&quot;:4,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Dirty Drive Tuning&quot;,&quot;experimental&quot;:&quot;Drag Drives&quot;,&quot;engineer&quot;:&quot;Professor Palin / Mel Brandon&quot;},{&quot;module&quot;:&quot;Shield Booster&quot;,&quot;grade&quot;:&quot;G5&quot;,&quot;blueprint&quot;:&quot;Heavy Duty&quot;,&quot;experimental&quot;:&quot;Super Capacitors&quot;,&quot;engineer&quot;:&quot;Didi Vatermann&quot;},{&quot;module&quot;:&quot;Bulkheads&quot;,&quot;blueprint&quot;:&quot;Lightweight&quot;,&quot;grade&quot;:&quot;G5&quot;,&quot;engineer&quot;:&quot;Selene Jean&quot;}]}}},&quot;data&quot;:{&quot;Ship&quot;:&quot;Type-6 Transporter&quot;,&quot;Modules&quot;:[{&quot;Slot&quot;:&quot;Armour&quot;,&quot;Item&quot;:&quot;type6_armour_grade1&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Armour_Advanced&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;SmallHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_mininglaser_fixed_small&quot;},{&quot;Slot&quot;:&quot;SmallHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_mining_abrblstr_fixed_small&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint1&quot;,&quot;Item&quot;:&quot;hpt_mrascanner_size0_class5&quot;},{&quot;Slot&quot;:&quot;TinyHardpoint2&quot;,&quot;Item&quot;:&quot;hpt_shieldbooster_size0_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ShieldBooster_HeavyDuty&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_shieldbooster_chunky&quot;}},{&quot;Slot&quot;:&quot;TinyHardpoint3&quot;,&quot;Item&quot;:&quot;hpt_heatsinklauncher_turret_tiny&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Misc_HeatSinkCapacity&quot;,&quot;Level&quot;:1,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;PowerPlant&quot;,&quot;Item&quot;:&quot;int_powerplant_size3_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;PowerPlant_Stealth&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_powerplant_cooled&quot;}},{&quot;Slot&quot;:&quot;MainEngines&quot;,&quot;Item&quot;:&quot;int_engine_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Engine_Dirty&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_engine_overloaded&quot;}},{&quot;Slot&quot;:&quot;FrameShiftDrive&quot;,&quot;Item&quot;:&quot;int_hyperdrive_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;FSD_LongRange&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_fsd_heavy&quot;}},{&quot;Slot&quot;:&quot;LifeSupport&quot;,&quot;Item&quot;:&quot;int_lifesupport_size2_class2&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;LifeSupport_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;PowerDistributor&quot;,&quot;Item&quot;:&quot;int_powerdistributor_size3_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;PowerDistributor_PriorityEngines&quot;,&quot;Level&quot;:3,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_powerdistributor_lightweight&quot;}},{&quot;Slot&quot;:&quot;Radar&quot;,&quot;Item&quot;:&quot;int_sensors_size2_class2&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Sensor_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;FuelTank&quot;,&quot;Item&quot;:&quot;int_fueltank_size4_class3&quot;},{&quot;Slot&quot;:&quot;Slot01_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot02_Size5&quot;,&quot;Item&quot;:&quot;int_cargorack_size5_class1&quot;},{&quot;Slot&quot;:&quot;Slot03_Size4&quot;,&quot;Item&quot;:&quot;int_refinery_size4_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Refineries_Shielded&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;Slot04_Size4&quot;,&quot;Item&quot;:&quot;int_dronecontrol_collection_size3_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;CollectionLimpet_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;Slot05_Size3&quot;,&quot;Item&quot;:&quot;int_shieldgenerator_size3_class3_fast&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ShieldGenerator_Reinforced&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0,&quot;ExperimentalEffect&quot;:&quot;special_shield_regenerative&quot;}},{&quot;Slot&quot;:&quot;Slot06_Size2&quot;,&quot;Item&quot;:&quot;int_dronecontrol_prospector_size1_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;ProspectingLimpet_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;Slot07_Size2&quot;,&quot;Item&quot;:&quot;int_dronecontrol_collection_size1_class5&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;CollectionLimpet_LightWeight&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}},{&quot;Slot&quot;:&quot;Slot08_Size1&quot;,&quot;Item&quot;:&quot;int_detailedsurfacescanner_tiny&quot;,&quot;Engineering&quot;:{&quot;BlueprintName&quot;:&quot;Sensor_Expanded&quot;,&quot;Level&quot;:5,&quot;Quality&quot;:1.0}}]}}]" title="Copy the Engineered SLEF to clipboard"><svg class="lex-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>copy</span></button></td><td class="note">Copies the raw Ship Loadout Export Format for that state.</td></tr>
+</tbody>
+</table>
+    </div>
+    <div class="callout"><span class="lbl">A laser suite plus a small shield</span><p>Two small hardpoints fit a <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining laser</a> and an abrasion blaster — a clean laser-mining setup. A Pulse Wave Analyser finds the rocks, a refinery and prospector/collector limpets work the loop, and a class-3 bi-weave keeps a small shield up. Core mining is possible by swapping a seismic launcher in, but with only two mounts you give up another tool to do it.</p></div>
+  </section>
+
+  <!-- s7 -->
+  <section id="section-initial-loadout-buy-only-plan">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Initial Loadout &mdash; Buy-Only Plan</h2></div>
+    <p>The buy-only state is deliberately bare: take the hull (~867k Cr) on its stock E-rated core internals and fit the one tool you can't mine without &mdash; a 1D <a href="../../engineering/engineering-manuals/modules.html#module-mining">Mining Laser</a> on a small hardpoint &mdash; plus a single 5E <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo Rack</a> for ore. The <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a> stay the hull's stock Lightweight Alloy &mdash; free with the chassis, and the right plate for a miner that lives on jump range, so there's nothing to buy here.</p>
+    <p>Everything else stays empty at this stage. The second hardpoint (abrasion blaster), the Pulse Wave Analyser, the refinery, both <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">limpet controllers</a>, the class-3 bi-weave shield and the <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">detailed surface scanner</a> are all left off the buy-only sheet &mdash; they come with the A-rated pass.</p>
+    <p>It barely earns as a miner yet; the point is to get the hull and primary laser cheaply, then A-rate the plant and distributor so the full suite runs without browning out.</p>
+  </section>
+
+  <!-- s8 -->
+  <section id="section-a-rated-loadout-upgrade-plan">
+    <div class="sec-head"><span class="sec-num">08</span><h2>A-Rated Loadout &mdash; Upgrade Plan</h2></div>
+    <p>The A-rated pass also fills out the mining suite &mdash; the abrasion blaster, a 0A Pulse Wave Analyser, a 4A Refinery, the 1A prospector and 1A/3A collector controllers and a 1I <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">detailed surface scanner</a> &mdash; alongside the core-system upgrades, in this priority:</p>
+    <ul class="bullets">
+      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a> &rarr; 3A</b> &mdash; Mining <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> and limpets are power-hungry; A-rate first. <span class="acc">~600k Cr</span></li>
+      <li><span class="stepnum">2</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a> &rarr; 3A</b> &mdash; Run <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a>, limpets and a shield together. <span class="acc">~800k Cr</span></li>
+      <li><span class="stepnum">3</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> &rarr; 4A</b> &mdash; Reach the distant hotspots that pay and haul ore home. <span class="acc">~1M Cr</span></li>
+      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Shield Generator</a> &rarr; 3C bi-weave</b> &mdash; Survive the exposed minutes of working a rock. <span class="acc">~400k Cr</span></li>
+      <li><span class="stepnum">5</span><b><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a> &rarr; 4A</b> &mdash; Reposition fast and flee when a pirate interdicts. <span class="acc">~800k Cr</span></li>
+    </ul>
+    <p>The <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a> stay the stock Lightweight Alloy throughout &mdash; a miner spends nothing on plate, banking that mass on jump range, shield and ore instead. There's no military swap on this hull.</p>
+    <div class="callout"><span class="lbl">Power runs the mining loop</span><p>Mining <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> and limpets draw heavily on a small class-3 plant and distributor &mdash; A-rate both first so the suite runs without browning out, then add the <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> for range and a small shield for survival.</p></div>
+  </section>
+
+  <!-- s9 -->
+  <section id="section-engineering-plan">
+    <div class="sec-head"><span class="sec-num">09</span><h2>Engineering Plan</h2></div>
+    <p>Mining engineering is light and focuses on the ship, not the tools &mdash; the mining hardware itself isn't meaningfully engineered. <a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a> (maxed) carries the <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>; pin blueprints for remote G1&rarr;G5 application.</p>
+    <div class="tbl-scroll">
+    <table class="data">
+<thead><tr><th>Module</th><th>Blueprint</th><th>Experimental</th><th>Engineer</th></tr></thead>
+<tbody>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a> (4)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> (G5)</td><td><span class="nolink">Mass Manager</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a> (3)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-distributor-engine-focused">Engine Focused</a> (G3)</td><td><span class="nolink">—</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-the-dweller">The Dweller</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a> (3)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-power-plant-low-emissions">Low Emissions</a> (G5)</td><td><span class="nolink">Thermal Spread</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-hera-tani">Hera Tani</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Bi-Weave Shield</a> (3)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bi-weave-shield-generator-reinforced">Reinforced</a> (G5)</td><td><span class="nolink">Fast Charge</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-lei-cheung">Lei Cheung</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a> (4)</td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drive Tuning</a> (G5)</td><td><span class="nolink">Drag Drives</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-professor-palin">Professor Palin</a> / <a href="../../engineering/engineering-manuals/engineers.html#engineer-mel-brandon">Mel Brandon</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">Shield Booster</a></td><td><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-shield-booster-heavy-duty">Heavy Duty</a> (G5)</td><td><span class="nolink">Super Capacitors</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-didi-vatermann">Didi Vatermann</a></td></tr>
+<tr><td class="mod"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Bulkheads</a></td><td>Lightweight (G5)</td><td><span class="nolink">—</span></td><td><a href="../../engineering/engineering-manuals/engineers.html#engineer-selene-jean">Selene Jean</a></td></tr>
+</tbody>
+</table>
+    </div>
+    <h3 class="subhead">Recommended order</h3>
+    <ul class="bullets">
+      <li><span class="stepnum">1</span><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-frame-shift-drive-increased-range">Increased Range</a> first &mdash; reach the paying hotspots and haul ore home efficiently.</li>
+      <li><span class="stepnum">2</span>Low-Emissions plant keeps heat down through long mining sessions.</li>
+      <li><span class="stepnum">3</span>Small bi-weave shield and a booster so you survive long enough to flee a pirate.</li>
+      <li><span class="stepnum">4</span>Leave the <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining laser</a>, abrasion blaster, <a href="../../engineering/engineering-manuals/modules.html#module-limpet-controllers">limpet controllers</a> and refinery stock &mdash; they don't benefit meaningfully from engineering.</li>
+    </ul>
+    <div class="callout"><span class="lbl">Material intensity (qualitative)</span><p>Light &mdash; only the ship's range, mobility and defence blueprints on modest medium modules; the mining tools are left stock, so there's no weapon-style grind. With a complete inventory this is spend, not farm. Ask for exact per-blueprint counts if needed.</p></div>
+  </section>
+
+  <!-- s10 -->
+  <section id="section-key-stat-upgrades">
+    <div class="sec-head"><span class="sec-num">10</span><h2>Key Stat Upgrades</h2></div>
+    <p>Approximate progression across the three states (figures are representative, not exact rolls):</p>
+    <div class="tbl-scroll">
+    <table class="data">
+      <thead><tr><th>Stat</th><th>Initial</th><th>A-rated</th><th>Engineered</th></tr></thead>
+      <tbody>
+        <tr><td class="mod">Ore per trip (t)</td><td>~32</td><td>~56</td><td class="acc">~64</td></tr>
+        <tr><td class="mod">Survives pirates</td><td>barely</td><td>flees</td><td class="acc">flees reliably</td></tr>
+        <tr><td class="mod">Shield (MJ)</td><td>none</td><td>~140</td><td class="acc">~300</td></tr>
+        <tr><td class="mod"><a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">Bulkheads</a></td><td>Lightweight</td><td>Lightweight</td><td class="acc">Lightweight (G5)</td></tr>
+        <tr><td class="mod">Tool mounts</td><td>2S</td><td>2S</td><td class="acc">2S</td></tr>
+        <tr><td class="mod">Pad access</td><td>medium</td><td>medium</td><td class="acc">medium</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Engineered, the Type-6 laser-mines a ~64t ore hold behind a modest shield, for almost nothing &mdash; a profitable first miner that reaches the hotspots and gets the haul home. The engineering stays lightweight throughout: G5 Lightweight Armour on the stock Lightweight Alloy <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a> and a Stripped Down <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">power distributor</a>, both shaving mass to protect the jump range that gets you to the paying rocks. Its hold stays small and its two hardpoints cap the tools it can carry; its job is to earn cheaply and fund a real miner.</p>
+  </section>
+
+  <!-- s11 -->
+  <section id="section-key-activities-where-to-do-them">
+    <div class="sec-head"><span class="sec-num">11</span><h2>Key Activities &amp; Where To Do Them</h2></div>
+    <div class="cards two">
+      <div class="card"><span class="ico">Getting started</span><ul class="bullets">
+      <li><b>Laser <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining</a> hotspots.</b> Work painite, platinum or tritium hotspots with a laser, abrasion blaster and a collector swarm.</li>
+      <li><b>Learning the loop.</b> Prospect, fire, refine and stow &mdash; the full mining rhythm on a forgiving budget hull.</li>
+      <li><b>Building <a href="../../engineering/engineering-manuals/modules.html#module-mining">mining</a> capital.</b> Bank early ore profits toward a <a href="type-8-transporter-mining.html">Type-8</a> or a capital miner.</li>
+    </ul></div>
+      <div class="card"><span class="ico">Advanced</span><ul class="bullets">
+      <li><b>Accessible cores.</b> Swap in a seismic launcher for occasional core cracking in quieter rings &mdash; one tool at a time.</li>
+      <li><b>Tritium top-ups.</b> Mine a modest fuel load for a fleet carrier on a starter budget.</li>
+      <li><b>Quiet-ring runs.</b> Lightly defended &mdash; work calmer systems and high-wake out the moment a pirate arrives.</li>
+    </ul></div>
+    </div>
+    <div class="callout"><span class="lbl">Generic example sites</span><p>Any accessible pristine metallic or icy ring suits it. From your home base it reaches mining systems easily; pick quieter rings while you learn, prospect, refine, and wake out if a pirate interdicts the haul.</p></div>
+  </section>
+
+  <!-- s12 -->
+  <section id="section-field-notes-what-else-to-know">
+    <div class="sec-head"><span class="sec-num">12</span><h2>Field Notes &mdash; What Else To Know</h2></div>
+    <ul class="bullets">
+      <li>Run it as a laser miner &mdash; two small hardpoints can't carry the full core-mining trio.</li>
+      <li>Keep a small bi-weave shield; the Type-6 is lightly built and pirates target laden miners.</li>
+      <li>A-rate the distributor and plant so <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> and limpets run together without browning out.</li>
+      <li>Don't engineer the mining tools &mdash; they don't benefit; engineer range, mobility and the shield instead.</li>
+      <li>It's a starter, not a keeper &mdash; bank the ore profit toward a <a href="type-8-transporter-mining.html">Type-8</a> or a capital miner.</li>
+    </ul>
+    <div class="callout"><span class="lbl">Verdict</span><p>The Type-6 Transporter is the cheapest functional miner: a refinery, limpets, ore racks and a small shield on a medium pad for under a million credits. Two small hardpoints cap it to laser mining, the ore hold is small, and it flees pirates rather than fighting them &mdash; which is why it rates <b>62</b>, ahead of the small-pad hulls but well below the real medium miners and the capital haulers. As a first miner that teaches the loop and funds the next ship, it earns its place; as a destination, it doesn't.</p></div>
+  </section>
+
+  <!-- Sources -->
+  <section class="credits" id="section-credits">
+    <div class="sec-head"><span class="sec-num">13</span><h2>Sources</h2></div>
+    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="cr-rows">
+      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Interactive outfitting &amp; build planner used to verify the mining loadout, slot sizes and power budget for this hull.</span><a class="cr-link" href="https://coriolis.io/outfit/type_6_transporter" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/type_6_transporter</a></div>
+      <div class="cr-row"><span class="cr-src">Elite Dangerous (official)</span><span class="cr-what">Frontier's official Type-6 Transporter ship page — manufacturer specs and the ship render used on this page.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/type-6-transporter" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../type-6-transporter</a></div>
+      <div class="cr-row"><span class="cr-src">EDCD coriolis-data</span><span class="cr-what">Authoritative hardpoint count, optional-internal slot sizes and base hull stats behind the mining build on this page.</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/blob/master/ships/type_6_transporter.json" target="_blank" rel="noopener noreferrer">coriolis-data/ships/type_6_transporter.json</a></div>
+      <div class="cr-row"><span class="cr-src">Inara &mdash; Type-6 Transporter</span><span class="cr-what">Ship specification, base stats and shipyard pricing cross-checked for the cost figures here.</span><a class="cr-link" href="https://inara.cz/elite/ship/30/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/30</a></div>
+      <div class="cr-row"><span class="cr-src">ED Wiki &mdash; Type-6 Transporter</span><span class="cr-what">Hull role, Lakon background and hardpoint / internal layout used to frame its mining limits.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Type-6_Transporter" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Type-6_Transporter</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="ft-fine">
+      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Ship &times; Role Dossier &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
+      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../../../design-system/js/ed-blackbox.js" defer></script>
+</body>
+</html>
