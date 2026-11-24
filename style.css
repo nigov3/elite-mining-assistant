@@ -111,3 +111,8 @@ body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
 .filters button.exo-first-toggle{border:1px solid #64748b88;border-radius:9px;background:transparent;color:inherit;padding:12px 16px;white-space:nowrap;cursor:pointer;box-shadow:none}.filters button.exo-first-toggle:hover{border-color:#f89b36}.filters button.exo-first-toggle[aria-pressed="true"]{border-color:#f89b36;color:#e98a24;background:#f89b361a;box-shadow:inset 0 -2px #f89b36}
 
 .filters button.exo-first-toggle{box-sizing:border-box;width:44px;height:44px;min-width:44px;flex:0 0 44px;padding:0;display:inline-flex;align-items:center;justify-content:center;font-size:16px;line-height:1}
+
+/* Explicit multiplier states, overriding generic button theme styles. */
+#exo-first[aria-pressed="false"],#exo-first[aria-pressed="false"]:hover,#exo-first[aria-pressed="false"]:focus{color:#94a3b8!important;border:1px solid #64748b88!important;background:transparent!important;box-shadow:none!important;text-shadow:none!important;font-weight:400}
+#exo-first[aria-pressed="true"]{color:#ffad55!important;border:1px solid #f89b36!important;background:#f89b3626!important;box-shadow:0 0 8px #f89b3640,inset 0 0 6px #f89b361a!important;font-weight:700}
+#exo-first:focus-visible{outline:2px solid #94a3b8;outline-offset:3px}
