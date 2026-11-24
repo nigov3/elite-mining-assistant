@@ -116,3 +116,5 @@ body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
 #exo-first[aria-pressed="false"],#exo-first[aria-pressed="false"]:hover,#exo-first[aria-pressed="false"]:focus{color:#94a3b8!important;border:1px solid #64748b88!important;background:transparent!important;box-shadow:none!important;text-shadow:none!important;font-weight:400}
 #exo-first[aria-pressed="true"]{color:#ffad55!important;border:1px solid #f89b36!important;background:#f89b3626!important;box-shadow:0 0 8px #f89b3640,inset 0 0 6px #f89b361a!important;font-weight:700}
 #exo-first:focus-visible{outline:2px solid #94a3b8;outline-offset:3px}
+
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}.guide-card{display:flex;flex-direction:column;gap:8px}.guide-card p{flex:1}.guide-link{display:block;padding:10px;border:1px solid #f89b36;border-radius:8px;text-align:center;color:#e98a24;text-decoration:none}.guide-link:hover{background:#f89b361a}
