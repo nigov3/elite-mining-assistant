@@ -1,0 +1,1190 @@
+[
+  {
+    "path": "guides/engineering/engineering-manuals/blueprints.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Чертежи"
+  },
+  {
+    "path": "guides/engineering/engineering-manuals/checklist.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Чек-лист инженерии"
+  },
+  {
+    "path": "guides/engineering/engineering-manuals/engineers.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Инженеры"
+  },
+  {
+    "path": "guides/engineering/engineering-manuals/modules.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Модули"
+  },
+  {
+    "path": "guides/engineering/materials-and-farming/crystalline-shards.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Кристаллические осколки"
+  },
+  {
+    "path": "guides/engineering/materials-and-farming/davs-hope.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Dav’s Hope"
+  },
+  {
+    "path": "guides/engineering/materials-and-farming/high-grade-emissions.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Высококлассные сигналы"
+  },
+  {
+    "path": "guides/engineering/materials-and-farming/jameson-crash-site.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Место крушения Джеймсона"
+  },
+  {
+    "path": "guides/engineering/materials-and-farming/materials.html",
+    "category": "Инженеры",
+    "role": "",
+    "title": "Материалы"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/ax.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Антитаргоидный бой"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/combat.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Бой"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/exploration.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Исследование"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/mining.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Добыча"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/multipurpose.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Многоцелевой"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/passenger.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Пассажирские перевозки"
+  },
+  {
+    "path": "guides/ships/best-ships-by-role/trading.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Лучшие корабли — Торговля"
+  },
+  {
+    "path": "guides/ships/general/rating-methodology.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Методика рейтинга"
+  },
+  {
+    "path": "guides/ships/general/ship-role-matrix.html",
+    "category": "Корабли",
+    "role": "",
+    "title": "Матрица ролей кораблей"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/adder-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Adder"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/adder-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Adder"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-challenger-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Alliance Challenger"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-challenger-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Alliance Challenger"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-chieftain-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Alliance Chieftain"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-chieftain-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Alliance Chieftain"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-crusader-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Alliance Crusader"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/alliance-crusader-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Alliance Crusader"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/anaconda-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Anaconda"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-explorer-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Asp Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-explorer-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Asp Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-explorer-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Asp Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-explorer-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Asp Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-explorer-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Asp Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/asp-scout-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Asp Scout"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/beluga-liner-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Beluga Liner"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/beluga-liner-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Beluga Liner"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/beluga-liner-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Beluga Liner"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/beluga-liner-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Beluga Liner"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/caspian-explorer-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Caspian Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/caspian-explorer-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Caspian Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/caspian-explorer-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Caspian Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/caspian-explorer-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Caspian Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/caspian-explorer-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Caspian Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Cobra Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iii-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Cobra Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iii-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Cobra Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iii-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Cobra Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iii-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Cobra Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iv-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Cobra Mk IV"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-iv-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Cobra Mk IV"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/cobra-mk-v-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Cobra Mk V"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/corsair-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Corsair"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/diamondback-explorer-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Diamondback Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/diamondback-explorer-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Diamondback Explorer"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/diamondback-scout-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Diamondback Scout"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/diamondback-scout-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Diamondback Scout"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/dolphin-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Dolphin"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/dolphin-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Dolphin"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/dolphin-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Dolphin"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/dolphin-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Dolphin"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/eagle-mk-ii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Eagle Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-assault-ship-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Federal Assault Ship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-assault-ship-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Federal Assault Ship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-corvette-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Federal Corvette"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-corvette-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Federal Corvette"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-corvette-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Federal Corvette"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-corvette-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Federal Corvette"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-corvette-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Federal Corvette"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-dropship-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Federal Dropship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-dropship-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Federal Dropship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-gunship-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Federal Gunship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/federal-gunship-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Federal Gunship"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/fer-de-lance-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Fer De Lance"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/fer-de-lance-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Fer De Lance"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/hauler-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Hauler"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/hauler-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Hauler"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-clipper-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Imperial Clipper"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-courier-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Imperial Courier"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-courier-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Imperial Courier"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-courier-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Imperial Courier"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-courier-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Imperial Courier"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-cutter-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Imperial Cutter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/imperial-eagle-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Imperial Eagle"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/keelback-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Keelback"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/keelback-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Keelback"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/kestrel-mk-ii-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Kestrel Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/kestrel-mk-ii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Kestrel Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/kestrel-mk-ii-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Kestrel Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-mk-ii-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Krait Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/krait-phantom-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Krait Phantom"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/lynx-highliner-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Lynx Highliner"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/mamba-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Mamba"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/mamba-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Mamba"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/mandalay-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Mandalay"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/mandalay-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Mandalay"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/orca-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Orca"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/orca-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Orca"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/panther-clipper-mk-ii-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Panther Clipper Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/panther-clipper-mk-ii-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Panther Clipper Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/panther-clipper-mk-ii-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Panther Clipper Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/panther-clipper-mk-ii-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Panther Clipper Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-mk-ii-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Python Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-mk-ii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Python Mk II"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/python-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Python"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/sidewinder-mk-i-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Sidewinder Mk I"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-10-defender-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Type 10 Defender"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-10-defender-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Type 10 Defender"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-10-defender-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 10 Defender"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-10-defender-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 10 Defender"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-10-defender-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 10 Defender"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-11-prospector-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Type 11 Prospector"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-11-prospector-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 11 Prospector"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-11-prospector-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 11 Prospector"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-11-prospector-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 11 Prospector"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-6-transporter-exploration.html",
+    "category": "Корабли",
+    "role": "Исследование",
+    "title": "Type 6 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-6-transporter-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 6 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-6-transporter-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 6 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-6-transporter-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 6 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-7-transporter-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 7 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-7-transporter-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 7 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-7-transporter-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Type 7 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-7-transporter-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 7 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-8-transporter-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 8 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-8-transporter-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 8 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-8-transporter-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Type 8 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-8-transporter-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 8 Transporter"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-9-heavy-mining.html",
+    "category": "Корабли",
+    "role": "Добыча",
+    "title": "Type 9 Heavy"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-9-heavy-multipurpose.html",
+    "category": "Корабли",
+    "role": "Многоцелевой",
+    "title": "Type 9 Heavy"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-9-heavy-passenger.html",
+    "category": "Корабли",
+    "role": "Пассажирские перевозки",
+    "title": "Type 9 Heavy"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/type-9-heavy-trading.html",
+    "category": "Корабли",
+    "role": "Торговля",
+    "title": "Type 9 Heavy"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/viper-mk-iii-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Viper Mk III"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/viper-mk-iv-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Viper Mk IV"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/vulture-ax.html",
+    "category": "Корабли",
+    "role": "Антитаргоидный бой",
+    "title": "Vulture"
+  },
+  {
+    "path": "guides/ships/ship-dossiers/vulture-combat.html",
+    "category": "Корабли",
+    "role": "Бой",
+    "title": "Vulture"
+  },
+  {
+    "path": "guides/systems/activity-guides/ax.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Антитаргоидный бой"
+  },
+  {
+    "path": "guides/systems/activity-guides/combat.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Бой"
+  },
+  {
+    "path": "guides/systems/activity-guides/exploration.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Исследование"
+  },
+  {
+    "path": "guides/systems/activity-guides/mining.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Добыча"
+  },
+  {
+    "path": "guides/systems/activity-guides/passenger.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Пассажирские перевозки"
+  },
+  {
+    "path": "guides/systems/activity-guides/trading.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Торговля"
+  },
+  {
+    "path": "guides/systems/combat-venues/combat-zones.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Зоны конфликтов"
+  },
+  {
+    "path": "guides/systems/combat-venues/pve-combat-venues.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Боевые зоны PvE"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/bgs.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Фоновая симуляция"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/community-goals.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Общественные цели"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/fleet-carrier.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Авианосец"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/powerplay.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Powerplay"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/superpower-rank.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Ранги сверхдержав"
+  },
+  {
+    "path": "guides/systems/galaxy-and-power-systems/system-colonization.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Колонизация систем"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/cmdrs-lexicon.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Словарь пилота"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/docking-landing-manual.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Стыковка и посадка"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/hud-customization.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Настройка HUD"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/new-cmdr-guide.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Руководство новичка"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/pilots-federation.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Федерация пилотов"
+  },
+  {
+    "path": "guides/systems/new-pilot-and-interface/third-party-apps.html",
+    "category": "Игровые механики",
+    "role": "",
+    "title": "Сторонние приложения"
+  }
+]
