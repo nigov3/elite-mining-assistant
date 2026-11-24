@@ -33,7 +33,8 @@
         "Серый - W",
         "Аметист-Y",
         "Индиго-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Aleoida Coronamus",
@@ -66,7 +67,8 @@
         "Серый - W",
         "Аметист-Y",
         "Индиго-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Aleoida Gravis",
@@ -99,7 +101,8 @@
         "Серый - W",
         "Аметист-Y",
         "Индиго-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Aleoida Laminiae",
@@ -132,7 +135,8 @@
         "Серый - W",
         "Аметист-Y",
         "Индиго-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Aleoida Spica",
@@ -165,7 +169,8 @@
         "Серый - W",
         "Аметист-Y",
         "Индиго-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Bacterium Acies",
@@ -192,7 +197,8 @@
         "Кобальт-рутений",
         "Сине-зеленый-сурьма",
         "Аквамарин-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Alcyoneum",
@@ -226,7 +232,8 @@
         "Аметист-W",
         "Сирень-Y",
         "D-охра"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Aurasus",
@@ -260,7 +267,8 @@
         "Аметист-W",
         "Сирень-Y",
         "D-охра"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Bullaris",
@@ -287,7 +295,8 @@
         "Аквамарин-рутений",
         "Кобальт-сурьма",
         "Красный-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Cerbrus",
@@ -322,7 +331,8 @@
         "Сирень-Y",
         "D-охра",
         "Оранжевый-Ae/Be"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Informem",
@@ -349,7 +359,8 @@
         "Золото-рутений",
         "Красный-сурьма",
         "Кобальт-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Nebulus",
@@ -376,7 +387,8 @@
         "Золото-полоний",
         "Оранжевый-рутений",
         "Сине-зеленый-технеций"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Omentum",
@@ -403,7 +415,8 @@
         "Лайм-кадмий",
         "Синий-олово",
         "Аквамарин-молибден"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Scopulum",
@@ -430,7 +443,8 @@
         "Аквамарин-вольфрам",
         "Лайм-молибден",
         "Белый-кадмий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Tela",
@@ -457,7 +471,8 @@
         "Зеленый - Вольфрам",
         "Желтый-молибден",
         "Золото-кадмий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Verrata",
@@ -484,7 +499,8 @@
         "Белый-молибден",
         "Персик-кадмий",
         "Красный-ртуть"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Vesicula",
@@ -511,7 +527,8 @@
         "Шелковица-рутений",
         "Сине-зеленый-сурьма",
         "Лайм-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Bacterium Volu",
@@ -538,7 +555,8 @@
         "Золото-иттрий",
         "Кобальт-рутений",
         "Красный=сурьма"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Cactoida Cortexum",
@@ -568,7 +586,8 @@
         "Красный-TTS",
         "Шалфей-N",
         "Охра-Y"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Cactoida Lapis",
@@ -592,7 +611,8 @@
         "Красный-TTS",
         "Шалфей-N",
         "Охра-Y"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Cactoida Peperatis",
@@ -622,7 +642,8 @@
         "Красный-TTS",
         "Шалфей-N",
         "Охра-Y"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Cactoida Pullulanta",
@@ -651,7 +672,8 @@
         "Красный-TTS",
         "Шалфей-N",
         "Охра-Y"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Cactoida Vermis",
@@ -694,7 +716,8 @@
         "Шалфей-N",
         "Охра-Y",
         "Зеленый-А"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Clypeus Lacrimam",
@@ -723,7 +746,8 @@
         "Бирюза-M",
         "Бирюзовый-L",
         "Желтый-N"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Clypeus Margaritus",
@@ -752,7 +776,8 @@
         "Бирюза-M",
         "Бирюзовый-L",
         "Желтый-N"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Clypeus Speculumi",
@@ -781,7 +806,8 @@
         "Бирюза-M",
         "Бирюзовый-L",
         "Желтый-N"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Concha Aureolas",
@@ -812,7 +838,8 @@
         "лайм-W",
         "Желтый-Y",
         "Зеленый-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Concha Biconcavis",
@@ -839,7 +866,8 @@
         "Золото-иттрий",
         "Белый-технеций",
         "Красный-полоний"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Concha Labiata",
@@ -870,7 +898,8 @@
         "лайм-W",
         "Желтый-Y",
         "Зеленый-D"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Concha Renibus",
@@ -897,7 +926,8 @@
         "Белый-вольфрам",
         "Персик-молибден",
         "Красный-кадмий"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Electricae Pluma",
@@ -924,7 +954,8 @@
         "Синий-рутений",
         "Кобальт-сурьма",
         "Шелковица-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 1000
     },
     {
       "name": "Electricae Radialem",
@@ -951,7 +982,8 @@
         "Синий-рутений",
         "Сине-зеленый-сурьма",
         "Зеленый-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 1000
     },
     {
       "name": "Fonticulua Campestris",
@@ -986,7 +1018,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Fonticulua Digitos",
@@ -1021,7 +1054,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Fonticulua Fluctus",
@@ -1056,7 +1090,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Fonticulua Lapida",
@@ -1091,7 +1126,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Fonticulua Segmentatus",
@@ -1126,7 +1162,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Fonticulua Upupam",
@@ -1161,7 +1198,8 @@
         "Охра - Y",
         "Бирюза-D",
         "AE/BE -бордо"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Frutexa Acus",
@@ -1191,7 +1229,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Collum",
@@ -1221,7 +1260,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Fera",
@@ -1251,7 +1291,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Flabellum",
@@ -1281,7 +1322,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Flammasis",
@@ -1311,7 +1353,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Metallicum",
@@ -1341,7 +1384,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Frutexa Sponsae",
@@ -1371,7 +1415,8 @@
         "красный-N",
         "оранжевый-W",
         "D-индиго"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Fumerola Aquatis",
@@ -1398,7 +1443,8 @@
         "Кобальт-вольфрам",
         "Сине-зеленый-молибден",
         "Зеленый-Кадмий"
-      ]
+      ],
+      "sampleDistanceM": 100
     },
     {
       "name": "Fumerola Carbosis",
@@ -1425,7 +1471,8 @@
         "Желтый-Вольфрам",
         "Золото-Молибден",
         "Оранжевый-Кадмий"
-      ]
+      ],
+      "sampleDistanceM": 100
     },
     {
       "name": "Fumerola Extremus",
@@ -1452,7 +1499,8 @@
         "Шелковица-вольфрам",
         "Аквамарин-кадмий",
         "Синий-молибден"
-      ]
+      ],
+      "sampleDistanceM": 100
     },
     {
       "name": "Fumerola Nitris",
@@ -1479,7 +1527,8 @@
         "Аквамарин-вольфрам",
         "Лайм-молибден",
         "Белый-кадмий"
-      ]
+      ],
+      "sampleDistanceM": 100
     },
     {
       "name": "Fungoida Bullarum",
@@ -1506,7 +1555,8 @@
         "Маджента-рутений",
         "Красный-сурьма",
         "Оранжевый-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Fungoida Gelata",
@@ -1533,7 +1583,8 @@
         "Оранжевый-Вольфрам",
         "Шелковица-молибден",
         "Сине-зеленый-Кадмий"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Fungoida Setisis",
@@ -1560,7 +1611,8 @@
         "Золото-рутений",
         "Персик-сурьма",
         "Оранжевый-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Fungoida Stabitis",
@@ -1587,7 +1639,8 @@
         "Персик-Вольфрам",
         "Маджента-молибден",
         "Синий-Кадмий"
-      ]
+      ],
+      "sampleDistanceM": 300
     },
     {
       "name": "Osseus Cornibus",
@@ -1615,7 +1668,8 @@
         "Изумруд-T",
         "Зеленый-TTS",
         "Бордо-Y"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Osseus Discus",
@@ -1642,7 +1696,8 @@
         "Красный-вольфрам",
         "Персик-молибден",
         "Белый-кадмий"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Osseus Fractus",
@@ -1670,7 +1725,8 @@
         "Изумруд-T",
         "Зеленый-TTS",
         "Бордо-Y"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Osseus Pellebantus",
@@ -1698,7 +1754,8 @@
         "Изумруд-T",
         "Зеленый-TTS",
         "Бордо-Y"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Osseus Pumice",
@@ -1725,7 +1782,8 @@
         "Золото-рутений",
         "Белый-сурьма",
         "Желтый-иттрий"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Osseus Spiralis",
@@ -1753,7 +1811,8 @@
         "Изумруд-T",
         "Зеленый-TTS",
         "Бордо-Y"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Recepta Conditivus",
@@ -1780,7 +1839,8 @@
         "Зеленый-иттрий",
         "Аквамарин-технеций",
         "Белый-полоний"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Recepta Deltahedronix",
@@ -1807,7 +1867,8 @@
         "Лайм-кадмий",
         "Сине-зеленый-ртуть",
         "Золото-молибден"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Recepta Umbrux",
@@ -1837,7 +1898,8 @@
         "Охра-L",
         "Бирюзовый-T",
         "шалфей-TTS"
-      ]
+      ],
+      "sampleDistanceM": 150
     },
     {
       "name": "Stratum Araneamus",
@@ -1859,7 +1921,8 @@
       ],
       "variants": [
         "Изумруд-A, B"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Cucumisis",
@@ -1889,7 +1952,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Excutitus",
@@ -1919,7 +1983,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Frigus",
@@ -1949,7 +2014,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Laminamus",
@@ -1979,7 +2045,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Limaxus",
@@ -2009,7 +2076,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Paleas",
@@ -2039,7 +2107,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Stratum Tectonicas",
@@ -2069,7 +2138,8 @@
         "Красный-W",
         "Индиго-Y",
         "D-сирень"
-      ]
+      ],
+      "sampleDistanceM": 500
     },
     {
       "name": "Tubus Cavas",
@@ -2102,7 +2172,8 @@
         "аметист-N",
         "Лайм-W или D",
         "D-желтый"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Tubus Compagibus",
@@ -2135,7 +2206,8 @@
         "аметист-N",
         "Лайм-W или D",
         "D-желтый"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Tubus Conifer",
@@ -2168,7 +2240,8 @@
         "аметист-N",
         "Лайм-W или D",
         "D-желтый"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Tubus Rosarium",
@@ -2201,7 +2274,8 @@
         "аметист-N",
         "Лайм-W или D",
         "D-желтый"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Tubus Sororibus",
@@ -2234,7 +2308,8 @@
         "аметист-N",
         "Лайм-W или D",
         "D-желтый"
-      ]
+      ],
+      "sampleDistanceM": 800
     },
     {
       "name": "Tussock Albata",
@@ -2264,7 +2339,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Capillum",
@@ -2294,7 +2370,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Caputus",
@@ -2324,7 +2401,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Catena",
@@ -2354,7 +2432,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Cultro",
@@ -2384,7 +2463,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Divisa",
@@ -2414,7 +2494,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Ignis",
@@ -2444,7 +2525,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Pennata",
@@ -2474,7 +2556,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Pennatis",
@@ -2504,7 +2587,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Propagito",
@@ -2534,7 +2618,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Serrati",
@@ -2564,7 +2649,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Stigmasis",
@@ -2594,7 +2680,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Triticum",
@@ -2624,7 +2711,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Ventusa",
@@ -2654,7 +2742,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     },
     {
       "name": "Tussock Virgam",
@@ -2684,7 +2773,8 @@
         "оранжевый-W",
         "D-бордо",
         "Y-красный"
-      ]
+      ],
+      "sampleDistanceM": 200
     }
   ],
   "referenceTables": {
@@ -4660,5 +4750,6 @@
         ""
       ]
     ]
-  }
+  },
+  "distanceSource": "https://elite-dangerous.fandom.com/wiki/Genetic_Sampler"
 }
