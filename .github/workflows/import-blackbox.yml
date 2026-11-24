@@ -1,0 +1,25 @@
+name: Import Black Box dossiers
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-blackbox.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch upstream
+        run: git clone --depth 1 --branch master https://github.com/tusharsaxena/ed-blackbox.git /tmp/blackbox
+      - name: Import original pages and assets
+        run: |
+          mkdir -p blackbox
+          cp -r /tmp/blackbox/guides /tmp/blackbox/design-system /tmp/blackbox/images blackbox/
+          cp /tmp/blackbox/LICENSE blackbox/LICENSE
+          find blackbox/guides -name '*.html' -exec sed -i '/<script[^>]*analytics.js/d' {} +
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blackbox
+          if ! git diff --cached --quiet; then git commit -m "Import MIT-licensed Black Box guides and assets"; git push; fi
