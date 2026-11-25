@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caspian Explorer &middot; Multipurpose &middot; Ship Dossier | E:D Black Box</title>
+<title>Caspian Explorer &middot; Многоцелевой корабль &middot; Досье корабля | E:D Black Box</title>
 <link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
 <link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
 <!-- Per-page accent: Multipurpose → amber (design-system default; no override needed) -->
@@ -14,50 +14,50 @@
 <!-- ---- GLOBAL HEADER ---- -->
 <header class="site-header">
   <div class="hdr-inner">
-    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box: главная">
       <img src="../../../images/logos/logo.png" alt="">
       <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
     </a>
     <span class="nav-sep" aria-hidden="true"></span>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="../../index.html">Home</a>
-      <a href="../../index.html#section-dossiers" class="active">Ships</a>
-      <a href="../../index.html#section-engineering">Engineering</a>
-      <a href="../../index.html#section-systems">Systems</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../../index.html">Главная</a>
+      <a href="../../index.html#section-dossiers" class="active">Корабли</a>
+      <a href="../../index.html#section-engineering">Инженеры</a>
+      <a href="../../index.html#section-systems">Системы</a>
     </nav>
     <div class="header-qn">
       <div class="hdr-crumb">
-        <span class="hdr-crumb-title">Caspian Explorer · Multipurpose</span>
+        <span class="hdr-crumb-title">Caspian Explorer · Многоцелевой корабль</span>
         <span class="hdr-crumb-trail">
-          <a href="../../index.html#section-dossiers">Ships</a>
+          <a href="../../index.html#section-dossiers">Корабли</a>
           <span class="sep">›</span>
-          <a href="../../index.html#section-ship-dossiers">Ship Dossiers</a>
+          <a href="../../index.html#section-ship-dossiers">Досье кораблей</a>
         </span>
       </div>
-      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+      <button class="qn-totop" type="button" aria-label="В начало страницы" title="В начало страницы">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
       </button>
       <div class="qn-dd" id="qn-dd">
         <div class="qn-field">
           <span class="qn-ico" aria-hidden="true">⌕</span>
-          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
-          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Перейти к разделу…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Очистить поиск" hidden>×</button>
         </div>
         <div class="qn-panel" id="qn-panel" role="listbox">
-          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Role &amp; Overview</span><span class="qn-side">01</span></a>
-          <a class="qn-item" href="#section-key-stats-what-makes-it-versatile"><span class="qn-dot amber"></span><span class="qn-nm">Key Stats &amp; What Makes It Versatile</span><span class="qn-side">02</span></a>
-          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">Why This Rating</span><span class="qn-side">03</span></a>
-          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">How It Compares</span><span class="qn-side">04</span></a>
-          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Cost &amp; Access</span><span class="qn-side">05</span></a>
-          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">3-State Loadout</span><span class="qn-side">06</span></a>
-          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Initial Loadout &mdash; Buy-Only Plan</span><span class="qn-side">07</span></a>
-          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">A-Rated Loadout &mdash; Upgrade Plan</span><span class="qn-side">08</span></a>
-          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">Engineering Plan</span><span class="qn-side">09</span></a>
-          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Key Stat Upgrades</span><span class="qn-side">10</span></a>
-          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Key Activities &amp; Where To Do Them</span><span class="qn-side">11</span></a>
-          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Field Notes &mdash; What Else To Know</span><span class="qn-side">12</span></a>
-          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">13</span></a>
-          <div class="qn-empty" hidden>No matching sections</div>
+          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Роль и обзор</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-key-stats-what-makes-it-versatile"><span class="qn-dot amber"></span><span class="qn-nm">Характеристики и преимущества в разных ролях</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">За что такая оценка</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">Сравнение с другими кораблями</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Цена и условия покупки</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">Три варианта оснащения</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Начальная сборка: только покупка</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">Сборка класса A: план оснащения</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">План инженерных улучшений</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Как меняются характеристики</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Чем заняться и куда полететь</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Советы из практики</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Источники</span><span class="qn-side">13</span></a>
+          <div class="qn-empty" hidden>Разделы не найдены</div>
         </div>
       </div>
     </div>
@@ -67,276 +67,276 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="kicker">Ship Dossier <span class="sep">//</span> Saud Kruger</div>
-    <h1 class="title"><span>Caspian Explorer</span><span class="role ac-role-multipurpose">Multipurpose</span></h1>
+    <div class="kicker">Досье корабля <span class="sep">//</span> Saud Kruger</div>
+    <h1 class="title"><span>Caspian Explorer</span><span class="role ac-role-multipurpose">Многоцелевой</span></h1>
     <div class="masthead-meta">
-      <span>Series <b>Ships</b></span>
-      <span>Updated <b>2026-07-01</b></span>
+      <span>Серия <b>Корабли</b></span>
+      <span>Обновлено <b>2026-07-01</b></span>
     </div>
   </header>
 
   <div class="verdict has-render">
     <div class="v-body">
-      <div class="v-eyebrow">Briefing</div>
-      <h2>Does <em>every job but one</em> — a gunless generalist with flagship reach and capacity</h2>
-      <p>A flexible do-everything hull with one hard limit: it carries <b>no weapon hardpoints</b>, so it does every job except combat. Fourteen optional internals and a class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> let one Caspian explore, haul, ferry passengers and run surface science in flagship comfort — but with zero guns and a ~189M Cr price, it is a costly generalist that can never fight. For versatility with teeth, a medium all-rounder does more for far less.</p>
+      <div class="v-eyebrow">Краткий обзор</div>
+      <h2>Подходит <em>для любой задачи, кроме одной</em> : безоружный универсал с дальностью и вместимостью флагмана</h2>
+      <p>Универсальному кораблю поставлен жёсткий предел: <b>нет точек подвески оружия</b>, так что он годится для всего, кроме боёв. Четырнадцать дополнительных отсеков и <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса позволяют на одном Caspian исследовать, возить грузы и пассажиров и работать на поверхности с комфортом флагмана. Но за ~189 млн кредитов вы покупаете универсал, который никогда не сможет сражаться. Если боевые возможности важны, средний универсал умеет больше за меньшие деньги.</p>
     </div>
     <figure class="ship-figure">
-      <img src="../../../images/ships/caspian-explorer.jpg" alt="Caspian Explorer" width="160" height="90">
+      <img src="../../../images/ships/caspian-explorer.jpg" alt="Корабль Caspian Explorer" width="160" height="90">
       <figcaption><b>Caspian Explorer</b> &middot; Saud Kruger</figcaption>
     </figure>
     <div class="stat-grid">
       <div class="stat"><div class="n">66<small>/100</small></div><div class="bar mini"><i style="--pct:66"></i></div></div>
-      <div class="stat"><div class="n">14</div><div class="l">Optional internals</div></div>
-      <div class="stat"><div class="n">0</div><div class="l">Weapon hardpoints</div></div>
-      <div class="stat"><div class="n">6</div><div class="l">Utility mounts</div></div>
-      <div class="stat"><div class="n">~434 t</div><div class="l">Max cargo</div></div>
-      <div class="stat"><div class="n">~189M Cr</div><div class="l">Hull price</div></div>
+      <div class="stat"><div class="n">14</div><div class="l">Дополнительные отсеки</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Точки подвески оружия</div></div>
+      <div class="stat"><div class="n">6</div><div class="l">Внешние крепления</div></div>
+      <div class="stat"><div class="n">~434 т</div><div class="l">Макс. груз</div></div>
+      <div class="stat"><div class="n">~189M Cr</div><div class="l">Цена корпуса</div></div>
     </div>
   </div>
 
-  <div class="callout"><span class="lbl">Rating methodology</span><p>This ship's <span class="acc">1&ndash;100 suitability rating</span> reflects its fully-engineered fit for this role, scored against every ship in the role. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  <div class="callout"><span class="lbl">Как выставляется оценка</span><p>Оценка пригодности корабля <span class="acc">от 1 до 100</span> учитывает его полностью улучшенную сборку и сравнивает её с другими кораблями в этой роли. Подробнее: <a href="../general/rating-methodology.html">как оцениваются корабли</a>.</p></div>
   <!-- s1 -->
   <section id="section-role-overview">
-    <div class="sec-head"><span class="sec-num">01</span><h2>Role &amp; Overview</h2></div>
-    <p>The Caspian Explorer is Saud Kruger's dedicated deep-space flagship, and its multipurpose case rests entirely on space. Fourteen optional internals and six utility mounts give it module capacity and comfort no other hull matches, and a class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> carries all of it a long way. As a generalist it trades, ferries passengers, explores and runs surface science from a single airframe, re-roled by swapping optional internals.</p>
-    <p>The catch is fundamental: the Caspian mounts <b>no weapons at all</b> &mdash; not a single hardpoint, only six utility slots for defensive kit. That makes it a multipurpose ship that can do every job except fight, and a poor choice the moment a task involves combat. It is also a large pad and a ~189M Cr investment. Its versatility is real but one-sided, which is why a cheaper medium all-rounder is the wiser buy for most commanders.</p>
-    <div class="callout"><span class="lbl">Where this hull shines</span><p>Non-combat multitasking at flagship scale: long trade runs, luxury passenger tourism, deep-space exploration and large-scale exobiology &mdash; all from one hull with room and range to spare, provided nothing needs shooting.</p></div>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Роль и обзор</h2></div>
+    <p>Caspian Explorer — флагман Saud Kruger для глубокого космоса. Его универсальность держится на вместимости. Четырнадцать дополнительных отсеков и шесть внешних креплений дают место и комфорт, которых нет у других кораблей, а <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса позволяет увезти всё это далеко. Меняя модули в дополнительных отсеках, на одном корпусе можно торговать, возить пассажиров, исследовать и работать на поверхности.</p>
+    <p>Но Caspian совсем <b>не несёт оружия</b> : ни одной точки подвески, только шесть внешних креплений для защиты. Поэтому он делает всё, кроме боёв, и не подходит ни для одной боевой задачи. Ещё нужна большая площадка и около 189 млн кредитов. Универсальность реальная, но односторонняя. Для большинства пилотов разумнее более дешёвый средний универсал.</p>
+    <div class="callout"><span class="lbl">Где корабль особенно хорош</span><p>Мирные задачи в масштабе флагмана: дальние торговые перевозки, роскошные пассажирские туры, исследования глубокого космоса и масштабная экзобиология. Всё на одном корабле с запасом дальности и места, пока ни в кого не надо стрелять.</p></div>
     <div class="nolink">
-      <h3 class="subhead">Other role builds of this ship</h3>
+      <h3 class="subhead">Сборки этого корабля для других задач</h3>
       <div class="vchips">
-        <a class="vchip r-exploration" href="caspian-explorer-exploration.html"><span class="vrole">Exploration</span><span class="vrate">94<small>/100</small></span></a>
-        <a class="vchip r-mining" href="caspian-explorer-mining.html"><span class="vrole">Mining</span><span class="vrate">60<small>/100</small></span></a>
-        <a class="vchip r-passenger" href="caspian-explorer-passenger.html"><span class="vrole">Passenger</span><span class="vrate">60<small>/100</small></span></a>
-        <a class="vchip r-trading" href="caspian-explorer-trading.html"><span class="vrole">Trading</span><span class="vrate">66<small>/100</small></span></a>
+        <a class="vchip r-exploration" href="caspian-explorer-exploration.html"><span class="vrole">Исследования</span><span class="vrate">94<small>/100</small></span></a>
+        <a class="vchip r-mining" href="caspian-explorer-mining.html"><span class="vrole">Добыча</span><span class="vrate">60<small>/100</small></span></a>
+        <a class="vchip r-passenger" href="caspian-explorer-passenger.html"><span class="vrole">Пассажирские перевозки</span><span class="vrate">60<small>/100</small></span></a>
+        <a class="vchip r-trading" href="caspian-explorer-trading.html"><span class="vrole">Торговля</span><span class="vrate">66<small>/100</small></span></a>
       </div>
     </div>
   </section>
 
   <!-- s2 -->
   <section id="section-key-stats-what-makes-it-versatile">
-    <div class="sec-head"><span class="sec-num">02</span><h2>Key Stats &amp; What Makes It Versatile</h2></div>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Характеристики и преимущества в разных ролях</h2></div>
     <div class="specgrid">
-      <div class="cell"><div class="k">Max cargo</div><div class="v">~434 <small>t</small></div></div>
-      <div class="cell"><div class="k">Max jump (engineered)</div><div class="v">~55&ndash;78 <small>LY</small></div></div>
-      <div class="cell"><div class="k">Weapon hardpoints</div><div class="v">0</div></div>
-      <div class="cell"><div class="k">Utility mounts</div><div class="v">6</div></div>
-      <div class="cell"><div class="k">Optional internals</div><div class="v">7&middot;6&middot;6&middot;5&middot;5&middot;5&middot;5&middot;4&middot;4&middot;3&middot;2&middot;1&middot;1&middot;1</div></div>
-      <div class="cell"><div class="k">Top speed / boost</div><div class="v">210 / 290 <small>m/s</small></div></div>
-      <div class="cell"><div class="k"><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a></div><div class="v">Class 8 <small>(dedicated)</small></div></div>
-      <div class="cell"><div class="k">Hull mass</div><div class="v">950 <small>t</small></div></div>
-      <div class="cell"><div class="k">Pad</div><div class="v">Large</div></div>
-      <div class="cell"><div class="k">Military slots</div><div class="v">0</div></div>
+      <div class="cell"><div class="k">Макс. груз</div><div class="v">~434 <small>т</small></div></div>
+      <div class="cell"><div class="k">Макс. прыжок с улучшениями</div><div class="v">~55&ndash;78 <small>св. лет</small></div></div>
+      <div class="cell"><div class="k">Точки подвески оружия</div><div class="v">0</div></div>
+      <div class="cell"><div class="k">Внешние крепления</div><div class="v">6</div></div>
+      <div class="cell"><div class="k">Дополнительные отсеки</div><div class="v">7&middot;6&middot;6&middot;5&middot;5&middot;5&middot;5&middot;4&middot;4&middot;3&middot;2&middot;1&middot;1&middot;1</div></div>
+      <div class="cell"><div class="k">Макс. скорость / с форсажем</div><div class="v">210 / 290 <small>м/с</small></div></div>
+      <div class="cell"><div class="k"><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a></div><div class="v">Класс 8 <small>(специализированный)</small></div></div>
+      <div class="cell"><div class="k">Масса корпуса</div><div class="v">950 <small>т</small></div></div>
+      <div class="cell"><div class="k">Площадка</div><div class="v">Большая</div></div>
+      <div class="cell"><div class="k">Военные отсеки</div><div class="v">0</div></div>
     </div>
-    <p>Three things make the Caspian a generalist &mdash; and one caps it:</p>
+    <p>Три сильные стороны Caspian как универсала и одно ограничение:</p>
     <ul class="bullets">
-      <li><b>Fourteen optional internals.</b> The deepest internal bay of any multipurpose hull &mdash; ~434 t of <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">cargo</a>, <a href="../../engineering/engineering-manuals/modules.html#module-passenger-cabin">passenger cabins</a>, exploration kit and comforts, all interchangeable per job.</li>
-      <li><b>Class-8 dedicated <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>.</b> Flagship reach &mdash; a stripped fit jumps ~78 LY, and even laden with cargo it stays a strong long-range traveller.</li>
-      <li><b>Six utility mounts.</b> A generous defensive suite &mdash; <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">shield boosters</a>, <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">heat sinks</a>, <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">chaff</a> and <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">point defence</a> to survive interdictions and slip away.</li>
-      <li><b>No weapons, ever.</b> Zero hardpoints means it cannot mount a single gun. The Caspian's multirole is explore/haul/ferry/science only &mdash; the combat half of "multipurpose" is simply absent.</li>
+      <li><b>Четырнадцать дополнительных отсеков.</b> Самый вместительный среди универсалов: около 434 т под <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">груз</a>, <a href="../../engineering/engineering-manuals/modules.html#module-passenger-cabin">пассажирские каюты</a>, исследовательские модули и удобства. Модули можно менять под нужную задачу.</li>
+      <li><b>Специализированный модуль 8-го класса: <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>.</b> Дальность флагмана: облегчённая сборка прыгает примерно на 78 св. лет, а с грузом корабль по-прежнему хорошо подходит для дальних рейсов.</li>
+      <li><b>Шесть внешних креплений.</b> Есть место для хорошего набора защиты: <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">усилителей щита</a>, <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">теплоотводы</a>, <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">дипольные отражатели</a> и <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">точечной обороны</a> , чтобы пережить перехват и уйти.</li>
+      <li><b>Оружия не будет.</b> Без точек подвески нельзя поставить ни одной пушки. Caspian годится для исследований, грузовых и пассажирских рейсов и работы на поверхности. Боевая часть универсальности отсутствует.</li>
     </ul>
-    <div class="callout"><span class="lbl">The ceiling, stated honestly</span><p>It's a gunless large pad &mdash; no outposts, no combat, ponderous at 210/290 m/s, and ~189M Cr to buy. Its case is capacity and range without teeth. For an all-rounder that also fights and lands at more stations, a <a href="python-multipurpose.html">Python</a> or <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> is the better ship for a fraction of the price.</p></div>
+    <div class="callout"><span class="lbl">В чём корабль уступает</span><p>Это безоружный корабль для больших площадок. Нет доступа к аванпостам и боевым задачам, скорость 210/290 м/с, цена около 189 млн кредитов. Его плюсы — вместимость и дальность. Если нужен универсал, который может сражаться и садится на большем числе станций, <a href="python-multipurpose.html">Python</a> или <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> лучше и стоит в разы дешевле.</p></div>
   </section>
 
   <!-- s3 -->
   <!-- Why This Rating -->
   <section id="section-why-this-rating">
-    <div class="sec-head"><span class="sec-num">03</span><h2>Why This Rating</h2><span class="tag">Scorecard</span></div>
-    <p class="lead">The role's deepest internals and a class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> carry it, but zero weapon hardpoints — it cannot mount a single gun — plus a ~189M Cr price and large-pad-only access cap a generalist that does every job except fight.</p>
-    <p>The <b>66/100</b> headline is a verdict against the multipurpose role's priority-ordered factors. Each factor carries a <b>weight</b> (its share of 100); this hull earns part of each based on how it performs against the whole field. The points <b>sum to the rating</b>.</p>
+    <div class="sec-head"><span class="sec-num">03</span><h2>За что такая оценка</h2><span class="tag">Оценка по критериям</span></div>
+    <p class="lead">Оценку держат самые вместительные отсеки в классе и <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса. Ноль оружейных креплений, цена около 189 млн кредитов и только большие площадки ограничивают универсал, который годится для всего, кроме боя.</p>
+    <p> <b>66/100</b> — итоговая оценка по критериям универсальной роли в порядке важности. Для каждого критерия есть <b>вес</b> (его доля из 100). Баллы по нему зависят от того, как корабль показал себя на фоне остальных. <b>Сумма баллов даёт итоговую оценку</b>.</p>
     <div class="tbl-scroll">
     <table class="data scorecard">
       <colgroup><col style="width:190px"><col style="width:150px"><col></colgroup>
-      <thead><tr><th>Role factor</th><th class="sc">Score</th><th>Why this score</th></tr></thead>
+      <thead><tr><th>Критерий</th><th class="sc">Баллы</th><th>Почему столько</th></tr></thead>
       <tbody>
-      <tr><td class="fct">Breadth of internals</td><td class="sc"><span class="scval">29</span><span class="den">/30</span><div class="bar mini"><i style="--pct:97"></i></div></td><td class="wcell">Fourteen optional internals (7·6·6·5·5·5·5·4·4·3·2·1·1·1) hold ~434 t cargo or any role's full kit — the most internal slots of any multipurpose hull; capped just short of max only because the top optional is size 7 (no size-8 like the Cutter) and three slots are size 1.</td></tr>
-      <tr><td class="fct">Firepower</td><td class="sc"><span class="scval">3</span><span class="den">/20</span><div class="bar mini"><i style="--pct:15"></i></div></td><td class="wcell">Zero weapon hardpoints — the hull cannot mount a single gun, only six utility slots for defensive kit (shield boosters, heat sinks, chaff, point defence). It cannot fill the combat half of 'multipurpose' at all; this is the single biggest reason it sits at 66.</td></tr>
-      <tr><td class="fct">Jump range</td><td class="sc"><span class="scval">18</span><span class="den">/20</span><div class="bar mini"><i style="--pct:90"></i></div></td><td class="wcell">Class-8 dedicated SCO FSD jumps ~78 LY stripped and stays a strong long-range traveller (~55–60 LY) even laden — matches the Anaconda and leads the large field.</td></tr>
-      <tr><td class="fct">Flexibility &amp; re-fit cost</td><td class="sc"><span class="scval">8</span><span class="den">/15</span><div class="bar mini"><i style="--pct:53"></i></div></td><td class="wcell">No rank or permit gate, but ~189M Cr hull (among the priciest), large-pad-only (bars outposts), and no guns means it can never re-role into combat — its multirole spans explore/trade/passenger/science only.</td></tr>
-      <tr><td class="fct">Survivability &amp; handling</td><td class="sc"><span class="scval">8</span><span class="den">/15</span><div class="bar mini"><i style="--pct:53"></i></div></td><td class="wcell">Lightweight-alloy explorer hull with no military slots and only an optional bi-weave, slow 210/290 m/s ponderous 950 t frame; six utilities allow a solid defensive booster/heat-sink stack, but it tanks and turns worse than dedicated combat hulls and relies on running, not fighting.</td></tr>
-      <tr class="totalrow"><td class="fct"><b>Weighted total</b></td><td class="sc"><span class="scval">66</span><span class="den">/100</span><div class="bar mini"><i style="--pct:66"></i></div></td><td class="wcell"><em>Matches the headline suitability rating for this ship in this role.</em></td></tr>
+      <tr><td class="fct">Вместимость внутренних отсеков</td><td class="sc"><span class="scval">29</span><span class="den">/30</span><div class="bar mini"><i style="--pct:97"></i></div></td><td class="wcell">Четырнадцать дополнительных отсеков (7·6·6·5·5·5·5·4·4·3·2·1·1·1) вмещают около 434 т груза или полный комплект под любую роль. Внутренних слотов больше, чем у других универсалов. До максимума оценка не дотягивает: крупнейший отсек 7-го размера, а не 8-го как у Cutter, и три отсека 1-го размера.</td></tr>
+      <tr><td class="fct">Огневая мощь</td><td class="sc"><span class="scval">3</span><span class="den">/20</span><div class="bar mini"><i style="--pct:15"></i></div></td><td class="wcell">Ни одной точки подвески оружия, только шесть внешних креплений для защиты: усилителей щита, теплоотводов, дипольных отражателей и точечной обороны. Выполнять боевые задачи корабль не может. Это главная причина оценки 66.</td></tr>
+      <tr><td class="fct">Дальность прыжка</td><td class="sc"><span class="scval">18</span><span class="den">/20</span><div class="bar mini"><i style="--pct:90"></i></div></td><td class="wcell">Специализированный FSD с SCO 8-го класса прыгает около 78 св. лет в лёгкой сборке и около 55–60 св. лет даже с грузом. Сопоставим с Anaconda и в числе лидеров большого класса.</td></tr>
+      <tr><td class="fct">Гибкость и цена переоснащения</td><td class="sc"><span class="scval">8</span><span class="den">/15</span><div class="bar mini"><i style="--pct:53"></i></div></td><td class="wcell">Ранг и пропуск не нужны, но корпус стоит около 189 млн кредитов (один из самых дорогих), садится только на больших площадках, поэтому аванпосты недоступны. Без оружия сменить роль на боевую невозможно. Остаются исследования, торговля, пассажирские рейсы и наука.</td></tr>
+      <tr><td class="fct">Живучесть и управляемость</td><td class="sc"><span class="scval">8</span><span class="den">/15</span><div class="bar mini"><i style="--pct:53"></i></div></td><td class="wcell">Лёгкая обшивка исследовательского корабля, нет военных слотов, двухконтурный щит ставится по желанию. Тяжёлый корпус 950 т и скорость 210/290 м/с делают корабль неповоротливым. Шесть внешних креплений вмещают усилители щита и теплоотводы, но он держит обстрел и поворачивает хуже боевых кораблей. Рассчитывайте на отход.</td></tr>
+      <tr class="totalrow"><td class="fct"><b>Взвешенный итог</b></td><td class="sc"><span class="scval">66</span><span class="den">/100</span><div class="bar mini"><i style="--pct:66"></i></div></td><td class="wcell"><em>Эта сумма совпадает с общей оценкой корабля в этой роли.</em></td></tr>
       </tbody>
     </table>
     </div>
-    <div class="callout"><span class="lbl">How to read it</span><p>Weights are an editorial decomposition of the role's stated priority order &mdash; not an in-game formula. Bar length shows how fully each factor is earned; the longest factors carried the score, the shortest are where it gave points away. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+    <div class="callout"><span class="lbl">Как читать таблицу</span><p>Вес критерия отражает приоритеты авторов гайда, а не формулу игры. Длина полосы показывает, какую долю от максимума корабль набрал по этому критерию. Подробнее: <a href="../general/rating-methodology.html">как оцениваются корабли</a>.</p></div>
   </section>
 
   <section id="section-how-it-compares">
-    <div class="sec-head"><span class="sec-num">04</span><h2>How It Compares</h2></div>
-    <p>Every table rates ships <em>for multipurpose specifically</em>, split by landing-pad class. The <b>Max cargo</b> column is maximum cargo tonnage — a proxy for internal room; the rating is the same 1&ndash;100 suitability verdict used across the site.</p>
-    <h3 class="subhead">Same class &mdash; large multipurpose ships</h3>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Сравнение с другими кораблями</h2></div>
+    <p>Таблицы сравнивают корабли <em>именно для многоцелевой роли</em>и разделяют их по размеру посадочной площадки. Столбец <b>Макс. груз</b> показывает максимальную массу груза как ориентир вместимости. Рейтинг от 1 до 100 сопоставим с остальными досье.</p>
+    <h3 class="subhead">Тот же класс: большие многоцелевые корабли</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Макс. груз</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="anaconda-multipurpose.html">Anaconda</a></td><td><span class="pill pad-large">Large</span></td><td>~470 t</td><td class="pcc"><span class="p">Higher-rated; internals; firepower</span><span class="c">Survivability</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
-        <tr><td class="mod"><a href="imperial-cutter-multipurpose.html">Imperial Cutter</a></td><td><span class="pill pad-large">Large</span></td><td>~794 t</td><td class="pcc"><span class="p">Higher-rated; survivability; internals</span><span class="c">Range</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
-        <tr><td class="mod"><a href="federal-corvette-multipurpose.html">Federal Corvette</a></td><td><span class="pill pad-large">Large</span></td><td>~618 t</td><td class="pcc"><span class="p">Higher-rated; firepower; internals</span><span class="c">Range</span></td><td><span class="rscore">78</span><div class="bar mini"><i style="--pct:78"></i></div></td></tr>
-        <tr><td class="mod"><a href="imperial-clipper-multipurpose.html">Imperial Clipper</a></td><td><span class="pill pad-large">Large</span></td><td>~250 t</td><td class="pcc"><span class="p">Higher-rated; flexibility; internals</span><span class="c">Firepower</span></td><td><span class="rscore">73</span><div class="bar mini"><i style="--pct:73"></i></div></td></tr>
-        <tr><td class="mod">Caspian Explorer <span class="pill md">this</span></td><td><span class="pill pad-large">Large</span></td><td>~434 t</td><td class="pcc"><span class="base">&mdash; this hull (baseline)</span></td><td><span class="rscore">66</span><div class="bar mini"><i style="--pct:66"></i></div></td></tr>
-        <tr><td class="mod"><a href="beluga-liner-multipurpose.html">Beluga Liner</a></td><td><span class="pill pad-large">Large</span></td><td>~370 t</td><td class="pcc"><span class="p">Internals; survivability</span><span class="c">Lower-rated; range</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
-        <tr><td class="mod"><a href="panther-clipper-mk-ii-multipurpose.html">Panther Clipper Mk II</a></td><td><span class="pill pad-large">Large</span></td><td>~662 t</td><td class="pcc"><span class="p">Internals; firepower</span><span class="c">Lower-rated; flexibility</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-10-defender-multipurpose.html">Type-10 Defender</a></td><td><span class="pill pad-large">Large</span></td><td>~534 t</td><td class="pcc"><span class="p">Firepower; internals</span><span class="c">Lower-rated; range</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-7-transporter-multipurpose.html">Type-7 Transporter</a></td><td><span class="pill pad-large">Large</span></td><td>~310 t</td><td class="pcc"><span class="p">Internals; flexibility</span><span class="c">Lower-rated; firepower</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-9-heavy-multipurpose.html">Type-9 Heavy</a></td><td><span class="pill pad-large">Large</span></td><td>~790 t</td><td class="pcc"><span class="p">Internals; flexibility</span><span class="c">Lower-rated; survivability</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="anaconda-multipurpose.html">Anaconda</a></td><td><span class="pill pad-large">Большая</span></td><td>~470 т</td><td class="pcc"><span class="p">Оценка выше; отсеки; огневая мощь</span><span class="c">Живучесть</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-cutter-multipurpose.html">Imperial Cutter</a></td><td><span class="pill pad-large">Большая</span></td><td>~794 т</td><td class="pcc"><span class="p">Оценка выше; живучесть; отсеки</span><span class="c">Дальность</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-corvette-multipurpose.html">Federal Corvette</a></td><td><span class="pill pad-large">Большая</span></td><td>~618 т</td><td class="pcc"><span class="p">Оценка выше; огневая мощь; отсеки</span><span class="c">Дальность</span></td><td><span class="rscore">78</span><div class="bar mini"><i style="--pct:78"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-clipper-multipurpose.html">Imperial Clipper</a></td><td><span class="pill pad-large">Большая</span></td><td>~250 т</td><td class="pcc"><span class="p">Оценка выше; гибкость; отсеки</span><span class="c">Огневая мощь</span></td><td><span class="rscore">73</span><div class="bar mini"><i style="--pct:73"></i></div></td></tr>
+        <tr><td class="mod">Caspian Explorer <span class="pill md">этот</span></td><td><span class="pill pad-large">Большая</span></td><td>~434 т</td><td class="pcc"><span class="base">— отправная точка для сравнения</span></td><td><span class="rscore">66</span><div class="bar mini"><i style="--pct:66"></i></div></td></tr>
+        <tr><td class="mod"><a href="beluga-liner-multipurpose.html">Beluga Liner</a></td><td><span class="pill pad-large">Большая</span></td><td>~370 т</td><td class="pcc"><span class="p">Отсеки; живучесть</span><span class="c">Оценка ниже; дальность</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="panther-clipper-mk-ii-multipurpose.html">Panther Clipper Mk II</a></td><td><span class="pill pad-large">Большая</span></td><td>~662 т</td><td class="pcc"><span class="p">Отсеки; огневая мощь</span><span class="c">Оценка ниже; гибкость</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-10-defender-multipurpose.html">Type-10 Defender</a></td><td><span class="pill pad-large">Большая</span></td><td>~534 т</td><td class="pcc"><span class="p">Огневая мощь; отсеки</span><span class="c">Оценка ниже; дальность</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-7-transporter-multipurpose.html">Type-7 Transporter</a></td><td><span class="pill pad-large">Большая</span></td><td>~310 т</td><td class="pcc"><span class="p">Отсеки; гибкость</span><span class="c">Оценка ниже; огневая мощь</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-9-heavy-multipurpose.html">Type-9 Heavy</a></td><td><span class="pill pad-large">Большая</span></td><td>~790 т</td><td class="pcc"><span class="p">Отсеки; гибкость</span><span class="c">Ниже оценка; живучесть</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">10 large-pad multipurpose hulls carry a rating, led by <b><a href="anaconda-multipurpose.html">Anaconda</a></b> (88). Every same-pad rival lands where this one does &mdash; the direct field to shop.</p>
-    <h3 class="subhead">Other classes &mdash; the medium all-rounders</h3>
+    <p class="nolink">В рейтинге 10 больших многоцелевых кораблей. Лидер — <b><a href="anaconda-multipurpose.html">Anaconda</a></b> (88). Все соперники в этой таблице садятся на такие же площадки; с них стоит начинать сравнение перед покупкой.</p>
+    <h3 class="subhead">Другие классы: средние универсалы</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Макс. груз</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="python-multipurpose.html">Python</a></td><td><span class="pill pad-medium">Medium</span></td><td>~294 t</td><td class="pcc"><span class="p">Higher-rated; internals; firepower</span><span class="c">Range</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
-        <tr><td class="mod"><a href="krait-mk-ii-multipurpose.html">Krait Mk II</a></td><td><span class="pill pad-medium">Medium</span></td><td>~230 t</td><td class="pcc"><span class="p">Higher-rated; firepower; internals</span><span class="c">Range</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
-        <tr><td class="mod"><a href="krait-phantom-multipurpose.html">Krait Phantom</a></td><td><span class="pill pad-medium">Medium</span></td><td>~190 t</td><td class="pcc"><span class="p">Higher-rated; range; flexibility</span><span class="c">Firepower</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
-        <tr><td class="mod"><a href="corsair-multipurpose.html">Corsair</a></td><td><span class="pill pad-medium">Medium</span></td><td>~318 t</td><td class="pcc"><span class="p">Higher-rated; firepower; internals</span><span class="c">Range</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
-        <tr><td class="mod"><a href="asp-explorer-multipurpose.html">Asp Explorer</a></td><td><span class="pill pad-medium">Medium</span></td><td>~130 t</td><td class="pcc"><span class="p">Higher-rated; flexibility; range</span><span class="c">Firepower</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-11-prospector-multipurpose.html">Type-11 Prospector</a></td><td><span class="pill pad-medium">Medium</span></td><td>~288 t</td><td class="pcc"><span class="p">Internals; survivability</span><span class="c">Lower-rated; firepower</span></td><td><span class="rscore">64</span><div class="bar mini"><i style="--pct:64"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-8-transporter-multipurpose.html">Type-8 Transporter</a></td><td><span class="pill pad-medium">Medium</span></td><td>~406 t</td><td class="pcc"><span class="p">Internals; flexibility</span><span class="c">Lower-rated; firepower</span></td><td><span class="rscore">58</span><div class="bar mini"><i style="--pct:58"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-6-transporter-multipurpose.html">Type-6 Transporter</a></td><td><span class="pill pad-medium">Medium</span></td><td>~114 t</td><td class="pcc"><span class="p">Range; internals</span><span class="c">Lower-rated; firepower</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="python-multipurpose.html">Python</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~294 т</td><td class="pcc"><span class="p">Оценка выше; отсеки; огневая мощь</span><span class="c">Дальность</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-mk-ii-multipurpose.html">Krait Mk II</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~230 т</td><td class="pcc"><span class="p">Оценка выше; огневая мощь; отсеки</span><span class="c">Дальность</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-phantom-multipurpose.html">Krait Phantom</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~190 т</td><td class="pcc"><span class="p">Оценка выше; дальность; гибкость</span><span class="c">Огневая мощь</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="corsair-multipurpose.html">Corsair</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~318 т</td><td class="pcc"><span class="p">Оценка выше; огневая мощь; отсеки</span><span class="c">Дальность</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
+        <tr><td class="mod"><a href="asp-explorer-multipurpose.html">Asp Explorer</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~130 т</td><td class="pcc"><span class="p">Оценка выше; гибкость; дальность</span><span class="c">Огневая мощь</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-11-prospector-multipurpose.html">Type-11 Prospector</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~288 т</td><td class="pcc"><span class="p">Отсеки; живучесть</span><span class="c">Оценка ниже; огневая мощь</span></td><td><span class="rscore">64</span><div class="bar mini"><i style="--pct:64"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-8-transporter-multipurpose.html">Type-8 Transporter</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~406 т</td><td class="pcc"><span class="p">Отсеки; гибкость</span><span class="c">Оценка ниже; огневая мощь</span></td><td><span class="rscore">58</span><div class="bar mini"><i style="--pct:58"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-6-transporter-multipurpose.html">Type-6 Transporter</a></td><td><span class="pill pad-medium">Средняя</span></td><td>~114 т</td><td class="pcc"><span class="p">Дальность; отсеки</span><span class="c">Оценка ниже; огневая мощь</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">The medium-pad multipurpose field (8 rated), led by <b><a href="python-multipurpose.html">Python</a></b> (86) &mdash; cheaper hulls and tighter pads. They undercut this hull on the numbers, but sit a pad class away.</p>
-    <h3 class="subhead">Other classes &mdash; the small all-rounders</h3>
+    <p class="nolink">В рейтинге 8 средних многоцелевых кораблей. Лидер — <b><a href="python-multipurpose.html">Python</a></b> (86). Они дешевле и садятся на меньших площадках, но относятся к другому классу.</p>
+    <h3 class="subhead">Другие классы: малые универсалы</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Max cargo</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Макс. груз</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="cobra-mk-v-multipurpose.html">Cobra Mk V</a></td><td><span class="pill pad-small">Small</span></td><td>~110 t</td><td class="pcc"><span class="p">Higher-rated; flexibility; internals</span><span class="c">Survivability</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
-        <tr><td class="mod"><a href="cobra-mk-iii-multipurpose.html">Cobra Mk III</a></td><td><span class="pill pad-small">Small</span></td><td>~64 t</td><td class="pcc"><span class="p">Higher-rated; flexibility; range</span><span class="c">Firepower</span></td><td><span class="rscore">72</span><div class="bar mini"><i style="--pct:72"></i></div></td></tr>
-        <tr><td class="mod"><a href="imperial-courier-multipurpose.html">Imperial Courier</a></td><td><span class="pill pad-small">Small</span></td><td>~34 t</td><td class="pcc"><span class="p">Flexibility; survivability</span><span class="c">Internals</span></td><td><span class="rscore">66</span><div class="bar mini"><i style="--pct:66"></i></div></td></tr>
-        <tr><td class="mod"><a href="dolphin-multipurpose.html">Dolphin</a></td><td><span class="pill pad-small">Small</span></td><td>~88 t</td><td class="pcc"><span class="p">Flexibility; internals</span><span class="c">Lower-rated; firepower</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-v-multipurpose.html">Cobra Mk V</a></td><td><span class="pill pad-small">Малая</span></td><td>~110 т</td><td class="pcc"><span class="p">Оценка выше; гибкость; отсеки</span><span class="c">Живучесть</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-iii-multipurpose.html">Cobra Mk III</a></td><td><span class="pill pad-small">Малая</span></td><td>~64 т</td><td class="pcc"><span class="p">Оценка выше; гибкость; дальность</span><span class="c">Огневая мощь</span></td><td><span class="rscore">72</span><div class="bar mini"><i style="--pct:72"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-courier-multipurpose.html">Imperial Courier</a></td><td><span class="pill pad-small">Малая</span></td><td>~34 т</td><td class="pcc"><span class="p">Гибкость; живучесть</span><span class="c">Отсеки и крепления</span></td><td><span class="rscore">66</span><div class="bar mini"><i style="--pct:66"></i></div></td></tr>
+        <tr><td class="mod"><a href="dolphin-multipurpose.html">Dolphin</a></td><td><span class="pill pad-small">Малая</span></td><td>~88 т</td><td class="pcc"><span class="p">Гибкость; отсеки</span><span class="c">Оценка ниже; огневая мощь</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">The small-pad multipurpose field (4 rated), led by <b><a href="cobra-mk-v-multipurpose.html">Cobra Mk V</a></b> (80) &mdash; cheaper hulls and tighter pads. They undercut this hull on the numbers, but sit a pad class away.</p>
+    <p class="nolink">В рейтинге 4 малых многоцелевых корабля. Лидер — <b><a href="cobra-mk-v-multipurpose.html">Cobra Mk V</a></b> (80). Они дешевле и садятся на меньших площадках, но относятся к другому классу.</p>
   </section>
 
   <!-- s4 -->
   <section id="section-cost-access">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Cost &amp; Access</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Цена и условия покупки</h2></div>
     <div class="specgrid">
-      <div class="cell"><div class="k">Hull</div><div class="v">~189M Cr</div></div>
-      <div class="cell"><div class="k">A-rated multirole</div><div class="v">~215M Cr</div></div>
-      <div class="cell"><div class="k">Engineered</div><div class="v">~245M+ Cr</div></div>
-      <div class="cell"><div class="k">Pad</div><div class="v">Large</div></div>
-      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
-      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Корпус</div><div class="v">~189M Cr</div></div>
+      <div class="cell"><div class="k">Универсальная сборка класса A</div><div class="v">~215M Cr</div></div>
+      <div class="cell"><div class="k">С инженерными улучшениями</div><div class="v">~245M+ Cr</div></div>
+      <div class="cell"><div class="k">Площадка</div><div class="v">Большая</div></div>
+      <div class="cell"><div class="k">Ранг</div><div class="v">Нет</div></div>
+      <div class="cell"><div class="k">Разрешение</div><div class="v">Нет</div></div>
     </div>
-    <p>At ~189M Cr the Caspian is one of the most expensive ships in the game, though it carries no rank or permit gate. A full multipurpose fit &mdash; shields, cargo, scoop, SRV bay and reinforcement &mdash; pushes the all-in figure past 245M Cr.</p>
-    <p>That is a lot to pay for a generalist that cannot fight. The Caspian only makes financial sense if you specifically want flagship capacity and range for peaceful work; for a true do-everything ship, a <a href="python-multipurpose.html">Python</a> or <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> costs a fraction and covers combat too.</p>
-    <div class="callout"><span class="lbl">Flagship money, no guns</span><p>Around 245M Cr all-in for a gunless large hull. It buys unmatched internal space and reach &mdash; not versatility across every role. A cheap medium all-rounder is the value pick for genuine multipurpose work.</p></div>
+    <p>За примерно 189 млн кредитов Caspian — один из самых дорогих кораблей игры, хотя ранг и пропуск не нужны. Со щитом, трюмом, заборником топлива, ангаром планетохода и усилениями общая цена превышает 245 млн.</p>
+    <p>Это дорого для универсала, который не может сражаться. Caspian стоит своих денег, только если вам нужна вместимость и дальность флагмана для мирных задач. Для настоящей универсальности <a href="python-multipurpose.html">Python</a> или <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> обойдётся в разы дешевле и сможет сражаться.</p>
+    <div class="callout"><span class="lbl">Цена флагмана, ни одной пушки</span><p>Около 245 млн кредитов за безоружный корабль на большой площадке. Платите за исключительную вместимость и дальность, а не за все роли сразу. Доступный средний универсал выгоднее, если нужны все роли.</p></div>
   </section>
 
   <!-- s6 -->
   <section id="section-3-state-loadout">
-    <div class="sec-head"><span class="sec-num">06</span><h2>3-State Loadout</h2></div>
-    <p>A do-everything-but-fight fit built on the Caspian's vast internals. Initial is buy-only; A-rated is the all-round baseline; Engineered layers the class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>'s signature range on top.</p>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Три варианта оснащения</h2></div>
+    <p>Сборка для всего, кроме боя, опирается на вместимость Caspian. Начальная — только покупные модули, класс A — основа под разные задачи, а инженерная раскрывает дальность <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>8-го класса.</p>
   </section>
 
   <!-- s7 -->
   <section id="section-initial-loadout-buy-only-plan">
-    <div class="sec-head"><span class="sec-num">07</span><h2>Initial Loadout &mdash; Buy-Only Plan</h2></div>
-    <p>Buy the hull and fit the base class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> and a big <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">cargo rack</a> first &mdash; range and capacity are the whole point. The stock Lightweight Alloy hull is free, so there's no bulkhead spend here. A single <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">shield booster</a> stiffens the base shield while everything is cheap.</p>
-    <p>Everything else goes in E-rated and cheap buy-only: <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">power plant</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a>, <a href="../../engineering/engineering-manuals/modules.html#module-life-support">life support</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">power distributor</a> and sensors all at base grade, with a class-7 <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">fuel tank</a> and a base <a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">shield generator</a>.</p>
-    <p>Leave the rest of the optional internals empty for now &mdash; the <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">fuel scoop</a>, SRV bay, <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a>, <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">shield cell bank</a>, <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">hull reinforcement</a>, extra cargo and surface scanner all wait for the A-rated pass.</p>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Начальная сборка: только покупка</h2></div>
+    <p>Купите корпус и сначала установите базовый <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса и большой <a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">на борту</a> : главное здесь дальность и вместимость. Штатная лёгкая обшивка бесплатна, на неё тратиться не надо. Один <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">усилителем щита</a> повысит прочность базового щита при небольших затратах.</p>
+    <p>Остальные основные модули пока оставьте дешёвыми, класса E: <a href="../../engineering/engineering-manuals/modules.html#module-power-plant">энергоустановка</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">к маневровым двигателям</a>, <a href="../../engineering/engineering-manuals/modules.html#module-life-support">системы жизнеобеспечения</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">распределитель энергии</a> и сенсоры базового класса, а также отсек 7-го класса под <a href="../../engineering/engineering-manuals/modules.html#module-fuel-tank">топливный бак</a> и базовый <a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">генератор щита 5C</a>.</p>
+    <p>. Остальные дополнительные слоты оставьте пустыми. До сборки класса A подождут <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">топливозаборник</a>, ангар для планетоходов, <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a>, <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">блок накопителей щита</a>, <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">усиление корпуса</a>, дополнительные трюмы и сканер поверхности.</p>
   </section>
 
   <!-- s8 -->
   <section id="section-a-rated-loadout-upgrade-plan">
-    <div class="sec-head"><span class="sec-num">08</span><h2>A-Rated Loadout &mdash; Upgrade Plan</h2></div>
-    <p>A-rating priority for a gunless multipurpose flagship:</p>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Сборка класса A: план оснащения</h2></div>
+    <p>Приоритет класса A для безоружного многоцелевого флагмана:</p>
     <ul class="bullets">
-      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> &rarr; 8A</b> &mdash; The class-8 drive is the heart of the ship; A-rate it first for reach across every job. <span class="acc">~25M Cr</span></li>
-      <li><span class="stepnum">2</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Plant</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">distributor</a> &rarr; A</b> &mdash; Power, agility and recharge to move a 950t hull and hold the shield. <span class="acc">~40M Cr</span></li>
-      <li><span class="stepnum">3</span><b>6C bi-weave + 3&times; <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">shield boosters</a></b> &mdash; The shield is the only defence on a gunless hull; make it fast and deep. <span class="acc">~10M Cr</span></li>
-      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Cargo racks</a> + <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">fuel scoop</a></b> &mdash; Fill the big slots with the trading and self-sufficiency kit the multirole lives on. <span class="acc">~15M Cr</span></li>
-      <li><span class="stepnum">5</span><b>SRV bay + <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a> + <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">shield cell bank</a></b> &mdash; Surface access, self-repair and burst shield healing for long solo runs. <span class="acc">~8M Cr</span></li>
-      <li><span class="stepnum">6</span><b><a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">Hull reinforcement</a> + <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a></b> &mdash; Cheap effective-armour on a military-slot-less hull, and cartographic payouts on the side. <span class="acc">~2M Cr</span></li>
+      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> &rarr; 8A</b> — двигатель 8-го класса определяет корабль. Поднимите до класса A первым: дальность нужна в любой роли. <span class="acc">~25 млн кр.</span></li>
+      <li><span class="stepnum">2</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Силовая установка</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">к маневровым двигателям</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">распределитель энергии</a> &rarr; A</b> — мощность, манёвренность и восстановление энергии нужны, чтобы двигать корпус 950 т и поддерживать щит. <span class="acc">~40M Cr</span></li>
+      <li><span class="stepnum">3</span><b>Двухконтурный 6C + 3&times; <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">усилителей щита</a></b> — щит остаётся главной защитой безоружного корабля. Нужны прочность и быстрое восстановление. <span class="acc">~10 млн кр.</span></li>
+      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-cargo-rack">Грузовые стеллажи</a> + <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">топливозаборник</a></b> — отдайте большие отсеки под торговые модули и автономность для разных задач. <span class="acc">~15M Cr</span></li>
+      <li><span class="stepnum">5</span><b>Ангар планетохода + <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a> + <a href="../../engineering/engineering-manuals/modules.html#module-shield-cell-bank">блок накопителей щита</a></b> — доступ к поверхности, самостоятельный ремонт и быстрое восстановление щита вдали от станций. <span class="acc">~8 млн кр.</span></li>
+      <li><span class="stepnum">6</span><b><a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">Усиление корпуса</a> + <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">подробный сканер поверхности 1I</a></b> — недорогой прирост эффективной брони без военных слотов и дополнительный заработок на картографии. <span class="acc">~2 млн кр.</span></li>
     </ul>
-    <div class="callout"><span class="lbl">Range and shield first, then fill the bays</span><p>A-rate the class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> and cores, harden the bi-weave, then use the Caspian's vast space for cargo, scoop, SRV and repair. With no guns to buy, the credits go into capacity and survivability instead.</p></div>
+    <div class="callout"><span class="lbl">Сначала дальность и щит, потом оснащение</span><p>Поднимите до класса A <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса и основные модули, усилите двухконтурный щит и заполните отсеки трюмами, заборником, ангаром планетохода и ремонтом. Оружия нет, поэтому деньги идут на вместимость и живучесть.</p></div>
   </section>
 
   <!-- s9 -->
   <section id="section-engineering-plan">
-    <div class="sec-head"><span class="sec-num">09</span><h2>Engineering Plan</h2></div>
-    <p>The all-rounder engineering pattern at flagship scale: <a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a> maxes the class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> for range, while the plant, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a>, distributor and shield work spread across the usual engineers. With no weapons to roll, the whole budget goes into reach and survivability.</p>
+    <div class="sec-head"><span class="sec-num">09</span><h2>План инженерных улучшений</h2></div>
+    <p>Инженерные улучшения для универсала в масштабе флагмана: <a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a> максимально увеличивает дальность <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса. Силовая установка, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">к маневровым двигателям</a>, распределитель и щит распределяются между обычными инженерами. Оружие улучшать не нужно, поэтому весь бюджет идёт на дальность и защиту.</p>
   </section>
 
   <!-- s10 -->
   <section id="section-key-stat-upgrades">
-    <div class="sec-head"><span class="sec-num">10</span><h2>Key Stat Upgrades</h2></div>
-    <p>Approximate progression across the three states (figures are representative, not exact rolls):</p>
+    <div class="sec-head"><span class="sec-num">10</span><h2>Как меняются характеристики</h2></div>
+    <p>Ориентировочные показатели для трёх сборок. Точный результат зависит от оснащения:</p>
     <div class="tbl-scroll">
     <table class="data">
-      <thead><tr><th>Stat</th><th>Initial</th><th>A-rated</th><th>Engineered</th></tr></thead>
+      <thead><tr><th>Показатель</th><th>Начальная</th><th>Класс A</th><th>С инженерными улучшениями</th></tr></thead>
       <tbody>
-        <tr><td class="mod">Max jump (LY)</td><td>~30</td><td>~42</td><td class="acc">~55&ndash;78</td></tr>
-        <tr><td class="mod">Cargo capacity</td><td>~192 t</td><td>~350 t</td><td class="acc">~434 t max</td></tr>
-        <tr><td class="mod">Shield (MJ)</td><td>base</td><td>~450</td><td class="acc">~900+</td></tr>
-        <tr><td class="mod">Hull (armour)</td><td>stock light</td><td>military</td><td class="acc">heavy-eng</td></tr>
-        <tr><td class="mod">Firepower</td><td>none</td><td>none</td><td class="acc">none</td></tr>
-        <tr><td class="mod">Speed (boost)</td><td>290 m/s</td><td>290 m/s</td><td class="acc">~330 m/s</td></tr>
+        <tr><td class="mod">Макс. прыжок, св. лет</td><td>~30</td><td>~42</td><td class="acc">~55&ndash;78</td></tr>
+        <tr><td class="mod">Вместимость трюма</td><td>~192 t</td><td>~350 t</td><td class="acc">~434 т максимум</td></tr>
+        <tr><td class="mod">Щит (МДж)</td><td>базовая</td><td>~450</td><td class="acc">~900+</td></tr>
+        <tr><td class="mod">Корпус (броня)</td><td>штатная лёгкая</td><td>военная</td><td class="acc">тяжёлая с улучшениями</td></tr>
+        <tr><td class="mod">Огневая мощь</td><td>нет</td><td>нет</td><td class="acc">нет</td></tr>
+        <tr><td class="mod">Скорость с форсажем</td><td>290 m/s</td><td>290 m/s</td><td class="acc">~330 м/с</td></tr>
       </tbody>
     </table>
     </div>
-    <p>Engineered, the Caspian jumps a long way while carrying deep cargo, a hardened bi-weave, an <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a>, an SRV bay and reinforcement &mdash; a self-sufficient generalist with real capacity and reach. What no state changes is the firepower line: it stays <b>none</b>, because the hull has no mounts. That single fixed zero is why a capable, well-built ship still rates only 66 for multipurpose.</p>
+    <p>После инженерных улучшений Caspian далеко прыгает с полным трюмом, усиленным двухконтурным щитом, <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a>, ангаром планетохода и усилениями. Это автономный универсал с запасом места и дальности. Огневая мощь во всех сборках — <b>нет</b>, потому что нет точек подвески. Из-за этого хорошо оснащённый корабль получает только 66 баллов в многоцелевой роли.</p>
   </section>
 
   <!-- s11 -->
   <section id="section-key-activities-where-to-do-them">
-    <div class="sec-head"><span class="sec-num">11</span><h2>Key Activities &amp; Where To Do Them</h2></div>
+    <div class="sec-head"><span class="sec-num">11</span><h2>Чем заняться и куда полететь</h2></div>
     <div class="cards two">
-      <div class="card"><span class="ico">Getting started</span><ul class="bullets">
-      <li><b>Bulk trade runs.</b> ~434 t of hold plus flagship range make long-haul commodity loops between economy hubs a natural fit.</li>
-      <li><b>Deep-space exploration.</b> The class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> and a big <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">scoop</a> reach the black as well as any dedicated explorer.</li>
-      <li><b>Mixed peaceful careers.</b> Trade one week, explore the next, run passenger work between &mdash; one hull for every non-combat job.</li>
+      <div class="card"><span class="ico">С чего начать</span><ul class="bullets">
+      <li><b>Крупные торговые перевозки.</b> Трюм около 434 т и дальность флагмана подходят для дальних товарных кругов между торговыми центрами.</li>
+      <li><b>Исследования глубокого космоса.</b> На <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса и большой <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">заборник топлива</a> помогают добраться в глубины космоса не хуже специализированного исследователя.</li>
+      <li><b>Чередование мирных занятий.</b> Торгуйте одну неделю, исследуйте следующую, а между ними возите пассажиров. Один корабль для всех небоевых ролей.</li>
     </ul></div>
-      <div class="card"><span class="ico">Advanced</span><ul class="bullets">
-      <li><b>Luxury passenger tourism.</b> <a href="../../engineering/engineering-manuals/modules.html#module-passenger-cabin">Passenger cabins</a> plus flagship comfort make it a premier sightseeing liner to distant wonders.</li>
-      <li><b>Large-scale exobiology.</b> An SRV bay and vast storage suit thorough, prolonged surface science.</li>
-      <li><b>Self-sufficient expeditions.</b> Scoop, <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a> and deep stores keep it out for months without resupply.</li>
+      <div class="card"><span class="ico">Для опытных пилотов</span><ul class="bullets">
+      <li><b>Роскошные пассажирские туры.</b> <a href="../../engineering/engineering-manuals/modules.html#module-passenger-cabin">Пассажирские каюты</a> и комфорт флагмана подходят для обзорных рейсов к далёким достопримечательностям.</li>
+      <li><b>Масштабная экзобиология.</b> Ангар планетохода и большой запас места подходят для долгих и подробных исследований поверхности.</li>
+      <li><b>Автономные экспедиции.</b> Заборник топлива, <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a> и большие запасы позволяют не пополнять припасы месяцами.</li>
     </ul></div>
     </div>
-    <div class="callout"><span class="lbl">Avoid anything that shoots back</span><p>Skip combat zones, pirate-heavy routes and any mission that expects teeth &mdash; the Caspian has none. Where it goes, it goes to work or to look, and it leaves the fighting to hulls built for it.</p></div>
+    <div class="callout"><span class="lbl">Избегайте всего, что стреляет</span><p>Пропускайте зоны конфликта, маршруты с пиратами и задания, где нужно оружие. Caspian предназначен для работы и исследований, а не для боя.</p></div>
   </section>
 
   <!-- s12 -->
   <section id="section-field-notes-what-else-to-know">
-    <div class="sec-head"><span class="sec-num">12</span><h2>Field Notes &mdash; What Else To Know</h2></div>
+    <div class="sec-head"><span class="sec-num">12</span><h2>Советы из практики</h2></div>
     <ul class="bullets">
-      <li>No weapon hardpoints at all &mdash; plan every activity around avoiding, not winning, a fight.</li>
-      <li>A hardened bi-weave and six utilities are your whole defence; stack <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">boosters</a> and carry <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">chaff</a> to survive interdictions and jump clear.</li>
-      <li>Mind the large pad &mdash; plan resupply around orbital stations, planetary ports or a fleet carrier; outposts are out.</li>
-      <li>It's a luxury generalist, not a value pick &mdash; a <a href="python-multipurpose.html">Python</a> or <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> does more, fights, and costs far less.</li>
+      <li>Оружейных креплений нет. Планируйте любые занятия так, чтобы избежать боя, а не выиграть его.</li>
+      <li>Усиленный двухконтурный щит и шесть внешних креплений — вся ваша защита. Поставьте <a href="../../engineering/engineering-manuals/modules.html#module-shield-booster">усилители</a> и возьмите <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">дипольные отражатели</a> , чтобы пережить перехват и уйти в прыжок.</li>
+      <li>Учитывайте большую площадку. Пополняйте припасы на орбитальных станциях, в планетарных портах или на авианосцах. Аванпосты недоступны.</li>
+      <li>Это роскошный универсал, а не выгодная покупка: <a href="python-multipurpose.html">Python</a> или <a href="krait-mk-ii-multipurpose.html">Krait Mk II</a> умеет больше, может сражаться и стоит гораздо меньше.</li>
     </ul>
-    <div class="callout"><span class="lbl">Verdict</span><p>The Caspian Explorer is a superb peaceful generalist wearing the wrong label: fourteen internals and a class-8 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> give it unmatched capacity and reach, but with <b>zero guns</b>, a large pad and a ~189M Cr price it does every job except the one that defines a true multirole. Buy it for range and space without teeth; buy a medium all-rounder for genuine do-everything versatility.</p></div>
+    <div class="callout"><span class="lbl">Итог</span><p>Caspian Explorer — отличный универсал для мирных занятий. Четырнадцать отсеков и <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> 8-го класса дают исключительную вместимость и дальность. Но при <b>нулевом вооружении</b>, большой площадке и цене около 189 млн кредитов он не может выполнять одну из основных ролей — боевую. Покупайте его ради дальности и пространства, а для полной универсальности выбирайте средний корабль.</p></div>
   </section>
 
   <!-- Sources -->
   <section class="credits" id="section-credits">
-    <div class="sec-head"><span class="sec-num">13</span><h2>Sources</h2></div>
-    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="sec-head"><span class="sec-num">13</span><h2>Источники</h2></div>
+    <p class="lead">Цифры в статье сверены авторами оригинала с источниками ниже.</p>
     <div class="cr-rows">
-      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Interactive outfitting &amp; build planner, preloaded for this ship.</span><a class="cr-link" href="https://coriolis.io/outfit/caspian_explorer" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/caspian_explorer</a></div>
-      <div class="cr-row"><span class="cr-src">Inara — Caspian Explorer</span><span class="cr-what">Stock hull stats, optional-internal layout, and the absence of weapon hardpoints on this ship.</span><a class="cr-link" href="https://inara.cz/elite/ship/86/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/86</a></div>
-      <div class="cr-row"><span class="cr-src">Fandom — Caspian Explorer</span><span class="cr-what">Manufacturer, Class-8 FSD, utility-mount count and the no-weapon-hardpoint design.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Caspian_Explorer" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Caspian_Explorer</a></div>
-      <div class="cr-row"><span class="cr-src">Elite Dangerous (official)</span><span class="cr-what">Frontier's official Caspian Explorer ship page — manufacturer specs, feature overview, and the ship render used on this page.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/caspian-explorer" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../caspian-explorer</a></div>
-      <div class="cr-row"><span class="cr-src">YouTube — The Buur Pit</span><span class="cr-what">Opinionated review of the Caspian Explorer covering its strengths, capacity and the limits of using it outside pure exploration.</span><a class="cr-link" href="https://www.youtube.com/watch?v=CdRY2kcZU2Q" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=CdRY2kcZU2Q</a></div>
-      <div class="cr-row"><span class="cr-src">YouTube — Ricardos Gaming</span><span class="cr-what">Full breakdown of the Caspian Explorer: Class-8 FSD, Mk II modules and optional-internal capacity.</span><a class="cr-link" href="https://www.youtube.com/watch?v=ScE3BP8hFQk" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=ScE3BP8hFQk</a></div>
+      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Интерактивный планировщик оснащения с выбранным кораблём.</span><a class="cr-link" href="https://coriolis.io/outfit/caspian_explorer" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/caspian_explorer</a></div>
+      <div class="cr-row"><span class="cr-src">Inara — Caspian Explorer</span><span class="cr-what">Базовые характеристики корпуса, схема дополнительных отсеков и отсутствие оружейных точек подвески.</span><a class="cr-link" href="https://inara.cz/elite/ship/86/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/86</a></div>
+      <div class="cr-row"><span class="cr-src">Fandom — Caspian Explorer</span><span class="cr-what">Производитель, FSD 8-го класса, количество внешних креплений и конструкция без оружейных точек.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Caspian_Explorer" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Caspian_Explorer</a></div>
+      <div class="cr-row"><span class="cr-src">Elite Dangerous (официальный сайт)</span><span class="cr-what">Официальная страница Caspian Explorer от Frontier: характеристики производителя, обзор особенностей и изображение корабля.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/caspian-explorer" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../caspian-explorer</a></div>
+      <div class="cr-row"><span class="cr-src">YouTube — The Buur Pit</span><span class="cr-what">Авторский обзор сильных сторон Caspian Explorer, его вместимости и ограничений вне исследовательской роли.</span><a class="cr-link" href="https://www.youtube.com/watch?v=CdRY2kcZU2Q" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=CdRY2kcZU2Q</a></div>
+      <div class="cr-row"><span class="cr-src">YouTube — Ricardos Gaming</span><span class="cr-what">Подробный разбор Caspian Explorer: FSD 8-го класса, модули Mk II и вместимость дополнительных отсеков.</span><a class="cr-link" href="https://www.youtube.com/watch?v=ScE3BP8hFQk" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=ScE3BP8hFQk</a></div>
     </div>
   </section>
 
   <footer>
     <div class="ft-fine">
-      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Ship &times; Role Dossier &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
-      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+      <span>&copy; 2026 Elite:Dangerous Black Box · CMDR Ka0s · Досье корабля по роли · <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></span>
+      <span>Elite Dangerous — товарный знак Frontier Developments plc. Это неофициальный фанатский материал, не связанный с Frontier Developments и не одобренный компанией.</span>
     </div>
   </footer>
 
