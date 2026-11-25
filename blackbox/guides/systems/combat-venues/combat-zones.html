@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Combat Zones &middot; Combat Venues | E:D Black Box</title>
+<title>Зоны конфликта &middot; Боевые площадки | E:D Black Box</title>
 <link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
 <link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
 <script src="../../../design-system/js/scroll-progress.js" defer></script>
@@ -13,51 +13,51 @@
 <!-- ---- GLOBAL HEADER ---- -->
 <header class="site-header">
   <div class="hdr-inner">
-    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box: главная">
       <img src="../../../images/logos/logo.png" alt="">
       <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
     </a>
     <span class="nav-sep" aria-hidden="true"></span>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="../../index.html">Home</a>
-      <a href="../../index.html#section-dossiers">Ships</a>
-      <a href="../../index.html#section-engineering">Engineering</a>
-      <a href="../../index.html#section-systems" class="active">Systems</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../../index.html">Главная</a>
+      <a href="../../index.html#section-dossiers">Корабли</a>
+      <a href="../../index.html#section-engineering">Инженеры</a>
+      <a href="../../index.html#section-systems" class="active">Системы</a>
     </nav>
     <div class="header-qn">
       <div class="hdr-crumb">
-        <span class="hdr-crumb-title">Combat Zones</span>
+        <span class="hdr-crumb-title">Зоны конфликта</span>
         <span class="hdr-crumb-trail">
-          <a href="../../index.html#section-systems">Systems</a>
+          <a href="../../index.html#section-systems">Системы</a>
           <span class="sep">›</span>
-          <a href="../../index.html#section-combat-venues">Combat Venues</a>
+          <a href="../../index.html#section-combat-venues">Боевые площадки</a>
         </span>
       </div>
-      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+      <button class="qn-totop" type="button" aria-label="Вернуться наверх" title="Вернуться наверх">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
       </button>
       <div class="qn-dd" id="qn-dd">
         <div class="qn-field">
           <span class="qn-ico" aria-hidden="true">⌕</span>
-          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
-          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Перейти к разделу…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Очистить поиск" hidden>×</button>
         </div>
         <div class="qn-panel" id="qn-panel" role="listbox">
-          <a class="qn-item" href="#section-what-a-combat-zone-is"><span class="qn-dot amber"></span><span class="qn-nm">What a combat zone is</span><span class="qn-side">01</span></a>
-          <a class="qn-item" href="#section-finding-zones-reading-intensity"><span class="qn-dot amber"></span><span class="qn-nm">Finding zones &amp; intensity</span><span class="qn-side">02</span></a>
-          <a class="qn-item" href="#section-entering-choosing-a-side"><span class="qn-dot amber"></span><span class="qn-nm">Entering &amp; choosing a side</span><span class="qn-side">03</span></a>
-          <a class="qn-item" href="#section-scoring-kills-confirmed"><span class="qn-dot amber"></span><span class="qn-nm">Scoring &amp; "kills confirmed"</span><span class="qn-side">04</span></a>
-          <a class="qn-item" href="#section-special-objectives"><span class="qn-dot amber"></span><span class="qn-nm">Special objectives</span><span class="qn-side">05</span></a>
-          <a class="qn-item" href="#section-combat-bonds-making-credits"><span class="qn-dot amber"></span><span class="qn-nm">Combat bonds &amp; credits</span><span class="qn-side">06</span></a>
-          <a class="qn-item" href="#section-superpower-reputation-rank-empire"><span class="qn-dot amber"></span><span class="qn-nm">Superpower rep (Empire)</span><span class="qn-side">07</span></a>
-          <a class="qn-item" href="#section-massacre-missions-inside-czs"><span class="qn-dot amber"></span><span class="qn-nm">Massacre missions in CZs</span><span class="qn-side">08</span></a>
-          <a class="qn-item" href="#section-winning-the-war-bgs"><span class="qn-dot amber"></span><span class="qn-nm">Winning the war (BGS)</span><span class="qn-side">09</span></a>
-          <a class="qn-item" href="#section-powerplay-conflict-zones"><span class="qn-dot amber"></span><span class="qn-nm">Powerplay conflict zones</span><span class="qn-side">10</span></a>
-          <a class="qn-item" href="#section-on-foot-conflict-zones"><span class="qn-dot amber"></span><span class="qn-nm">On-foot conflict zones</span><span class="qn-side">11</span></a>
-          <a class="qn-item" href="#section-ship-loadout-doctrine"><span class="qn-dot amber"></span><span class="qn-nm">Ship &amp; loadout doctrine</span><span class="qn-side">12</span></a>
-          <a class="qn-item" href="#section-quick-reference"><span class="qn-dot amber"></span><span class="qn-nm">Quick reference</span><span class="qn-side">13</span></a>
-          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">14</span></a>
-          <div class="qn-empty" hidden>No matching sections</div>
+          <a class="qn-item" href="#section-what-a-combat-zone-is"><span class="qn-dot amber"></span><span class="qn-nm">Что такое зона конфликта</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-finding-zones-reading-intensity"><span class="qn-dot amber"></span><span class="qn-nm">Поиск зон и уровень сложности</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-entering-choosing-a-side"><span class="qn-dot amber"></span><span class="qn-nm">Вход и выбор стороны</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-scoring-kills-confirmed"><span class="qn-dot amber"></span><span class="qn-nm">Счёт и подтверждённые уничтожения</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-special-objectives"><span class="qn-dot amber"></span><span class="qn-nm">Особые задачи</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-combat-bonds-making-credits"><span class="qn-dot amber"></span><span class="qn-nm">Боевые облигации и заработок</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-superpower-reputation-rank-empire"><span class="qn-dot amber"></span><span class="qn-nm">Репутация у сверхдержавы (Империя)</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-massacre-missions-inside-czs"><span class="qn-dot amber"></span><span class="qn-nm">Задания на уничтожение кораблей</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-winning-the-war-bgs"><span class="qn-dot amber"></span><span class="qn-nm">Как выиграть войну (BGS)</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-powerplay-conflict-zones"><span class="qn-dot amber"></span><span class="qn-nm">Зоны конфликта «Борьбы за власть»</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-on-foot-conflict-zones"><span class="qn-dot amber"></span><span class="qn-nm">Наземные зоны конфликта</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-ship-loadout-doctrine"><span class="qn-dot amber"></span><span class="qn-nm">Корабль и оснащение</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-quick-reference"><span class="qn-dot amber"></span><span class="qn-nm">Краткая справка</span><span class="qn-side">13</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Источники</span><span class="qn-side">14</span></a>
+          <div class="qn-empty" hidden>Подходящих разделов нет</div>
         </div>
       </div>
     </div>
@@ -67,259 +67,259 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="kicker">Combat Venues <span class="sep">//</span> Conflict Zones</div>
-    <h1 class="title">Combat <span>Zones</span> <span class="role">Operations Guide</span></h1>
+    <div class="kicker">Боевые площадки <span class="sep">//</span> Зоны конфликта</div>
+    <h1 class="title">Зоны <span>конфликта</span> <span class="role">Руководство по операциям</span></h1>
     <div class="masthead-meta">
-      <span>Series <b>Systems</b></span>
-      <span>Updated <b>2026-07-01</b></span>
+      <span>Серия <b>Системы</b></span>
+      <span>Обновлено <b>2026-07-01</b></span>
     </div>
   </header>
 
   <div class="verdict">
-    <div class="v-eyebrow">Briefing</div>
-    <h2>Combat bonds are <em>vouchers</em> — side first, bank often, or lose everything</h2>
-    <p>Combat Zones spawn only in systems at War or Civil War and vanish when the war resolves. Two types exist: ship CZs in space and on-foot CZs at planetary settlements, each with separate rules and rewards. Both pay combat bonds that are lost on death, so leaving to redeem is as important as the fight itself. CZs also feed <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Empire</a> reputation and BGS war outcomes — but neither is automatic.</p>
+    <div class="v-eyebrow">Вводная</div>
+    <h2>Боевые облигации — это <em>квитанции</em>. Сначала выберите сторону, потом сдавайте их почаще, иначе потеряете всё.</h2>
+    <p>Зоны конфликта появляются только в системах с войной или гражданской войной и исчезают по её завершении. Есть два вида: космические бои на кораблях и наземные бои в поселениях, каждый со своими правилами и наградами. Оба вида дают боевые облигации, которые теряются при гибели, поэтому вовремя уйти и погасить их не менее важно, чем сражаться. Зоны также влияют на репутацию у <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Империи</a> и итоги войны в фоновой симуляции (BGS), но ни то ни другое не происходит автоматически.</p>
     <div class="stat-grid">
-      <div class="stat"><div class="n">3</div><div class="l">intensity tiers</div></div>
-      <div class="stat"><div class="n">~500k</div><div class="l">Low zone haul (CR)</div></div>
-      <div class="stat"><div class="n">5–20M</div><div class="l">High zone haul (CR)</div></div>
-      <div class="stat"><div class="n">~80k</div><div class="l">Max per-ship bond (CR)</div></div>
-      <div class="stat"><div class="n">1,000</div><div class="l">On-foot reinforcement points</div></div>
-      <div class="stat"><div class="n">−50</div><div class="l">Points per capture point taken</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">уровня интенсивности</div></div>
+      <div class="stat"><div class="n">~500 тыс.</div><div class="l">Доход за зону низкой интенсивности (кр.)</div></div>
+      <div class="stat"><div class="n">5–20 млн</div><div class="l">Доход за зону высокой интенсивности (кр.)</div></div>
+      <div class="stat"><div class="n">~80 тыс.</div><div class="l">Макс. облигация за корабль (кр.)</div></div>
+      <div class="stat"><div class="n">1,000</div><div class="l">Очки подкрепления на земле</div></div>
+      <div class="stat"><div class="n">−50</div><div class="l">Очков за захват одной точки</div></div>
     </div>
   </div>
 
   <!-- 01 -->
   <section id="section-what-a-combat-zone-is">
-    <div class="sec-head"><span class="sec-num">01</span><h2>What a Combat Zone Is</h2></div>
-    <p>A Combat Zone (CZ) is a transient signal source that appears only in systems where two minor factions are in a <strong>War</strong> or <strong>Civil War</strong> state. It is not a permanent feature of a system — when the war ends, the zones vanish. This is the single most important framing fact: a CZ is always tied to <em>two specific factions fighting each other</em>, and everything you do inside it pushes one of them toward winning.</p>
-    <p>There are two completely separate kinds, with separate rules, separate rewards, and separate skill demands:</p>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Что такое зона конфликта</h2></div>
+    <p>Зона конфликта (CZ) — временный источник сигнала, который появляется, только когда две малые фракции находятся в состоянии <strong>войны</strong> или <strong>гражданской войны</strong>. Зоны исчезают после окончания войны. Главное, что зона всегда связана с <em>двумя конкретными противоборствующими фракциями</em>, и ваши действия приближают одну из них к победе.</p>
+    <p>Есть два совершенно разных вида со своими правилами, наградами и требованиями к навыкам:</p>
     <ul class="bullets">
-      <li><strong>Ship CZs</strong> — fought in your ship, in space. Drop in from supercruise, pick a side, destroy enemy ships.</li>
-      <li><strong>On-foot CZs</strong> — fought on foot at a planetary settlement, infantry-style, accessed through Frontline Solutions. Covered fully in <a href="#section-on-foot-conflict-zones">On-Foot Conflict Zones</a>.</li>
+      <li><strong>Космические зоны</strong>: сражения на кораблях в космосе. Выйдите из суперкруиза, выберите сторону и уничтожайте вражеские корабли.</li>
+      <li><strong>Наземные зоны</strong>: пехотный бой в планетарном поселении, куда можно попасть через службу Frontline Solutions. Подробнее в разделе <a href="#section-on-foot-conflict-zones">«Наземные зоны конфликта»</a>.</li>
     </ul>
-    <p>Ships destroyed in a CZ <strong>do not drop materials</strong> — so this is not a place to farm engineering mats. It is a place to make credits, build reputation, swing a war, and rank up combat.</p>
-    <div class="callout"><span class="lbl">// Core loop</span><p>Find a system at war → drop into a zone → choose the side opposing your targets → destroy enemy ships (each = a bond + a tick on the score) → optionally clear the special objectives → leave before you die → redeem bonds at a station. Repeat.</p></div>
+    <p>Уничтоженные в зоне корабли <strong>не оставляют материалов</strong>. Это место не для сбора материалов инженеров, а для заработка, репутации, влияния на войну и повышения боевого ранга.</p>
+    <div class="callout"><span class="lbl">// Основной порядок действий</span><p>Найдите систему с войной → войдите в зону → встаньте на сторону противников вашей цели → уничтожайте вражеские корабли (каждый даёт облигацию и приближает победу) → при желании выполните особые задачи → уйдите, пока не погибли → погасите облигации на станции. Повторяйте.</p></div>
   </section>
 
   <!-- 02 -->
   <section id="section-finding-zones-reading-intensity">
-    <div class="sec-head"><span class="sec-num">02</span><h2>Finding Zones &amp; Reading Intensity</h2></div>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Поиск зон и определение интенсивности</h2></div>
 
-    <h3 class="subhead">Locating a war</h3>
-    <p>Because CZs only exist during active wars, the hunt is really a hunt for a system in War / Civil War. Two reliable approaches:</p>
+    <h3 class="subhead">Как найти войну</h3>
+    <p>Зоны существуют только во время активной войны, поэтому ищите систему в состоянии войны или гражданской войны. Есть два надёжных способа:</p>
     <ul class="bullets">
-      <li><strong>In-game:</strong> jump into a candidate system. If a war is active, conflict zones show up in the <strong>Navigation panel</strong> as signal sources. Supercruise toward one and drop in.</li>
-      <li><strong>Out-of-game:</strong> use <a href="https://inara.cz" target="_blank" rel="noopener noreferrer">Inara</a> to search a faction or system and read its current states (War / Civil War), or <a href="https://edtools.cc/pve" target="_blank" rel="noopener noreferrer">edtools.cc/pve</a> to find active combat systems. States rotate constantly, so check fresh.</li>
+      <li><strong>В игре:</strong> прыгните в подходящую систему. Если война идёт, зоны конфликта появятся на <strong>панели навигации</strong> как источники сигналов. Подлетите к одному в суперкруизе и выйдите из него.</li>
+      <li><strong>Вне игры:</strong> откройте <a href="https://inara.cz" target="_blank" rel="noopener noreferrer">Inara</a>, найдите фракцию или систему и посмотрите текущее состояние (война или гражданская война), либо откройте <a href="https://edtools.cc/pve" target="_blank" rel="noopener noreferrer">edtools.cc/pve</a> для поиска активных конфликтов. Состояния постоянно меняются, поэтому перепроверяйте перед вылетом.</li>
     </ul>
 
-    <h3 class="subhead">Reading intensity — it's hidden in your ship</h3>
-    <p>The little <strong>+</strong> marks next to a CZ signal in the nav panel are <em>not</em> the intensity rating. To learn a zone's tier before committing:</p>
+    <h3 class="subhead">На корабле уровень интенсивности не виден напрямую</h3>
+    <p>Небольшие значки <strong>+</strong> возле сигнала зоны на панели навигации — <em>не</em> показатель интенсивности. Чтобы узнать уровень до боя:</p>
     <ul class="bullets">
-      <li>Open the <strong>System Map → planetary map → select the CZ</strong>; it shows a threat number.</li>
-      <li>Or dock and talk to <strong>Frontline Solutions</strong>, which lists each zone as Low / Medium / High intensity.</li>
+      <li>Откройте <strong>карту системы → карту планеты → выберите зону конфликта</strong>. Там указан уровень угрозы.</li>
+      <li>Или пристыкуйтесь и обратитесь в <strong>Frontline Solutions</strong>: там зоны подписаны как низкой, средней или высокой интенсивности.</li>
     </ul>
 
     <div class="tbl-scroll">
     <table class="data">
-      <thead><tr><th>Intensity</th><th>Enemy ships</th><th>Special spawns</th><th>Rough payout (full zone)</th></tr></thead>
+      <thead><tr><th>Интенсивность</th><th>Корабли противника</th><th>Особые цели</th><th>Примерная выплата за всю зону</th></tr></thead>
       <tbody>
-        <tr><td><span class="pill lo">Low</span></td><td>Mostly stock; the odd Elite-ranked pilot, no engineering</td><td>No Spec Ops wings</td><td><b>~500k CR</b></td></tr>
-        <tr><td><span class="pill md">Medium</span></td><td>Lightly engineered, mixed ranks</td><td>Spec Ops wings, Captains, correspondents/propagandists</td><td><b>low single-digit millions</b></td></tr>
-        <tr><td><span class="pill hi">High</span></td><td>Heavily engineered, high-rank pilots</td><td>All of the above, plus a chance of a <b>Capital Ship</b> if the Empire or <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Federation</a> is a combatant</td><td><b>~5–20M CR</b></td></tr>
+        <tr><td><span class="pill lo">Низкая</span></td><td>В основном штатные корабли, иногда пилоты ранга «Элита», без инженерных модификаций</td><td>Нет крыльев спецназа</td><td><b>~500 тыс. кр.</b></td></tr>
+        <tr><td><span class="pill md">Средняя</span></td><td>Небольшие модификации, пилоты разных рангов</td><td>Крылья спецназа, капитаны, корреспонденты и пропагандисты</td><td><b>несколько миллионов</b></td></tr>
+        <tr><td><span class="pill hi">Высокая</span></td><td>Сильно модифицированные корабли, пилоты высоких рангов</td><td>Всё перечисленное, плюс возможен <b>линейный корабль</b>, если сражается Империя или <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Федерация</a>.</td><td><b>~5–20 млн кр.</b></td></tr>
       </tbody>
     </table>
     </div>
 
-    <div class="callout"><span class="lbl">// Difficulty is not linear</span><p>Even Low zones can contain Elite-rank NPCs, and ships are combat-fitted — tougher than the random traffic you meet in the wild. Climb the ladder deliberately: Low → Medium → High. Don't take a glass cannon into a High expecting the rep to carry you.</p></div>
-    <div class="callout"><span class="lbl">// Anti-bully mechanic</span><p>Bringing an over-engineered monster to a Low or Medium will summon hefty enemy Spec Ops wings to even the odds. The zone scales to punish stomping, so match the ship to the tier rather than over-gunning a soft zone.</p></div>
+    <div class="callout"><span class="lbl">// Сложность растёт неравномерно</span><p>Даже в зоне низкой интенсивности встречаются неигровые пилоты ранга «Элита», а корабли снаряжены для боя и крепче случайных встречных. Повышайте интенсивность постепенно: низкая → средняя → высокая. Не берите в высокую зону корабль с большим уроном и слабой защитой в расчёте на ранг.</p></div>
+    <div class="callout"><span class="lbl">// Механика выравнивания сил</span><p>Если взять чрезмерно усиленный корабль в зону низкой или средней интенсивности, появятся мощные вражеские крылья спецназа. Подбирайте оснащение под сложность, а не пытайтесь задавить лёгкую зону огневой мощью.</p></div>
   </section>
 
   <!-- 03 -->
   <section id="section-entering-choosing-a-side">
-    <div class="sec-head"><span class="sec-num">03</span><h2>Entering &amp; Choosing a Side</h2></div>
-    <p>On dropping in, a prompt appears in the <strong>Comms panel (message tab)</strong> asking which faction you want to fight for. This is mandatory:</p>
+    <div class="sec-head"><span class="sec-num">03</span><h2>Вход и выбор стороны</h2></div>
+    <p>После выхода из суперкруиза в <strong>панели связи (вкладка сообщений)</strong> появится запрос, за какую фракцию вы хотите сражаться. Это обязательный шаг:</p>
     <ul class="bullets">
-      <li><b>Select a side</b> in the Comms panel.</li>
-      <li><b>Read the repaint.</b> Your radar instantly recolours: green = allies, red = hostiles. The red ships are now your legal targets and will engage you.</li>
-      <li><b>Then open fire</b> — only now.</li>
+      <li><b>Выберите сторону</b> на панели связи.</li>
+      <li><b>Посмотрите на цвета отметок.</b> Радар сразу перекрасится: зелёные — союзники, красные — противники. Красные корабли теперь законные цели и будут атаковать вас.</li>
+      <li><b>Открывайте огонь</b> только после этого.</li>
     </ul>
-    <div class="callout"><span class="lbl">// Fire before you side and everyone turns on you</span><p>If you shoot a single shot before choosing a faction, the <strong>entire zone</strong> — both sides — treats you as hostile. Bonds won't accrue and you'll be swarmed. Always side first.</p></div>
-    <h3 class="subhead">Two edge cases</h3>
+    <div class="callout"><span class="lbl">// Откроете огонь раньше — обе стороны станут враждебны</span><p>Если выстрелить до выбора фракции, вас посчитает врагом <strong>вся зона</strong>, с обеих сторон. Облигаций не будет, а корабли навалятся на вас. Сначала всегда выбирайте сторону.</p></div>
+    <h3 class="subhead">Два особых случая</h3>
     <ul class="bullets">
-      <li><strong>"Ceasefire" instead of a side menu:</strong> the war has ended. The zone is a husk, kills won't register, and any mission tied to it is dead. Leave; mission clears at the next daily server tick.</li>
-      <li><strong>Purple contacts (in a wing):</strong> a wingmate fired on an ally. Whoever does <em>not</em> have a purple target should leave and re-drop, or the zone may flip everyone hostile. Solo, you won't see this.</li>
+      <li><strong>«Перемирие» вместо выбора стороны:</strong> война закончилась. Зона осталась пустой формальностью, уничтожения не засчитываются, связанное задание больше не выполнить. Улетайте: задание сбросится при следующем суточном пересчёте.</li>
+      <li><strong>Фиолетовые отметки в крыле:</strong> кто-то из крыла выстрелил в союзника. Если у вас <em>не</em> появилась фиолетовая цель, уйдите и войдите снова, иначе вся зона может стать враждебной. В одиночку такого не будет.</li>
     </ul>
-    <div class="callout"><span class="lbl">// Picking the RIGHT side for missions</span><p>You destroy the side you did <strong>not</strong> join. For a "Kill Faction X Ships" mission, join X's <em>enemy</em> so that X's ships become the red targets. Side with X by mistake and you'll be killing their opponent — zero mission progress.</p></div>
+    <div class="callout"><span class="lbl">// Как выбрать нужную сторону для задания</span><p>Вы уничтожаете корабли той стороны, к которой <strong>не</strong> присоединились. Для задания «Уничтожить корабли фракции X» вступайте за <em>противников X</em>, чтобы красными стали корабли X. По ошибке выберете X — будете сбивать её соперников, а задание не продвинется.</p></div>
   </section>
 
   <!-- 04 -->
   <section id="section-scoring-kills-confirmed">
-    <div class="sec-head"><span class="sec-num">04</span><h2>Scoring &amp; "Kills Confirmed"</h2></div>
-    <p>Each side has a victory bar shown top-right (the HUD readout below). Every enemy you destroy adds to your side's score and is relayed in your comms feed — destroyed enemies, lost allies, and warnings as either side nears victory or defeat. Fill your bar before the enemy fills theirs and your side <strong>wins the zone</strong>.</p>
-    <p>Crucially, two things happen per kill, and they are independent:</p>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Счёт и подтверждённые уничтожения</h2></div>
+    <p>У каждой стороны есть шкала победы справа вверху (см. пример интерфейса ниже). Каждый уничтоженный противник повышает счёт вашей стороны. В сообщениях видны потери врага и союзников, а также предупреждения о близкой победе или поражении. Если ваша шкала заполнится первой, ваша сторона <strong>выиграет бой</strong>.</p>
+    <p>За каждое уничтожение независимо друг от друга происходят две вещи:</p>
     <ul class="bullets">
-      <li><strong>The victory tally</strong> — pushes your side toward winning the engagement (BGS effect, see <a href="#section-winning-the-war-bgs">Winning the War</a>). Winning is <em>not</em> required to keep your bonds or your mission kills.</li>
-      <li><strong>A combat bond</strong> — the credit voucher that goes in your wallet (see <a href="#section-combat-bonds-making-credits">Combat Bonds &amp; Making Credits</a>).</li>
+      <li><strong>Прибавка к счёту победы</strong> приближает вашу сторону к победе (влияние на BGS, см. <a href="#section-winning-the-war-bgs">«Как выиграть войну»</a>). Победа <em>не</em> нужна, чтобы сохранить облигации или прогресс задания.</li>
+      <li><strong>Боевая облигация</strong> — квитанция на выплату кредитов (см. <a href="#section-combat-bonds-making-credits">«Боевые облигации и заработок»</a>).</li>
     </ul>
     <div class="hud" aria-hidden="true">
       <span class="hud-c1"></span><span class="hud-c2"></span>
-      <h4>// Warzone Status — Victory Tally</h4>
-      <p>Allied (your side) 62% &nbsp;VS&nbsp; 41% Hostile (targets)</p>
+      <h4>// Состояние зоны конфликта: счёт</h4>
+      <p>Союзники (ваша сторона) 62% &nbsp;ПРОТИВ&nbsp; 41% Противники (цели)</p>
     </div>
-    <p class="muted">The top-right HUD bars are the zone's scoreboard — fill yours first and your side wins the engagement.</p>
+    <p class="muted">Шкалы справа вверху показывают счёт: заполните свою первой, и ваша сторона выиграет бой.</p>
 
-    <div class="callout"><span class="lbl">// Why your mission counter sometimes lags the kills</span><p>Mission progress tracks <em>qualifying</em> kills independently of the victory bar. So a kill can pay a bond and move the score yet not tick a mission — usually because the dead ship wasn't the mission's target faction, or because of how stacked missions count (see <a href="#section-massacre-missions-inside-czs">Massacre Missions Inside CZs</a>). The zone score, the bonds, and each mission's tally are three separate ledgers.</p></div>
+    <div class="callout"><span class="lbl">// Почему счётчик задания может отставать</span><p>Задание отдельно считает <em>подходящие</em> цели. За уничтожение можно получить облигацию и очки боя, но не зачёт задания: например, если корабль не той фракции или из-за правил совмещения заданий (см. <a href="#section-massacre-missions-inside-czs">«Задания на уничтожение кораблей»</a>). Счёт боя, облигации и прогресс каждого задания ведутся отдельно.</p></div>
   </section>
 
   <!-- 05 -->
   <section id="section-special-objectives">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Special Objectives</h2></div>
-    <p>From Medium intensity up, scripted events spawn into the zone. Killing the hostile versions (or protecting the friendly ones) gives bonds plus a big jolt to your side's victory tally.</p>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Особые задачи</h2></div>
+    <p>Начиная со средней интенсивности, в зоне запускаются особые события. Уничтожение вражеской цели или защита дружественной приносит облигации и заметно двигает шкалу победы.</p>
     <div class="cards three">
-      <article class="card"><div class="c-head"><span class="c-eyebrow">High-value kill</span><h3>Captain</h3></div><p>A large engineered ship — typically <a href="../../ships/ship-dossiers/anaconda-multipurpose.html">Anaconda</a>, <a href="../../ships/ship-dossiers/federal-corvette-multipurpose.html">Corvette</a> or <a href="../../ships/ship-dossiers/imperial-cutter-multipurpose.html">Cutter</a> — flown by an Elite pilot. Enemy: hunt it down and kill it. Friendly: keep it alive until it jumps out.</p><p><em>Tip: target the <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> or powerplant to drop it fast.</em></p></article>
-      <article class="card"><div class="c-head"><span class="c-eyebrow">Elite wing</span><h3>Spec Ops</h3></div><p>Four heavily engineered medium ships with unique effects. If hostile, kill all four fast — they can wipe your allies and lose you the fight. If friendly, leave them be.</p><p><em>Warning: these do NOT count toward combat-bond / massacre missions.</em></p></article>
-      <article class="card"><div class="c-head"><span class="c-eyebrow">Escort</span><h3>War Correspondent</h3></div><p>A non-combat ship that must be protected if it's on your side. Keep hostiles off it until it departs.</p></article>
-      <article class="card"><div class="c-head"><span class="c-eyebrow">Priority target</span><h3>Propagandist</h3></div><p>An enemy ship that must be destroyed. Prioritise it when it appears.</p></article>
-      <article class="card"><div class="c-head"><span class="c-eyebrow">High intensity only</span><h3>Capital Ship</h3></div><p>Appears only in High zones when the Empire or Federation is a combatant. It cannot be destroyed — disable it by targeting and destroying its <b>heat relays</b> (cycle sub-targets) to force it to flee.</p></article>
+      <article class="card"><div class="c-head"><span class="c-eyebrow">Ценная цель</span><h3>Капитан</h3></div><p>Большой модифицированный корабль, обычно <a href="../../ships/ship-dossiers/anaconda-multipurpose.html">Anaconda</a>, <a href="../../ships/ship-dossiers/federal-corvette-multipurpose.html">Corvette</a> или <a href="../../ships/ship-dossiers/imperial-cutter-multipurpose.html">Cutter</a>, с пилотом ранга «Элита». Вражеского капитана найдите и уничтожьте, союзного защищайте, пока он не уйдёт в прыжок.</p><p><em>Совет: цельтесь в <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">рамочно-сдвиговый двигатель</a> или силовую установку, чтобы быстро вывести корабль из строя.</em></p></article>
+      <article class="card"><div class="c-head"><span class="c-eyebrow">Элитное крыло</span><h3>Спецназ</h3></div><p>Четыре сильно модифицированных средних корабля с особыми эффектами. Вражеские уничтожайте как можно быстрее: они могут разнести союзников и проиграть вам бой. Дружественным не мешайте.</p><p><em>Внимание: эти корабли не засчитываются в задания на боевые облигации или уничтожение кораблей.</em></p></article>
+      <article class="card"><div class="c-head"><span class="c-eyebrow">Сопровождение</span><h3>Военный корреспондент</h3></div><p>Небоевой корабль. Если он на вашей стороне, защищайте его от противника до ухода.</p></article>
+      <article class="card"><div class="c-head"><span class="c-eyebrow">Приоритетная цель</span><h3>Пропагандист</h3></div><p>Вражеский корабль, который нужно уничтожить. При появлении займитесь им первым.</p></article>
+      <article class="card"><div class="c-head"><span class="c-eyebrow">Только высокая интенсивность</span><h3>Линейный корабль</h3></div><p>Появляется только в зонах высокой интенсивности, когда воюет Империя или Федерация. Уничтожить его нельзя. Заставьте его отступить, выведя из строя <b>тепловые реле</b> (переключайте подцели).</p></article>
     </div>
-    <div class="callout"><span class="lbl">// Spec Ops vs Capital — usually one or the other</span><p>In a High zone, if Spec Ops spawns the capital ship typically won't, and vice versa. Neither is mandatory for victory; they're accelerators and paydays, not win conditions.</p></div>
+    <div class="callout"><span class="lbl">// Спецназ и линейный корабль: обычно что-то одно</span><p>В зоне высокой интенсивности при появлении спецназа линейного корабля обычно не будет, и наоборот. Ни то ни другое не обязательно для победы: они ускоряют бой и приносят кредиты.</p></div>
   </section>
 
   <!-- 06 -->
   <section id="section-combat-bonds-making-credits">
-    <div class="sec-head"><span class="sec-num">06</span><h2>Combat Bonds &amp; Making Credits</h2></div>
-    <p>Every enemy you destroy after siding awards a <strong>combat bond voucher</strong>. Value is fixed per ship type — heavier ships pay more — and ranges from a few thousand up to roughly <strong>80,000 CR</strong> for the biggest hulls. (Destroy a ship <em>without</em> having chosen a side and it's a flat ~3,000 CR, another reason to side first.)</p>
+    <div class="sec-head"><span class="sec-num">06</span><h2>«Боевые облигации и заработок»</h2></div>
+    <p>Каждый противник, уничтоженный после выбора стороны, даёт <strong>боевую облигацию</strong>. Стоимость зависит от типа корабля: тяжёлые стоят дороже. Разброс — от нескольких тысяч до примерно <strong>80 000 кр.</strong> за самые крупные корабли (если уничтожить корабль <em>без</em> выбора стороны, выплата фиксированная, около 3 000 кр.; ещё один повод сначала определиться).</p>
 
-    <h3 class="subhead">Income expectations</h3>
+    <h3 class="subhead">На какой доход рассчитывать</h3>
     <div class="tbl-scroll">
     <table class="data">
-      <thead><tr><th>Zone</th><th>Per-ship bond</th><th>Realistic full-zone haul</th></tr></thead>
+      <thead><tr><th>Зона</th><th>Облигация за корабль</th><th>Реалистичный доход за зону</th></tr></thead>
       <tbody>
-        <tr><td><span class="pill lo">Low</span></td><td>small</td><td><b>~500k CR</b></td></tr>
-        <tr><td><span class="pill md">Medium</span></td><td>moderate</td><td><b>a few million</b></td></tr>
-        <tr><td><span class="pill hi">High</span></td><td>up to ~80k each</td><td><b>5–20M CR</b> (skill/ship dependent)</td></tr>
+        <tr><td><span class="pill lo">Низкая</span></td><td>небольшая</td><td><b>~500 тыс. кр.</b></td></tr>
+        <tr><td><span class="pill md">Средняя</span></td><td>средняя</td><td><b>несколько миллионов</b></td></tr>
+        <tr><td><span class="pill hi">Высокая</span></td><td>до ~80 тыс. за корабль</td><td><b>5–20 млн кр.</b> (зависит от навыка и корабля)</td></tr>
       </tbody>
     </table>
     </div>
 
-    <h3 class="subhead">Target priority for income</h3>
+    <h3 class="subhead">Приоритет целей для заработка</h3>
     <ul class="bullets">
-      <li>Prioritise the big hulls — <strong>Corvettes, Cutters, Anacondas, Pythons</strong> — for the fattest bonds.</li>
-      <li>If none are in range, use <strong>"Select Highest Threat"</strong> targeting. It finds your next kill and tends to put allied NPCs on the same target, giving you a free wingman against tough ships.</li>
+      <li>Начинайте с крупных кораблей: <strong>Corvette, Cutter, Anaconda и Python</strong>. За них платят больше всего.</li>
+      <li>Если крупных кораблей в радиусе нет, используйте команду <strong>«Выбрать наибольшую угрозу»</strong>. Она находит следующую цель, и союзные неигровые пилоты часто переключаются на неё, помогая против крепких кораблей.</li>
     </ul>
 
-    <h3 class="subhead">Redeeming &amp; protecting your bonds</h3>
+    <h3 class="subhead">Где погашать и как не терять облигации</h3>
     <ul class="bullets">
-      <li>Bonds are redeemed at the <strong>Combat Bond Contact</strong> in a station's Contacts menu, at a station in the system controlled by the faction you fought for.</li>
-      <li>They behave like bounty vouchers: <strong>unredeemed bonds are lost if your ship is destroyed</strong>. Bank often — when a fight turns against you, jump out and cash in before re-engaging.</li>
+      <li>Облигации погашаются через <strong>службу боевых облигаций</strong> в меню «Контакты» на станции той же системы, которую контролирует фракция, за которую вы сражались.</li>
+      <li>Как и квитанции за розыск, <strong>непогашенные облигации теряются при уничтожении корабля</strong>. Сдавайте их чаще: если бой пошёл не в вашу пользу, уйдите в прыжок и погасите облигации перед возвращением.</li>
     </ul>
-    <div class="callout"><span class="lbl">// The rebuy maths</span><p>A High zone can pay 10M+, but a single death there forfeits every unbanked bond <em>and</em> charges your rebuy. Net result of a greedy wipe can be deeply negative. Treat "leave to bank" as a core part of the loop, not an interruption to it.</p></div>
+    <div class="callout"><span class="lbl">// Как учитывать выкуп</span><p>Зона высокой интенсивности может принести 10 млн и больше, но одна гибель обнуляет все несданные облигации <em>и</em> добавляет расходы на выкуп корабля. Жадность может вогнать в большой минус. Вылет для сдачи — часть боевого цикла, а не лишняя пауза.</p></div>
   </section>
 
   <!-- 07 -->
   <section id="section-superpower-reputation-rank-empire">
-    <div class="sec-head"><span class="sec-num">07</span><h2>Superpower Reputation &amp; Rank (Empire)</h2></div>
-    <p>This is the section you actually care about for the Achenar / engineer grind, so here's the honest mechanic, layered:</p>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Репутация и ранг у сверхдержавы (Империя)</h2></div>
+    <p>Как это работает, если вы хотите получить доступ к Achenar или инженеру:</p>
     <ul class="bullets">
-      <li><strong>Winning a zone</strong> raises your reputation with the faction you fought for and lowers it with the side you destroyed.</li>
-      <li><strong>Redeeming combat bonds</strong> for an Empire-aligned faction raises your standing with that faction — and anything that raises reputation with an Empire-aligned faction nudges your <strong><a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Imperial</a> rank bar</strong> upward.</li>
-      <li><strong>Both ends must line up.</strong> For the rep/rank to land on <em>Empire</em>, fight for an <strong>Imperial-aligned minor faction</strong> and cash the bonds at an <strong>Imperial station</strong>. Cash Imperial-earned bonds at a Federal station and the superpower credit can skew the wrong way.</li>
+      <li><strong>Победа в зоне</strong> повышает репутацию у фракции, за которую вы сражались, и снижает у противника.</li>
+      <li><strong>Погашение боевых облигаций</strong> за фракцию Империи улучшает отношения с ней. Всё, что повышает репутацию у такой фракции, приближает повышение по <strong><a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">имперской</a> шкале ранга</strong>.</li>
+      <li><strong>Сторона и станция должны совпадать.</strong> Чтобы репутация и прогресс пошли на пользу <em>Империи</em>, сражайтесь за <strong>малую фракцию на стороне Империи</strong> и погашайте облигации на <strong>имперской станции</strong>. Если сдать имперские облигации на федеральной станции, зачёт сверхдержавы может пойти не туда.</li>
     </ul>
-    <div class="callout"><span class="lbl">// The rank bar still needs a promotion mission</span><p>CZ rep can <em>fill</em> the <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Imperial</a> rank bar, but reputation and naval rank are separate systems. Once the bar hits 100%, you still must find and complete an <strong>"<a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Imperial</a> Navy"-titled promotion mission</strong> (board-flip to roll one). No amount of CZ grinding promotes you on its own.</p></div>
-    <div class="callout"><span class="lbl">// Read this before flying out</span><p>For your Squire → Achenar goal, CZs are a <em>bonus</em> source of <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Empire</a> rep, not the efficient path. The rank-bar gain from combat is small per action, and the bottleneck is the promotion-mission roll, not rep volume. Use CZs if you're enjoying the combat and banking credits anyway; otherwise courier/transport/donation missions fill the bar faster per minute. Also note the <a href="../../ships/ship-dossiers/mandalay-exploration.html">Mandalay</a> is a traveller, not a brawler — for any serious Medium/High zone work, bring the <a href="../../ships/ship-dossiers/python-mk-ii-combat.html">Python Mk II</a> or <a href="../../ships/ship-dossiers/cobra-mk-v-combat.html">Cobra Mk V</a> combat builds, not the explorer.</p></div>
+    <div class="callout"><span class="lbl">// Для повышения нужно отдельное задание</span><p>Репутация за бои может <em>заполнить</em> шкалу <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">имперского</a> ранга, но репутация и звание флота — разные вещи. На 100% всё равно найдите и выполните <strong><a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">имперское</a> флотское задание на повышение</strong> (обновите доску заданий, чтобы оно появилось). Одними боями новый ранг не получить.</p></div>
+    <div class="callout"><span class="lbl">// Прочтите перед вылетом</span><p>Если ваша цель — ранг сквайра и разрешение на Achenar, зоны конфликта дают <em>дополнительную</em>, а не основную <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Империи</a> репутацию. Одно действие даёт мало прогресса, а основная задержка — появление задания на повышение. Летайте в зоны, если вам нравится бой и вы заодно зарабатываете. Для скорости чаще подходят курьерские задания, перевозки и пожертвования. Учтите также: <a href="../../ships/ship-dossiers/mandalay-exploration.html">Манделай</a> — корабль для дальних перелётов, а не для затяжных боёв. Для серьёзной средней или высокой зоны берите <a href="../../ships/ship-dossiers/python-mk-ii-combat.html">Python Mk II</a> или <a href="../../ships/ship-dossiers/cobra-mk-v-combat.html">Cobra Mk V</a> в боевом оснащении вместо исследовательского корабля.</p></div>
   </section>
 
   <!-- 08 -->
   <section id="section-massacre-missions-inside-czs">
-    <div class="sec-head"><span class="sec-num">08</span><h2>Massacre Missions Inside CZs</h2></div>
-    <p>"Kill Faction X Ships" missions are completed cleanly in a CZ where X is a combatant: side against X, and X's ships are your legal kills. Three rules govern how the tally fills:</p>
+    <div class="sec-head"><span class="sec-num">08</span><h2>«Задания на уничтожение кораблей»</h2></div>
+    <p>Задание «Уничтожить корабли фракции X» удобно выполнять в зоне, где X воюет. Вступите против неё, и её корабли станут законными целями. Счётчик работает по трём правилам:</p>
     <ul class="bullets">
-      <li><strong>Side correctly.</strong> Join X's enemy. Kills only count against the faction you're <em>not</em> fighting for.</li>
-      <li><strong>Spec Ops don't count.</strong> Ships spawned by the Spec Ops objective never tick combat-bond/massacre missions — kill the regular combatants for mission credit.</li>
-      <li><strong>Stacking is per mission-giver.</strong> One kill counts toward multiple missions <em>only if they were issued by different factions</em>. Two missions from the <strong>same</strong> faction targeting X do not share a kill — you'd grind the full combined total.</li>
+      <li><strong>Выберите нужную сторону.</strong> Встаньте за противников X. Засчитываются уничтожения кораблей фракции, за которую вы <em>не</em> сражаетесь.</li>
+      <li><strong>Спецназ не считается.</strong> Корабли из особой задачи «Спецназ» не продвигают задания на облигации и уничтожение. Сбивайте обычных участников боя.</li>
+      <li><strong>Совмещайте задания разных фракций.</strong> Одно уничтожение продвигает несколько заданий, <em>только если их выдали разные фракции</em>. Два задания от <strong>одной</strong> фракции против X не делят одно уничтожение: придётся набрать суммарное число целей.</li>
     </ul>
-    <div class="callout"><span class="lbl">// How to actually stack</span><p>Collect "Kill X" missions against <strong>one</strong> target faction from as many <strong>different</strong> Imperial mission-givers as possible (across stations / nearby systems). Then each qualifying kill ticks one mission from every different giver at once. For same-giver missions, kills tick the <em>oldest accepted</em> mission first, then the next.</p></div>
-    <div class="callout"><span class="lbl">// Tracking aid</span><p>The <strong>EDMC Massacres</strong> plugin (for Elite Dangerous Market Connector) groups accepted massacre missions by giver, shows total kills needed per faction, and flags your largest stack — worth running if you lean into combat farming.</p></div>
+    <div class="callout"><span class="lbl">// Как совмещать задания</span><p>Наберите задания на уничтожение кораблей <strong>одной</strong> фракции у как можно большего числа <strong>разных</strong> имперских заказчиков на станциях и в соседних системах. Тогда каждое подходящее уничтожение продвинет по одному заданию от каждого заказчика. У одного заказчика сначала продвигается <em>самое раннее принятое</em> задание, затем следующее.</p></div>
+    <div class="callout"><span class="lbl">// Как отслеживать прогресс</span><p>Дополнение <strong>EDMC Massacres</strong> для Elite Dangerous Market Connector группирует принятые задания по заказчикам, показывает, сколько всего целей осталось у каждой фракции, и выделяет самую большую группу заданий. Удобно, если часто зарабатываете на боях.</p></div>
   </section>
 
   <!-- 09 -->
   <section id="section-winning-the-war-bgs">
-    <div class="sec-head"><span class="sec-num">09</span><h2>Winning the War (BGS)</h2></div>
-    <p>Combat zones are a Background Simulation (BGS) tool. Here's how a zone win becomes a war win:</p>
+    <div class="sec-head"><span class="sec-num">09</span><h2>Как выиграть войну (BGS)</h2></div>
+    <p>Зоны конфликта — инструмент фоновой симуляции (BGS). Вот как победа в зоне приближает победу в войне:</p>
     <ul class="bullets">
-      <li>Zone victories and completed war-missions feed a <strong>daily tally</strong> determining which side "won the day."</li>
-      <li>The faction that wins the most days takes <strong>Influence</strong> when the war resolves; the loser sheds Influence (and can lose control of assets/stations).</li>
-      <li><strong>During</strong> a war the embattled factions' Influence is frozen — combat bonds are effectively the only lever on the outcome until it ends.</li>
-      <li>Check who won the previous day on the faction's <strong>station news page</strong>, or by expanding the faction in the <strong>Status tab</strong> of your internals panel.</li>
+      <li>Победы в зонах и выполненные военные задания идут в <strong>суточный зачёт</strong>, который определяет победителя дня.</li>
+      <li>Фракция, выигравшая больше дней, получает <strong>влияние</strong> по итогам войны. Проигравшая теряет влияние, а иногда и контроль над объектами или станциями.</li>
+      <li><strong>Во время</strong> войны влияние обеих фракций заморожено. Боевые облигации фактически остаются единственным рычагом влияния на исход, пока война не закончится.</li>
+      <li>Победителя предыдущего дня ищите в <strong>новостях станции фракции</strong> или раскройте сведения о фракции на вкладке <strong>«Состояние»</strong> в правой панели корабля.</li>
     </ul>
-    <p class="muted">For pure rep/credit grinding the war outcome doesn't matter to you — but if you ever want to flip a station to a friendlier faction (handy for cheaper outfitting or unlocking access), this is the mechanism.</p>
+    <p class="muted">Если нужны только деньги и репутация, итог войны не важен. Но именно так можно передать станцию более дружественной фракции, например для дешёвого оснащения или доступа.</p>
   </section>
 
   <!-- 10 -->
   <section id="section-powerplay-conflict-zones">
-    <div class="sec-head"><span class="sec-num">10</span><h2>Powerplay Conflict Zones</h2></div>
-    <p>Under Powerplay 2.0 there are dedicated <strong>Power Conflict Zones</strong>, separate from ordinary faction-war CZs. They look similar but differ in important ways:</p>
+    <div class="sec-head"><span class="sec-num">10</span><h2>Зоны конфликта «Борьбы за власть»</h2></div>
+    <p>В версии 2.0 есть отдельные <strong>зоны конфликта сил</strong>, не связанные с обычными войнами фракций. Они похожи, но есть важные отличия:</p>
     <ul class="bullets">
-      <li>They reward <strong>Powerplay merits</strong> — ordinary CZs do not. Credits may be a touch lower, but merits drive your Powerplay rating.</li>
-      <li>You're auto-assigned to the <strong>Power you're pledged to</strong>. If neither side is your Power, you may choose freely.</li>
-      <li>Power bonds are issued under the <strong>Power's literal name</strong> (e.g. a named Power) and redeemed at the <strong>Combat Bond Contact on that Power's Stronghold Carrier</strong>, not a normal station.</li>
-      <li>As of the most recent design they appear only in the <strong>Medium</strong> variety.</li>
+      <li>Там начисляют <strong>заслуги «Борьбы за власть»</strong>, в отличие от обычных зон. Кредитов может быть немного меньше, зато заслуги повышают ранг в этом режиме.</li>
+      <li>Вас автоматически ставят за <strong>силу, которой вы присягнули</strong>. Если её нет ни с одной стороны, выбирайте свободно.</li>
+      <li>Облигации выдаются на <strong>имя конкретной силы</strong> и погашаются через <strong>службу боевых облигаций на авианосце её оплота</strong>, а не на обычной станции.</li>
+      <li>В последней описанной версии они бывают только <strong>средней</strong> интенсивности.</li>
     </ul>
-    <div class="callout"><span class="lbl">// Note vs your Lavigny-Duval standing</span><p>You're currently Hostile to A. Lavigny-Duval, whose Powerplay presence covers systems like Cemiess. Power CZs are a separate consideration from your Empire <em>rank</em> grind — you don't need to touch Powerplay to reach Squire. File this section under "good to know," not "to-do."</p></div>
+    <div class="callout"><span class="lbl">// Если у вас плохие отношения с Лавиньи-Дюваль</span><p>При враждебном статусе у А. Лавиньи-Дюваль, чья сила присутствует, например, в Cemiess, не путайте её зоны с повышением <em>имперского ранга</em>. Для получения звания сквайра «Борьба за власть» не нужна. Этот раздел на будущее, а не обязательный шаг.</p></div>
   </section>
 
   <!-- 11 -->
   <section id="section-on-foot-conflict-zones">
-    <div class="sec-head"><span class="sec-num">11</span><h2>On-Foot Conflict Zones</h2></div>
-    <p>Accessed on foot at a settlement, ideally via <strong>Frontline Solutions</strong> (which lets you respawn back into the fight). Intensity (Low/Med/High) can't be read in-ship; check the planetary map's threat number or Frontline's listing.</p>
-    <h3 class="subhead">How a battle is won</h3>
+    <div class="sec-head"><span class="sec-num">11</span><h2>«Наземные зоны конфликта»</h2></div>
+    <p>Наземный бой проходит в поселении. Удобнее попасть туда через <strong>Frontline Solutions</strong> (служба позволяет вернуться в бой после гибели). С корабля интенсивность не видна: смотрите уровень угрозы на карте планеты или список Frontline.</p>
+    <h3 class="subhead">Как выиграть бой</h3>
     <ul class="bullets">
-      <li>Two teams of <strong>12 fighters</strong>, dropped in by dropship. Each team starts with <strong>1,000 reinforcement points</strong> and loses <strong>5</strong> every time one of its members is killed or critically injured.</li>
-      <li>Reduce the enemy to <strong>0 points and eliminate the remaining members</strong> to win.</li>
-      <li><strong>Secondary objective — control points</strong> (Alpha, Bravo, Charlie, Delta, Echo, Foxtrot; max three active at once): stand in the zone until the meter hits 100%. Capturing one strips <strong>50 reinforcement points</strong> from the enemy and pays every capturing player a <strong>3,000 CR</strong> bond.</li>
+      <li>Две команды по <strong>12 бойцов</strong>высаживаются с десантных кораблей. У каждой изначально <strong>1 000 очков подкрепления</strong>, и команда теряет <strong>5</strong> за каждого убитого или критически раненого бойца.</li>
+      <li>Уменьшите запас противника до <strong>нуля и устраните оставшихся бойцов</strong>, чтобы победить.</li>
+      <li><strong>Дополнительная задача: точки контроля</strong> (Альфа, Браво, Чарли, Дельта, Эхо, Фокстрот; одновременно активно до трёх). Стойте в зоне до 100%. Захват отнимает у противника <strong>50 очков подкрепления</strong> и даёт каждому участвовавшему игроку облигацию на <strong>3 000 кр.</strong></li>
     </ul>
-    <h3 class="subhead">Pay &amp; gear</h3>
+    <h3 class="subhead">Оплата и снаряжение</h3>
     <ul class="bullets">
-      <li>Per-kill bonds run a few thousand up to tens of thousands; a strong High zone can net <strong>~5–20M</strong> in one session.</li>
-      <li><strong>Mercenary rank matters:</strong> climbing it (e.g. Defenceless → Soldier) roughly doubles payout. Engineered suit (Maverick/Dominator) and weapons make a large difference.</li>
-      <li>Redeem at <strong>Frontline Solutions</strong> or a Combat Voucher Contact in the concourse.</li>
+      <li>Облигация за бойца приносит от нескольких тысяч до десятков тысяч. Удачный бой высокой интенсивности может дать <strong>~5–20 млн</strong> за заход.</li>
+      <li><strong>Ранг наёмника важен:</strong> повышение (например, от «Беззащитного» до «Солдата») примерно удваивает выплаты. Инженерные улучшения костюма Maverick или Dominator и оружия заметно помогают.</li>
+      <li>Погашайте облигации через <strong>Frontline Solutions</strong> или в службе боевых квитанций на станции.</li>
     </ul>
-    <div class="callout"><span class="lbl">// Reset trick</span><p>Entering the zone manually (not via the Frontline dropship) lets you reset it quickly by jumping to supercruise and returning — useful for chaining fresh zones, at the cost of losing the easy respawn.</p></div>
+    <div class="callout"><span class="lbl">// Быстрый перезапуск</span><p>Если попасть в зону самостоятельно, а не на десантном корабле Frontline, её можно быстро перезапустить: уйдите в суперкруиз и вернитесь. Удобно для серии боёв, но простого возвращения после гибели не будет.</p></div>
   </section>
 
   <!-- 12 -->
   <section id="section-ship-loadout-doctrine">
-    <div class="sec-head"><span class="sec-num">12</span><h2>Ship &amp; Loadout Doctrine</h2></div>
+    <div class="sec-head"><span class="sec-num">12</span><h2>Корабль и оснащение</h2></div>
     <ul class="bullets">
-      <li><strong>Engineering by tier:</strong> Low needs little; Medium wants a solid engineered build; High demands a well-engineered ship or a player wing. NPCs scale to match.</li>
-      <li><strong>Weapons:</strong> don't run pure beam <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> for long engagements — heat and sustain become a problem. Mix sustained energy with kinetic (multi-cannons) so you're not fully dependent on either; bring enough ammo for an extended fight.</li>
-      <li><strong>Defence:</strong> shield tank with resistance-augmented boosters favours the long, multi-ship slog of a CZ over a glass-cannon gank build. Carry an <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a> for module repair on extended sessions.</li>
-      <li><strong>Wingman trick:</strong> "Select Highest Threat" tends to align allied NPCs onto your target — let them tank while you DPS.</li>
-      <li><strong>Don't over-gun a soft zone:</strong> a monster build in a Low/Medium triggers extra enemy Spec Ops wings.</li>
+      <li><strong>Модификации по интенсивности:</strong> для низкой почти не нужны, для средней нужна крепкая инженерная сборка, для высокой — хорошо модифицированный корабль или крыло игроков. Сила противников подстраивается.</li>
+      <li><strong>Оружие:</strong> в затяжном бою не ограничивайтесь лучевыми <a href="../../engineering/engineering-manuals/modules.html#module-lasers">лазерами</a>: будет сложно с нагревом и длительностью огня. Сочетайте энергетическое оружие и кинетическое (многоствольные пушки), чтобы не зависеть только от одного. Берите боеприпасы с запасом.</li>
+      <li><strong>Защита:</strong> крепкие щиты с усилителями сопротивления подходят для долгого боя лучше сборки с высоким уроном и слабой защитой. Возьмите <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок автоматического ремонта</a> для восстановления модулей в долгих боях.</li>
+      <li><strong>Как получить поддержку:</strong> команда «Выбрать наибольшую угрозу» часто переключает союзников на вашу цель. Пусть они принимают огонь, пока вы наносите урон.</li>
+      <li><strong>Не перебарщивайте с оснащением в простых зонах:</strong> чрезмерно мощная сборка в зоне низкой или средней интенсивности вызывает дополнительные вражеские крылья спецназа.</li>
     </ul>
-    <div class="callout"><span class="lbl">// Ship picks</span><p>A <strong>medium combat flagship</strong> such as the <a href="../../ships/ship-dossiers/python-mk-ii-combat.html">Python Mk II</a> is the natural High-zone choice; a <strong>flexible small-pad combat ship</strong> like the <a href="../../ships/ship-dossiers/cobra-mk-v-combat.html">Cobra Mk V</a> is capable for Low/Medium. A long-range traveller such as the <a href="../../ships/ship-dossiers/mandalay-exploration.html">Mandalay</a> has no business in a sustained warzone — leave it parked for CZ work. it's a long-range traveller with no business in a sustained warzone. Standard combat doctrine applies here: G5 Overcharged plant with Thermal Spread, G5 <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">Dirty Drives</a>, <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-beam-laser">Thermal Vent</a> beams, a Corrosive multi-cannon, Heavy Duty boosters/<a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">HRPs</a>.</p></div>
+    <div class="callout"><span class="lbl">// Какие корабли взять</span><p>Хороший <strong>средний боевой корабль</strong> вроде <a href="../../ships/ship-dossiers/python-mk-ii-combat.html">Python Mk II</a> подходит для высокой интенсивности. Универсальный <strong>боевой корабль для малой площадки</strong> вроде <a href="../../ships/ship-dossiers/cobra-mk-v-combat.html">Cobra Mk V</a> справится с низкой и средней. А дальнолётный <a href="../../ships/ship-dossiers/mandalay-exploration.html">Манделай</a> для длительного боя не годится: оставьте его в ангаре. Обычное боевое оснащение: форсированная силовая установка 5-го уровня модификации с «Рассеиванием тепла», <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-thrusters-dirty-drive-tuning">«Грязные» двигатели</a> 5-го уровня, <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-beam-laser">«Отвод тепла»</a> на лучевых лазерах, многоствольная пушка с коррозионными боеприпасами, усилители щитов и <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">усиления корпуса</a> с модификацией «Усиленная конструкция» для обоих.</p></div>
   </section>
 
   <!-- 13 -->
   <section id="section-quick-reference">
-    <div class="sec-head"><span class="sec-num">13</span><h2>Quick Reference</h2></div>
+    <div class="sec-head"><span class="sec-num">13</span><h2>Краткая справка</h2></div>
     <div class="tbl-scroll">
     <table class="data">
-      <thead><tr><th>Question</th><th>Answer</th></tr></thead>
+      <thead><tr><th>Вопрос</th><th>Ответ</th></tr></thead>
       <tbody>
-        <tr><td>Where do CZs appear?</td><td>Only in systems in <b>War / Civil War</b>; shown as nav-panel signal sources.</td></tr>
-        <tr><td>How do I read intensity?</td><td>System Map → planetary map → select CZ (threat number), or Frontline Solutions.</td></tr>
-        <tr><td>First action on dropping in?</td><td><b>Choose a side</b> in the Comms panel — before firing.</td></tr>
-        <tr><td>Which side for "Kill X" missions?</td><td>Join <b>X's enemy</b>; X's ships become the red targets.</td></tr>
-        <tr><td>What wins the zone?</td><td>Filling your <b>victory bar</b> (top-right) faster than the enemy. Not required for bonds/mission kills.</td></tr>
-        <tr><td>Do Spec Ops count for missions?</td><td><b>No.</b> Kill regular combatants for mission credit.</td></tr>
-        <tr><td>Can one kill clear several missions?</td><td>Only across <b>different mission-givers</b>; same-giver stacks don't share.</td></tr>
-        <tr><td>How is a Capital Ship handled?</td><td>Can't be killed — destroy its <b>heat relays</b> to force a retreat (High only).</td></tr>
-        <tr><td>Where do bonds go?</td><td><b>Combat Bond Contact</b> at a station of the faction you fought for. Lost on death.</td></tr>
-        <tr><td>Does this rank up <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Empire</a>?</td><td>Feeds the bar (fight <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Imperial</a> faction + cash at <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Imperial</a> station), but rank still needs a <b>promotion mission</b>.</td></tr>
-        <tr><td>Merits from CZs?</td><td>Only from dedicated <b>Power Conflict Zones</b>, redeemed at a Stronghold Carrier.</td></tr>
-        <tr><td>On-foot win condition?</td><td>Drain enemy from 1,000 <b>reinforcement points</b> (−5/death) to zero; capture points (−50 each).</td></tr>
+        <tr><td>Где появляются зоны конфликта?</td><td>Только в системах с состоянием <b>войны или гражданской войны</b>. На панели навигации видны как источники сигнала.</td></tr>
+        <tr><td>Как узнать интенсивность?</td><td>Карта системы → карта планеты → зона конфликта (уровень угрозы) либо список Frontline Solutions.</td></tr>
+        <tr><td>Что делать при входе?</td><td><b>Выберите сторону</b> на панели связи, прежде чем стрелять.</td></tr>
+        <tr><td>За кого вступать при задании уничтожить X?</td><td>Встаньте на сторону <b>противников X</b>: корабли X станут красными целями.</td></tr>
+        <tr><td>Как выиграть бой?</td><td>Заполните свою <b>шкалу победы</b> справа вверху раньше противника. Для облигаций и зачёта уничтожений победа не нужна.</td></tr>
+        <tr><td>Засчитывается ли спецназ в заданиях?</td><td><b>Нет.</b> Уничтожайте обычных участников боя.</td></tr>
+        <tr><td>Может ли одно уничтожение продвинуть несколько заданий?</td><td>Только от <b>разных заказчиков</b>. Задания от одного заказчика не делят уничтожения.</td></tr>
+        <tr><td>Что делать с линейным кораблём?</td><td>Уничтожить его нельзя. Выведите из строя <b>тепловые реле</b>, чтобы он ушёл (только в зонах высокой интенсивности).</td></tr>
+        <tr><td>Где погашать облигации?</td><td>Через <b>службу боевых облигаций</b> на станции фракции, за которую вы сражались. При гибели облигации теряются.</td></tr>
+        <tr><td>Продвигает ли это ранг <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Империи</a>?</td><td>Заполняет шкалу (сражайтесь за <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">имперскую</a> фракцию и сдавайте на <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">имперской</a> станции), но для повышения нужно <b>задание на повышение</b>.</td></tr>
+        <tr><td>Дают ли зоны заслуги?</td><td>Только отдельные <b>зоны конфликта сил</b>. Облигации сдавайте на авианосце оплота.</td></tr>
+        <tr><td>Как победить на земле?</td><td>Снизьте запас противника с 1 000 <b>очков подкрепления</b> до нуля (−5 за потерю бойца), захватывайте точки (−50 за каждую).</td></tr>
       </tbody>
     </table>
     </div>
@@ -327,23 +327,23 @@
 
   <!-- Sources -->
   <section class="credits" id="section-credits">
-    <div class="sec-head"><span class="sec-num">14</span><h2>Sources</h2></div>
-    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="sec-head"><span class="sec-num">14</span><h2>Источники</h2></div>
+    <p class="lead">Цифры сверены с источниками ниже.</p>
     <div class="cr-rows">
-      <div class="cr-row"><span class="cr-src">Fandom Wiki</span><span class="cr-what">Conflict-zone mechanics, intensity tiers, and Spec Ops / Capital Ship details.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Conflict_Zone" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Conflict_Zone</a></div>
-      <div class="cr-row"><span class="cr-src">Fandom Wiki</span><span class="cr-what">On-foot (Odyssey) conflict-zone mechanics, infantry roles, and capture-point flow.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Conflict_Zone_(On_Foot)" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Conflict_Zone_(On_Foot)</a></div>
-      <div class="cr-row"><span class="cr-src">edtools.cc</span><span class="cr-what">Finds systems in active conflict and the faction states that spawn combat zones, filtered by reference system and range.</span><a class="cr-link" href="https://edtools.cc/pve" target="_blank" rel="noopener noreferrer">edtools.cc/pve</a></div>
-      <div class="cr-row"><span class="cr-src">E:D PvE Combat Wiki</span><span class="cr-what">Community catalogue of known conflict-zone locations and CZ farming venues.</span><a class="cr-link" href="https://sites.google.com/view/ed-pve-combat/location-catalogue/conflict-zones" target="_blank" rel="noopener noreferrer">sites.google.com/view/ed-pve-combat</a></div>
-      <div class="cr-row"><span class="cr-src">Inara</span><span class="cr-what">Live galaxy-wide tracker of active faction conflicts (wars / civil wars) that spawn conflict zones.</span><a class="cr-link" href="https://inara.cz/galaxy-conflicts/" target="_blank" rel="noopener noreferrer">inara.cz/galaxy-conflicts</a></div>
-      <div class="cr-row"><span class="cr-src">YouTube — Down to Earth Astronomy</span><span class="cr-what">Walkthrough of Update 7 conflict-zone changes: ship CZ mechanics, faction selection, war and civil-war states, and combat bond payouts.</span><a class="cr-link" href="https://www.youtube.com/watch?v=E-373ICzdOE" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=E-373ICzdOE</a></div>
-      <div class="cr-row"><span class="cr-src">YouTube — Down to Earth Astronomy</span><span class="cr-what">Livestream examining combat earnings, including conflict-zone combat bond payouts and the value of redeeming them.</span><a class="cr-link" href="https://www.youtube.com/watch?v=KiS6KCFdmOw" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=KiS6KCFdmOw</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Fandom</span><span class="cr-what">Механика зон, уровни интенсивности, спецназ и линейные корабли.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Conflict_Zone" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Conflict_Zone</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Fandom</span><span class="cr-what">Механика наземных зон Odyssey, пехотные роли и захват точек.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Conflict_Zone_(On_Foot)" target="_blank" rel="noopener noreferrer">elite-dangerous.fandom.com/wiki/Conflict_Zone_(On_Foot)</a></div>
+      <div class="cr-row"><span class="cr-src">edtools.cc</span><span class="cr-what">Поиск активных конфликтов и состояний фракций с фильтром по исходной системе и дальности.</span><a class="cr-link" href="https://edtools.cc/pve" target="_blank" rel="noopener noreferrer">edtools.cc/pve</a></div>
+      <div class="cr-row"><span class="cr-src">Вики E:D о боях с компьютером</span><span class="cr-what">Собранный сообществом список известных зон конфликта и мест для заработка на боях.</span><a class="cr-link" href="https://sites.google.com/view/ed-pve-combat/location-catalogue/conflict-zones" target="_blank" rel="noopener noreferrer">sites.google.com/view/ed-pve-combat</a></div>
+      <div class="cr-row"><span class="cr-src">Inara</span><span class="cr-what">Актуальный список войн и гражданских войн фракций по всей галактике.</span><a class="cr-link" href="https://inara.cz/galaxy-conflicts/" target="_blank" rel="noopener noreferrer">inara.cz/galaxy-conflicts</a></div>
+      <div class="cr-row"><span class="cr-src">YouTube — Down to Earth Astronomy</span><span class="cr-what">Разбор изменений обновления 7: космические зоны, выбор фракции, война, гражданская война и оплата облигаций.</span><a class="cr-link" href="https://www.youtube.com/watch?v=E-373ICzdOE" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=E-373ICzdOE</a></div>
+      <div class="cr-row"><span class="cr-src">YouTube — Down to Earth Astronomy</span><span class="cr-what">Запись трансляции о боевых доходах, в том числе о выплатах в зонах и важности погашения облигаций.</span><a class="cr-link" href="https://www.youtube.com/watch?v=KiS6KCFdmOw" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=KiS6KCFdmOw</a></div>
     </div>
   </section>
 
 <footer>
   <div class="ft-fine">
-    <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Systems &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
-    <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+    <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Системы &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></span>
+    <span>Elite Dangerous — товарный знак Frontier Developments plc. Это неофициальный фанатский материал: Frontier Developments не связана с ним и не одобряла его.</span>
   </div>
 </footer>
 
