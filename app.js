@@ -191,29 +191,92 @@ async function showExo(){
 
 async function showGuides(){content.innerHTML='<h2>Гайды</h2><p class="muted">Каталог E:D Black Box. Руководства в оформлении Companion. Перевод текстов пока не завершён.</p><div class="filters"><input id="guide-q" placeholder="Поиск корабля или гайда"><select id="guide-category"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role"><option value="">Все специализации</option></select></div><p id="guide-count"></p><div id="guide-rows" class="guide-grid">Загрузка…</div>';const rows=document.getElementById('guide-rows'),q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role');try{const res=await fetch('../data/blackbox-guides.json?v=1');if(!res.ok)throw Error(res.status);const entries=await res.json();for(const r of new Set(entries.map(e=>e.role).filter(Boolean)))role.add(new Option(r,r));function draw(){rows.replaceChildren();const list=entries.filter(e=>(!cat.value||e.category===cat.value)&&(!role.value||e.role===role.value)&&(e.title+' '+e.role+' '+e.category).toLowerCase().includes(q.value.trim().toLowerCase()));document.getElementById('guide-count').textContent='Найдено: '+list.length+' из '+entries.length;for(const e of list){const a=document.createElement('article');a.className='exo-card guide-card';const k=document.createElement('div');k.className='exo-genus';k.textContent=e.category;const h=document.createElement('h3');h.textContent=e.title;const p=document.createElement('p');p.textContent=e.role;const link=document.createElement('a');link.className='guide-link';link.href='../blackbox/'+e.path;link.textContent='Открыть руководство';link.onclick=ev=>{ev.preventDefault();openCompanionGuide(e,entries)};a.append(k,h,p,link);rows.append(a)}}if(!rows.isConnected)return;q.oninput=draw;cat.onchange=draw;role.onchange=draw;draw()}catch(e){rows.textContent='Не удалось загрузить каталог: '+e.message}}
 
-async function openCompanionGuide(entry,entries){
+function scrollCompanionGuide(root, fragment) {
+ if (!fragment) return false;
+ let id = fragment.replace(/^#/, '');
+ try { id = decodeURIComponent(id); } catch (_) {}
+ const target = [...root.querySelectorAll('[id]')].find(el => el.id === id);
+ if (!target) return false;
+ target.scrollIntoView({block:'start'});
+ return true;
+}
+
+async function copyCompanionBuild(payload) {
+ if (!payload) throw Error('Пустая сборка');
+ if (navigator.clipboard?.writeText) {
+  try { await navigator.clipboard.writeText(payload); return; } catch (_) {}
+ }
+ const input = document.createElement('textarea');
+ input.value = payload;
+ input.readOnly = true;
+ input.style.cssText = 'position:fixed;left:-9999px;top:0';
+ const previous = document.activeElement;
+ document.body.append(input);
+ try {
+  input.select();
+  if (!document.execCommand('copy')) throw Error('Нет доступа к буферу обмена');
+ } finally {
+  input.remove();
+  previous?.focus?.({preventScroll:true});
+ }
+}
+
+async function openCompanionGuide(entry,entries,fragment=''){
  const root=document.createElement('article');root.className='companion-guide';
- const back=document.createElement('button');back.textContent='← Все гайды';back.onclick=showGuides;
- const title=document.createElement('h2');title.textContent=entry.title+' — '+entry.role;
- const status=document.createElement('p');status.className='muted';status.textContent='Загрузка…';
- content.replaceChildren(back,title,status,root);
+ const back=document.createElement('button');back.type='button';back.textContent='← Все гайды';back.onclick=showGuides;
+ const title=document.createElement('h2');title.textContent=[entry.title,entry.role].filter(Boolean).join(' — ');
+ const status=document.createElement('p');status.className='muted';status.setAttribute('aria-live','polite');status.textContent='Загрузка…';
+ const note=document.createElement('p');note.className='muted';note.setAttribute('role','status');note.hidden=true;
+ content.replaceChildren(back,title,status,note,root);
+ const destinations=new Map(entries.map(e=>[new URL('../blackbox/'+e.path,location.href).pathname,e]));
  try{
  const url=new URL('../blackbox/'+entry.path,location.href);
  const response=await fetch(url);if(!response.ok)throw Error(response.status);
  const doc=new DOMParser().parseFromString(await response.text(),'text/html');
+ if(!root.isConnected)return;
  const parts=doc.querySelectorAll('.v-body,.stat-grid,section[id]');
  if(!parts.length)throw Error('Формат руководства пока не поддерживается');
- status.textContent='Источник: E:D Black Box · перевод может быть неполным';
+ status.textContent='Источник: E:D Black Box · '+(/^ru(?:-|$)/i.test(doc.documentElement.lang)?'русский перевод':'перевод может быть неполным');
  const toc=document.createElement('nav');toc.className='companion-guide-toc';root.append(toc);
+ const copiedLabels=new WeakMap();
+ root.addEventListener('click',async ev=>{
+  const button=ev.target?.closest?.('button.lex-copy[data-slef]');
+  if(!button||!root.contains(button))return;
+  ev.preventDefault();
+  if(!copiedLabels.has(button))copiedLabels.set(button,button.innerHTML);
+  button.disabled=true;
+  try{
+   await copyCompanionBuild(button.getAttribute('data-slef'));
+   button.textContent='Скопировано';
+   note.hidden=false;note.textContent='Сборка SLEF скопирована.';
+   setTimeout(()=>{if(button.isConnected)button.innerHTML=copiedLabels.get(button)},1500);
+  }catch(_){
+   note.hidden=false;note.textContent='Не удалось скопировать сборку. Можно открыть её по ссылке Coriolis или EDSY.';
+  }finally{button.disabled=false}
+ });
  for(const part of parts){
  if(part.parentElement.closest('.v-body,.stat-grid,section[id]'))continue;
  const node=part.cloneNode(true);node.querySelectorAll('script,style,iframe,object,embed,form').forEach(x=>x.remove());
  for(const el of [node,...node.querySelectorAll('*')]){for(const attr of [...el.attributes])if(/^on/i.test(attr.name)||attr.name==='style')el.removeAttribute(attr.name)}
  for(const img of node.querySelectorAll('img[src]')){img.src=new URL(img.getAttribute('src'),url).href;img.loading='lazy'}
- for(const a of node.querySelectorAll('a[href]')){const href=a.getAttribute('href');if(href.startsWith('#'))continue;const dest=new URL(href,url);if(!['http:','https:'].includes(dest.protocol)){a.removeAttribute('href');continue}a.href=dest.href;const match=entries.find(e=>new URL('../blackbox/'+e.path,location.href).pathname===dest.pathname);if(match)a.onclick=ev=>{ev.preventDefault();openCompanionGuide(match,entries)}}
+ for(const a of node.querySelectorAll('a[href]')){
+  const dest=new URL(a.getAttribute('href'),url);
+  if(!['http:','https:'].includes(dest.protocol)){a.removeAttribute('href');continue}
+  const match=dest.origin===url.origin?destinations.get(dest.pathname):null;
+  a.href=dest.href;
+  if(match)a.onclick=ev=>{
+   if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey)return;
+   if(dest.pathname===url.pathname&&dest.hash){
+    if(scrollCompanionGuide(root,dest.hash))ev.preventDefault();
+    return;
+   }
+   ev.preventDefault();openCompanionGuide(match,entries,dest.hash);
+  };
+ }
  const card=document.createElement('div');card.className='exo-card companion-guide-section';card.append(node);root.append(card);
- const heading=node.querySelector('h2');if(node.id&&heading){const jump=document.createElement('button');jump.textContent=heading.textContent;jump.onclick=()=>node.scrollIntoView({behavior:'smooth',block:'start'});toc.append(jump)}
+ const heading=node.querySelector('h2');if(node.id&&heading){const jump=document.createElement('button');jump.type='button';jump.textContent=heading.textContent;jump.onclick=()=>scrollCompanionGuide(root,'#'+encodeURIComponent(node.id));toc.append(jump)}
  }
  const source=document.createElement('a');source.href='https://edblackbox.com/'+entry.path;source.textContent='Оригинал E:D Black Box ↗';source.target='_blank';source.rel='noopener noreferrer';root.append(source);
- }catch(e){status.textContent='Не удалось открыть руководство: '+e.message}
+ if(fragment&& !scrollCompanionGuide(root,fragment))title.scrollIntoView({block:'start'});
+ }catch(e){if(root.isConnected)status.textContent='Не удалось открыть руководство: '+e.message}
 }
