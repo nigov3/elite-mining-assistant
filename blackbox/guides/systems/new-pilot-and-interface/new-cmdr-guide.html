@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New CMDR's Guide &middot; New Pilots &amp; Interface | E:D Black Box</title>
+<title>Руководство новичка · Первые шаги и интерфейс | E:D Black Box</title>
 <link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
 <link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
 <script src="../../../design-system/js/scroll-progress.js" defer></script>
@@ -13,50 +13,50 @@
 <!-- ---- GLOBAL HEADER ---- -->
 <header class="site-header">
   <div class="hdr-inner">
-    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box — главная">
       <img src="../../../images/logos/logo.png" alt="">
       <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
     </a>
     <span class="nav-sep" aria-hidden="true"></span>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="../../index.html">Home</a>
-      <a href="../../index.html#section-dossiers">Ships</a>
-      <a href="../../index.html#section-engineering">Engineering</a>
-      <a href="../../index.html#section-systems" class="active">Systems</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../../index.html">Главная</a>
+      <a href="../../index.html#section-dossiers">Корабли</a>
+      <a href="../../index.html#section-engineering">Инженеры</a>
+      <a href="../../index.html#section-systems" class="active">Системы</a>
     </nav>
     <div class="header-qn">
       <div class="hdr-crumb">
-        <span class="hdr-crumb-title">New CMDR's Guide</span>
+        <span class="hdr-crumb-title">Руководство новичка</span>
         <span class="hdr-crumb-trail">
-          <a href="../../index.html#section-systems">Systems</a>
+          <a href="../../index.html#section-systems">Системы</a>
           <span class="sep">›</span>
-          <a href="../../index.html#section-new-pilot">New Pilot &amp; Interface</a>
+          <a href="../../index.html#section-new-pilot">Первые шаги и интерфейс</a>
         </span>
       </div>
-      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+      <button class="qn-totop" type="button" aria-label="Наверх" title="Наверх">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
       </button>
       <div class="qn-dd" id="qn-dd">
         <div class="qn-field">
           <span class="qn-ico" aria-hidden="true">⌕</span>
-          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
-          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Найти раздел…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Очистить поиск" hidden>×</button>
         </div>
         <div class="qn-panel" id="qn-panel" role="listbox">
-          <a class="qn-item" href="#section-undock"><span class="qn-dot amber"></span><span class="qn-nm">Before You Undock</span><span class="qn-side">01</span></a>
-          <a class="qn-item" href="#section-fly"><span class="qn-dot amber"></span><span class="qn-nm">Learn to Fly</span><span class="qn-side">02</span></a>
-          <a class="qn-item" href="#section-docking"><span class="qn-dot amber"></span><span class="qn-nm">Docking &amp; Your First Landing</span><span class="qn-side">03</span></a>
-          <a class="qn-item" href="#section-loop"><span class="qn-dot amber"></span><span class="qn-nm">The Core Game Loop</span><span class="qn-side">04</span></a>
-          <a class="qn-item" href="#section-careers"><span class="qn-dot amber"></span><span class="qn-nm">Pick a Career</span><span class="qn-side">05</span></a>
-          <a class="qn-item" href="#section-income"><span class="qn-dot amber"></span><span class="qn-nm">Making Your First Credits</span><span class="qn-side">06</span></a>
-          <a class="qn-item" href="#section-ships"><span class="qn-dot amber"></span><span class="qn-nm">What to Buy (and What to Skip) Early</span><span class="qn-side">07</span></a>
-          <a class="qn-item" href="#section-apps"><span class="qn-dot amber"></span><span class="qn-nm">Essential Apps &amp; Tools</span><span class="qn-side">08</span></a>
-          <a class="qn-item" href="#section-engineering"><span class="qn-dot amber"></span><span class="qn-nm">Engineering: The Next Step</span><span class="qn-side">09</span></a>
-          <a class="qn-item" href="#section-endgame"><span class="qn-dot amber"></span><span class="qn-nm">The Bigger Galaxy</span><span class="qn-side">10</span></a>
-          <a class="qn-item" href="#section-checklist"><span class="qn-dot amber"></span><span class="qn-nm">First 10 Hours: Objective Checklist</span><span class="qn-side">11</span></a>
-          <a class="qn-item" href="#section-pitfalls"><span class="qn-dot amber"></span><span class="qn-nm">Common Early Mistakes</span><span class="qn-side">12</span></a>
-          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">13</span></a>
-          <div class="qn-empty" hidden>No matching sections</div>
+          <a class="qn-item" href="#section-undock"><span class="qn-dot amber"></span><span class="qn-nm">Перед вылетом</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-fly"><span class="qn-dot amber"></span><span class="qn-nm">Учимся летать</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-docking"><span class="qn-dot amber"></span><span class="qn-nm">Стыковка и первая посадка</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-loop"><span class="qn-dot amber"></span><span class="qn-nm">Что делать в игре</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-careers"><span class="qn-dot amber"></span><span class="qn-nm">Выбери занятие</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-income"><span class="qn-dot amber"></span><span class="qn-nm">Первые кредиты</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-ships"><span class="qn-dot amber"></span><span class="qn-nm">Что покупать в начале, а что пропустить</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-apps"><span class="qn-dot amber"></span><span class="qn-nm">Полезные приложения и инструменты</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-engineering"><span class="qn-dot amber"></span><span class="qn-nm">Инженеры: следующий шаг</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-endgame"><span class="qn-dot amber"></span><span class="qn-nm">Что ещё есть в галактике</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-checklist"><span class="qn-dot amber"></span><span class="qn-nm">Первые 10 часов: список задач</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-pitfalls"><span class="qn-dot amber"></span><span class="qn-nm">Типичные ошибки новичков</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Источники</span><span class="qn-side">13</span></a>
+          <div class="qn-empty" hidden>Разделы не найдены</div>
         </div>
       </div>
     </div>
@@ -66,299 +66,299 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="kicker">New Pilots &amp; Interface <span class="sep">//</span> First Ten Hours</div>
-    <h1 class="title">New CMDR's <span>Guide</span> <span class="role">Getting Started</span></h1>
+    <div class="kicker">Первые шаги и интерфейс <span class="sep">//</span> Первые десять часов</div>
+    <h1 class="title">Руководство <span>новичка</span> <span class="role">Начало игры</span></h1>
     <div class="masthead-meta">
-      <span>Series <b>Systems</b></span>
-      <span>Updated <b>2026-07-01</b></span>
+      <span>Серия <b>Системы</b></span>
+      <span>Обновлено <b>2026-07-01</b></span>
     </div>
   </header>
 
   <!-- HERO / VERDICT -->
   <div class="verdict">
-    <div class="v-eyebrow">Field Briefing</div>
-    <h2>You spawn in a loaned Sidewinder with almost nothing — <em>this is the map out</em>.</h2>
-    <p>This is the manual for your first ten hours: learn to fly and dock, pick a career, bank your first million, and leave the starter zone pointed somewhere on purpose. <b>Fly safe, fly cheap, keep your rebuy in the bank.</b> Every deeper subject below has its own guide on this site — this page is the index to all of them, in the order a new commander actually needs them.</p>
+    <div class="v-eyebrow">Краткий обзор</div>
+    <h2>Ты начинаешь на выданном в аренду Sidewinder почти без ничего. <em>Вот как выбраться дальше</em>.</h2>
+    <p>Это руководство на первые десять часов: научись летать и садиться, выбери занятие, заработай первый миллион и покинь стартовый район с понятной целью. <b>Летай осторожно, не переплачивай и держи деньги на выкуп.</b> У каждой темы ниже есть отдельное руководство. Здесь они собраны в порядке, в котором пригодятся новому пилоту.</p>
     <div class="why">
-      <div><h4>Start in Solo or PvE</h4><p>Same galaxy, same progression, none of the Open-mode PvP risk while you learn.</p></div>
-      <div><h4>Pick one focus</h4><p>Combat, trade or exploration — commit to a single track for your first millions.</p></div>
-      <div><h4>Never lose more than you have</h4><p>Insurance rebuy is the only number that ends a career. Keep it covered, always.</p></div>
+      <div><h4>Начни в одиночном режиме или в группе PvE</h4><p>Та же галактика и тот же прогресс, но без риска боя с игроками в открытом режиме, пока учишься.</p></div>
+      <div><h4>Выбери одно направление</h4><p>Бой, торговля или исследования: сосредоточься на одном, пока зарабатываешь первые миллионы.</p></div>
+      <div><h4>Не теряй больше, чем можешь себе позволить</h4><p>Карьеру может оборвать нехватка денег на страховой выкуп. Всегда оставляй запас.</p></div>
     </div>
   </div>
 
   <!-- 01 BEFORE YOU UNDOCK -->
   <section id="section-undock">
-    <div class="sec-head"><span class="sec-num">01</span><h2>Before You Undock</h2><span class="tag">Setup</span></div>
-    <p class="lead">Five minutes of setup saves you hours of frustration. Pick a safe game mode, run the training scenarios, and bind the controls you will use every minute.</p>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Перед вылетом</h2><span class="tag">Подготовка</span></div>
+    <p class="lead">Пять минут подготовки сэкономят часы. Выбери безопасный режим, пройди обучение и назначь клавиши для частых действий.</p>
 
-    <h3 class="subhead">Choose your game mode</h3>
-    <p>You pick a mode at login, and you can switch any time. All three share one galaxy and one persistent save — progress counts identically wherever you play.</p>
+    <h3 class="subhead">Выбери режим игры</h3>
+    <p>Режим выбирают при входе и меняют в любой момент. Во всех трёх одна галактика и одно сохранение: прогресс засчитывается одинаково.</p>
     <div class="cards three">
       <article class="card">
-        <div class="c-head"><h3>Solo</h3></div>
-        <div class="card-tags"><span class="pill md">Recommended start</span></div>
-        <p>The full galaxy with <b>NPCs only</b> — no other players can instance into your session. Fully persistent, progresses exactly like Open. The safest place to learn.</p>
+        <div class="c-head"><h3>Одиночный режим</h3></div>
+        <div class="card-tags"><span class="pill md">Рекомендуем для начала</span></div>
+        <p>Вся галактика, но только <b>персонажи под управлением игры</b> . Другие игроки не попадают в твою сессию. Всё сохраняется, прогресс такой же, как в открытом режиме. Самый безопасный вариант для обучения.</p>
       </article>
       <article class="card">
-        <div class="c-head"><h3>Private Group</h3></div>
-        <div class="card-tags"><span class="pill md">Recommended start</span></div>
-        <p>An invite-only shared instance. Large PvE communities (e.g. <b>Mobius</b>) give you co-op company without open PvP. Also progresses normally.</p>
+        <div class="c-head"><h3>Приватная группа</h3></div>
+        <div class="card-tags"><span class="pill md">Рекомендуем для начала</span></div>
+        <p>Общая сессия по приглашению. В крупных PvE-сообществах, например <b>Mobius</b>, можно играть вместе без открытых боёв с игроками. Прогресс засчитывается как обычно.</p>
       </article>
       <article class="card">
-        <div class="c-head"><h3>Open</h3></div>
-        <div class="card-tags"><span class="pill hi">PvP possible</span></div>
-        <p>The shared instance where any commander can find you — cooperation and hostility both. Worth it later; not where you want to make your first mistakes.</p>
+        <div class="c-head"><h3>Открытый режим</h3></div>
+        <div class="card-tags"><span class="pill hi">Возможен бой с игроками</span></div>
+        <p>Общая сессия, где тебя могут встретить любые пилоты. Возможны и сотрудничество, и нападения. Попробуешь позже, когда освоишь основы.</p>
       </article>
     </div>
 
-    <h3 class="subhead">Run the training scenarios</h3>
-    <p>From the main menu, work through <b>Basic Flight, Docking, Travel and Combat</b> before you touch your real save. They teach every control in a consequence-free sandbox — no rebuy, no lost cargo.</p>
+    <h3 class="subhead">Пройди учебные сценарии</h3>
+    <p>В главном меню пройди <b>основы полёта, стыковку, путешествие и бой</b> перед входом в основное сохранение. Там отрабатывают управление без последствий: не надо платить выкуп, груз не теряется.</p>
 
-    <h3 class="subhead">Where you start</h3>
-    <p>New commanders begin in the <b>Pilots' Federation District</b>, a protected starter region (start systems include <span class="acc">LHS 3447 / Trevithick Dock</span>, Asellus Primus and Dromi) with reduced PvP exposure, meant to onboard you over roughly your first hours in the game.</p>
+    <h3 class="subhead">Где ты начинаешь</h3>
+    <p>Новые пилоты начинают в <b>округе Федерации пилотов</b>, защищённой стартовой области. Среди стартовых систем и станций — <span class="acc">LHS 3447 / Trevithick Dock</span>, Asellus Primus и Dromi. Здесь ниже вероятность боя с игроками, и район рассчитан примерно на первые часы игры.</p>
     <div class="legend">
-      <div class="lg"><h4>Your opening hand</h4>
-        <div class="kv-row"><span class="kv-k"><b>Ship</b></span><span class="kv-v">a loaned <b><a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder Mk I</a></b> — disposable, free to replace if destroyed while broke.</span></div>
-        <div class="kv-row"><span class="kv-k"><b>Starting credits</b></span><span class="kv-v"><span class="kv-tbd">unconfirmed</span> — sources disagree (historically a small grubstake); treat your real balance as the truth, not any guide's figure.</span></div>
-        <div class="kv-row"><span class="kv-k"><b>New-pilot insurance</b></span><span class="kv-v">a large <b>rebuy discount</b> that ends the first time you raise any Pilots' <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Federation</a> rank. Mistakes are nearly free right now — use the window.</span></div>
+      <div class="lg"><h4>Что дают на старте</h4>
+        <div class="kv-row"><span class="kv-k"><b>Корабль</b></span><span class="kv-v">арендованный <b><a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder Mk I</a></b> . Если его уничтожат и денег не останется, можно бесплатно получить замену.</span></div>
+        <div class="kv-row"><span class="kv-k"><b>Стартовый баланс</b></span><span class="kv-v"><span class="kv-tbd">не подтверждён</span> : источники расходятся. Раньше давали небольшую сумму; ориентируйся на свой баланс, а не цифру из гайда.</span></div>
+        <div class="kv-row"><span class="kv-k"><b>Страховка новичка</b></span><span class="kv-v">большая <b>скидка на выкуп</b> , которая действует до первого повышения любого ранга <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Федерации</a> пилотов. Сейчас ошибки почти ничего не стоят, пользуйся этим.</span></div>
       </div>
     </div>
 
-    <h3 class="subhead">Bind your controls early</h3>
-    <p>HOTAS is pleasant but <b>mouse-and-keyboard is fully viable</b>. Whatever you fly with, set custom binds for the actions you reach for constantly before you rely on them in the wild.</p>
-    <div class="callout"><span class="lbl">Minimum bind set</span><p>Throttle · pitch / roll / yaw · landing gear · cargo scoop · lights · target ahead · next system in route · honk (Discovery Scanner) · silent running · deploy hardpoints. The HUD reference colours are a separate job — see <a href="hud-customization.html">HUD Customization</a>.</p></div>
+    <h3 class="subhead">Заранее назначь управление</h3>
+    <p>Летать с джойстиком и рычагом тяги (HOTAS) приятно, но <b>мышь и клавиатура тоже подходят</b>. На чём бы ты ни летал, настрой частые действия, пока от них не зависит корабль.</p>
+    <div class="callout"><span class="lbl">Минимальный набор клавиш</span><p>Тяга, тангаж, крен, рысканье, шасси, грузозаборник, фары, цель впереди, следующая система маршрута, общий обзор сканером обнаружения, скрытный ход и раскрытие оружейных креплений. Настройка цветов кабины — отдельная тема, см. <a href="hud-customization.html">настройку интерфейса кабины</a>.</p></div>
   </section>
 
   <!-- 02 LEARN TO FLY -->
   <section id="section-fly">
-    <div class="sec-head"><span class="sec-num">02</span><h2>Learn to Fly</h2><span class="tag">Flight</span></div>
-    <p class="lead">Three travel modes, one set of controls. Master the normal-space sweet spot, then supercruise, then the jump to the next star.</p>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Учимся летать</h2><span class="tag">Полёт</span></div>
+    <p class="lead">Три режима перемещения и одно управление. Освой манёвры в обычном пространстве, затем суперкруиз и прыжки к другим звёздам.</p>
 
-    <h3 class="subhead">Normal space</h3>
-    <p>Your axes are <b>pitch, roll, yaw, lateral / vertical thrust and throttle</b>. The throttle has a <b>blue "sweet spot" zone</b> — sit your throttle inside it for the tightest turn rate. <b>Flight Assist</b> is on by default and dampens your movement; leave it <span class="acc">ON</span> as a beginner. FA-off is an advanced skill, not a starting requirement. <b>Boost</b> gives a burst of speed for escaping trouble — never boost inside a station.</p>
+    <h3 class="subhead">Обычное пространство</h3>
+    <p>Доступны <b>тангаж, крен, рысканье, боковая и вертикальная тяга и регулятор тяги</b>. На шкале тяги есть <b>синяя зона</b> . Держи тягу в ней для самых быстрых разворотов. <b>Помощь в пилотировании</b> включена по умолчанию и стабилизирует движение. На первых порах оставь её <span class="acc">включённой</span> . Полёт без неё — продвинутый навык, не обязательный для новичка. <b>Форсаж</b> даёт короткий рывок, чтобы оторваться от неприятностей. Не включай его внутри станции.</p>
 
-    <h3 class="subhead">Supercruise — travel within a system</h3>
-    <p>Supercruise is in-system faster-than-light travel. Approaching a target, throttle to roughly <b>75%</b> and watch the <span class="acc">"7 seconds to target"</span> readout — drop too fast or too slow and you overshoot, the single most common new-player frustration.</p>
+    <h3 class="subhead">Суперкруиз: полёт внутри системы</h3>
+    <p>В суперкруизе корабль перемещается по системе быстрее света. При сближении с целью убавь тягу примерно до <b>75%</b> и следи за показанием <span class="acc">«7 секунд до цели»</span> . Если неверно сбросить тягу, легко пролететь мимо. Это одна из самых частых ошибок новичков.</p>
 
-    <h3 class="subhead">Hyperspace — jump between systems</h3>
-    <p>The <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Frame Shift Drive</a> (<a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>) jumps you star-to-star. Plot a route in the <b>Galaxy Map</b>, target the next system, charge, jump. Many jumps drop you facing a star — <b>throttle down on arrival</b> to stay clear of its exclusion zone.</p>
-    <div class="callout danger"><span class="lbl">Fuel kills more new pilots than pirates</span><p>Every jump burns fuel. A <b><a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">Fuel Scoop</a></b> refuels you by skimming scoopable stars — the <span class="acc">KGB FOAM</span> classes (O, B, A, F, G, K, M). Running dry far from a station strands you. If it happens, the <a href="third-party-apps.html#app-fuel-rats">Fuel Rats</a> will come get you.</p></div>
+    <h3 class="subhead">Гиперпространство: прыжок между системами</h3>
+    <p> <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Рамочно-сместительный двигатель</a> (<a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>) переносит от звезды к звезде. Проложи маршрут на <b>карте галактики</b>, выбери следующую систему, заряди двигатель и прыгни. После прыжка корабль часто смотрит прямо на звезду. <b>Сбрасывай тягу по прибытии</b> , чтобы не войти в зону исключения звезды.</p>
+    <div class="callout danger"><span class="lbl">Топливо губит больше новичков, чем пираты</span><p>Каждый прыжок расходует топливо. <b><a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">Топливозаборник</a></b> позволяет заправиться возле звёзд подходящих классов: <span class="acc">KGB FOAM</span> (O, B, A, F, G, K, M). Без топлива вдали от станции ты застрянешь. Если это случилось, <a href="third-party-apps.html#app-fuel-rats">Fuel Rats</a> прилетят на помощь.</p></div>
   </section>
 
   <!-- 03 DOCKING -->
   <section id="section-docking">
-    <div class="sec-head"><span class="sec-num">03</span><h2>Docking &amp; Your First Landing</h2><span class="tag">Docking</span></div>
-    <p class="lead">Stations are safe zones with rules. Request a pad, keep your speed down, match the hologram, and put the gear down.</p>
+    <div class="sec-head"><span class="sec-num">03</span><h2>Стыковка и первая посадка</h2><span class="tag">Стыковка</span></div>
+    <p class="lead">Станции безопасны, если соблюдать правила. Запроси площадку, сбрось скорость, совмести корабль с голограммой и выпусти шасси.</p>
     <ol class="steps">
-      <li><span class="st">Request docking</span><p>Within about <b>7.5 km</b> of the station, open the Contacts panel and request docking. You are assigned a numbered <b>landing pad</b>.</p></li>
-      <li><span class="st">Slow down inside the slot</span><p>Keep approach speed <b>under ~100 m/s</b> through the mail slot and inside the no-fire zone. The station opens fire if you loiter, speed, or scan it hostile.</p></li>
-      <li><span class="st">Match and descend</span><p>Line up with the pad's hologram orientation, deploy <b>landing gear</b> (default <span class="kbd">L</span>), and settle onto the pad. Auto-dock works but can fail — learn the manual approach first.</p></li>
+      <li><span class="st">Запроси стыковку</span><p>На расстоянии около <b>7,5 км</b> от станции открой панель контактов и запроси стыковку. Тебе назначат <b>посадочную площадку с номером</b>.</p></li>
+      <li><span class="st">Сбавь скорость у входа</span><p>Держи скорость <b>ниже примерно 100 м/с</b> при проходе через вход и внутри зоны запрета огня. Если задержаться, превысить скорость или выполнить враждебное сканирование, станция может открыть огонь.</p></li>
+      <li><span class="st">Выровняйся и снижайся</span><p>Совмести направление корабля с голограммой площадки, выпусти <b>шасси</b> (клавиша по умолчанию — <span class="kbd">L</span>) и мягко сядь. Автостыковка помогает, но может подвести. Сначала научись садиться вручную.</p></li>
     </ol>
-    <div class="callout"><span class="lbl">Pad sizes</span><p>Pads are <b>Small / Medium / Large</b> and your hull must fit. <b>Outposts have no Large pads</b>, so big ships can't dock there — check before you haul a fat cargo run to one. The full request / approach / pad / outpost procedure lives in the <a href="docking-landing-manual.html">Docking &amp; Landing Manual</a>.</p></div>
+    <div class="callout"><span class="lbl">Размеры площадок</span><p>Площадки бывают <b>малыми, средними и большими</b> . Корабль должен подходить по размеру. <b>На аванпостах нет больших площадок</b>, поэтому большие корабли там не сядут. Проверь это до рейса с полным трюмом. Весь порядок запроса, захода и посадки описан в <a href="docking-landing-manual.html">руководстве по стыковке и посадке</a>.</p></div>
   </section>
 
   <!-- 04 CORE GAME LOOP -->
   <section id="section-loop">
-    <div class="sec-head"><span class="sec-num">04</span><h2>The Core Game Loop</h2><span class="tag">Loop</span></div>
-    <p class="lead">Everything in Elite is a variation on one loop. Learn it once and every activity reads the same.</p>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Что делать в игре</h2><span class="tag">Основной цикл</span></div>
+    <p class="lead">Все занятия в Elite — варианты одного цикла. Освоив его, легче разобраться во всём остальном.</p>
     <div class="hud"><span class="hud-c1"></span><span class="hud-c2"></span>
-      <p><b>Accept work → travel (supercruise / FSD) → do the thing → return and get paid → upgrade → repeat at a bigger scale.</b></p>
+      <p><b>Возьми задание → долети в суперкруизе или на FSD → выполни работу → вернись за наградой → улучши оснащение → повтори в большем масштабе.</b></p>
     </div>
-    <p>Two interfaces carry it. The <b>Galaxy Map</b> plots interstellar routes and reads trade and economy data; the <b>System Map</b> finds stations, bodies and signal sources once you arrive. The <b>Mission Board</b> at every station is your main early income and reputation engine — <b>data courier and delivery</b> jobs are the safest first work, paying roughly <span class="acc">10k–50k CR</span> each.</p>
+    <p>В этом помогают две карты. <b>Карта галактики</b> нужна для маршрутов между звёздами, торговли и сведений об экономике. <b>Карта системы</b> показывает станции, небесные тела и источники сигналов по прибытии. <b>Доска заданий</b> на станциях даёт первые деньги и репутацию. <b>Курьерские поручения и доставка</b> безопаснее всего для начала. Каждое задание приносит примерно <span class="acc">10–50 тыс. кредитов</span> .</p>
 
-    <h3 class="subhead">How ranks work</h3>
-    <p>Ranks run on <b>six independent tracks</b> certified by the <a href="pilots-federation.html">Pilots Federation</a> — Combat, Trade, Exploration, plus Mercenary, Exobiologist and CQC. Each is a nine-step ladder.</p>
+    <h3 class="subhead">Как устроены ранги</h3>
+    <p>Есть <b>шесть независимых направлений</b> под эгидой <a href="pilots-federation.html">Федерации пилотов</a> : бой, торговля, исследования, наёмничество, экзобиология и CQC. В каждом по девять ступеней.</p>
     <div class="hud"><span class="hud-c1"></span><span class="hud-c2"></span>
-      <p>Harmless → Mostly Harmless → Novice → Competent → Expert → Master → Dangerous → Deadly → <b>Elite</b> — with prestige <b>Elite I–V</b> added in Odyssey.</p>
+      <p>Безвредный → В основном безвредный → Новичок → Компетентный → Эксперт → Мастер → Опасный → Смертоносный → <b>Элита</b> . В Odyssey добавили престижные ступени <b>Элита I–V</b> .</p>
     </div>
-    <p>Combat rank grows by killing higher-ranked enemies; Trade and Exploration rank up by <b>credits generated in that activity</b> (Trade Elite alone takes on the order of a billion credits of profit).</p>
-    <p><b>Superpower ranks</b> — <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Federation</a>, <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Empire</a>, <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-all">Alliance</a> — are a separate system that unlocks permit-locked ships; that ladder is its own guide, <a href="../galaxy-and-power-systems/superpower-rank.html">Superpower Rank</a>.</p>
+    <p>Боевой ранг растёт за уничтожение противников с более высоким рангом. Торговый и исследовательский растут за <b>кредиты, заработанные в этих занятиях</b> (для торговой «Элиты» нужно около миллиарда кредитов прибыли).</p>
+    <p><b>Ранги сверхдержав</b> — <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-fed">Федерации</a>, <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-emp">Империи</a>, <a href="../galaxy-and-power-systems/superpower-rank.html#superpower-all">Альянса</a> — отдельная система доступа к кораблям с ограничениями. Подробнее в руководстве <a href="../galaxy-and-power-systems/superpower-rank.html">«Ранги сверхдержав»</a>.</p>
   </section>
 
   <!-- 05 CAREERS -->
   <section id="section-careers">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Pick a Career</h2><span class="tag">Careers</span></div>
-    <p class="lead">You don't have to commit forever — but pick a single focus for your first millions. Each track below links the <b>activity guide</b> (how to fly it) and the <b>by-role ship ladder</b> (what to fly).</p>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Выбери занятие</h2><span class="tag">Занятия</span></div>
+    <p class="lead">Выбирать навсегда не нужно, но первые миллионы проще заработать в одном занятии. Для каждого есть <b>гайд по занятию</b> (как им заниматься) и <b>рейтинг кораблей по роли</b> (на чём летать).</p>
     <div class="cards three">
       <article class="card ac-role-combat">
-        <div class="c-head"><h3>Combat</h3><span class="c-eyebrow">Bounties &amp; massacres</span></div>
-        <p>Hunt <b>Wanted</b> NPCs for bounties at <b>Nav Beacons</b> and <b>Resource Extraction Sites</b>. Start in a <b>Low RES</b> against Harmless pirates; massacre missions stack well on top. How: <a href="../activity-guides/combat.html">Combat playbook</a>. Venues: <a href="../combat-venues/pve-combat-venues.html">PvE Combat Venues</a> &amp; <a href="../combat-venues/combat-zones.html">Combat Zones</a>. Ships: <a href="../../ships/best-ships-by-role/combat.html">Best Combat Ships</a>.</p>
+        <div class="c-head"><h3>Бой</h3><span class="c-eyebrow">Награды за головы и задания на уничтожение</span></div>
+        <p>Охоться на <b>разыскиваемых</b> персонажей за наградами у <b>навигационных маяков</b> и <b>в местах добычи ресурсов</b>. Начни в <b>безопасном месте добычи (Low RES)</b> с пиратов низшего ранга. Удобно совмещать с заданиями на уничтожение. Как: <a href="../activity-guides/combat.html">гайд по бою</a>. Где: <a href="../combat-venues/pve-combat-venues.html">места для боя с персонажами игры</a> &amp; <a href="../combat-venues/combat-zones.html">зоны конфликтов</a>. Корабли: <a href="../../ships/best-ships-by-role/combat.html">лучшие боевые корабли</a>.</p>
       </article>
       <article class="card ac-role-trading">
-        <div class="c-head"><h3>Trade</h3><span class="c-eyebrow">Buy low, sell high</span></div>
-        <p>Run a profitable A↔B commodity loop; read prices in the Galaxy Map or INARA. <b>Lowest risk</b>, steady scaling into bigger cargo hulls. How: <a href="../activity-guides/trading.html">Trading playbook</a>. Ships: <a href="../../ships/best-ships-by-role/trading.html">Best Trading Ships</a>.</p>
+        <div class="c-head"><h3>Торговля</h3><span class="c-eyebrow">Покупай дешевле, продавай дороже</span></div>
+        <p>Возить товары между двумя станциями с прибылью можно, сверяя цены по карте галактики или INARA. <b>Риск самый низкий</b>, а прибыль растёт с размером трюма. Как: <a href="../activity-guides/trading.html">гайд по торговле</a>. Корабли: <a href="../../ships/best-ships-by-role/trading.html">лучшие торговые корабли</a>.</p>
       </article>
       <article class="card ac-role-exploration">
-        <div class="c-head"><h3>Exploration</h3><span class="c-eyebrow">Map the black</span></div>
-        <p>Honk the Discovery Scanner on arrival, map bodies with a <b><a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a></b>, sell data at Universal Cartographics. <b>Exobiology</b> (scanning plant life on foot with the Artemis Suit) pays roughly <span class="acc">1–5M CR per valuable species</span>. How: <a href="../activity-guides/exploration.html">Exploration playbook</a>. Ships: <a href="../../ships/best-ships-by-role/exploration.html">Best Exploration Ships</a>.</p>
+        <div class="c-head"><h3>Исследования</h3><span class="c-eyebrow">Составляй карты неизведанного</span></div>
+        <p>По прибытии сделай общий обзор сканером обнаружения, картографируй тела с помощью <b><a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">подробный сканер поверхности 1I</a></b>и продавай данные в Universal Cartographics. <b>Экзобиология</b> (сбор образцов пешком в костюме Artemis) даёт примерно <span class="acc">1–5 млн кредитов за ценный вид</span>. Как: <a href="../activity-guides/exploration.html">гайд по исследованиям</a>. Корабли: <a href="../../ships/best-ships-by-role/exploration.html">лучшие исследовательские корабли</a>.</p>
       </article>
     </div>
-    <div class="callout"><span class="lbl">Other tracks</span><p><b><a href="../../engineering/engineering-manuals/modules.html#module-mining">Mining</a></b> (<a href="../activity-guides/mining.html">how</a> · <a href="../../ships/best-ships-by-role/mining.html">ships</a>) and <b>Passenger</b> work (<a href="../activity-guides/passenger.html">how</a> · <a href="../../ships/best-ships-by-role/passenger.html">ships</a>) are viable from early on. <b>Anti-Xeno</b> — the war against the Thargoids (<a href="../activity-guides/ax.html">how</a> · <a href="../../ships/best-ships-by-role/ax.html">ships</a>) — is a specialised endgame track, <span class="acc">not a beginner activity</span>.</p></div>
+    <div class="callout"><span class="lbl">Другие занятия</span><p><b><a href="../../engineering/engineering-manuals/modules.html#module-mining">Добыча</a></b> (<a href="../activity-guides/mining.html">как заниматься</a> · <a href="../../ships/best-ships-by-role/mining.html">корабли</a>) и <b>пассажирские перевозки</b> (<a href="../activity-guides/passenger.html">как заниматься</a> · <a href="../../ships/best-ships-by-role/passenger.html">корабли</a>) доступны уже в начале. <b>Борьба с таргоидами (AX)</b> — война с таргоидами (<a href="../activity-guides/ax.html">как заниматься</a> · <a href="../../ships/best-ships-by-role/ax.html">корабли</a>) — специализированное занятие для поздней игры, <span class="acc">не для новичков</span>.</p></div>
   </section>
 
   <!-- 06 INCOME -->
   <section id="section-income">
-    <div class="sec-head"><span class="sec-num">06</span><h2>Making Your First Credits</h2><span class="tag">Income</span></div>
-    <p class="lead">The fastest early money is unglamorous: stack same-destination missions and run them in one trip. Bank a rebuy buffer before you spend on anything.</p>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Первые кредиты</h2><span class="tag">Заработок</span></div>
+    <p class="lead">Самый быстрый ранний заработок прост: набери несколько заданий в одно место и выполни за рейс. Прежде чем покупать что-либо, отложи на выкуп.</p>
     <div class="cards three">
       <article class="card">
-        <div class="c-head"><h3>Stack missions</h3></div>
-        <p>At a busy system, fill your board with <b>same-destination</b> delivery, courier and passenger jobs and clear them in a single run. Lowest skill floor, reliable payout.</p>
+        <div class="c-head"><h3>Совмещай задания</h3></div>
+        <p>В оживлённой системе набери задания на доставку, курьерские рейсы и пассажирские перевозки <b>в одно место</b> и выполни их за один рейс. Минимум навыков, стабильная оплата.</p>
       </article>
       <article class="card">
-        <div class="c-head"><h3>Bounty hunting</h3></div>
-        <p><b>Low / High RES</b> bounty hunting against Wanted NPCs turns combat into steady income — and feeds Combat rank at the same time.</p>
+        <div class="c-head"><h3>Охота за головами</h3></div>
+        <p>В <b>местах добычи с низкой или высокой опасностью (Low / High RES)</b> охота на разыскиваемых персонажей приносит стабильный доход и повышает боевой ранг.</p>
       </article>
       <article class="card">
-        <div class="c-head"><h3>Exobiology</h3></div>
-        <p>Once you can reach biological worlds, on-foot scanning is the <b>highest credit-per-hour</b> a new pilot can reach, for those willing to learn it.</p>
+        <div class="c-head"><h3>Экзобиология</h3></div>
+        <p>Как только сможешь добраться до миров с жизнью, пешее сканирование даст <b>наибольший доход в час</b> из доступного новичку, если готов освоиться.</p>
       </article>
     </div>
-    <p>Realistic early targets: clear <b>~100,000 CR</b> inside the starter system, then leave and grind your chosen career toward <b>~5–10M CR</b> — enough for a real ship plus a rebuy buffer.</p>
-    <div class="callout danger"><span class="lbl">Keep your rebuy in the bank</span><p>Insurance rebuy is roughly <b>5% of total ship + module value</b>; the Pilots' Federation insures the other ≥95%. Die without the rebuy on hand and you are dumped back into a free <a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder</a>. <b>Never fly a hull you can't afford to buy back.</b></p></div>
-    <div class="callout"><span class="lbl">Bigger money, when ready</span><p>Time-limited <a href="../galaxy-and-power-systems/community-goals.html">Community Goals</a> are galaxy-wide events with tiered payouts — a new pilot who contributes can earn well above the usual early rates.</p></div>
+    <p>Примерный ориентир: заработай <b>~100 тыс. кредитов</b> в стартовой системе. Затем развивай выбранное занятие до <b>~5–10 млн кредитов</b> . Хватит на первый серьёзный корабль и запас на выкуп.</p>
+    <div class="callout danger"><span class="lbl">Держи деньги на выкуп</span><p>Страховой выкуп — примерно <b>5% стоимости корабля и модулей</b>. Федерация пилотов покрывает не меньше 95%. Если погибнешь без денег на выкуп, вернёшься на бесплатный <a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder</a>. <b>Никогда не летай на корабле, который не можешь выкупить.</b></p></div>
+    <div class="callout"><span class="lbl">Как заработать больше позже</span><p>Ограниченные по времени <a href="../galaxy-and-power-systems/community-goals.html">общественные цели</a> — общегалактические события с наградами по вкладу. Даже новичок может заработать больше обычного, если внесёт вклад.</p></div>
   </section>
 
   <!-- 07 WHAT TO BUY -->
   <section id="section-ships">
-    <div class="sec-head"><span class="sec-num">07</span><h2>What to Buy (and What to Skip) Early</h2><span class="tag">Ships</span></div>
-    <p class="lead"><b>Don't rush a big ship.</b> A cheap, well-outfitted small or medium beats an empty hull you can't afford to lose. Spend on the modules that matter for your role, not on hull size.</p>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Что покупать в начале, а что пропустить</h2><span class="tag">Корабли</span></div>
+    <p class="lead"><b>Не спеши покупать большой корабль.</b> Недорогой, хорошо оснащённый малый или средний корабль лучше пустого корпуса, который ты не можешь выкупить. Трать кредиты на нужные модули, а не на размер.</p>
 
-    <h3 class="subhead">Recommended early hulls</h3>
-    <p>Sensible first purchases by track. Prices are approximate purchase costs — <b>confirm the live figure on INARA before you buy</b>, prices shift with game updates.</p>
+    <h3 class="subhead">Какие корабли покупать первыми</h3>
+    <p>Разумные покупки для разных занятий. Цены ориентировочные: <b>перед покупкой проверь актуальную цену на INARA</b>. Обновления игры могут её менять.</p>
     <div class="tbl-scroll">
     <table class="data">
       <thead>
-        <tr><th>Hull</th><th>Role</th><th class="num">Approx. price</th><th>Why</th></tr>
+        <tr><th>Корпус</th><th>Назначение</th><th class="num">Примерная цена</th><th>Почему стоит взять</th></tr>
       </thead>
       <tbody>
-        <tr class="hl"><td><b><a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a></b></td><td>Multirole</td><td class="num">349,718</td><td>The classic do-everything budget hull — this is the ~350k multirole new players are pointed at.</td></tr>
-        <tr><td><b><a href="../../ships/ship-dossiers/adder-exploration.html">Adder</a></b></td><td>Budget multi</td><td class="num">87,808</td><td>Cheapest real step up from the <a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder</a>; light mining, trading and short-range exploring.</td></tr>
-        <tr><td><b><a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a></b></td><td>Combat</td><td class="num">142,931</td><td>Fast, cheap, dedicated combat — the budget bounty-hunter's first proper gun.</td></tr>
-        <tr><td><b><a href="../../ships/ship-dossiers/diamondback-explorer-exploration.html">Diamondback Explorer</a></b></td><td>Exploration</td><td class="num">1,894,760</td><td>Superb early long-range explorer / exobiology hull once you can afford it.</td></tr>
-        <tr><td><b><a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a></b></td><td>Multirole</td><td class="num">1,989,461</td><td>Buyable for credits since 24 Apr 2025 (Odyssey). Versatile but ~2M — <b>not</b> a 350k starter.</td></tr>
+        <tr class="hl"><td><b><a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a></b></td><td>Универсальный</td><td class="num">349,718</td><td>Классический недорогой универсал. Именно его примерно за 350 тыс. обычно советуют новичкам.</td></tr>
+        <tr><td><b><a href="../../ships/ship-dossiers/adder-exploration.html">Adder</a></b></td><td>Бюджетный универсал</td><td class="num">87,808</td><td>Самый дешёвый заметный шаг после <a href="../../ships/ship-dossiers/sidewinder-mk-i-combat.html">Sidewinder</a>. Подходит для небольшой добычи, торговли и близких исследований.</td></tr>
+        <tr><td><b><a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a></b></td><td>Бой</td><td class="num">142,931</td><td>Быстрый, дешёвый, создан для боя. Первый серьёзный вариант для бюджетной охоты за головами.</td></tr>
+        <tr><td><b><a href="../../ships/ship-dossiers/diamondback-explorer-exploration.html">кораблю Diamondback Explorer</a></b></td><td>Исследования</td><td class="num">1,894,760</td><td>Отличный первый дальнобойный корабль для исследований и экзобиологии, как только хватит денег.</td></tr>
+        <tr><td><b><a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a></b></td><td>Универсальный</td><td class="num">1,989,461</td><td>С 24 апреля 2025 года продаётся за кредиты в Odyssey. Универсальный, но стоит около 2 млн, а <b>не</b> 350 тыс.</td></tr>
       </tbody>
     </table>
     </div>
-    <div class="callout"><span class="lbl">Name trap</span><p>Some new-player guides quote the ~350k ship as a "<a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a>". It isn't — the <b>~350k multirole is the <a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a></b>. The <a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a> is a separate ~2M hull. Always price a build on INARA, never from a third-party table.</p></div>
+    <div class="callout"><span class="lbl">Не перепутай модели</span><p>В некоторых руководствах корабль за ~350 тыс. называют «<a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a>». Это не так: бюджетный <b>универсал за ~350 тыс. — <a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a></b>. Выбрать корабль поможет <a href="../../ships/ship-dossiers/cobra-mk-v-multipurpose.html">Cobra Mk V</a> стоит около 2 млн. Проверяй стоимость сборки на INARA, а не в сторонней таблице.</p></div>
 
-    <h3 class="subhead">Priority module upgrades</h3>
+    <h3 class="subhead">Какие модули улучшать первыми</h3>
     <div class="legend">
-      <div class="lg"><h4>In rough order</h4>
-        <div class="kv-row"><span class="kv-k"><b>1 · <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a></b></span><span class="kv-v">jump range — the single biggest quality-of-life upgrade on any ship.</span></div>
-        <div class="kv-row"><span class="kv-k"><b>2 · <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">Fuel Scoop</a></b></span><span class="kv-v">free fuel from stars; the difference between roaming freely and getting stranded.</span></div>
-        <div class="kv-row"><span class="kv-k"><b>3 · Core internals</b></span><span class="kv-v"><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">power plant</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">power distributor</a> — keep the ship powered and responsive.</span></div>
-        <div class="kv-row"><span class="kv-k"><b>4 · Role gear</b></span><span class="kv-v"><a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a> for explorers; mining <a href="../../engineering/engineering-manuals/modules.html#module-lasers">lasers</a> + refinery + collector limpets for miners.</span></div>
+      <div class="lg"><h4>Примерный порядок</h4>
+        <div class="kv-row"><span class="kv-k"><b>1 · <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">Рамочно-сместительный двигатель (FSD)</a></b></span><span class="kv-v">увеличивает дальность прыжка и заметно упрощает жизнь на любом корабле.</span></div>
+        <div class="kv-row"><span class="kv-k"><b>2 · <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">Топливозаборник</a></b></span><span class="kv-v">даёт бесплатное топливо у звёзд. С ним можно летать свободно, не рискуя остаться без топлива.</span></div>
+        <div class="kv-row"><span class="kv-k"><b>3 · Основные модули</b></span><span class="kv-v"><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">энергетическая установка</a>, <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">маневровые двигатели</a>, <a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">распределитель энергии</a> — чтобы кораблю хватало энергии и он быстро реагировал.</span></div>
+        <div class="kv-row"><span class="kv-k"><b>4 · Оборудование для занятия</b></span><span class="kv-v"><a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Подробный сканер поверхности</a> для исследователя, а для добычи — <a href="../../engineering/engineering-manuals/modules.html#module-lasers">лазеры</a> , переработчик и дроны-сборщики.</span></div>
       </div>
     </div>
-    <div class="callout"><span class="lbl">Module grades A–E</span><p><b>A</b> = best and most expensive · <b>D</b> = lightest · <b>E</b> = cheapest. <b>D-rate to save weight and cash</b>, A-rate only the parts that matter for your role. Skip ships you can't insure, over-fitting a starter hull, and PvP gambles in Open.</p></div>
-    <div class="callout"><span class="lbl">Decide what to fly</span><p>Which hull wins each role, with 1–100 ratings: <a href="../../ships/general/ship-role-matrix.html">Ship × Role Matrix</a> and <a href="../../ships/best-ships-by-role/multipurpose.html">Best Multipurpose Ships</a>. How the scores are derived: <a href="../../ships/general/rating-methodology.html">Rating Methodology</a>. Per-ship deep dives: <a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a>, <a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a>, <a href="../../ships/ship-dossiers/diamondback-explorer-exploration.html">Diamondback Explorer</a>.</p></div>
+    <div class="callout"><span class="lbl">Классы модулей A–E</span><p><b>A</b> — лучший и самый дорогой; <b>D</b> — самый лёгкий; <b>E</b> — самый дешёвый. <b>Ставь класс D, чтобы сэкономить массу и кредиты</b>, а класс A — только на важные для занятия модули. Не покупай корабли без запаса на выкуп, не перегружай первый корпус и не рискуй в боях с игроками в открытом режиме.</p></div>
+    <div class="callout"><span class="lbl">Как выбрать корабль</span><p>Оценки от 1 до 100 для каждого занятия: <a href="../../ships/general/ship-role-matrix.html">таблица «Корабль × роль»</a> и <a href="../../ships/best-ships-by-role/multipurpose.html">лучшие универсальные корабли</a>. Как выставляют оценки: <a href="../../ships/general/rating-methodology.html">методика оценки</a>. Подробно о каждом корабле: <a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a>, <a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a>, <a href="../../ships/ship-dossiers/diamondback-explorer-exploration.html">кораблю Diamondback Explorer</a>.</p></div>
   </section>
 
   <!-- 08 APPS -->
   <section id="section-apps">
-    <div class="sec-head"><span class="sec-num">08</span><h2>Essential Apps &amp; Tools</h2><span class="tag">Apps</span></div>
-    <p class="lead">Elite is built to be played with a <b>second screen</b>. The in-game UI has no trade planner, no material checklist, no neutron router — community tools fill every gap. Four cover the new-pilot basics.</p>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Полезные приложения и инструменты</h2><span class="tag">Приложения</span></div>
+    <p class="lead">Играть в Elite удобно с <b>вторым экраном</b>. Встроенный интерфейс не планирует торговлю и маршруты через нейтронные звёзды и не ведёт список материалов. С этим помогают инструменты сообщества. Для начала хватит четырёх.</p>
     <div class="cards three">
       <article class="card">
         <div class="c-head"><h3>INARA</h3></div>
-        <div class="card-tags"><span class="pill md">Reference</span></div>
-        <p>The commander dashboard — market and trade data, materials, engineers, station search, near-everything reference. The default answer to "where do I find…?".</p>
+        <div class="card-tags"><span class="pill md">Справочник</span></div>
+        <p>Главная панель пилота: рынок, торговля, материалы, инженеры, поиск станций и многое другое. Первый ответ на вопрос «где найти…?».</p>
       </article>
       <article class="card">
         <div class="c-head"><h3>Coriolis / EDSY</h3></div>
-        <div class="card-tags"><span class="pill md">Build planner</span></div>
-        <p>Offline ship outfitters — design and cost a full build before you spend a credit. Share a fit by sharing its URL.</p>
+        <div class="card-tags"><span class="pill md">Планировщики сборок</span></div>
+        <p>Подбери оборудование и посчитай полную цену до покупки. Чтобы поделиться сборкой, отправь ссылку.</p>
       </article>
       <article class="card">
         <div class="c-head"><h3>EDSM</h3></div>
-        <div class="card-tags"><span class="pill md">Galaxy map</span></div>
-        <p>Community galaxy and system database; logs and shares your exploration once you feed it your journal.</p>
+        <div class="card-tags"><span class="pill md">Карта галактики</span></div>
+        <p>База систем сообщества. Подключи игровой журнал, чтобы записывать исследования и делиться ими.</p>
       </article>
       <article class="card">
         <div class="c-head"><h3>Road to Riches</h3></div>
-        <div class="card-tags"><span class="pill md">Routing</span></div>
-        <p>Auto-generated high-value exploration scan routes — the standard way for a new explorer to fund a first real ship.</p>
+        <div class="card-tags"><span class="pill md">Маршруты</span></div>
+        <p>Автоматически строит маршруты по дорогим объектам для сканирования. Обычный способ заработать исследователю на первый серьёзный корабль.</p>
       </article>
     </div>
-    <p>Underneath them, the local journal tools <b>EDMC / EDDiscovery</b> feed data to the whole ecosystem, and <b>Canonn</b> collects exobiology and mystery data. The full curated list, with what each tool does, is the <a href="third-party-apps.html">Third-Party Apps</a> directory.</p>
+    <p>Инструменты для чтения локального журнала <b>EDMC / EDDiscovery</b> передают данные другим сервисам, а <b>Canonn</b> собирает сведения об экзобиологии и загадках. Полный список приложений и их назначение — в разделе <a href="third-party-apps.html">«Сторонние приложения»</a> .</p>
   </section>
 
   <!-- 09 ENGINEERING -->
   <section id="section-engineering">
-    <div class="sec-head"><span class="sec-num">09</span><h2>Engineering: The Next Step</h2><span class="tag">Engineering</span></div>
-    <p class="lead"><b>Don't rush it.</b> Engineering is how modules become dramatically better — more jump range, tougher hull, harder-hitting weapons — but it's a mid-game project, not a first-hour one. Settle into a ship and a few million credits first.</p>
-    <p>It works in three parts: <b>unlock Engineers</b> (each has an invite requirement and a location), gather <b>materials</b> (raw, manufactured and encoded — found in the world, never bought), then apply <b>blueprints</b> at grades 1–5. A common first target is <b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> range</b> (<a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a>), but follow a proper unlock order rather than guessing your way through invites.</p>
-    <div class="callout"><span class="lbl">The engineering manuals</span><p>New-pilot unlock order: <a href="../../engineering/engineering-manuals/checklist.html">Unlock Checklist</a>. Who and where: <a href="../../engineering/engineering-manuals/engineers.html">Engineers</a>. What the effects do: <a href="../../engineering/engineering-manuals/blueprints.html">Blueprints</a>. Slot-by-slot fitting: <a href="../../engineering/engineering-manuals/modules.html">Modules</a>. Where to gather: <a href="../../engineering/materials-and-farming/materials.html">Materials</a> and farm routes like <a href="../../engineering/materials-and-farming/davs-hope.html">Dav's Hope</a>.</p></div>
+    <div class="sec-head"><span class="sec-num">09</span><h2>Инженеры: следующий шаг</h2><span class="tag">Инженеры</span></div>
+    <p class="lead"><b>Не спеши.</b> Инженеры заметно улучшают модули: увеличивают дальность, укрепляют корпус и повышают урон. Это задача для середины игры, не первого часа. Сначала освой подходящий корабль и накопи несколько миллионов.</p>
+    <p>Три шага: <b>открой инженеров</b> (у каждого условия приглашения и своё место), собери <b>материалы</b> (сырьевые, промышленные и кодированные: их находят, а не покупают), а затем примени <b>чертежи</b> со ступенями от 1 до 5. Частая первая цель — <b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">улучшение FSD</a> для дальности</b> (<a href="../../engineering/engineering-manuals/engineers.html#engineer-felicity-farseer">Felicity Farseer</a>), но лучше следовать проверенному порядку открытия, а не угадывать условия приглашений.</p>
+    <div class="callout"><span class="lbl">Руководства по инженерам</span><p>Порядок открытия для новичка: <a href="../../engineering/engineering-manuals/checklist.html">список условий</a>. Кто и где: <a href="../../engineering/engineering-manuals/engineers.html">инженеры</a>. Что дают улучшения: <a href="../../engineering/engineering-manuals/blueprints.html">чертежи</a>. Как подобрать оснащение по отсекам: <a href="../../engineering/engineering-manuals/modules.html">модули</a>. Где собирать: <a href="../../engineering/materials-and-farming/materials.html">материалы</a> и маршруты сбора, например <a href="../../engineering/materials-and-farming/davs-hope.html">Dav's Hope</a>.</p></div>
   </section>
 
   <!-- 10 THE BIGGER GALAXY -->
   <section id="section-endgame">
-    <div class="sec-head"><span class="sec-num">10</span><h2>The Bigger Galaxy</h2><span class="tag">Endgame</span></div>
-    <p class="lead">Horizon markers — the systems you grow into once the basics are second nature. One line each so you know they exist.</p>
+    <div class="sec-head"><span class="sec-num">10</span><h2>Что ещё есть в галактике</h2><span class="tag">Поздняя игра</span></div>
+    <p class="lead">К этим занятиям можно перейти, когда освоишь основы. Вот коротко, что существует.</p>
     <div class="legend">
-      <div class="lg"><h4>When you're ready</h4>
-        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/bgs.html">Background Simulation</a></b></span><span class="kv-v">the living economy and politics of minor factions you can influence.</span></div>
-        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/powerplay.html">Powerplay</a></b></span><span class="kv-v">pledge to a galactic Power and earn merits on a weekly cycle.</span></div>
-        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/community-goals.html">Community Goals</a></b></span><span class="kv-v">galaxy-wide events with tiered rewards for everyone who contributes.</span></div>
+      <div class="lg"><h4>Когда будешь готов</h4>
+        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/bgs.html">Фоновая симуляция (BGS)</a></b></span><span class="kv-v">Живая экономика и политика малых фракций, на которые можно влиять.</span></div>
+        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/powerplay.html">Powerplay</a></b></span><span class="kv-v">Присягни галактической державе и зарабатывай очки заслуг в недельных циклах.</span></div>
+        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/community-goals.html">Общественные цели</a></b></span><span class="kv-v">События для всей галактики с наградами по вкладу.</span></div>
       </div>
-      <div class="lg"><h4>Capital ambitions</h4>
-        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/system-colonization.html">System Colonisation</a></b></span><span class="kv-v">claim and build out your own systems.</span></div>
-        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/fleet-carrier.html">Fleet Carrier</a></b></span><span class="kv-v">your own jump-capable mobile base — and a huge credit sink.</span></div>
-        <div class="kv-row"><span class="kv-k"><b><a href="../activity-guides/ax.html">Anti-Xeno</a></b></span><span class="kv-v">the war against the Thargoids; specialised gear required.</span></div>
+      <div class="lg"><h4>Масштабные проекты</h4>
+        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/system-colonization.html">Колонизация систем</a></b></span><span class="kv-v">Заявляй права на системы и развивай их.</span></div>
+        <div class="kv-row"><span class="kv-k"><b><a href="../galaxy-and-power-systems/fleet-carrier.html">Авианосец</a></b></span><span class="kv-v">Собственная мобильная база с гиперпрыжками и огромными расходами.</span></div>
+        <div class="kv-row"><span class="kv-k"><b><a href="../activity-guides/ax.html">Борьба с таргоидами (AX)</a></b></span><span class="kv-v">Война с таргоидами, для которой нужно специальное оснащение.</span></div>
       </div>
     </div>
   </section>
 
   <!-- 11 CHECKLIST -->
   <section id="section-checklist">
-    <div class="sec-head"><span class="sec-num">11</span><h2>First 10 Hours: Objective Checklist</h2><span class="tag">Checklist</span></div>
-    <p class="lead">Ordered milestones. Work down the list and you leave the starter zone competent, solvent, and pointed at a goal.</p>
+    <div class="sec-head"><span class="sec-num">11</span><h2>Первые 10 часов: список задач</h2><span class="tag">Список задач</span></div>
+    <p class="lead">Выполняй по порядку, чтобы покинуть стартовый район с освоенным управлением, деньгами и понятной целью.</p>
     <ol class="steps">
-      <li><span class="st">Run all four training scenarios</span><p>Basic Flight, Docking, Travel, Combat — before your real save.</p></li>
-      <li><span class="st">Set your keybinds</span><p>Gear, scoop, lights, target, route, honk, hardpoints.</p></li>
-      <li><span class="st">Dock and undock manually</span><p>At your start station, without taking damage.</p></li>
-      <li><span class="st">Plot a multi-system <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> route</span><p>Use the Galaxy Map; jump it end to end, throttling down on each arrival.</p></li>
-      <li><span class="st">Finish 3–5 courier / delivery missions</span><p>Clear roughly <span class="acc">~100,000 CR</span> from stacked jobs.</p></li>
-      <li><span class="st">Taste each track</span><p>Kill one Wanted ship in a Low RES, run one trade loop, honk and map one system.</p></li>
-      <li><span class="st">Fit a <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">Detailed Surface Scanner</a></span><p>Add a <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">Fuel Scoop</a> if exploring; practise scooping fuel from a star.</p></li>
-      <li><span class="st">Bank a rebuy buffer</span><p>Reach ~100,000 CR with the rebuy set aside, not spent.</p></li>
-      <li><span class="st">Leave the starter zone</span><p>Head for a mission-rich hub — <b>Eravate</b>, <b>LHS 3447</b> or <b>Diaguandri</b>.</p></li>
-      <li><span class="st">Buy your first career ship</span><p><a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a>, <a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a> or <a href="../../ships/ship-dossiers/adder-exploration.html">Adder</a> by track — keeping the rebuy covered.</p></li>
-      <li><span class="st">Bookmark your tools</span><p>INARA + Coriolis, and read your chosen track's activity guide here.</p></li>
-      <li><span class="st">Stretch: start engineering</span><p>Gather your first materials and pick a first Engineer to court.</p></li>
+      <li><span class="st">Пройди четыре учебных сценария</span><p>Основы полёта, стыковка, путешествие и бой. Пройди их перед входом в основное сохранение.</p></li>
+      <li><span class="st">Назначь клавиши</span><p>Шасси, грузозаборник, фары, цель, маршрут, общий обзор и раскрытие креплений.</p></li>
+      <li><span class="st">Вылети и сядь вручную</span><p>На стартовой станции, не получив урона.</p></li>
+      <li><span class="st">Проложи <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> маршрут</span><p>через несколько систем по карте галактики. Пройди его целиком и сбрасывай тягу после каждого прыжка.</p></li>
+      <li><span class="st">Выполни 3–5 курьерских заданий или доставок</span><p>Заработай примерно <span class="acc">~100 тыс. кредитов</span> , совмещая задания на одном маршруте.</p></li>
+      <li><span class="st">Попробуй разные занятия</span><p>Уничтожь разыскиваемый корабль в безопасной зоне добычи (Low RES), проведи торговый рейс, просканируй и картографируй систему.</p></li>
+      <li><span class="st">Установи <a href="../../engineering/engineering-manuals/modules.html#module-detailed-surface-scanner">подробный сканер поверхности</a></span><p>Добавь <a href="../../engineering/engineering-manuals/modules.html#module-fuel-scoop">топливозаборник</a> , если собираешься исследовать. Потренируйся заправляться у звезды.</p></li>
+      <li><span class="st">Отложи деньги на выкуп</span><p>Дойди примерно до 100 тыс. кредитов, оставив запас на выкуп нетронутым.</p></li>
+      <li><span class="st">Покинь стартовый район</span><p>Лети туда, где много заданий, например в систему <b>Eravate</b>, <b>LHS 3447</b> или <b>Diaguandri</b>.</p></li>
+      <li><span class="st">Купи первый корабль для своего занятия</span><p><a href="../../ships/ship-dossiers/cobra-mk-iii-multipurpose.html">Cobra Mk III</a>, <a href="../../ships/ship-dossiers/viper-mk-iii-combat.html">Viper Mk III</a> или <a href="../../ships/ship-dossiers/adder-exploration.html">Adder</a> подойдут для разных ролей. Не забудь оставить деньги на выкуп.</p></li>
+      <li><span class="st">Добавь полезные инструменты в закладки</span><p>INARA и Coriolis. Прочитай руководство по выбранному занятию.</p></li>
+      <li><span class="st">Дополнительно: начни открывать инженеров</span><p>Собери первые материалы и выбери инженера, к которому хочешь попасть.</p></li>
     </ol>
   </section>
 
   <!-- 12 PITFALLS -->
   <section id="section-pitfalls">
-    <div class="sec-head"><span class="sec-num">12</span><h2>Common Early Mistakes</h2><span class="tag">Pitfalls</span></div>
-    <p class="lead">The deaths and dead ends every new commander hits at least once. Read them now and skip the lesson.</p>
-    <div class="callout danger"><span class="lbl">Fatal</span><p>Running out of <b>fuel</b> with no scoop · flying a ship you <b>can't afford to rebuy</b> · landing on <b>high-gravity (&gt;1G)</b> worlds before you can manage the descent.</p></div>
-    <div class="callout"><span class="lbl">Costly</span><p>Taking missions beyond your <b>jump range or cargo capacity</b> · <b>boosting or speeding inside stations</b> (they open fire) · mining <b>depleted rings</b> or forgetting <b>limpets</b>.</p></div>
-    <div class="callout tip"><span class="lbl">Avoidable</span><p>Don't gamble on <b>PvP in Open</b> while learning — play <b>Solo or a Private Group</b> until the fundamentals are automatic, then choose Open on your own terms.</p></div>
+    <div class="sec-head"><span class="sec-num">12</span><h2>Типичные ошибки новичков</h2><span class="tag">Подводные камни</span></div>
+    <p class="lead">Ошибки, на которых обычно обжигаются новички. Вот как их избежать.</p>
+    <div class="callout danger"><span class="lbl">Смертельные</span><p>Остаться без <b>топлива</b> и топливозаборника; летать на корабле, который <b>не сможешь выкупить</b> ; садиться на <b>планеты с высокой гравитацией (&gt;1G)</b> , пока не умеешь управлять снижением.</p></div>
+    <div class="callout"><span class="lbl">Дорогостоящие</span><p>Брать задания, для которых не хватает <b>дальности прыжка или места в трюме</b> · <b>включать форсаж или превышать скорость внутри станции</b> (станция может открыть огонь); добывать в <b>истощённых кольцах</b> или забывать <b>дронов</b>.</p></div>
+    <div class="callout tip"><span class="lbl">Которых легко избежать</span><p>Пока учишься, не рискуй в <b>боях с игроками в открытом режиме</b> . Играй <b>в одиночку или в приватной группе</b> , пока не освоишь основы. Потом сам решишь, когда идти в открытый режим.</p></div>
   </section>
 
   <!-- 13 SOURCES -->
   <section class="credits" id="section-credits">
-    <div class="sec-head"><span class="sec-num">13</span><h2>Sources</h2><span class="tag">Verified</span></div>
-    <p class="lead">Facts on this page are verified against the sources below; uncertain figures (starting credits, exact starter-zone duration, live ship prices) are flagged in-text rather than guessed.</p>
+    <div class="sec-head"><span class="sec-num">13</span><h2>Источники</h2><span class="tag">Проверено</span></div>
+    <p class="lead">Факты сверены с источниками ниже. Неподтверждённые данные, в том числе стартовые кредиты, точная длительность пребывания в стартовом районе и актуальные цены кораблей, отмечены в тексте.</p>
     <div class="cr-rows">
-      <div class="cr-row"><span class="cr-src">Steam Community</span><span class="cr-what">New-player first-session steps, docking speeds, career tracks and milestones (corroborate prices independently — its Cobra Mk V cost is inaccurate).</span><a class="cr-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3501779130" target="_blank" rel="noopener noreferrer">steamcommunity.com/…/3501779130</a></div>
-      <div class="cr-row"><span class="cr-src">ED Wiki — Ranks</span><span class="cr-what">The six rank tracks and the nine-step Harmless→Elite ladder plus Elite I–V.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Ranks" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Ranks</a></div>
-      <div class="cr-row"><span class="cr-src">ED Wiki — LHS 3447</span><span class="cr-what">Starter systems, Trevithick Dock and the loaned Sidewinder in the Pilots' Federation District.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/LHS_3447" target="_blank" rel="noopener noreferrer">fandom.com/wiki/LHS_3447</a></div>
-      <div class="cr-row"><span class="cr-src">ED Wiki — Sidewinder</span><span class="cr-what">Starter-ship role; Pilots' Federation insures ≥95%; free-Sidewinder loan on bankruptcy.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Sidewinder" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Sidewinder</a></div>
-      <div class="cr-row"><span class="cr-src">ED Wiki — Pilots Federation</span><span class="cr-what">New-pilot rebuy discount until your first rank-up; district onboarding.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Pilots_Federation" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Pilots_Federation</a></div>
-      <div class="cr-row"><span class="cr-src">ED Wiki — Cobra Mk V</span><span class="cr-what">Cobra Mk V purchasable for credits since 24 Apr 2025; price ~1.99M.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Cobra_Mk_V" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Cobra_Mk_V</a></div>
-      <div class="cr-row"><span class="cr-src">INARA — Ships</span><span class="cr-what">Current verified hull purchase prices (Adder, Viper Mk III, Diamondback Explorer, Cobra Mk V).</span><a class="cr-link" href="https://inara.cz/elite/ships/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ships</a></div>
-      <div class="cr-row"><span class="cr-src">EDCD — coriolis-data</span><span class="cr-what">Canonical hull <code>retailCost</code> values (the exact base purchase prices shown in the early-hulls table).</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/tree/master/ships" target="_blank" rel="noopener noreferrer">github.com/EDCD/coriolis-data/…/ships</a></div>
+      <div class="cr-row"><span class="cr-src">Сообщество Steam</span><span class="cr-what">Первые шаги, скорости при стыковке, занятия и этапы. Проверяй цены отдельно: цена Cobra Mk V в этом источнике указана неверно.</span><a class="cr-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3501779130" target="_blank" rel="noopener noreferrer">steamcommunity.com/…/3501779130</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Elite Dangerous · Ранги</span><span class="cr-what">Шесть направлений ранга, девять ступеней от «Безвредного» до «Элиты» и ступени «Элита I–V».</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Ranks" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Ranks</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Elite Dangerous · LHS 3447</span><span class="cr-what">Стартовые системы, Trevithick Dock и арендованный Sidewinder в округе Федерации пилотов.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/LHS_3447" target="_blank" rel="noopener noreferrer">fandom.com/wiki/LHS_3447</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Elite Dangerous · Sidewinder</span><span class="cr-what">Роль стартового корабля. Федерация пилотов покрывает не менее 95%, а при банкротстве даёт бесплатный Sidewinder.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Sidewinder" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Sidewinder</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Elite Dangerous · Федерация пилотов</span><span class="cr-what">Скидка новичка на выкуп до первого повышения ранга и стартовый район.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Pilots_Federation" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Pilots_Federation</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Elite Dangerous · Cobra Mk V</span><span class="cr-what">Cobra Mk V продаётся за кредиты с 24 апреля 2025 года. Цена около 1,99 млн.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Cobra_Mk_V" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Cobra_Mk_V</a></div>
+      <div class="cr-row"><span class="cr-src">INARA · Корабли</span><span class="cr-what">Цены покупки корпусов на момент проверки: Adder, Viper Mk III, Diamondback Explorer и Cobra Mk V.</span><a class="cr-link" href="https://inara.cz/elite/ships/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ships</a></div>
+      <div class="cr-row"><span class="cr-src">EDCD — coriolis-data</span><span class="cr-what">Справочные значения <code>retailCost</code> для корпусов: точные базовые цены из таблицы первых покупок.</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/tree/master/ships" target="_blank" rel="noopener noreferrer">github.com/EDCD/coriolis-data/…/ships</a></div>
     </div>
   </section>
 
   <footer>
     <div class="ft-fine">
-      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Systems &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
-      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+      <span>&copy; 2026 Elite:Dangerous Black Box · CMDR Ka0s · Системы · <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></span>
+      <span>Elite Dangerous — товарный знак Frontier Developments plc. Это неофициальный фанатский материал, не связанный с Frontier Developments и не одобренный компанией.</span>
     </div>
   </footer>
 
