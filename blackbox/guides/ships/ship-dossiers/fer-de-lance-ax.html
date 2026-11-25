@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fer-de-Lance &middot; AX &middot; Ship Dossier | E:D Black Box</title>
+<title>Fer-de-Lance · Бой с таргоидами · Досье корабля | E:D Black Box</title>
 <link rel="icon" type="image/png" href="../../../images/logos/favicon.png">
 <link rel="stylesheet" href="../../../design-system/css/ed-blackbox.css">
 <!-- Per-page accent: AX → good-green (only permitted page-level CSS) -->
@@ -14,50 +14,50 @@
 <!-- ---- GLOBAL HEADER ---- -->
 <header class="site-header">
   <div class="hdr-inner">
-    <a class="brand" href="../../index.html" aria-label="E:D Black Box — home">
+    <a class="brand" href="../../index.html" aria-label="E:D Black Box — главная">
       <img src="../../../images/logos/logo.png" alt="">
       <span class="wordmark"><span class="hl">E:D</span> Black Box</span>
     </a>
     <span class="nav-sep" aria-hidden="true"></span>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="../../index.html">Home</a>
-      <a href="../../index.html#section-dossiers" class="active">Ships</a>
-      <a href="../../index.html#section-engineering">Engineering</a>
-      <a href="../../index.html#section-systems">Systems</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../../index.html">Главная</a>
+      <a href="../../index.html#section-dossiers" class="active">Корабли</a>
+      <a href="../../index.html#section-engineering">Инженеры</a>
+      <a href="../../index.html#section-systems">Системы</a>
     </nav>
     <div class="header-qn">
       <div class="hdr-crumb">
-        <span class="hdr-crumb-title">Fer-de-Lance · AX</span>
+        <span class="hdr-crumb-title">Fer-de-Lance · Бой с таргоидами</span>
         <span class="hdr-crumb-trail">
-          <a href="../../index.html#section-dossiers">Ships</a>
+          <a href="../../index.html#section-dossiers">Корабли</a>
           <span class="sep">›</span>
-          <a href="../../index.html#section-ship-dossiers">Ship Dossiers</a>
+          <a href="../../index.html#section-ship-dossiers">Досье кораблей</a>
         </span>
       </div>
-      <button class="qn-totop" type="button" aria-label="Scroll to top" title="Scroll to top">
+      <button class="qn-totop" type="button" aria-label="Наверх" title="Наверх">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13 L12 6 L20 13"/><path d="M4 18.5 L12 11.5 L20 18.5"/></svg>
       </button>
       <div class="qn-dd" id="qn-dd">
         <div class="qn-field">
           <span class="qn-ico" aria-hidden="true">⌕</span>
-          <input id="qn-search" class="qn-input" type="text" placeholder="Jump to a section…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
-          <button id="qn-clear" class="qn-clear" type="button" aria-label="Clear search" hidden>×</button>
+          <input id="qn-search" class="qn-input" type="text" placeholder="Перейти к разделу…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="qn-panel" aria-autocomplete="list">
+          <button id="qn-clear" class="qn-clear" type="button" aria-label="Очистить поиск" hidden>×</button>
         </div>
         <div class="qn-panel" id="qn-panel" role="listbox">
-          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Role &amp; Overview</span><span class="qn-side">01</span></a>
-          <a class="qn-item" href="#section-key-stats-what-makes-it-fight"><span class="qn-dot amber"></span><span class="qn-nm">Key Stats &amp; What Makes It Fight Thargoids</span><span class="qn-side">02</span></a>
-          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">Why This Rating</span><span class="qn-side">03</span></a>
-          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">How It Compares</span><span class="qn-side">04</span></a>
-          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Cost &amp; Access</span><span class="qn-side">05</span></a>
-          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">3-State Loadout</span><span class="qn-side">06</span></a>
-          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Initial Loadout &mdash; Buy-Only Plan</span><span class="qn-side">07</span></a>
-          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">A-Rated Loadout &mdash; Upgrade Plan</span><span class="qn-side">08</span></a>
-          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">Engineering Plan</span><span class="qn-side">09</span></a>
-          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Key Stat Upgrades</span><span class="qn-side">10</span></a>
-          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Key Activities &amp; Where To Do Them</span><span class="qn-side">11</span></a>
-          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Field Notes &mdash; What Else To Know</span><span class="qn-side">12</span></a>
-          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Sources</span><span class="qn-side">13</span></a>
-          <div class="qn-empty" hidden>No matching sections</div>
+          <a class="qn-item" href="#section-role-overview"><span class="qn-dot amber"></span><span class="qn-nm">Роль и обзор</span><span class="qn-side">01</span></a>
+          <a class="qn-item" href="#section-key-stats-what-makes-it-fight"><span class="qn-dot amber"></span><span class="qn-nm">Характеристики: что помогает сражаться с таргоидами</span><span class="qn-side">02</span></a>
+          <a class="qn-item" href="#section-why-this-rating"><span class="qn-dot amber"></span><span class="qn-nm">За что такая оценка</span><span class="qn-side">03</span></a>
+          <a class="qn-item" href="#section-how-it-compares"><span class="qn-dot amber"></span><span class="qn-nm">Сравнение с другими кораблями</span><span class="qn-side">04</span></a>
+          <a class="qn-item" href="#section-cost-access"><span class="qn-dot amber"></span><span class="qn-nm">Цена и условия покупки</span><span class="qn-side">05</span></a>
+          <a class="qn-item" href="#section-3-state-loadout"><span class="qn-dot amber"></span><span class="qn-nm">3 варианта оснащения</span><span class="qn-side">06</span></a>
+          <a class="qn-item" href="#section-initial-loadout-buy-only-plan"><span class="qn-dot amber"></span><span class="qn-nm">Начальная сборка: только покупка</span><span class="qn-side">07</span></a>
+          <a class="qn-item" href="#section-a-rated-loadout-upgrade-plan"><span class="qn-dot amber"></span><span class="qn-nm">Сборка класса A: план оснащения</span><span class="qn-side">08</span></a>
+          <a class="qn-item" href="#section-engineering-plan"><span class="qn-dot amber"></span><span class="qn-nm">План инженерных улучшений</span><span class="qn-side">09</span></a>
+          <a class="qn-item" href="#section-key-stat-upgrades"><span class="qn-dot amber"></span><span class="qn-nm">Как меняются характеристики</span><span class="qn-side">10</span></a>
+          <a class="qn-item" href="#section-key-activities-where-to-do-them"><span class="qn-dot amber"></span><span class="qn-nm">Чем заняться и куда полететь</span><span class="qn-side">11</span></a>
+          <a class="qn-item" href="#section-field-notes-what-else-to-know"><span class="qn-dot amber"></span><span class="qn-nm">Советы из практики</span><span class="qn-side">12</span></a>
+          <a class="qn-item" href="#section-credits"><span class="qn-dot amber"></span><span class="qn-nm">Источники</span><span class="qn-side">13</span></a>
+          <div class="qn-empty" hidden>Разделы не найдены</div>
         </div>
       </div>
     </div>
@@ -67,273 +67,273 @@
 <div class="wrap">
 
   <header class="masthead">
-    <div class="kicker">Ship Dossier <span class="sep">//</span> Zorgon Peterson</div>
-    <h1 class="title"><span>Fer-de-Lance</span><span class="role ac-role-ax">AX Combat</span></h1>
+    <div class="kicker">Досье корабля <span class="sep">//</span> Zorgon Peterson</div>
+    <h1 class="title"><span>Fer-de-Lance</span><span class="role ac-role-ax">Бой с таргоидами</span></h1>
     <div class="masthead-meta">
-      <span>Series <b>Ships</b></span>
-      <span>Updated <b>2026-07-01</b></span>
+      <span>Серия <b>Корабли</b></span>
+      <span>Обновлено <b>2026-07-01</b></span>
     </div>
   </header>
 
   <div class="verdict has-render">
     <div class="v-body">
-      <div class="v-eyebrow">Briefing</div>
-      <h2>A duellist pressed into AX — it <em>dodges</em> where it can't tank</h2>
-      <p>Four medium mounts give the Fer-de-Lance a full Gauss-capable count, and its best-in-class agility physically dodges the Interceptor lightning that grounds heavier AX hulls. But it carries the smallest internals in the field — six optionals, no military slots, thin armour on a 250-tonne frame that runs hot. It survives by not being hit, not by absorbing damage, which caps it near the bottom of the rated AX hulls despite an elite airframe.</p>
+      <div class="v-eyebrow">Сводка</div>
+      <h2>Дуэлянт в боях AX: <em>уклоняется</em> там, где не выдержит удара</h2>
+      <p>Четыре средние точки Fer-de-Lance вмещают полный комплект пушек Гаусса. Лучшая в классе манёвренность позволяет уйти от разрядов перехватчика, которые сковывают более тяжёлые корабли AX. Но у него самые тесные отсеки среди соперников: шесть дополнительных, ни одного военного, тонкая броня и склонный к перегреву корпус массой 250 т. Он выживает, избегая попаданий, а не выдерживая урон, и поэтому даже с отличными лётными качествами остаётся внизу рейтинга AX.</p>
     </div>
     <figure class="ship-figure">
-      <img src="../../../images/ships/fer-de-lance.jpg" alt="Fer-de-Lance" width="160" height="90">
+      <img src="../../../images/ships/fer-de-lance.jpg" alt="Изображение корабля Fer-de-Lance" width="160" height="90">
       <figcaption><b>Fer-de-Lance</b> &middot; Zorgon Peterson</figcaption>
     </figure>
     <div class="stat-grid">
       <div class="stat"><div class="n">68<small>/100</small></div><div class="bar mini"><i style="--pct:68"></i></div></div>
-      <div class="stat"><div class="n">1H · 4M</div><div class="l">Hardpoints</div></div>
-      <div class="stat"><div class="n">0</div><div class="l">Military slots</div></div>
-      <div class="stat"><div class="n">260 / 350</div><div class="l">Speed / boost m/s</div></div>
-      <div class="stat"><div class="n">~51M</div><div class="l">Hull price Cr</div></div>
-      <div class="stat"><div class="n">M</div><div class="l">Pad size</div></div>
+      <div class="stat"><div class="n">1H · 4M</div><div class="l">Оружейные точки</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Военные отсеки</div></div>
+      <div class="stat"><div class="n">260 / 350</div><div class="l">Скорость / с форсажем, м/с</div></div>
+      <div class="stat"><div class="n">~51 млн</div><div class="l">Цена корпуса, кр.</div></div>
+      <div class="stat"><div class="n">M</div><div class="l">Посадочная площадка</div></div>
     </div>
   </div>
 
-  <div class="callout"><span class="lbl">Rating methodology</span><p>This ship's <span class="acc">1&ndash;100 suitability rating</span> reflects its fully-engineered fit for this role, scored against every ship in the role. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+  <div class="callout"><span class="lbl">Как выставляется оценка</span><p>Корабль получает <span class="acc">оценку пригодности от 1 до 100</span> в полностью улучшенной сборке для этой роли, в сравнении со всеми другими кораблями той же роли. См. <a href="../general/rating-methodology.html">методику оценки кораблей</a>.</p></div>
   <!-- s1 -->
   <section id="section-role-overview">
-    <div class="sec-head"><span class="sec-num">01</span><h2>Role &amp; Overview</h2></div>
-    <p>The Fer-de-Lance is a duelling hull, not an anti-Xeno platform &mdash; but its two defining traits translate. Four medium hardpoints each take a size-2 Guardian Gauss Cannon, so it fields a full Gauss-capable count, and its class-leading agility lets it side-step Thargoid lightning the way it out-turns a human opponent. On paper that reads well; in practice the fit is a compromise the ship was never built for.</p>
-    <p>The cost is everything behind the guns. Six optional internals &mdash; largest class 5, no military slots &mdash; must hold the shield, Guardian <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">hull reinforcement</a>, module hardening and an <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a> all at once, so nothing gets much room. Armour is thin (225 base), the 250-tonne hull runs hot under Gauss fire, and the short jump range needs a carrier lift to reach distant Maelstroms. The FDL wins AX fights by dodging and clean exits, not by out-tanking a <a href="alliance-challenger-ax.html">Challenger</a> or out-gunning a <a href="python-mk-ii-ax.html">Python Mk II</a>.</p>
-    <div class="callout"><span class="lbl">Where this hull shines</span><p>Fast, evasive hit-and-run anti-Xeno work for a pilot who already owns and loves the FDL: dodging Interceptor lightning, single-Cyclops and Basilisk runs, and Scout clearing &mdash; not standing in sustained fire or reaching remote Maelstroms unassisted.</p></div>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Роль и обзор</h2></div>
+    <p>Fer-de-Lance создан для дуэлей, а не для боя с таргоидами, но два его главных достоинства полезны и здесь. На каждую из четырёх средних точек можно поставить пушку Гаусса Стражей класса 2: получится полный комплект. Лучшая в классе манёвренность позволяет уходить в сторону от разрядов таргоидов так же легко, как обгонять человеческих соперников в развороте. На бумаге это выглядит хорошо, но на практике выходит компромиссная сборка для задачи, на которую корабль не рассчитывался.</p>
+    <p>Проблема во всём остальном оснащении. В шести дополнительных отсеках, из которых самый большой класса 5, а военных нет вовсе, должны поместиться щит, усилители <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">корпуса Стражей</a>, защита модулей и <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a>, так что места ни на что не хватает. Базовая броня тонкая (225), корпус массой 250 т перегревается от стрельбы из пушек Гаусса, а из-за малой дальности прыжка до далёких Мальстрёмов придётся добираться на авианосце. FDL побеждает в AX уклонением и своевременным отходом, а не превосходя по броне <a href="alliance-challenger-ax.html">Challenger</a> или по огневой мощи <a href="python-mk-ii-ax.html">Python Mk II</a>.</p>
+    <div class="callout"><span class="lbl">Где корабль особенно хорош</span><p>Быстрые вылазки против таргоидов с уклонением и отходом для тех, кто уже владеет FDL и любит его. Корабль подходит для уклонения от разрядов перехватчиков, одиночных боёв с Cyclops и Basilisk и зачистки разведчиков. Он не предназначен для долгого боя под огнём или самостоятельного перелёта к далёким Мальстрёмам.</p></div>
     <div class="nolink">
-      <h3 class="subhead">Other role builds of this ship</h3>
+      <h3 class="subhead">Сборки этого корабля для других задач</h3>
       <div class="vchips">
-        <a class="vchip r-combat" href="fer-de-lance-combat.html"><span class="vrole">Combat</span><span class="vrate">93<small>/100</small></span></a>
+        <a class="vchip r-combat" href="fer-de-lance-combat.html"><span class="vrole">Бой</span><span class="vrate">93<small>/100</small></span></a>
       </div>
     </div>
   </section>
 
   <!-- s2 -->
   <section id="section-key-stats-what-makes-it-fight">
-    <div class="sec-head"><span class="sec-num">02</span><h2>Key Stats &amp; What Makes It Fight Thargoids</h2></div>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Характеристики: что помогает сражаться с таргоидами</h2></div>
     <div class="specgrid">
-      <div class="cell"><div class="k">Hardpoints</div><div class="v">1H &middot; 4M <small>(Gauss on the mediums)</small></div></div>
-      <div class="cell"><div class="k">Military slots</div><div class="v">0 <small>(no module hardening)</small></div></div>
-      <div class="cell"><div class="k">Top speed / boost</div><div class="v">260 / 350 <small>m/s</small></div></div>
-      <div class="cell"><div class="k">Utility mounts</div><div class="v">6</div></div>
-      <div class="cell"><div class="k">Base shield</div><div class="v">~270 <small>MJ (high for a medium)</small></div></div>
-      <div class="cell"><div class="k">Base armour</div><div class="v">225 <small>(thin)</small></div></div>
-      <div class="cell"><div class="k">Optional internals</div><div class="v">5&middot;4&middot;4&middot;2&middot;1&middot;1</div></div>
-      <div class="cell"><div class="k">Agility</div><div class="v">Class-leading</div></div>
-      <div class="cell"><div class="k">Jump range</div><div class="v">Short</div></div>
-      <div class="cell"><div class="k">Pad</div><div class="v">Medium</div></div>
-      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
-      <div class="cell"><div class="k">Crew seats</div><div class="v">2</div></div>
+      <div class="cell"><div class="k">Оружейные точки</div><div class="v">1H &middot; 4M <small>(пушки Гаусса на средних точках)</small></div></div>
+      <div class="cell"><div class="k">Военные отсеки</div><div class="v">0 <small>(без защиты модулей)</small></div></div>
+      <div class="cell"><div class="k">Макс. скорость / с форсажем</div><div class="v">260 / 350 <small>м/с</small></div></div>
+      <div class="cell"><div class="k">Внешние крепления</div><div class="v">6</div></div>
+      <div class="cell"><div class="k">Базовая прочность щита</div><div class="v">~270 <small>МДж (высокий для среднего корабля)</small></div></div>
+      <div class="cell"><div class="k">Базовая броня</div><div class="v">225 <small>(тонкая)</small></div></div>
+      <div class="cell"><div class="k">Дополнительные отсеки</div><div class="v">5&middot;4&middot;4&middot;2&middot;1&middot;1</div></div>
+      <div class="cell"><div class="k">Манёвренность</div><div class="v">Лучшая в классе</div></div>
+      <div class="cell"><div class="k">Дальность прыжка</div><div class="v">Малая</div></div>
+      <div class="cell"><div class="k">Посадочная площадка</div><div class="v">Средняя</div></div>
+      <div class="cell"><div class="k">Звание</div><div class="v">Нет</div></div>
+      <div class="cell"><div class="k">Места экипажа</div><div class="v">2</div></div>
     </div>
-    <p>Two strengths and two hard limits define the FDL as an AX hull:</p>
+    <p>У FDL в боях с таргоидами два преимущества и два серьёзных ограничения:</p>
     <ul class="bullets">
-      <li><b>Four medium mounts.</b> Each takes a size-2 Guardian <a href="../../engineering/engineering-manuals/modules.html#module-xeno">Gauss Cannon</a> &mdash; the Gauss-capable count matches the <a href="imperial-cutter-ax.html">Cutter</a> and <a href="federal-gunship-ax.html">Gunship</a> ceiling, though heat caps how many run at once.</li>
-      <li><b>Best-in-class agility.</b> It turns and holds a target better than any other medium, letting it physically dodge Interceptor lightning &mdash; the single most important AX survival skill.</li>
-      <li><b>No military slots, tiny internals.</b> Six optionals topping at class 5 must carry shield, Guardian <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">hull reinforcement</a>, module hardening and an <a href="../../engineering/engineering-manuals/modules.html#module-afmu">AFMU</a> together &mdash; it can't harden modules like a <a href="alliance-chieftain-ax.html">Chieftain</a>.</li>
-      <li><b>Runs hot, jumps short.</b> A 250-tonne hull has little thermal mass for Gauss volleys, and the size-4 <a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> needs a carrier lift to reach remote Maelstroms.</li>
+      <li><b>Четыре средние точки.</b> На каждую можно поставить орудие класса 2: <a href="../../engineering/engineering-manuals/modules.html#module-xeno">пушку Гаусса Стражей</a>. По возможному числу пушек Гаусса он не уступает <a href="imperial-cutter-ax.html">Cutter</a> и <a href="federal-gunship-ax.html">Gunship</a>, хотя нагрев ограничивает число орудий, которыми можно пользоваться одновременно.</li>
+      <li><b>Лучшая в классе манёвренность.</b> Он разворачивается и удерживает цель лучше других средних кораблей. Это позволяет уходить от разрядов перехватчиков — важнейший навык выживания в AX.</li>
+      <li><b>Военных отсеков нет, дополнительные тесные.</b> В шести дополнительных отсеках, самый большой из которых класса 5, нужно разместить щит и <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">усилители корпуса Стражей</a>, защиту модулей и <a href="../../engineering/engineering-manuals/modules.html#module-afmu">блок авторемонта (AFMU)</a> одновременно. Так же хорошо защитить модули, как <a href="alliance-chieftain-ax.html">Chieftain, не получится</a>.</li>
+      <li><b>Сильный нагрев и короткий прыжок.</b> Корпус массой 250 т быстро нагревается от залпов пушек Гаусса, а двигатель класса 4 (<a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a>) заставляет пользоваться авианосцем, чтобы добраться до далёких Мальстрёмов.</li>
     </ul>
-    <div class="callout"><span class="lbl">The ceiling, stated honestly</span><p>The FDL's airframe is elite, but AX rewards tank and reinforcement room it doesn't have. Zero military slots, six small optionals and thin armour mean it hardens and heals worse than nearly every rated AX hull; the huge mount is wasted (no huge AX weapon exists). It sits at <b>68</b> because agility alone can't offset the field's shallowest defensive fit &mdash; a <a href="mamba-ax.html">Mamba</a> edges it on raw speed, and every military-slotted medium out-survives it.</p></div>
+    <div class="callout"><span class="lbl">Ограничения корабля</span><p>У FDL отличные лётные характеристики, но в AX ценятся прочность и место под усилители, которых ему не хватает. Без военных отсеков, с шестью тесными дополнительными и тонкой бронёй он защищает и ремонтирует модули хуже почти всех оценённых кораблей AX. Огромная точка используется не по назначению: огромного оружия AX нет. Его оценка — <b>68</b>, потому что манёвренность не компенсирует самый скромный набор защиты среди соперников: <a href="mamba-ax.html">Mamba</a> чуть быстрее по прямой, а любой средний корабль с военными отсеками выживает лучше.</p></div>
   </section>
 
   <!-- s3 -->
   <!-- Why This Rating -->
   <section id="section-why-this-rating">
-    <div class="sec-head"><span class="sec-num">03</span><h2>Why This Rating</h2><span class="tag">Scorecard</span></div>
-    <p class="lead">An elite duelling airframe pressed into anti-Xeno work: four medium Gauss mounts and best-in-class agility let it dodge Interceptor lightning, but zero military slots, six small optionals and thin armour make it the shallowest-tanked hull in the rated AX field — it survives by evasion, not endurance, which pins it near the bottom.</p>
-    <p>The <b>68/100</b> headline is a verdict against the anti-Xeno role's priority-ordered factors. Each factor carries a <b>weight</b> (its share of 100); this hull earns part of each based on how it performs against the whole field. The points <b>sum to the rating</b>.</p>
+    <div class="sec-head"><span class="sec-num">03</span><h2>За что такая оценка</h2><span class="tag">Оценка по критериям</span></div>
+    <p class="lead">Отличный дуэльный корабль в роли охотника на таргоидов: четыре средние точки под пушки Гаусса и лучшая в классе манёвренность позволяют уходить от разрядов перехватчиков. Однако без военных отсеков, с шестью тесными дополнительными и тонкой бронёй его запас защиты самый скромный среди оценённых кораблей AX. Он выживает за счёт уклонения, а не стойкости, поэтому остаётся внизу рейтинга.</p>
+    <p>Итоговая <b>68/100</b> оценка складывается из критериев, расположенных по приоритетности для боя с таргоидами. У каждого есть свой <b>вес</b> (доля от 100); корабль получает часть баллов по сравнению со всеми соперниками. В сумме они дают <b>итоговую оценку</b>.</p>
     <div class="tbl-scroll">
     <table class="data scorecard">
       <colgroup><col style="width:190px"><col style="width:150px"><col></colgroup>
-      <thead><tr><th>Role factor</th><th class="sc">Score</th><th>Why this score</th></tr></thead>
+      <thead><tr><th>Критерий</th><th class="sc">Баллы</th><th>Почему столько</th></tr></thead>
       <tbody>
-      <tr><td class="fct">Hardpoints for Gauss</td><td class="sc"><span class="scval">19</span><span class="den">/25</span><div class="bar mini"><i style="--pct:76"></i></div></td><td class="wcell">Four medium mounts each seat a size-2 Guardian Gauss — matching the Cutter/Gunship Gauss-capable ceiling — but the 250t hull's heat limit means it realistically runs only two, and the huge mount is wasted since no huge AX weapon exists.</td></tr>
-      <tr><td class="fct">Heat capacity &amp; management</td><td class="sc"><span class="scval">13</span><span class="den">/20</span><div class="bar mini"><i style="--pct:65"></i></div></td><td class="wcell">A 250t hull with just 224 heat capacity runs hot under Gauss volleys; six utilities fit two heat-sink launchers and an Overcharged + Thermal Spread plant helps, but there is no thermal-mass margin for a full battery.</td></tr>
-      <tr><td class="fct">Hull tank &amp; reinforcement room</td><td class="sc"><span class="scval">9</span><span class="den">/20</span><div class="bar mini"><i style="--pct:45"></i></div></td><td class="wcell">The decisive weakness: zero military slots and only six optionals (5·4·4·2·1·1) topping at class 5 on a thin 225-base-armour hull, so Guardian hull/module reinforcement, shield and AFMU compete for the same cramped bays.</td></tr>
-      <tr><td class="fct">Agility</td><td class="sc"><span class="scval">22</span><span class="den">/25</span><div class="bar mini"><i style="--pct:88"></i></div></td><td class="wcell">Best-in-class medium agility (260/350, roll 90) physically dodges Interceptor lightning — its whole survival case and the reason it rates at all against tankier peers.</td></tr>
-      <tr><td class="fct">Caustic handling &amp; support slots</td><td class="sc"><span class="scval">5</span><span class="den">/10</span><div class="bar mini"><i style="--pct:50"></i></div></td><td class="wcell">Six utility mounts easily carry Xeno Scanner, caustic sink and two heat sinks, but the tiny internals leave room only for an AFMU and thin Guardian reinforcement — no decon limpet and no deep support stack.</td></tr>
-      <tr class="totalrow"><td class="fct"><b>Weighted total</b></td><td class="sc"><span class="scval">68</span><span class="den">/100</span><div class="bar mini"><i style="--pct:68"></i></div></td><td class="wcell"><em>Matches the headline suitability rating for this ship in this role.</em></td></tr>
+      <tr><td class="fct">Точки под пушки Гаусса</td><td class="sc"><span class="scval">19</span><span class="den">/25</span><div class="bar mini"><i style="--pct:76"></i></div></td><td class="wcell">Каждая из четырёх средних точек вмещает пушку Гаусса Стражей класса 2, так что предел тот же, что у Cutter и Gunship. Но из-за нагрева корпуса массой 250 т на практике ставят только две, а огромную точку нельзя использовать полностью, поскольку огромного оружия AX нет.</td></tr>
+      <tr><td class="fct">Теплоёмкость и контроль нагрева</td><td class="sc"><span class="scval">13</span><span class="den">/20</span><div class="bar mini"><i style="--pct:65"></i></div></td><td class="wcell">Корпус массой 250 т с теплоёмкостью всего 224 перегревается от залпов пушек Гаусса. Шесть внешних креплений позволяют поставить две теплоотводные катапульты, а форсированная силовая установка с «Распределением тепла» помогает отводить тепло. Но запаса теплоёмкости на полную батарею нет.</td></tr>
+      <tr><td class="fct">Броня и запас отсеков под усилители</td><td class="sc"><span class="scval">9</span><span class="den">/20</span><div class="bar mini"><i style="--pct:45"></i></div></td><td class="wcell">Решающий недостаток: нет военных отсеков, а из шести дополнительных (5·4·4·2·1·1) самый большой — класса 5. При базовой броне всего 225 щит, усилители корпуса и модулей Стражей и блок авторемонта конкурируют за тесные отсеки.</td></tr>
+      <tr><td class="fct">Манёвренность</td><td class="sc"><span class="scval">22</span><span class="den">/25</span><div class="bar mini"><i style="--pct:88"></i></div></td><td class="wcell">Лучшая среди средних кораблей манёвренность (260/350, крен 90) позволяет физически уходить от разрядов перехватчиков. На этом держится вся живучесть FDL и его место в рейтинге среди более прочных соперников.</td></tr>
+      <tr><td class="fct">Защита от едкого вещества и вспомогательное оснащение</td><td class="sc"><span class="scval">5</span><span class="den">/10</span><div class="bar mini"><i style="--pct:50"></i></div></td><td class="wcell">На шести внешних креплениях легко размещаются сканер ксеносов, катапульта для нейтрализации едкого вещества и два теплоотвода. Но внутри хватает места лишь на блок авторемонта и немного усилителей Стражей. Контроллер обеззараживающих дронов и большой комплект поддержки не помещаются.</td></tr>
+      <tr class="totalrow"><td class="fct"><b>Взвешенный итог</b></td><td class="sc"><span class="scval">68</span><span class="den">/100</span><div class="bar mini"><i style="--pct:68"></i></div></td><td class="wcell"><em>Совпадает с итоговой оценкой пригодности корабля для этой роли.</em></td></tr>
       </tbody>
     </table>
     </div>
-    <div class="callout"><span class="lbl">How to read it</span><p>Weights are an editorial decomposition of the role's stated priority order &mdash; not an in-game formula. Bar length shows how fully each factor is earned; the longest factors carried the score, the shortest are where it gave points away. See <a href="../general/rating-methodology.html">how ships are rated</a>.</p></div>
+    <div class="callout"><span class="lbl">Как читать таблицу</span><p>Вес каждого критерия отражает редакционную расстановку приоритетов роли, а не формулу игры. Длина полосы показывает, какую долю баллов по критерию заработал корабль. Длинные полосы дали основную часть оценки, короткие показывают, где он потерял баллы. См. <a href="../general/rating-methodology.html">методику оценки кораблей</a>.</p></div>
   </section>
 
   <section id="section-how-it-compares">
-    <div class="sec-head"><span class="sec-num">04</span><h2>How It Compares</h2></div>
-    <p>Every table rates ships <em>for AX specifically</em>, split by landing-pad class. The <b>Hardpoints</b> column is the hardpoint loadout — the mount count for a Gauss suite; the rating is the same 1&ndash;100 suitability verdict used across the site.</p>
-    <h3 class="subhead">Same class &mdash; medium AX ships</h3>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Сравнение с другими кораблями</h2></div>
+    <p>Во всех таблицах корабли оцениваются <em>именно для боя с таргоидами</em> и разделены по размеру посадочной площадки. Столбец <b>Оружейные точки</b> показывает набор оружейных точек, от которого зависит число пушек Гаусса; оценка пригодности по шкале от 1 до 100 та же, что и на остальных страницах.</p>
+    <h3 class="subhead">Тот же класс: средние корабли AX</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Hardpoints</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Оружейные точки</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="alliance-chieftain-ax.html">Alliance Chieftain</a></td><td><span class="pill pad-medium">Medium</span></td><td>2L 1M 3S</td><td class="pcc"><span class="p">Higher-rated; agility; heat</span><span class="c">Gauss mounts</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
-        <tr><td class="mod"><a href="krait-mk-ii-ax.html">Krait Mk II</a></td><td><span class="pill pad-medium">Medium</span></td><td>3L 2M</td><td class="pcc"><span class="p">Higher-rated; Gauss mounts; agility</span><span class="c">Hull tank</span></td><td><span class="rscore">89</span><div class="bar mini"><i style="--pct:89"></i></div></td></tr>
-        <tr><td class="mod"><a href="alliance-challenger-ax.html">Alliance Challenger</a></td><td><span class="pill pad-medium">Medium</span></td><td>1L 3M 3S</td><td class="pcc"><span class="p">Higher-rated; hull tank; caustic kit</span><span class="c">Agility</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
-        <tr><td class="mod"><a href="corsair-ax.html">Corsair</a></td><td><span class="pill pad-medium">Medium</span></td><td>3L 3M</td><td class="pcc"><span class="p">Higher-rated; Gauss mounts; agility</span><span class="c">Hull tank</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
-        <tr><td class="mod"><a href="krait-phantom-ax.html">Krait Phantom</a></td><td><span class="pill pad-medium">Medium</span></td><td>2L 2M</td><td class="pcc"><span class="p">Higher-rated; agility; heat</span><span class="c">Hull tank</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
-        <tr><td class="mod"><a href="python-mk-ii-ax.html">Python Mk II</a></td><td><span class="pill pad-medium">Medium</span></td><td>4L 2M</td><td class="pcc"><span class="p">Higher-rated; Gauss mounts; caustic kit</span><span class="c">Hull tank</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
-        <tr><td class="mod"><a href="federal-gunship-ax.html">Federal Gunship</a></td><td><span class="pill pad-medium">Medium</span></td><td>1L 4M 2S</td><td class="pcc"><span class="p">Higher-rated; hull tank; caustic kit</span><span class="c">Agility</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
-        <tr><td class="mod"><a href="python-ax.html">Python</a></td><td><span class="pill pad-medium">Medium</span></td><td>3L 2M</td><td class="pcc"><span class="p">Higher-rated; hull tank; caustic kit</span><span class="c">Agility</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
-        <tr><td class="mod"><a href="alliance-crusader-ax.html">Alliance Crusader</a></td><td><span class="pill pad-medium">Medium</span></td><td>1L 2M 3S</td><td class="pcc"><span class="p">Higher-rated; hull tank; heat</span><span class="c">Agility</span></td><td><span class="rscore">79</span><div class="bar mini"><i style="--pct:79"></i></div></td></tr>
-        <tr><td class="mod"><a href="federal-assault-ship-ax.html">Federal Assault Ship</a></td><td><span class="pill pad-medium">Medium</span></td><td>2L 2M</td><td class="pcc"><span class="p">Higher-rated; agility; hull tank</span><span class="c">Gauss mounts</span></td><td><span class="rscore">77</span><div class="bar mini"><i style="--pct:77"></i></div></td></tr>
-        <tr><td class="mod"><a href="federal-dropship-ax.html">Federal Dropship</a></td><td><span class="pill pad-medium">Medium</span></td><td>1L 4M</td><td class="pcc"><span class="p">Higher-rated; caustic kit; Gauss mounts</span><span class="c">Agility</span></td><td><span class="rscore">73</span><div class="bar mini"><i style="--pct:73"></i></div></td></tr>
-        <tr><td class="mod"><a href="mamba-ax.html">Mamba</a></td><td><span class="pill pad-medium">Medium</span></td><td>1H 2L 2S</td><td class="pcc"><span class="p">Higher-rated; agility; heat</span><span class="c">Hull tank</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
-        <tr><td class="mod">Fer-de-Lance <span class="pill md">this</span></td><td><span class="pill pad-medium">Medium</span></td><td>1H 4M</td><td class="pcc"><span class="base">&mdash; this hull (baseline)</span></td><td><span class="rscore">68</span><div class="bar mini"><i style="--pct:68"></i></div></td></tr>
+        <tr><td class="mod"><a href="alliance-chieftain-ax.html">Alliance Chieftain</a></td><td><span class="pill pad-medium">Средняя</span></td><td>2L 1M 3S</td><td class="pcc"><span class="p">Оценка выше; манёвренность; контроль нагрева</span><span class="c">Точки под пушки Гаусса</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-mk-ii-ax.html">Krait Mk II</a></td><td><span class="pill pad-medium">Средняя</span></td><td>3L 2M</td><td class="pcc"><span class="p">Оценка выше; точки под пушки Гаусса; манёвренность</span><span class="c">Запас брони</span></td><td><span class="rscore">89</span><div class="bar mini"><i style="--pct:89"></i></div></td></tr>
+        <tr><td class="mod"><a href="alliance-challenger-ax.html">Alliance Challenger</a></td><td><span class="pill pad-medium">Средняя</span></td><td>1L 3M 3S</td><td class="pcc"><span class="p">Оценка выше; запас брони; защита от едкого вещества</span><span class="c">Манёвренность</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
+        <tr><td class="mod"><a href="corsair-ax.html">Corsair</a></td><td><span class="pill pad-medium">Средняя</span></td><td>3L 3M</td><td class="pcc"><span class="p">Оценка выше; точки под пушки Гаусса; манёвренность</span><span class="c">Запас брони</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="krait-phantom-ax.html">Krait Phantom</a></td><td><span class="pill pad-medium">Средняя</span></td><td>2L 2M</td><td class="pcc"><span class="p">Оценка выше; манёвренность; контроль нагрева</span><span class="c">Запас брони</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="python-mk-ii-ax.html">Python Mk II</a></td><td><span class="pill pad-medium">Средняя</span></td><td>4L 2M</td><td class="pcc"><span class="p">Оценка выше; точки под пушки Гаусса; защита от едкого вещества</span><span class="c">Запас брони</span></td><td><span class="rscore">84</span><div class="bar mini"><i style="--pct:84"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-gunship-ax.html">Federal Gunship</a></td><td><span class="pill pad-medium">Средняя</span></td><td>1L 4M 2S</td><td class="pcc"><span class="p">Оценка выше; запас брони; защита от едкого вещества</span><span class="c">Манёвренность</span></td><td><span class="rscore">82</span><div class="bar mini"><i style="--pct:82"></i></div></td></tr>
+        <tr><td class="mod"><a href="python-ax.html">Python</a></td><td><span class="pill pad-medium">Средняя</span></td><td>3L 2M</td><td class="pcc"><span class="p">Оценка выше; запас брони; защита от едкого вещества</span><span class="c">Манёвренность</span></td><td><span class="rscore">80</span><div class="bar mini"><i style="--pct:80"></i></div></td></tr>
+        <tr><td class="mod"><a href="alliance-crusader-ax.html">Alliance Crusader</a></td><td><span class="pill pad-medium">Средняя</span></td><td>1L 2M 3S</td><td class="pcc"><span class="p">Оценка выше; запас брони; контроль нагрева</span><span class="c">Манёвренность</span></td><td><span class="rscore">79</span><div class="bar mini"><i style="--pct:79"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-assault-ship-ax.html">Federal Assault Ship</a></td><td><span class="pill pad-medium">Средняя</span></td><td>2L 2M</td><td class="pcc"><span class="p">Оценка выше; манёвренность; запас брони</span><span class="c">Точки под пушки Гаусса</span></td><td><span class="rscore">77</span><div class="bar mini"><i style="--pct:77"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-dropship-ax.html">Federal Dropship</a></td><td><span class="pill pad-medium">Средняя</span></td><td>1L 4M</td><td class="pcc"><span class="p">Оценка выше; защита от едкого вещества; точки под пушки Гаусса</span><span class="c">Манёвренность</span></td><td><span class="rscore">73</span><div class="bar mini"><i style="--pct:73"></i></div></td></tr>
+        <tr><td class="mod"><a href="mamba-ax.html">Mamba</a></td><td><span class="pill pad-medium">Средняя</span></td><td>1H 2L 2S</td><td class="pcc"><span class="p">Оценка выше; манёвренность; контроль нагрева</span><span class="c">Запас брони</span></td><td><span class="rscore">70</span><div class="bar mini"><i style="--pct:70"></i></div></td></tr>
+        <tr><td class="mod">Fer-de-Lance <span class="pill md">этот</span></td><td><span class="pill pad-medium">Средняя</span></td><td>1H 4M</td><td class="pcc"><span class="base">— этот корабль (для сравнения)</span></td><td><span class="rscore">68</span><div class="bar mini"><i style="--pct:68"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">13 medium-pad AX hulls carry a rating, led by <b><a href="alliance-chieftain-ax.html">Alliance Chieftain</a></b> (90). Every same-pad rival lands where this one does &mdash; the direct field to shop.</p>
-    <h3 class="subhead">Other classes &mdash; the capital AX platforms</h3>
+    <p class="nolink">Оценены 13 кораблей AX для средних площадок. Лидер — <b><a href="alliance-chieftain-ax.html">Alliance Chieftain</a></b> (90). Из этой таблицы проще всего выбрать альтернативу: все корабли садятся там же, где и Corvette.</p>
+    <h3 class="subhead">Другие классы: тяжёлые корабли AX</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Hardpoints</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Оружейные точки</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="imperial-cutter-ax.html">Imperial Cutter</a></td><td><span class="pill pad-large">Large</span></td><td>1H 2L 4M</td><td class="pcc"><span class="p">Higher-rated; Gauss mounts; heat</span><span class="c">Agility</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
-        <tr><td class="mod"><a href="anaconda-ax.html">Anaconda</a></td><td><span class="pill pad-large">Large</span></td><td>1H 3L 2M 2S</td><td class="pcc"><span class="p">Higher-rated; Gauss mounts; hull tank</span><span class="c">Agility</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
-        <tr><td class="mod"><a href="federal-corvette-ax.html">Federal Corvette</a></td><td><span class="pill pad-large">Large</span></td><td>2H 1L 2M 2S</td><td class="pcc"><span class="p">Higher-rated; hull tank; heat</span><span class="c">Agility</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
-        <tr><td class="mod"><a href="type-10-defender-ax.html">Type-10 Defender</a></td><td><span class="pill pad-large">Large</span></td><td>4L 3M 2S</td><td class="pcc"><span class="p">Higher-rated; hull tank; caustic kit</span><span class="c">Agility</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
+        <tr><td class="mod"><a href="imperial-cutter-ax.html">Imperial Cutter</a></td><td><span class="pill pad-large">Большая</span></td><td>1H 2L 4M</td><td class="pcc"><span class="p">Оценка выше; точки под пушки Гаусса; контроль нагрева</span><span class="c">Манёвренность</span></td><td><span class="rscore">90</span><div class="bar mini"><i style="--pct:90"></i></div></td></tr>
+        <tr><td class="mod"><a href="anaconda-ax.html">Anaconda</a></td><td><span class="pill pad-large">Большая</span></td><td>1H 3L 2M 2S</td><td class="pcc"><span class="p">Оценка выше; точки под пушки Гаусса; запас брони</span><span class="c">Манёвренность</span></td><td><span class="rscore">88</span><div class="bar mini"><i style="--pct:88"></i></div></td></tr>
+        <tr><td class="mod"><a href="federal-corvette-ax.html">Federal Corvette</a></td><td><span class="pill pad-large">Большая</span></td><td>2H 1L 2M 2S</td><td class="pcc"><span class="p">Оценка выше; запас брони; контроль нагрева</span><span class="c">Манёвренность</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
+        <tr><td class="mod"><a href="type-10-defender-ax.html">Type-10 Defender</a></td><td><span class="pill pad-large">Большая</span></td><td>4L 3M 2S</td><td class="pcc"><span class="p">Оценка выше; запас брони; защита от едкого вещества</span><span class="c">Манёвренность</span></td><td><span class="rscore">86</span><div class="bar mini"><i style="--pct:86"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">The large-pad AX field (4 rated), led by <b><a href="imperial-cutter-ax.html">Imperial Cutter</a></b> (90) &mdash; bigger pads and bankrolls. They out-muscle this hull on the numbers, but sit a pad class away.</p>
-    <h3 class="subhead">Other classes &mdash; the light AX skirmishers</h3>
+    <p class="nolink">Среди кораблей AX для больших площадок оценены 4 модели. Лидер — <b><a href="imperial-cutter-ax.html">Imperial Cutter</a></b> (90). Им нужны площадки крупнее и бюджет больше. По цифрам они мощнее этого корабля, но относятся к другому классу площадки.</p>
+    <h3 class="subhead">Другие классы: лёгкие корабли AX для быстрых вылазок</h3>
     <div class="tbl-scroll nolink">
     <table class="cmp">
       <colgroup><col style="width:17%"><col style="width:9%"><col style="width:16%"><col style="width:46%"><col style="width:12%"></colgroup>
-      <thead><tr><th>Ship</th><th>Class</th><th>Hardpoints</th><th>Pros &amp; cons</th><th>Rating</th></tr></thead>
+      <thead><tr><th>Корабль</th><th>Класс</th><th>Оружейные точки</th><th>Плюсы и минусы</th><th>Оценка</th></tr></thead>
       <tbody>
-        <tr><td class="mod"><a href="kestrel-mk-ii-ax.html">Kestrel Mk II</a></td><td><span class="pill pad-small">Small</span></td><td>3L 2S</td><td class="pcc"><span class="p">Agility; Gauss mounts</span><span class="c">Lower-rated; caustic kit</span></td><td><span class="rscore">60</span><div class="bar mini"><i style="--pct:60"></i></div></td></tr>
-        <tr><td class="mod"><a href="cobra-mk-v-ax.html">Cobra Mk V</a></td><td><span class="pill pad-small">Small</span></td><td>3M 2S</td><td class="pcc"><span class="p">Agility; Gauss mounts</span><span class="c">Lower-rated; caustic kit</span></td><td><span class="rscore">50</span><div class="bar mini"><i style="--pct:50"></i></div></td></tr>
-        <tr><td class="mod"><a href="vulture-ax.html">Vulture</a></td><td><span class="pill pad-small">Small</span></td><td>2L</td><td class="pcc"><span class="p">Hull tank; agility</span><span class="c">Lower-rated; Gauss mounts</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
+        <tr><td class="mod"><a href="kestrel-mk-ii-ax.html">Kestrel Mk II</a></td><td><span class="pill pad-small">Малая</span></td><td>3L 2S</td><td class="pcc"><span class="p">Манёвренность; точки под пушки Гаусса</span><span class="c">Оценка ниже; защита от едкого вещества</span></td><td><span class="rscore">60</span><div class="bar mini"><i style="--pct:60"></i></div></td></tr>
+        <tr><td class="mod"><a href="cobra-mk-v-ax.html">Cobra Mk V</a></td><td><span class="pill pad-small">Малая</span></td><td>3M 2S</td><td class="pcc"><span class="p">Манёвренность; точки под пушки Гаусса</span><span class="c">Оценка ниже; защита от едкого вещества</span></td><td><span class="rscore">50</span><div class="bar mini"><i style="--pct:50"></i></div></td></tr>
+        <tr><td class="mod"><a href="vulture-ax.html">Vulture</a></td><td><span class="pill pad-small">Малая</span></td><td>2L</td><td class="pcc"><span class="p">Запас брони; манёвренность</span><span class="c">Оценка ниже; точки под пушки Гаусса</span></td><td><span class="rscore">44</span><div class="bar mini"><i style="--pct:44"></i></div></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="nolink">The small-pad AX field (3 rated), led by <b><a href="kestrel-mk-ii-ax.html">Kestrel Mk II</a></b> (60) &mdash; cheaper hulls and tighter pads. They undercut this hull on the numbers, but sit a pad class away.</p>
+    <p class="nolink">Среди кораблей AX для малых площадок оценены 3 модели. Лидер — <b><a href="kestrel-mk-ii-ax.html">Kestrel Mk II</a></b> (60). Их корпуса дешевле и садятся на площадки меньшего размера. По цене они выигрывают у Corvette, но относятся к другому классу площадки.</p>
   </section>
 
   <!-- s4 -->
   <section id="section-cost-access">
-    <div class="sec-head"><span class="sec-num">05</span><h2>Cost &amp; Access</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Цена и условия покупки</h2></div>
     <div class="specgrid">
-      <div class="cell"><div class="k">Hull</div><div class="v">~51M Cr</div></div>
-      <div class="cell"><div class="k">Retail (A-rated)</div><div class="v">~75M Cr</div></div>
-      <div class="cell"><div class="k">Engineered</div><div class="v">~95M+ Cr</div></div>
-      <div class="cell"><div class="k">Pad</div><div class="v">Medium</div></div>
-      <div class="cell"><div class="k">Rank</div><div class="v">None</div></div>
-      <div class="cell"><div class="k">Permit</div><div class="v">None</div></div>
+      <div class="cell"><div class="k">Корпус</div><div class="v">~51 млн кр.</div></div>
+      <div class="cell"><div class="k">Оснащение (класс A)</div><div class="v">~75 млн кр.</div></div>
+      <div class="cell"><div class="k">С инженерными улучшениями</div><div class="v">~95 млн+ кр.</div></div>
+      <div class="cell"><div class="k">Посадочная площадка</div><div class="v">Средняя</div></div>
+      <div class="cell"><div class="k">Звание</div><div class="v">Нет</div></div>
+      <div class="cell"><div class="k">Разрешение</div><div class="v">Нет</div></div>
     </div>
-    <p>At ~51M Cr the hull needs no rank or permit, but the AX weapons do gate the build: the Guardian <a href="../../engineering/engineering-manuals/modules.html#module-xeno">Gauss Cannon</a>, Shard Cannon, Guardian <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">hull</a> and <a href="../../engineering/engineering-manuals/modules.html#module-module-reinforcement">module reinforcement</a> are Guardian tech-broker unlocks, earned by running Guardian ruins and structures for blueprint fragments and materials.</p>
-    <p>Once unlocked, the fit is cheap to outfit &mdash; the small internals mean few large modules to A-rate &mdash; but the Guardian grind, not credits, is the real cost of entry. Spend on the shield, distributor and <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a> first; the FDL's AX case is flying and heat, not deep modules it can't fit.</p>
-    <div class="callout"><span class="lbl">No rank gate, but a Guardian grind</span><p>The FDL needs no navy rank, yet every AX weapon on it requires Guardian tech-broker unlocks. Budget the ruins runs before the credits.</p></div>
+    <p>Корпус за ~51 млн кр. не требует ни звания, ни разрешения. Препятствие — оружие AX: <a href="../../engineering/engineering-manuals/modules.html#module-xeno">пушка Гаусса Стражей</a>, осколочная пушка и усилители <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">корпуса</a> и <a href="../../engineering/engineering-manuals/modules.html#module-module-reinforcement">модулей</a> Стражей разблокируются у технологических брокеров. Для этого нужно добыть фрагменты чертежей и материалы в руинах и сооружениях Стражей.</p>
+    <p>Оснастить корабль после разблокировки недорого: отсеки маленькие и крупных модулей класса A мало. Главные расходы — время на разблокировку технологий Стражей, а не кредиты. Сначала тратьте на щит, распределитель и <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">двигатели</a>: FDL в боях AX держится на манёвренности и контроле нагрева, а не на усилениях, которые негде разместить.</p>
+    <div class="callout"><span class="lbl">Звание не нужно, технологии Стражей — нужны</span><p>Для FDL не нужно военно-морское звание, но всё его оружие AX требует разблокировки у технологических брокеров Стражей. Сначала запланируйте вылеты к руинам, потом расходы кредитов.</p></div>
   </section>
 
   <!-- s6 -->
   <section id="section-3-state-loadout">
-    <div class="sec-head"><span class="sec-num">06</span><h2>3-State Loadout</h2></div>
-    <p>A cramped anti-Xeno fit built around a Gauss pair and best-in-class agility. Initial is buy-only cores; A-rated is the AX-ready baseline; Engineered hardens mobility, heat and shield.</p>
+    <div class="sec-head"><span class="sec-num">06</span><h2>3 варианта оснащения</h2></div>
+    <p>Тесная сборка для боя с таргоидами с двумя пушками Гаусса и лучшей в классе манёвренностью. Начальная сборка — только покупка основных модулей; класс A — отправная точка для AX; инженерные улучшения повышают подвижность, снижают нагрев и укрепляют щит.</p>
   </section>
 
   <!-- s7 -->
   <section id="section-initial-loadout-buy-only-plan">
-    <div class="sec-head"><span class="sec-num">07</span><h2>Initial Loadout &mdash; Buy-Only Plan</h2></div>
-    <p>Buy the hull and stock D/E-rated cores to move it under its own power &mdash; there's no point A-rating anything until the Guardian weapons are unlocked, since the AX kit is what makes it a Thargoid hull at all.</p>
-    <p>Leave the hardpoints and optionals empty at this stage. Unlike a bounty build, the FDL can't fight Thargoids on buy-only weapons; the initial state is transit-only until the Guardian tech-broker unlocks are done.</p>
-    <p>Ride the stock Lightweight Alloy <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a> for now &mdash; armour is a fallback the FDL barely uses, so spend the first credits on the shield and distributor instead.</p>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Начальная сборка: только покупка</h2></div>
+    <p>Купите корпус и штатные основные модули класса D/E, чтобы он мог летать. До разблокировки оружия Стражей ставить класс A бессмысленно: без оснащения AX корабль вообще не годится для боя с таргоидами.</p>
+    <p>Оставьте оружейные точки и дополнительные отсеки пустыми. В отличие от сборки для охоты за наградами FDL не может воевать с таргоидами на оружии, доступном сразу. Начальная сборка годится лишь для перелётов до разблокировки у технологических брокеров Стражей.</p>
+    <p>Пока оставьте штатную <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">обшивку</a> из лёгкого сплава. Броня — запасной вариант, которым FDL почти не пользуется, так что первые кредиты лучше тратить на щит и распределитель.</p>
   </section>
 
   <!-- s8 -->
   <section id="section-a-rated-loadout-upgrade-plan">
-    <div class="sec-head"><span class="sec-num">08</span><h2>A-Rated Loadout &mdash; Upgrade Plan</h2></div>
-    <p>A-rating priority for an AX skirmisher &mdash; feed the guns, then the airframe, then the shield:</p>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Сборка класса A: план оснащения</h2></div>
+    <p>Что сначала довести до класса A для коротких вылазок AX: питание орудий, потом ходовые качества, затем щит.</p>
     <ul class="bullets">
-      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Power Plant</a> &rarr; A</b> &mdash; Guardian Gauss and Shard are power-hungry; A-rate first so nothing browns out. <span class="acc">~7M Cr</span></li>
-      <li><span class="stepnum">2</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Power Distributor</a> &rarr; A</b> &mdash; The Gauss capacitor drains fast; the oversized class-6 unit keeps the pair firing. <span class="acc">~6M Cr</span></li>
-      <li><span class="stepnum">3</span><b><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Thrusters</a> &rarr; A</b> &mdash; Agility is the FDL's whole AX case; A-rate to keep dodging the lightning. <span class="acc">~5M Cr</span></li>
-      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Shield Generator</a> &rarr; bi-weave</b> &mdash; Fast regen behind the FDL's high base shield rides out thermal damage between passes. <span class="acc">~4M Cr</span></li>
-      <li><span class="stepnum">5</span><b>Guardian <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">Hull</a> &amp; <a href="../../engineering/engineering-manuals/modules.html#module-module-reinforcement">Module Reinforcement</a></b> &mdash; The only hardening the FDL has; slot them into the optionals since there are no military bays. <span class="acc">~3M Cr</span></li>
-      <li><span class="stepnum">6</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> &rarr; A</b> &mdash; Mitigate the short range; you'll still want a carrier lift to distant Maelstroms. <span class="acc">~3M Cr</span></li>
+      <li><span class="stepnum">1</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-plant">Силовая установка</a> → A</b>: пушки Гаусса и осколочные пушки Стражей требуют много энергии. Сначала поставьте класс A, чтобы модули не отключались. <span class="acc">~7 млн кр.</span></li>
+      <li><span class="stepnum">2</span><b><a href="../../engineering/engineering-manuals/modules.html#module-power-distributor">Распределитель энергии</a> → A</b>: пушки Гаусса быстро разряжают накопитель. Увеличенный распределитель класса 6 позволяет паре орудий продолжать огонь. <span class="acc">~6 млн кр.</span></li>
+      <li><span class="stepnum">3</span><b><a href="../../engineering/engineering-manuals/modules.html#module-thrusters">Маневровые двигатели</a> → A</b>: весь смысл FDL в AX — манёвренность. Класс A позволяет и дальше уходить от разрядов. <span class="acc">~5 млн кр.</span></li>
+      <li><span class="stepnum">4</span><b><a href="../../engineering/engineering-manuals/modules.html#module-shield-generator">Генератор щита</a> → двухконтурный</b>: щит быстро восстанавливается между заходами и выдерживает тепловой урон благодаря высокой базовой прочности щита FDL. <span class="acc">~4 млн кр.</span></li>
+      <li><span class="stepnum">5</span><b>Усилители Стражей: <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">усилители корпуса</a> и <a href="../../engineering/engineering-manuals/modules.html#module-module-reinforcement">усилители модулей</a></b>: единственная доступная защита FDL. Ставьте их в дополнительные отсеки, поскольку военных нет. <span class="acc">~3 млн кр.</span></li>
+      <li><span class="stepnum">6</span><b><a href="../../engineering/engineering-manuals/modules.html#module-frame-shift-drive">FSD</a> → A</b>: частично компенсирует малую дальность прыжка. До далёких Мальстрёмов всё равно лучше добираться на авианосце. <span class="acc">~3 млн кр.</span></li>
     </ul>
-    <div class="callout"><span class="lbl">Agility is the armour</span><p>Don't over-mass the FDL chasing tank it can't hold &mdash; its survival comes from not being hit. Keep the hull light, A-rate the <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">thrusters</a>, and lean on the shield and dodging rather than piling Guardian plate into six small slots.</p></div>
+    <div class="callout"><span class="lbl">Манёвренность заменяет броню</span><p>Не перегружайте FDL попытками поставить усиления, на которые нет места: его живучесть держится на уклонении. Сохраняйте корпус лёгким, доведите до класса A <a href="../../engineering/engineering-manuals/modules.html#module-thrusters">двигатели</a> и больше полагайтесь на щит и уклонение, чем на усилители Стражей в шести тесных отсеках.</p></div>
   </section>
 
   <!-- s9 -->
   <section id="section-engineering-plan">
-    <div class="sec-head"><span class="sec-num">09</span><h2>Engineering Plan</h2></div>
-    <p>The house anti-Xeno pattern focused on mobility, heat and shield &mdash; the Guardian and AX weapons take no engineering, so the gains are all in the ship modules and how you fly.</p>
+    <div class="sec-head"><span class="sec-num">09</span><h2>План инженерных улучшений</h2></div>
+    <p>Инженерная схема AX направлена на подвижность, нагрев и щит. Оружие Стражей и AX у инженеров не улучшается, так что выигрыш дают модули корабля и стиль пилотирования.</p>
   </section>
 
   <!-- s10 -->
   <section id="section-key-stat-upgrades">
-    <div class="sec-head"><span class="sec-num">10</span><h2>Key Stat Upgrades</h2></div>
-    <p>Approximate progression across the three states (figures are representative, not exact rolls):</p>
+    <div class="sec-head"><span class="sec-num">10</span><h2>Как меняются характеристики</h2></div>
+    <p>Примерный рост характеристик для трёх вариантов (ориентировочные значения, не точные результаты улучшений):</p>
     <div class="tbl-scroll">
     <table class="data">
-      <thead><tr><th>Stat</th><th>Initial</th><th>A-rated</th><th>Engineered</th></tr></thead>
+      <thead><tr><th>Показатель</th><th>Начальная</th><th>Класс A</th><th>С инженерными улучшениями</th></tr></thead>
       <tbody>
-        <tr><td class="mod">Top speed (boost)</td><td>350 m/s</td><td>350 m/s</td><td class="acc">~460 m/s</td></tr>
-        <tr><td class="mod">Agility</td><td>excellent</td><td>excellent</td><td class="acc">elite</td></tr>
-        <tr><td class="mod">Shield (MJ)</td><td>~270</td><td>~450</td><td class="acc">~900+</td></tr>
-        <tr><td class="mod">Armour (effective)</td><td>~405</td><td>~700</td><td class="acc">~1,500+</td></tr>
-        <tr><td class="mod">Gauss capacity</td><td>none</td><td>2× medium</td><td class="acc">2× medium (heat-limited)</td></tr>
-        <tr><td class="mod">Jump range</td><td>short</td><td>short</td><td class="acc">short</td></tr>
+        <tr><td class="mod">Макс. скорость с форсажем</td><td>350 м/с</td><td>350 м/с</td><td class="acc">~460 м/с</td></tr>
+        <tr><td class="mod">Манёвренность</td><td>отличная</td><td>отличная</td><td class="acc">выдающаяся</td></tr>
+        <tr><td class="mod">Щит (МДж)</td><td>~270</td><td>~450</td><td class="acc">~900+</td></tr>
+        <tr><td class="mod">Эффективная броня</td><td>~405</td><td>~700</td><td class="acc">~1,500+</td></tr>
+        <tr><td class="mod">Число пушек Гаусса</td><td>нет</td><td>2× средние</td><td class="acc">2× средние (ограничение по нагреву)</td></tr>
+        <tr><td class="mod">Дальность прыжка</td><td>малая</td><td>малая</td><td class="acc">малая</td></tr>
       </tbody>
     </table>
     </div>
-    <p>Engineering pushes boost past 460 m/s and shields near 900 MJ while keeping the FDL's elite agility &mdash; the traits that let it dodge Interceptor lightning. Guardian <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">hull reinforcement</a> and <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bulkheads-heavy-duty">Heavy Duty</a> <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads">bulkheads</a> lift effective armour past 1,500, but with no military slots that stack stays shallow next to any Guardian-hardened peer. The short jump range never improves much; the FDL's AX ceiling is set by internals, not engineering.</p>
+    <p>Инженерные улучшения дают свыше 460 м/с на форсаже и щит почти 900 МДж, сохраняя превосходную манёвренность FDL, которая позволяет уходить от разрядов перехватчика. <a href="../../engineering/engineering-manuals/modules.html#module-hull-reinforcement">Усилители корпуса Стражей</a> и <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-bulkheads-heavy-duty">обшивка с улучшением «Усиленная конструкция»</a> <a href="../../engineering/engineering-manuals/blueprints.html#blueprint-group-bulkheads"></a>повышают эффективную броню до более чем 1,500, но без военных отсеков такого усиления меньше, чем у других кораблей с защитой Стражей. Дальность прыжка остаётся небольшой. Возможности FDL в AX ограничивают отсеки, а не инженерные улучшения.</p>
   </section>
 
   <!-- s11 -->
   <section id="section-key-activities-where-to-do-them">
-    <div class="sec-head"><span class="sec-num">11</span><h2>Key Activities &amp; Where To Do Them</h2></div>
+    <div class="sec-head"><span class="sec-num">11</span><h2>Чем заняться и куда полететь</h2></div>
     <div class="cards two">
-      <div class="card"><span class="ico">Getting started</span><ul class="bullets">
-      <li><b>Scout clearing.</b> The gimballed Enhanced AX <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">Multi-Cannon</a> and agility make quick work of Thargoid Scouts in Non-Human Signal Sources &mdash; the safest way to learn AX in the FDL.</li>
-      <li><b>Single Cyclops runs.</b> Place Gauss on exposed hearts and boost out of the lightning; the FDL can solo a Cyclops once you have the <a href="../../engineering/engineering-manuals/modules.html#module-xeno">Xeno</a> Scanner reading its hearts.</li>
-      <li><b>Guardian unlocks.</b> Run Guardian ruins and structures for the blueprint fragments the Gauss, Shard and reinforcement modules require.</li>
+      <div class="card"><span class="ico">С чего начать</span><ul class="bullets">
+      <li><b>Зачистка разведчиков.</b> Улучшенная <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">многоствольная пушка AX</a> на подвижном подвесе и манёвренность позволяют быстро расправляться с разведчиками таргоидов в нечеловеческих источниках сигнала. Это самый безопасный способ учиться боям AX на FDL.</li>
+      <li><b>Одиночные бои с Cyclops.</b> Стреляйте из пушек Гаусса по открытым сердцам и уходите от разрядов на форсаже. FDL справится с Cyclops в одиночку, когда вы научитесь пользоваться <a href="../../engineering/engineering-manuals/modules.html#module-xeno">ксено-</a>сканером, чтобы обнаруживать сердца.</li>
+      <li><b>Разблокировка технологий Стражей.</b> Посетите руины и сооружения Стражей, чтобы собрать фрагменты чертежей, необходимые для пушек Гаусса, осколочных пушек и модулей усиления.</li>
     </ul></div>
-      <div class="card"><span class="ico">Advanced</span><ul class="bullets">
-      <li><b>Basilisk hit-and-run.</b> For an experienced pilot, the agility supports dodging a Basilisk's tougher lightning &mdash; but respect the thin tank and disengage early.</li>
-      <li><b>AXCZ skirmishing.</b> Work the edges of an Anti-Xeno Conflict Zone, picking off hearts and re-positioning rather than standing in sustained fire.</li>
-      <li><b>Maelstrom perimeter.</b> Ferry the FDL to a Maelstrom on a carrier, then fight the fast, evasive game it's built for.</li>
+      <div class="card"><span class="ico">Для опытных пилотов</span><ul class="bullets">
+      <li><b>Короткие атаки на Basilisk.</b> Опытному пилоту манёвренность помогает уходить от более сильных разрядов Basilisk. Помните о слабой защите и отступайте заранее.</li>
+      <li><b>Вылазки в зонах конфликтов AX.</b> Держитесь по краям зоны конфликтов AX, поражайте сердца и меняйте позицию вместо того, чтобы стоять под огнём.</li>
+      <li><b>Край Мальстрёма.</b> Доставьте FDL к Мальстрёму на авианосце, затем сражайтесь короткими заходами с уклонением. Для этого он и подходит.</li>
     </ul></div>
     </div>
-    <div class="callout"><span class="lbl">Generic example systems</span><p>Any Non-Human Signal Source or AXCZ near a Maelstrom suits it. The short jump range means basing the FDL near the Thargoid front &mdash; or lifting it there by carrier &mdash; rather than self-ferrying across the bubble.</p></div>
+    <div class="callout"><span class="lbl">Примеры систем</span><p>Подойдёт любой нечеловеческий источник сигнала или зона конфликтов AX рядом с Мальстрёмом. Из-за малой дальности прыжка лучше держать FDL у фронта или доставлять его туда авианосцем, а не перегонять своим ходом через обитаемый Пузырь.</p></div>
   </section>
 
   <!-- s12 -->
   <section id="section-field-notes-what-else-to-know">
-    <div class="sec-head"><span class="sec-num">12</span><h2>Field Notes &mdash; What Else To Know</h2></div>
+    <div class="sec-head"><span class="sec-num">12</span><h2>Советы из практики</h2></div>
     <ul class="bullets">
-      <li>Fly it as an evasion platform: dodge the lightning, place Gauss on exposed hearts, and disengage &mdash; the thin internals punish standing in the fire.</li>
-      <li>Manage heat hard; a 250-tonne hull heats fast under Gauss volleys, so fire in bursts and keep two <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">heat sinks</a> ready.</li>
-      <li>The huge mount is wasted on AX &mdash; no huge AX weapon exists, so it under-fills with a large Enhanced AX <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">Multi-Cannon</a> for chip damage and Scout clearing.</li>
-      <li>Accept the short jump range &mdash; carrier-lift the FDL to the Thargoid front rather than fighting its transit.</li>
-      <li>If you don't already own an FDL, a <a href="alliance-chieftain-ax.html">Chieftain</a> gives the same evasion with military slots and a real tank &mdash; the better first AX hull.</li>
+      <li>Пилотируйте с расчётом на уклонение: уходите от разрядов, стреляйте из пушек Гаусса по открытым сердцам и отступайте. Тесные отсеки не позволяют долго выдерживать огонь.</li>
+      <li>Активно отводите тепло. Корпус массой 250 т быстро нагревается от залпов пушек Гаусса, поэтому стреляйте короткими сериями и держите две <a href="../../engineering/engineering-manuals/modules.html#module-countermeasures">теплоотводные катапульты</a> наготове.</li>
+      <li>В AX огромная точка используется не полностью: огромного оружия AX нет, так что поставьте большую улучшенную <a href="../../engineering/engineering-manuals/modules.html#module-kinetic">многоствольную пушку AX</a> для небольшого дополнительного урона и зачистки разведчиков.</li>
+      <li>Смиритесь с малой дальностью прыжка: вместо долгого перегона доставьте FDL на фронт авианосцем.</li>
+      <li>Если у вас ещё нет FDL, <a href="alliance-chieftain-ax.html">Chieftain</a> даёт ту же способность уклоняться, но с военными отсеками и серьёзной защитой. Это более удачный первый корабль AX.</li>
     </ul>
-    <div class="callout"><span class="lbl">Verdict</span><p>The Fer-de-Lance can fight Thargoids, but it wasn't built to. Four medium Gauss mounts and elite agility let it dodge and skirmish, yet zero military slots, six small optionals and thin armour make it the shallowest-tanked hull in the rated AX field. It earns its <b>68</b> on airframe alone &mdash; a strong choice only for a pilot who already loves the ship and flies it by evasion, not endurance.</p></div>
+    <div class="callout"><span class="lbl">Итог</span><p>Fer-de-Lance может сражаться с таргоидами, но создавался не для этого. Четыре средние точки под пушки Гаусса и отличная манёвренность позволяют уклоняться и атаковать короткими заходами. Обратная сторона: ни одного военного отсека, шесть тесных дополнительных и тонкая броня дают самую скромную защиту среди оценённых кораблей AX. Он получает <b>68</b> только за лётные качества. Это хороший выбор лишь для пилота, который уже любит этот корабль и полагается на уклонение, а не стойкость.</p></div>
   </section>
 
   <!-- Sources -->
   <section class="credits" id="section-credits">
-    <div class="sec-head"><span class="sec-num">13</span><h2>Sources</h2></div>
-    <p class="lead">Figures on this page are verified against the sources below.</p>
+    <div class="sec-head"><span class="sec-num">13</span><h2>Источники</h2></div>
+    <p class="lead">Данные на странице сверены с источниками ниже.</p>
     <div class="cr-rows">
-      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Interactive outfitting &amp; build planner, preloaded for this ship.</span><a class="cr-link" href="https://coriolis.io/outfit/fer_de_lance" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/fer_de_lance</a></div>
-      <div class="cr-row"><span class="cr-src">Elite Dangerous (official)</span><span class="cr-what">Frontier's official Fer-de-Lance ship page — manufacturer specs, feature overview, and the ship render used on this page.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/fer-de-lance" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../fer-de-lance</a></div>
-      <div class="cr-row"><span class="cr-src">EDCD coriolis-data</span><span class="cr-what">Ship slot layout, module variants, and engineering blueprint data.</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/blob/master/ships/fer_de_lance.json" target="_blank" rel="noopener noreferrer">coriolis-data/ships/fer_de_lance.json</a></div>
-      <div class="cr-row"><span class="cr-src">Fandom wiki &mdash; Anti-Xeno combat</span><span class="cr-what">Guardian Gauss/Shard weapons, Interceptor heart mechanics, and caustic/lightning handling referenced for the AX loadout.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Anti-Xeno_Combat" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Anti-Xeno_Combat</a></div>
-      <div class="cr-row"><span class="cr-src">Inara &mdash; Fer-de-Lance</span><span class="cr-what">Ship reference page: stat block, hardpoint &amp; module slot layout, sell locations.</span><a class="cr-link" href="https://inara.cz/elite/ship/56/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/56</a></div>
+      <div class="cr-row"><span class="cr-src">Coriolis</span><span class="cr-what">Интерактивный планировщик оснащения с выбранным кораблём.</span><a class="cr-link" href="https://coriolis.io/outfit/fer_de_lance" target="_blank" rel="noopener noreferrer">coriolis.io/outfit/fer_de_lance</a></div>
+      <div class="cr-row"><span class="cr-src">Elite Dangerous (официальный сайт)</span><span class="cr-what">Официальная страница Fer-de-Lance от Frontier: характеристики производителя, обзор возможностей и изображение корабля для этой страницы.</span><a class="cr-link" href="https://www.elitedangerous.com/equipment/starships/fer-de-lance" target="_blank" rel="noopener noreferrer">elitedangerous.com/.../fer-de-lance</a></div>
+      <div class="cr-row"><span class="cr-src">EDCD coriolis-data</span><span class="cr-what">Схема отсеков, варианты модулей и инженерные чертежи.</span><a class="cr-link" href="https://github.com/EDCD/coriolis-data/blob/master/ships/fer_de_lance.json" target="_blank" rel="noopener noreferrer">coriolis-data/ships/fer_de_lance.json</a></div>
+      <div class="cr-row"><span class="cr-src">Вики Fandom: бой с таргоидами</span><span class="cr-what">Пушки Гаусса и осколочные пушки Стражей, механика сердец перехватчиков и способы защиты от едкого урона и разрядов, использованные при составлении сборки AX.</span><a class="cr-link" href="https://elite-dangerous.fandom.com/wiki/Anti-Xeno_Combat" target="_blank" rel="noopener noreferrer">fandom.com/wiki/Anti-Xeno_Combat</a></div>
+      <div class="cr-row"><span class="cr-src">Inara: Fer-de-Lance</span><span class="cr-what">Справка о корабле: характеристики, схема оружейных точек и отсеков, места продажи.</span><a class="cr-link" href="https://inara.cz/elite/ship/56/" target="_blank" rel="noopener noreferrer">inara.cz/elite/ship/56</a></div>
     </div>
   </section>
 
   <footer>
     <div class="ft-fine">
-      <span>&copy; 2026 Elite:Dangerous Black Box &middot; CMDR Ka0s &middot; Ship &times; Role Dossier &middot; <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Report an issue</a></span>
-      <span>Elite Dangerous is a trademark of Frontier Developments plc. Unofficial fan content &mdash; not affiliated with or endorsed by Frontier Developments.</span>
+      <span>&copy; 2026 Elite:Dangerous Black Box · CMDR Ka0s · Досье корабля по роли · <a href="https://github.com/tusharsaxena/ed-blackbox/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a></span>
+      <span>Elite Dangerous — товарный знак Frontier Developments plc. Неофициальные материалы поклонников, не связанные с Frontier Developments и не одобренные компанией.</span>
     </div>
   </footer>
 
