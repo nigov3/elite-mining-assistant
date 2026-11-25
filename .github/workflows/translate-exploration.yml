@@ -1,0 +1,52 @@
+name: Russian exploration localization
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/translate-exploration.yml'
+permissions:
+  contents: write
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install beautifulsoup4 deep-translator
+      - name: Translate exploration dossiers
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from bs4 import BeautifulSoup, NavigableString, Comment
+          from deep_translator import GoogleTranslator
+          import re,time
+          tr=GoogleTranslator(source='en',target='ru')
+          for p in sorted(Path('blackbox/guides/ships/ship-dossiers').glob('*-exploration.html')):
+              soup=BeautifulSoup(p.read_text(), 'html.parser')
+              cache={}
+              for n in list(soup.find_all(string=True)):
+                  if isinstance(n,Comment) or n.find_parent(['script','style','svg','code','pre']): continue
+                  s=str(n).strip()
+                  if not re.search(r'[A-Za-z]{3}',s) or re.search(r'[А-Яа-я]',s): continue
+                  if len(s)>4500: raise RuntimeError('Oversized text node')
+                  if s not in cache:
+                      for attempt in range(4):
+                          try:
+                              cache[s]=tr.translate(s)
+                              break
+                          except Exception:
+                              if attempt==3: raise
+                              time.sleep(5*(attempt+1))
+                  if cache[s]: n.replace_with(NavigableString(str(n).replace(s,cache[s],1)))
+              soup.html['lang']='ru'
+              p.write_text(str(soup))
+              print(p,flush=True)
+          PY
+      - name: Commit translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blackbox/guides/ships/ship-dossiers
+          if ! git diff --cached --quiet; then git commit -m "Machine translate exploration dossiers into Russian"; git push; fi
