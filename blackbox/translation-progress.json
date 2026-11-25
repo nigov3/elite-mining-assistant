@@ -55,11 +55,13 @@
     "guides/systems/activity-guides/passenger.html",
     "guides/systems/activity-guides/trading.html",
     "guides/systems/combat-venues/pve-combat-venues.html",
+    "guides/systems/galaxy-and-power-systems/bgs.html",
     "guides/systems/galaxy-and-power-systems/community-goals.html",
     "guides/systems/new-pilot-and-interface/cmdrs-lexicon.html",
     "guides/systems/new-pilot-and-interface/docking-landing-manual.html",
     "guides/systems/new-pilot-and-interface/hud-customization.html",
     "guides/systems/new-pilot-and-interface/new-cmdr-guide.html",
-    "guides/systems/new-pilot-and-interface/pilots-federation.html"
+    "guides/systems/new-pilot-and-interface/pilots-federation.html",
+    "guides/systems/new-pilot-and-interface/third-party-apps.html"
   ]
 }
