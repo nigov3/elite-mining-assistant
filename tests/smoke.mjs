@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import './guide-reader.mjs';
 import './guide-catalog.mjs';
 import './guide-search.mjs';
+import "./star-citizen.mjs";
 const js = readFileSync('app.js', 'utf8');
 const css = readFileSync('style.css', 'utf8');
 execFileSync(process.execPath, ['--check', 'app.js'], { stdio: 'inherit' });
