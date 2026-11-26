@@ -282,7 +282,7 @@
 </g>
 <path d="M46 784h430" stroke="#23394a"/>
 <g data-action="true">
-<text x="46" y="805" font-size="17" fill="#edf5fd" font-weight="400" text-anchor="start">Круиз-контроль: вкл. / выкл.</text>
+<text x="46" y="805" font-size="17" fill="#edf5fd" font-weight="400" text-anchor="start">Круиз: вкл. / выкл.</text>
 <rect x="438" y="789" width="38" height="22" rx="5" fill="#382a19" stroke="#ffbe58"/>
 <text x="457" y="805" font-size="13" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
 <rect x="313" y="789" width="120" height="22" rx="5" fill="#223142" stroke="#d5e1ee"/>
@@ -598,7 +598,7 @@
 </g>
 <path d="M1462 1221h430" stroke="#23394a"/>
 <g data-action="true">
-<text x="1462" y="1242" font-size="17" fill="#edf5fd" font-weight="400" text-anchor="start">Сменить осн. режим полёта</text>
+<text x="1462" y="1242" font-size="17" fill="#edf5fd" font-weight="400" text-anchor="start">Основной режим полёта</text>
 <rect x="1854" y="1226" width="38" height="22" rx="5" fill="#382a19" stroke="#ffbe58"/>
 <text x="1873" y="1242" font-size="13" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
 <rect x="1783" y="1226" width="66" height="22" rx="5" fill="#223142" stroke="#d5e1ee"/>
