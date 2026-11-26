@@ -40,8 +40,8 @@
         <div class="sc-reference">
           <details>
             <summary>Шпаргалка CDFv2 целиком на русском</summary>
-            <a data-sc-image="dualsense-edge-cdfv2-ru.svg" target="_blank" rel="noopener">
-              <img width="1680" height="2267" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
+            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=colors" target="_blank" rel="noopener">
+              <img width="1680" height="2563" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
             </a>
           </details>
           <details>

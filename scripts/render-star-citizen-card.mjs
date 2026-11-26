@@ -5,7 +5,22 @@ const context = {};
 runInNewContext(readFileSync('star-citizen/bindings.js','utf8'), context);
 const bindings = context.starCitizenFlightBindings;
 const control = readFileSync('star-citizen/dualsense-edge.svg','utf8').replace(/^<svg[^>]*>|<\/svg>\s*$/g,'').trim();
-const short = {M1:'L1 +',IM:'Взаимодействие',SC:'Сканирование',MG:'Добыча',ML:'Ракеты',EA:'Арена',VIEW:'Свободный обзор',QT:'Квантовый режим',CLICK:'Нажать стик',H:'Удерживать',LONG:'Долго удерживать',TAP:'Коротко',X2:'Дважды',STD:'По умолчанию'};
+const chips = {
+  M1: ['M1','Зажать L1','#ffbe58','#382a19'],
+  IM: ['IM','Режим взаимодействия','#d6adff','#302346'],
+  SC: ['SC','Режим сканирования','#73e5a1','#143525'],
+  MG: ['MG','Режим добычи','#ff8ac0','#382339'],
+  ML: ['ML','Ракетный режим','#f2e387','#39351f'],
+  QT: ['QT','Квантовый режим','#52ddd7','#13353a'],
+  EA: ['EA','Арена','#9ec8ff','#203451'],
+  VIEW: ['VIEW','Свободный обзор','#a7d2da','#20353e'],
+  CLICK: ['Нажать стик','','#d5e1ee','#223142'],
+  H: ['Удерживать','','#d5e1ee','#223142'],
+  LONG: ['Долго держать','','#f9b2b5','#3b2631'],
+  TAP: ['Коротко','','#d5e1ee','#223142'],
+  X2: ['Дважды','','#d5e1ee','#223142'],
+  STD: ['По умолчанию','','#bbcbdc','#1f2d3b'],
+};
 const W = 1680;
 const out = [];
 const esc = s => s.replaceAll('&','&amp;').replaceAll('<','&lt;');
@@ -16,12 +31,27 @@ const wrap = (s,len) => s.split(' ').reduce((a,w) => {
   else a[a.length-1] += ' ' + w;
   return a;
 },[]);
+const badgeWidth = key => chips[key][0].length * 9 + 17;
+const badge = (x,y,key) => {
+  const [label,,tone,background] = chips[key];
+  const width = badgeWidth(key);
+  r(x,y,width,24,background,tone,6);
+  t(x + width/2,y+17,label,14,tone,700,'middle');
+  return width;
+};
+const chipRows = tags => {
+  let width = 0;
+  const lines = [];
+  for (const tag of tags.split(' ').filter(Boolean)) {
+    if (!lines.length || width + badgeWidth(tag) > 350) { lines.push([]); width = 0; }
+    lines.at(-1).push(tag);
+    width += badgeWidth(tag) + 7;
+  }
+  return lines;
+};
 const rows = bindings.map(b => {
-  const acts = b.actions.map(([tags,label]) => ({
-    title: wrap(label,31),
-    detail: wrap(tags.split(' ').filter(Boolean).map(tag=>short[tag]).join(' · '),44).filter(Boolean)
-  }));
-  return { b, acts, height: 66 + acts.reduce((h,a)=>h+22*a.title.length+17*a.detail.length+9,0) };
+  const acts = b.actions.map(([tags,label]) => ({ title: wrap(label,31), detail: chipRows(tags) }));
+  return { b, acts, height: 68 + acts.reduce((h,a)=>h+22*a.title.length+30*a.detail.length+9,0) };
 });
 r(49,43,6,83,'#62d9f4');
 t(69,64,'STAR CITIZEN / УПРАВЛЕНИЕ КОРАБЛЁМ',19,'#62d9f4',700);
@@ -35,9 +65,14 @@ t(78,275,'L3: форсаж',21);
 t(78,310,'Наклон влево / вправо: крен',21);
 t(78,345,'L1 + стик: боковое смещение',20);
 t(78,373,'и подъём / спуск',20);
-t(1170,201,'КАК ЧИТАТЬ СХЕМУ',17,'#62d9f4',700);
-const guidance=['Подписи из экспорта профиля.','«По умолчанию» — действие','из настроек игры 4.10,','не записанное в CDFv2.','Не для импорта в игру.'];
-guidance.forEach((s,i)=>t(1170,239+30*i,s,20,'#bdd0df'));
+t(1163,190,'ЦВЕТНЫЕ ОБОЗНАЧЕНИЯ',17,'#62d9f4',700);
+['M1','IM','SC','MG','ML','QT','EA','VIEW'].forEach((key,i) => {
+  const yy = 204 + i*32;
+  const ww = badge(1163,yy,key);
+  t(1163+ww+12,yy+18,chips[key][1],18,'#e2edf7');
+});
+t(1163,490,'«По умолчанию» — из настроек игры 4.10,',16,'#a9c4d7');
+t(1163,513,'не записано в экспорте CDFv2.',16,'#a9c4d7');
 let y = 557;
 const sequence = ['l2','l1','r1','r2','l3','r3','create','options','triangle','circle','square','cross','up','left','down','right','missile-mode'];
 const ordered = sequence.map(id=>rows.find(o=>o.b.id===id));
@@ -51,7 +86,11 @@ for(let first=0;first<ordered.length;first+=4){
     let yy=y+57;
     for(const a of acts){
       for(const line of a.title){t(x+15,yy,line,18);yy+=22;}
-      for(const line of a.detail){t(x+15,yy-3,line,14,'#a9c4d7');yy+=17;}
+      for(const line of a.detail){
+        let xx=x+15;
+        for(const key of line) xx+=badge(xx,yy-14,key)+7;
+        yy+=30;
+      }
       yy+=9;
     }
   }
