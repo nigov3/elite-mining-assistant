@@ -19,6 +19,7 @@ function sectionFromLocation(){
 function sectionUrl(which,keepGuide=false){
  const url=new URL(location.href);
  if(!keepGuide||which!=='guides'){url.searchParams.delete('guide');url.searchParams.delete('section');url.searchParams.delete('ship')}
+ if(which!=='wiki')url.searchParams.delete('wikiq');
  url.hash=which==='resources'?'':which;
  return url;
 }
@@ -151,19 +152,72 @@ function showRoutes(){
   }catch(error){msg.textContent='Не удалось рассчитать: '+error.message+'. Открой Spansh по ссылкам ниже.'}finally{btn.disabled=false}
  };
 }
+let guideSectionsRequest;
+function loadGuideSections(){
+ return guideSectionsRequest??=fetch('../data/blackbox-search-sections.json?v=1',{signal:AbortSignal.timeout(5000)})
+ .then(response=>{if(!response.ok)throw Error(response.status);return response.json()})
+ .catch(()=>{guideSectionsRequest=null;return {}});
+}
+function renderWikiGuideResults(out,matches){
+ const cards=matches.map(match=>{
+  const card=guideElement('article','tool-link wiki-guide-card');
+  const link=guideElement('a','',match.title);
+  const key=match.ship?'Досье корабля':match.section?match.entry.title+' · '+match.entry.category:match.entry.category;
+  if(match.ship){
+   const url=new URL(guideReaderUrl());url.searchParams.set('ship',match.ship);link.href=url.href;
+  }else link.href=guideReaderUrl(match.entry.path,match.section);
+  card.append(guideElement('div','wiki-guide-source',key),link);
+  return card;
+ });
+ out.replaceChildren(...cards);
+ out.closest('section').hidden=!cards.length;
+}
 function showWiki(){
  const base='https://elite-dangerous.fandom.com/ru';
- content.innerHTML='<h2>База знаний Elite Dangerous</h2><p class="muted">Поиск по русскоязычной Elite Dangerous Wiki (Fandom): корабли, модули, ресурсы, инженеры, объекты и механики игры.</p><form id="wiki-form" class="filters"><input id="wiki-query" type="search" placeholder="Например: Анаконда, таргоиды, пейнит…" aria-label="Что найти на вики" required style="flex:1;min-width:200px"><button type="submit">Найти на вики</button></form><p id="wiki-status" class="muted" aria-live="polite"></p><div id="wiki-results"></div><p><a href="https://elite-dangerous.fandom.com/ru/wiki/Elite-dangerous_%D0%B2%D0%B8%D0%BA%D0%B8" target="_blank" rel="noopener noreferrer">Открыть русскую Elite Dangerous Wiki ↗</a></p>';
- document.getElementById('wiki-form').onsubmit=async e=>{
-  e.preventDefault();const q=document.getElementById('wiki-query').value.trim(),status=document.getElementById('wiki-status'),out=document.getElementById('wiki-results');if(!q)return;
-  out.replaceChildren();const searchUrl=base+'/wiki/Special:Search?query='+encodeURIComponent(q);const external=document.createElement('a');external.href=searchUrl;external.target='_blank';external.rel='noopener noreferrer';external.textContent='Открыть все результаты на русской вики ↗';out.append(external);status.textContent='Ищу статьи…';
+ content.innerHTML='<h2>База знаний Elite Dangerous</h2><p class="muted">Поиск по нашим гайдам и русскоязычной Elite Dangerous Wiki.</p><form id="wiki-form" class="filters"><input id="wiki-query" type="search" placeholder="Например: Анаконда, ФСД Стражей, пейнит…" aria-label="Поиск по базе знаний" required style="flex:1;min-width:200px"><button type="submit">Найти</button></form><section id="wiki-guides" class="wiki-search-group" aria-labelledby="wiki-guides-heading" hidden><h3 id="wiki-guides-heading">Наши гайды</h3><div id="wiki-guide-results" class="tool-grid" aria-live="polite"></div></section><section class="wiki-search-group" aria-labelledby="wiki-results-heading" id="wiki-external" hidden><h3 id="wiki-results-heading">Страницы из вики</h3><p id="wiki-status" class="muted" aria-live="polite"></p><div id="wiki-results" class="tool-grid"></div><a id="wiki-fallback" target="_blank" rel="noopener noreferrer">Открыть все результаты на русской вики ↗</a></section><p><a href="https://elite-dangerous.fandom.com/ru/wiki/Elite-dangerous_%D0%B2%D0%B8%D0%BA%D0%B8" target="_blank" rel="noopener noreferrer">Открыть русскую Elite Dangerous Wiki ↗</a></p>';
+ const get=id=>document.getElementById(id);
+ const form=get('wiki-form'),input=get('wiki-query'),local=get('wiki-guide-results'),status=get('wiki-status'),out=get('wiki-results'),fallback=get('wiki-fallback'),external=get('wiki-external');
+ let current=0,controller;
+ async function runSearch(q){
+  if(!q)return;
+  const id=++current;
+  controller?.abort();controller=new AbortController();
+  const request=controller;
+  const pending=()=>form.isConnected&&id===current;
+  const where=new URL(location.href);where.searchParams.set('wikiq',q);
+  history.replaceState(null,'',where);syncSectionLink('wiki');
+  local.textContent='Ищу в наших гайдах…';local.closest('section').hidden=false;
+  out.replaceChildren();
+  fallback.href=base+'/wiki/Special:Search?query='+encodeURIComponent(q);
+  external.hidden=false;
+  status.textContent='Ищу статьи в вики…';
+  // Local cards do not wait for Fandom and the source blocks never swap places.
+  Promise.all([loadGuideCatalog(),loadGuideSections()]).then(([catalog,sections])=>{
+   if(pending())renderWikiGuideResults(local,rankCompanionGuides(catalog,sections,q));
+  }).catch(()=>{if(pending())renderWikiGuideResults(local,[])});
+  const timeout=setTimeout(()=>request.abort(),12000);
   try{
    const api=base+'/api.php?action=query&generator=search&gsrsearch='+encodeURIComponent(q)+'&gsrlimit=12&prop=extracts&exintro=1&explaintext=1&exsentences=2&format=json&origin=*';
-   const res=await fetch(api,{signal:AbortSignal.timeout(12000)});if(!res.ok)throw Error('HTTP '+res.status);const data=await res.json();if(data.error)throw Error(data.error.info||'API error');
-   const pages=Object.values(data.query?.pages||{}).sort((a,b)=>(a.index??99)-(b.index??99));if(!pages.length){status.textContent='Статьи не найдены. Попробуй другой запрос или поиск на самой вики.';return}
-   const list=document.createElement('div');list.className='tool-grid';pages.forEach(page=>{const item=document.createElement('div');item.className='tool-link';const a=document.createElement('a');a.href=base+'/wiki/'+encodeURIComponent(page.title.replace(/ /g,'_'));a.target='_blank';a.rel='noopener noreferrer';a.textContent=page.title+' ↗';item.append(a);if(page.extract){const p=document.createElement('p');p.textContent=page.extract.slice(0,320);item.append(p)}list.append(item)});out.append(list);status.textContent='Найдено статей: '+pages.length+'. Источник: русская Elite Dangerous Wiki.';
-  }catch(err){status.textContent='Встроенный поиск недоступен ('+err.message+'). Ссылка выше открывает результаты напрямую на русской вики.'}
- };
+   const res=await fetch(api,{signal:request.signal});if(!res.ok)throw Error('HTTP '+res.status);
+   const data=await res.json();if(data.error)throw Error(data.error.info||'API error');
+   if(!pending())return;
+   const pages=Object.values(data.query?.pages||{}).sort((a,b)=>(a.index??99)-(b.index??99));
+   status.textContent=pages.length?'Найдено статей: '+pages.length+'.':'В вики ничего не найдено.';
+   for(const page of pages){
+    if(typeof page.title!=='string')continue;
+    const item=guideElement('article','tool-link'),link=guideElement('a','',page.title+' ↗');
+    link.href=base+'/wiki/'+encodeURIComponent(page.title.replace(/ /g,'_'));
+    link.target='_blank';link.rel='noopener noreferrer';item.append(link);
+    if(typeof page.extract==='string'&&page.extract)item.append(guideElement('p','',page.extract.slice(0,320)));
+    out.append(item);
+   }
+  }catch(_){
+   if(pending())status.textContent='Вики не ответила. По ссылке ниже можно открыть поиск напрямую.';
+  }finally{clearTimeout(timeout)}
+ }
+ form.onsubmit=event=>{event.preventDefault();runSearch(input.value.trim())};
+ const saved=new URL(location.href).searchParams.get('wikiq');
+ if(saved){input.value=saved;runSearch(saved)}
 }
 
 /* Gamepad-friendly companion mode. The overlay must be focused for browser Gamepad API input. */

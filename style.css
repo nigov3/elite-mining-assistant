@@ -119,6 +119,13 @@ body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
 
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}.guide-card{display:flex;flex-direction:column;gap:8px}.guide-card p{flex:1}.guide-link{display:block;padding:10px;border:1px solid #f89b36;border-radius:8px;text-align:center;color:#e98a24;text-decoration:none}.guide-link:hover{background:#f89b361a}
 
+/* In Knowledge Base search, keep the local guide results distinct from the external wiki. */
+.wiki-search-group{margin:20px 0 25px}
+.wiki-search-group h3{margin:0 0 9px}
+.wiki-guide-card{border-inline-start:3px solid var(--hud)!important}
+.wiki-guide-source{color:var(--hud-muted);font-size:12px;margin:0 0 5px}
+#wiki-fallback{display:inline-block;margin-top:10px}
+
 /* One expandable card per hull, with a separate link for each published role. */
 .guide-catalog-group{margin:20px 0 28px}
 .guide-catalog-group h3{margin:0 0 6px}
