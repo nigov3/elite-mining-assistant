@@ -119,6 +119,26 @@ body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
 
 .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}.guide-card{display:flex;flex-direction:column;gap:8px}.guide-card p{flex:1}.guide-link{display:block;padding:10px;border:1px solid #f89b36;border-radius:8px;text-align:center;color:#e98a24;text-decoration:none}.guide-link:hover{background:#f89b361a}
 
+/* One expandable card per hull, with a separate link for each published role. */
+.guide-catalog-group{margin:20px 0 28px}
+.guide-catalog-group h3{margin:0 0 6px}
+.guide-catalog-group p{margin:0 0 12px}
+.guide-card h4{margin:0;font-size:16px}
+#guide-ships{align-items:start;grid-template-columns:repeat(auto-fill,minmax(min(100%,244px),1fr));gap:10px}
+.guide-ship{min-width:0;border:1px solid var(--hud-border);border-radius:10px;background:rgba(var(--hud-rgb),.045)}
+.guide-ship[open]{border-color:rgba(var(--hud-rgb),.5)}
+.guide-ship-summary{display:flex;align-items:center;gap:9px;min-height:50px;padding:10px 12px;cursor:pointer;list-style:none}
+.guide-ship-summary::-webkit-details-marker{display:none}
+.guide-ship-summary::after{content:'';flex:none;width:7px;height:7px;margin:0 3px 3px 1px;border-right:2px solid var(--hud);border-bottom:2px solid var(--hud);transform:rotate(45deg)}
+.guide-ship[open] .guide-ship-summary::after{transform:rotate(225deg);margin-bottom:-3px}
+.guide-ship-name{flex:1;font-weight:700;overflow-wrap:anywhere}
+.guide-ship-count{flex:none;color:var(--hud-muted);font-size:12px}
+.guide-ship-roles{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0 10px 12px}
+.guide-ship-roles .guide-link{padding:7px 9px;font-size:12px;line-height:1.35;color:var(--hud);border-color:rgba(var(--hud-rgb),.35)}
+.guide-ship-roles .guide-link-matched{font-weight:700;border-color:var(--hud);background:rgba(var(--hud-rgb),.13)}
+.guide-ship-summary:focus-visible,.guide-ship-roles a:focus-visible{outline:2px solid var(--hud);outline-offset:-1px}
+.guide-reader-links{display:flex;flex-wrap:wrap;align-items:center;gap:3px 12px}
+
 /* Keep the Companion controls in view while the original guide scrolls. */
 body.guide-view{overflow:hidden}
 .guide-view #app{height:100vh;height:100dvh;padding-bottom:10px;display:flex;flex-direction:column}

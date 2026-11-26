@@ -18,7 +18,7 @@ function sectionFromLocation(){
 }
 function sectionUrl(which,keepGuide=false){
  const url=new URL(location.href);
- if(!keepGuide||which!=='guides'){url.searchParams.delete('guide');url.searchParams.delete('section')}
+ if(!keepGuide||which!=='guides'){url.searchParams.delete('guide');url.searchParams.delete('section');url.searchParams.delete('ship')}
  url.hash=which==='resources'?'':which;
  return url;
 }
@@ -238,7 +238,98 @@ async function renderGuideProgress(status,entries){
   if(status.isConnected)status.textContent='Не удалось загрузить прогресс перевода. Каталог доступен ниже.';
  }
 }
-async function showGuides(){content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters"><input id="guide-q" placeholder="Поиск корабля или гайда"><select id="guide-category"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role"><option value="">Все специализации</option></select></div><p id="guide-count"></p><div id="guide-rows" class="guide-grid">Загрузка…</div>';const rows=document.getElementById('guide-rows'),q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');try{const res=await fetch('../data/blackbox-guides.json?v=1');if(!res.ok)throw Error(res.status);const entries=await res.json();if(!rows.isConnected)return;renderGuideProgress(progress,entries);for(const r of new Set(entries.map(e=>e.role).filter(Boolean)))role.add(new Option(r,r));function draw(){rows.replaceChildren();const list=entries.filter(e=>(!cat.value||e.category===cat.value)&&(!role.value||e.role===role.value)&&(e.title+' '+e.role+' '+e.category).toLowerCase().includes(q.value.trim().toLowerCase()));count.textContent='Найдено: '+list.length+' из '+entries.length;for(const e of list){const a=document.createElement('article');a.className='exo-card guide-card';const k=document.createElement('div');k.className='exo-genus';k.textContent=e.category;const h=document.createElement('h3');h.textContent=e.title;const p=document.createElement('p');p.textContent=e.role;const link=document.createElement('a');link.className='guide-link';link.href=guideReaderUrl(e.path);link.textContent='Открыть руководство';a.append(k,h,p,link);rows.append(a)}}if(!rows.isConnected)return;q.oninput=draw;cat.onchange=draw;role.onchange=draw;draw()}catch(e){rows.textContent='Не удалось загрузить каталог: '+e.message;progress.textContent='Прогресс недоступен без каталога.'}}
+const dossierPath='/ship-dossiers/';
+let guideCatalogRequest;
+function loadGuideCatalog(){
+ return guideCatalogRequest??=fetch('../data/blackbox-guides.json?v=1').then(res=>{
+  if(!res.ok)throw Error(res.status);
+  return res.json();
+ }).catch(error=>{guideCatalogRequest=null;throw error});
+}
+function splitGuideCatalog(entries){
+ const shipsByName=new Map(), main=[];
+ for(const entry of entries){
+  if(!entry.path.includes(dossierPath)){main.push(entry);continue}
+  if(!shipsByName.has(entry.title))shipsByName.set(entry.title,{title:entry.title,guides:[]});
+  shipsByName.get(entry.title).guides.push(entry);
+ }
+ const byName=new Intl.Collator('ru',{numeric:true,sensitivity:'base'});
+ return {ships:[...shipsByName.values()].sort((a,b)=>byName.compare(a.title,b.title)),main};
+}
+function filterGuideCatalog(catalog,query,category,role){
+ const terms=query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+ const matches=entry=>(!category||entry.category===category)&&(!role||entry.role===role)&&
+  terms.every(term=>(entry.title+' '+entry.role+' '+entry.category).toLowerCase().includes(term));
+ return {ships:catalog.ships.filter(ship=>ship.guides.some(matches)),main:catalog.main.filter(matches)};
+}
+function guideElement(tag,className,text){
+ const el=document.createElement(tag);
+ if(className)el.className=className;
+ if(text)el.textContent=text;
+ return el;
+}
+function renderShipCard(ship,role,open){
+ const card=guideElement('details','guide-ship');
+ card.open=open;
+ card.dataset.ship=ship.title;
+ const summary=guideElement('summary','guide-ship-summary');
+ summary.append(guideElement('span','guide-ship-name',ship.title),guideElement('span','guide-ship-count',ship.guides.length+' '+(ship.guides.length===1?'роль':ship.guides.length<5?'роли':'ролей')));
+ card.append(summary);
+ const links=guideElement('ul','guide-ship-roles');
+ const prioritized=role?[...ship.guides.filter(e=>e.role===role),...ship.guides.filter(e=>e.role!==role)]:ship.guides;
+ for(const entry of prioritized){
+  const item=guideElement('li');
+  const link=guideElement('a','guide-link'+(role===entry.role?' guide-link-matched':''),entry.role);
+  link.href=guideReaderUrl(entry.path);
+  link.setAttribute('aria-label',ship.title+' — '+entry.role);
+  item.append(link);links.append(item);
+ }
+ card.append(links);return card;
+}
+function renderMainGuideCard(entry){
+ const card=guideElement('article','exo-card guide-card');
+ const link=guideElement('a','guide-link','Открыть руководство');
+ link.href=guideReaderUrl(entry.path);
+ card.append(guideElement('div','exo-genus',entry.category),guideElement('h4','',entry.title),guideElement('p','',entry.role),link);
+ return card;
+}
+async function showGuides(){
+ content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters guide-filters"><input id="guide-q" aria-label="Поиск корабля или гайда" placeholder="Поиск корабля или гайда"><select id="guide-category" aria-label="Категория"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role" aria-label="Специализация"><option value="">Все специализации</option></select></div><p id="guide-count" role="status"></p><section class="guide-catalog-group" aria-labelledby="guide-ships-title" hidden><h3 id="guide-ships-title">Досье кораблей</h3><p class="muted">Выбери корабль, затем роль.</p><div id="guide-ships" class="guide-grid"></div></section><section class="guide-catalog-group" aria-labelledby="guide-main-title" hidden><h3 id="guide-main-title">Основные гайды</h3><div id="guide-main" class="guide-grid"></div></section>';
+ const q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');
+ const shipsGrid=document.getElementById('guide-ships'),mainGrid=document.getElementById('guide-main');
+ count.textContent='Загрузка каталога…';
+ try{
+  const entries=await loadGuideCatalog();
+  if(!count.isConnected)return;
+  renderGuideProgress(progress,entries);
+  const catalog=splitGuideCatalog(entries);
+  for(const name of [...new Set(entries.map(e=>e.role).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru')))role.add(new Option(name,name));
+  const requestedShip=new URL(location.href).searchParams.get('ship');
+  const openShips=new Set(requestedShip?[requestedShip]:[]);
+  function draw(){
+   const {ships,main}=filterGuideCatalog(catalog,q.value,cat.value,role.value);
+   count.textContent=ships.length||main.length?'Корабли: '+ships.length+' · Основные гайды: '+main.length:'Ничего не найдено. Попробуй другой запрос или фильтр.';
+   shipsGrid.parentElement.hidden=!ships.length;
+   mainGrid.parentElement.hidden=!main.length;
+   shipsGrid.replaceChildren(...ships.map(ship=>{
+    const card=renderShipCard(ship,role.value,openShips.has(ship.title)||Boolean(q.value.trim()&&ships.length===1));
+    const summary=card.querySelector('summary');
+    summary.addEventListener('click',()=>{if(card.open)openShips.delete(ship.title);else openShips.add(ship.title)});
+    return card;
+   }));
+   mainGrid.replaceChildren(...main.map(renderMainGuideCard));
+  }
+  q.oninput=draw;cat.onchange=draw;role.onchange=draw;draw();
+  if(requestedShip){
+   const card=[...shipsGrid.children].find(el=>el.dataset.ship===requestedShip);
+   if(card){card.querySelector('summary').focus({preventScroll:true});card.scrollIntoView({block:'center',behavior:'instant'})}
+  }
+ }catch(error){
+  if(!count.isConnected)return;
+  count.textContent='Не удалось загрузить каталог: '+error.message;
+  progress.textContent='Прогресс недоступен без каталога.';
+ }
+}
 
 // Full Black Box documents keep their own styles, scripts and relative assets.
 function guideReaderUrl(path, section){
@@ -251,8 +342,9 @@ function guideReaderUrl(path, section){
 function showGuideReader(path,section){
  document.body.classList.add('guide-view');
  const bar=document.createElement('div');bar.className='guide-reader-bar';
- const back=document.createElement('a');back.className='guide-reader-back';back.href=guideReaderUrl();back.textContent='← Все гайды';
- bar.append(back);
+ const links=guideElement('div','guide-reader-links');
+ const back=guideElement('a','guide-reader-back','← Все гайды');back.href=guideReaderUrl();
+ links.append(back);bar.append(links);
  content.replaceChildren(bar);
  if(!guidePathPattern.test(path)){
   const error=document.createElement('p');error.textContent='Не удалось открыть руководство. Выбери его в каталоге.';
@@ -260,6 +352,15 @@ function showGuideReader(path,section){
  }
  const original=document.createElement('a');original.href=new URL(path,'https://edblackbox.com/');original.target='_blank';original.rel='noopener noreferrer';original.textContent='Оригинал E:D Black Box ↗';
  bar.append(original);
+ if(path.includes(dossierPath))loadGuideCatalog().then(entries=>{
+  if(!bar.isConnected)return;
+  const ship=entries.find(entry=>entry.path===path)?.title;
+  if(!ship)return;
+  const catalog=new URL(guideReaderUrl());
+  catalog.searchParams.set('ship',ship);
+  const roles=guideElement('a','guide-reader-roles','Роли: '+ship);
+  roles.href=catalog.href;links.append(roles);
+ }).catch(()=>{});
  const url=new URL('../blackbox/'+path,location.href);
  url.searchParams.set('companion',document.body.dataset.theme==='light'?'light':'dark');
  if(section)url.hash=section;
