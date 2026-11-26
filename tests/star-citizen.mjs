@@ -26,7 +26,7 @@ for (const theme of ['dark','light']) {
   assert(html.indexOf('star-citizen/controls.js') < html.indexOf('../app.js'));
   assert(html.includes('star-citizen/controls.css'));
 }
-for (const asset of ['dualsense-edge.svg','star-citizen-dualsense-edge-ru.webp','star-citizen-original-crop.png','star-citizen-keyboard-mouse.png']) {
+for (const asset of ['dualsense-edge.svg','star-citizen-dualsense-edge-ru.webp','xbox-original-ru.svg','keyboard-original-ru.svg']) {
   assert(existsSync('star-citizen/' + asset));
   assert(read('star-citizen/controls.js').includes(asset));
 }

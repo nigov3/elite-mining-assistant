@@ -42,16 +42,16 @@
             </a>
           </details>
           <details>
-            <summary>Геймпад Xbox: оригинальный скриншот</summary>
-            <a data-sc-image="star-citizen-original-crop.png" target="_blank" rel="noopener">
-              <img width="1310" height="708" loading="lazy" alt="Обрезанный скриншот меню полётных привязок Xbox в Star Citizen">
+            <summary>Геймпад Xbox: игровая схема на русском</summary>
+            <a data-sc-image="xbox-original-ru.svg" target="_blank" rel="noopener">
+              <img width="2135" height="1240" loading="lazy" alt="Игровая схема полётных привязок Xbox на русском">
             </a>
           </details>
           <details>
-            <summary>Клавиатура и мышь: полёт</summary>
-            <p class="muted sc-image-hint">Нажми на скриншот, чтобы открыть его в полном размере.</p>
-            <a data-sc-image="star-citizen-keyboard-mouse.png" target="_blank" rel="noopener">
-              <img width="1270" height="334" loading="lazy" alt="Обрезанный игровой скриншот полётных привязок клавиатуры и мыши в Star Citizen">
+            <summary>Клавиатура и мышь: игровая схема на русском</summary>
+            <p class="muted sc-image-hint">Нажми на схему, чтобы открыть её в полном размере.</p>
+            <a data-sc-image="keyboard-original-ru.svg" target="_blank" rel="noopener">
+              <img width="3970" height="1110" loading="lazy" alt="Игровая схема полётных привязок клавиатуры и мыши на русском">
             </a>
           </details>
         </div>

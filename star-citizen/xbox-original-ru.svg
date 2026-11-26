@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2135" height="1240" viewBox="0 0 2135 1240" font-family="DejaVu Sans, sans-serif"><title>Star Citizen: полётные привязки на русском</title><rect width="100%" height="100%" fill="#030608"/>
+<text x="28" y="46" fill="#82a8bf" font-size="20" text-anchor="start" font-weight="400">STAR CITIZEN / ПРИВЯЗКИ КЛАВИШ</text>
+<text x="28" y="91" fill="#e1f2fc" font-size="33" text-anchor="start" font-weight="700">Геймпад Xbox</text>
+<text x="2107" y="88" fill="#82a8bf" font-size="19" text-anchor="end" font-weight="400">ПОЛЁТ • СХЕМА С ИГРОВОГО ЭКРАНА</text>
+<path d="M28 110H2107" fill="none" stroke="#314a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(230 150)">
+<path d="M316 406H359L431 480H581" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M314 552H674" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M314 697H358L499 596H640" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M580 225V234L612 261V310" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M707 80V469" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M975 128V151L926 261V311" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1080 338V352L1002 368" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M835 273V478" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1299 360H1205L1147 429H966" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1346 479H1017" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1289 604H1125L1001 494L915 478" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1324 773H1117L970 529" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 877V864H460L674 656V634" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M746 875V821L712 789V595" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1027 840H979V812L870 704V601" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M507 312V341L546 370" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="0" y="355" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Смещение вперёд / назад</text>
+<text x="0" y="378" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Смещение влево / вправо</text>
+<text x="0" y="401" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Нажать стик: форсаж</text>
+<text x="0" y="424" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Нажать стик: круиз-контроль</text>
+<text x="0" y="447" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Крен влево / вправо</text>
+<text x="0" y="470" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Смещение вверх / вниз</text>
+<text x="0" y="493" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Нажать стик: меню действий</text>
+<text x="0" y="559" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Фокус по прицелу</text>
+<text x="0" y="582" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Ближайшая вражеская цель*</text>
+<text x="0" y="605" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+МФД вверх</text>
+<text x="0" y="700" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Следующая подсистема цели</text>
+<text x="0" y="723" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Сбросить выбор подсистемы*</text>
+<text x="0" y="746" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Следующая союзная цель</text>
+<text x="0" y="769" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+МФД влево</text>
+<text x="430" y="94" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Огонь группы оружия 2</text>
+<text x="430" y="117" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Снизить лимит скорости</text>
+<text x="430" y="140" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#f5e884" font-weight="700">ML&#8239;</tspan>
+Пустить ракету</text>
+<text x="430" y="163" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffba61" font-weight="700">SC&#8239;</tspan>
+Уменьшить угол сканирования</text>
+<text x="430" y="186" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Уменьшить мощность лазера</text>
+<text x="430" y="209" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Отдалить</text>
+<text x="707" y="21" fill="#c0d9ea" font-size="17" text-anchor="middle" font-weight="400">Круговое меню действий</text>
+<text x="707" y="44" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Открыть mobiGlas</text>
+<text x="707" y="67" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Карта звёзд*</text>
+<text x="1035" y="21" fill="#c0d9ea" font-size="17" text-anchor="middle" font-weight="400">Огонь группы оружия 1</text>
+<text x="1035" y="44" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Повысить лимит скорости</text>
+<text x="1035" y="67" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffba61" font-weight="700">SC&#8239;</tspan>
+Увеличить угол сканирования</text>
+<text x="1035" y="90" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Увеличить мощность лазера</text>
+<text x="1035" y="113" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Приблизить</text>
+<text x="1082" y="186" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Импульс радара*</text>
+<text x="1082" y="209" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Перекл. самоуничтожение*</text>
+<text x="1082" y="232" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#f5e884" font-weight="700">ML&#8239;</tspan>
+Следующая ракета</text>
+<text x="1082" y="255" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+<tspan fill="#ffba61" font-weight="700">SC&#8239;</tspan>
+Перекл. скан цели в прицеле</text>
+<text x="1082" y="278" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Включить лазер добычи</text>
+<text x="1082" y="301" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Сменить лазер добычи</text>
+<text x="1082" y="324" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Выбрать</text>
+<text x="835" y="241" fill="#c0d9ea" font-size="17" text-anchor="middle" font-weight="400">Пауза / настройки</text>
+<text x="835" y="264" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+<tspan fill="#6de6bd" font-weight="700">EA&#8239;</tspan>
+Таблица результатов</text>
+<text x="1316" y="369" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Режим взаимодействия*</text>
+<text x="1316" y="392" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Сменить вид камеры</text>
+<text x="1361" y="466" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Режим без автоторможения (удерживать)</text>
+<text x="1361" y="489" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Перекл. режим наведения</text>
+<text x="1361" y="512" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Выйти из кресла</text>
+<text x="1361" y="535" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Катапультироваться*</text>
+<text x="1301" y="605" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Сменить тип контрмер</text>
+<text x="1301" y="628" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#6de6bd" font-weight="700">EA&#8239;</tspan>
+Возродиться (по ситуации)</text>
+<text x="1301" y="651" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Зарядить квантовый двигатель</text>
+<text x="1301" y="674" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Включить квантовый двигатель*</text>
+<text x="1338" y="778" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Выпустить контрмеры</text>
+<text x="1338" y="801" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Посмотреть назад*</text>
+<text x="390" y="900" fill="#c0d9ea" font-size="17" text-anchor="middle" font-weight="400">Выпустить / убрать шасси</text>
+<text x="390" y="923" fill="#c0d9ea" font-size="17" text-anchor="middle" font-weight="400">Автопосадка*</text>
+<text x="390" y="946" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Включить / выключить фары</text>
+<text x="390" y="969" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+МФД вниз</text>
+<text x="749" y="900" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffba61" font-weight="700">SC&#8239;</tspan>
+Перекл. режим сканирования</text>
+<text x="749" y="923" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Перекл. режим добычи</text>
+<text x="749" y="946" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Круговое меню режимов полёта*</text>
+<text x="749" y="969" fill="#c0d9ea" font-size="17" text-anchor="middle">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+МФД вправо</text>
+<text x="1035" y="860" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Тангаж вверх / вниз</text>
+<text x="1035" y="883" fill="#c0d9ea" font-size="17" text-anchor="start" font-weight="400">Рыскание влево / вправо</text>
+<text x="1035" y="906" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Нажать стик: тормоз корабля</text>
+<text x="1035" y="929" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Смотреть вверх / вниз</text>
+<text x="1035" y="952" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Смотреть влево / вправо</text>
+<text x="1035" y="975" fill="#c0d9ea" font-size="17" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Нажать стик: фокус</text>
+<text x="455" y="302" fill="#ffb341" font-size="17" text-anchor="start" font-weight="700">LB • Модификатор 1*</text>
+<text x="764" y="358" fill="#f5e884" font-size="17" text-anchor="middle" font-weight="700">LB + RB: ракетный режим</text>
+<path d="M657 351H637M891 351H911" fill="none" stroke="#486172" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M512 382 C514 363 570 342 619 333 Q652 323 660 346 L660 385" fill="none" stroke="#ffb341" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M884 385V348 Q893 322 933 333 C976 344 1019 361 1026 379 L1026 389" fill="none" stroke="#c0d9ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M600 331V317Q600 309 609 309H627Q636 309 636 317V330M907 330V315Q907 309 915 309H932Q942 309 942 317V331" fill="none" stroke="#c0d9ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M615 358 Q641 348 660 385 C687 410 859 415 884 385 Q906 350 930 358 C979 369 1043 387 1061 431 C1096 531 1145 644 1137 735 C1132 779 1118 805 1070 823 Q1064 825 1057 818 L967 735 Q930 696 895 696H641Q597 696 553 740L489 803 Q479 825 469 823 C419 807 402 780 404 714 C407 632 447 518 480 432 C492 398 538 378 615 358Z" fill="none" stroke="#c0d9ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="581" cy="480" r="53" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="581" cy="480" r="45" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="870" cy="599" r="53" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="870" cy="599" r="45" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="707" cy="480" r="16" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="835" cy="480" r="16" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<circle cx="965" cy="429" r="25" fill="#030608" stroke="#d7a1ff" stroke-width="3"/>
+<text x="965" y="438" fill="#d7a1ff" font-size="25" text-anchor="middle" font-weight="700">Y</text>
+<circle cx="915" cy="480" r="25" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<text x="915" y="489" fill="#c0d9ea" font-size="25" text-anchor="middle" font-weight="700">X</text>
+<circle cx="1016" cy="480" r="25" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<text x="1016" y="489" fill="#c0d9ea" font-size="25" text-anchor="middle" font-weight="700">B</text>
+<circle cx="965" cy="530" r="25" fill="#030608" stroke="#c0d9ea" stroke-width="3"/>
+<text x="965" y="539" fill="#c0d9ea" font-size="25" text-anchor="middle" font-weight="700">A</text>
+<path d="M655 578V546Q655 542 660 542H686Q691 542 691 546V577H722Q727 577 727 583V611Q727 615 722 615H691V645Q691 650 686 650H660Q655 650 655 645V615H626Q621 615 621 610V583Q621 578 626 578Z" fill="none" stroke="#c0d9ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M28 1152H2107" fill="none" stroke="#314a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="38" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start">
+<tspan fill="#ffb341" font-weight="700">M1&#8239;</tspan>
+Модификатор 1 (удерживать LB)</text>
+<text x="510" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start">
+<tspan fill="#d7a1ff" font-weight="700">IM&#8239;</tspan>
+Взаимодействие</text>
+<text x="828" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start">
+<tspan fill="#ffba61" font-weight="700">SC&#8239;</tspan>
+Сканирование</text>
+<text x="1128" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start">
+<tspan fill="#e788df" font-weight="700">MG&#8239;</tspan>
+Добыча</text>
+<text x="1388" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start">
+<tspan fill="#f5e884" font-weight="700">ML&#8239;</tspan>
+Ракетный режим</text>
+<text x="1728" y="1187" fill="#c0d9ea" font-size="18" text-anchor="start" font-weight="400">* Удерживать кнопку</text>
+</svg>
