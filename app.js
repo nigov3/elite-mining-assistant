@@ -265,33 +265,6 @@ async function showExo(){
  }catch(e){view.textContent='Не удалось загрузить каталог: '+e.message}
 }
 
-async function renderGuideProgress(status,entries){
- try {
-  const response=await fetch('../blackbox/translation-progress.json',{cache:'no-cache'});
-  if(!response.ok)throw new Error('Progress request failed');
-  const {verifiedPaths}=await response.json();
-  if(!Array.isArray(verifiedPaths)||!verifiedPaths.every(path=>typeof path==='string'))throw new Error('Invalid progress manifest');
-  if(!status.isConnected)return;
-  const verified=new Set(verifiedPaths);
-  const paths=[...new Set(entries.map(entry=>entry.path))];
-  const main=paths.filter(path=>!path.includes('/ship-dossiers/'));
-  const dossiers=paths.filter(path=>path.includes('/ship-dossiers/'));
-  const groups=[['Всего',paths],['Основные гайды',main],['Досье кораблей',dossiers]];
-  const list=document.createElement('div');list.className='guide-progress-grid';
-  for(const [name,group] of groups){
-   const done=group.filter(path=>verified.has(path)).length;
-   const percent=group.length?Math.round(done*100/group.length):0;
-   const item=document.createElement('div');item.className='guide-progress-item';
-   const title=document.createElement('span');title.textContent=name;
-   const count=document.createElement('strong');count.textContent=done+' / '+group.length+' · '+percent+'%';
-   const bar=document.createElement('progress');bar.max=group.length||1;bar.value=done;bar.setAttribute('aria-label',name+': '+count.textContent);
-   item.append(title,count,bar);list.append(item);
-  }
-  status.replaceChildren(list);
- }catch(_){
-  if(status.isConnected)status.textContent='Не удалось загрузить прогресс перевода. Каталог доступен ниже.';
- }
-}
 const dossierPath='/ship-dossiers/';
 let guideCatalogRequest;
 function loadGuideCatalog(){
@@ -348,14 +321,13 @@ function renderMainGuideCard(entry){
  return card;
 }
 async function showGuides(){
- content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters guide-filters"><input id="guide-q" aria-label="Поиск корабля или гайда" placeholder="Поиск корабля или гайда"><select id="guide-category" aria-label="Категория"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role" aria-label="Специализация"><option value="">Все специализации</option></select></div><p id="guide-count" role="status"></p><details id="guide-dossiers" class="guide-catalog-group guide-dossiers" hidden><summary class="guide-dossiers-summary"><span>Досье кораблей</span></summary><div class="guide-dossiers-body"><p class="muted">Выбери корабль, затем роль.</p><div id="guide-ships" class="guide-grid"></div></div></details><section class="guide-catalog-group" aria-labelledby="guide-main-title" hidden><h3 id="guide-main-title">Основные гайды</h3><div id="guide-main" class="guide-grid"></div></section>';
- const q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');
+ content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><div class="filters guide-filters"><input id="guide-q" aria-label="Поиск корабля или гайда" placeholder="Поиск корабля или гайда"><select id="guide-category" aria-label="Категория"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role" aria-label="Специализация"><option value="">Все специализации</option></select></div><p id="guide-count" role="status"></p><details id="guide-dossiers" class="guide-catalog-group guide-dossiers" hidden><summary class="guide-dossiers-summary"><span>Досье кораблей</span></summary><div class="guide-dossiers-body"><p class="muted">Выбери корабль, затем роль.</p><div id="guide-ships" class="guide-grid"></div></div></details><section class="guide-catalog-group" aria-labelledby="guide-main-title" hidden><h3 id="guide-main-title">Основные гайды</h3><div id="guide-main" class="guide-grid"></div></section>';
+ const q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count');
  const dossiers=document.getElementById('guide-dossiers'),shipsGrid=document.getElementById('guide-ships'),mainGrid=document.getElementById('guide-main');
  count.textContent='Загрузка каталога…';
  try{
   const entries=await loadGuideCatalog();
   if(!count.isConnected)return;
-  renderGuideProgress(progress,entries);
   const catalog=splitGuideCatalog(entries);
   for(const name of [...new Set(entries.map(e=>e.role).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru')))role.add(new Option(name,name));
   const requestedShip=new URL(location.href).searchParams.get('ship');
@@ -382,7 +354,6 @@ async function showGuides(){
  }catch(error){
   if(!count.isConnected)return;
   count.textContent='Не удалось загрузить каталог: '+error.message;
-  progress.textContent='Прогресс недоступен без каталога.';
  }
 }
 
