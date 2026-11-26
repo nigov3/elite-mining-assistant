@@ -35,8 +35,9 @@
         <div class="sc-reference">
           <details>
             <summary>Шпаргалка CDFv2 целиком на русском</summary>
-            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=compact-2" target="_blank" rel="noopener">
-              <img width="1940" height="1476" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
+            <p class="muted sc-image-hint">Нажми на схему, чтобы открыть в полном размере.</p>
+            <a class="sc-cdfv2-reference" data-sc-image="dualsense-edge-cdfv2-ru.svg?v=portrait" target="_blank" rel="noopener">
+              <img width="1470" height="1476" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
             </a>
           </details>
           <details>
@@ -75,7 +76,6 @@
         const label = node('span', action.label, 'sc-action');
         label.title = action.full;
         label.setAttribute('aria-label', action.full);
-        li.append(label);
         if (action.keys.length) {
           const row = node('div', '', 'sc-badges');
           action.keys.forEach(key => {
@@ -88,6 +88,7 @@
           });
           li.append(row);
         }
+        li.append(label);
         return li;
       }));
       buttons.forEach(button => button.setAttribute('aria-pressed',

@@ -17,7 +17,7 @@
 .sc-selected { min-height: 230px; min-width: 0; padding: 15px 17px; border: 1px solid var(--sc-line); border-radius: 14px; background: rgba(var(--hud-rgb),.04); }
 .sc-selected h3 { margin: 0 0 6px; color: inherit; font-size: clamp(18px,2.15vw,23px); }
 .sc-selected ul { list-style: none; margin: 0; padding: 0; overflow-x: auto; }
-.sc-selected li { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; padding: 7px 0; border-bottom: 1px solid var(--sc-line); white-space: nowrap; min-width: max-content; }
+.sc-selected li { display: flex; align-items: baseline; justify-content: flex-start; gap: 6px; padding: 7px 0; border-bottom: 1px solid var(--sc-line); white-space: nowrap; min-width: max-content; }
 .sc-action { font-size: .88rem; }
 .sc-input-key { margin: 9px 0 0; font-size: .75rem; }
 .sc-selected li:last-child { border-bottom: 0; }
@@ -29,6 +29,7 @@
 .sc-reference summary { cursor: pointer; font-weight: 650; }
 .sc-reference summary:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
 .sc-reference a { display: block; margin-top: 10px; }
+.sc-reference a.sc-cdfv2-reference { max-width: 760px; }
 .sc-reference img { display: block; width: 100%; height: auto; border-radius: 6px; }
 @media (max-width: 760px) {
   .sc-layout { grid-template-columns: minmax(0,1fr); }

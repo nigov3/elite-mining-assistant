@@ -6,7 +6,7 @@ runInNewContext(readFileSync('star-citizen/bindings.js','utf8'), ctx);
 const bindings = ctx.starCitizenFlightBindings;
 const control = readFileSync('star-citizen/dualsense-edge.svg','utf8').replace(/^<svg[^>]*>|<\/svg>\s*$/g,'').trim();
 const chips = ctx.starCitizenActionBadges;
-const W = 1940, pad = 32, card = 458, step = 472;
+const W = 1470, pad = 24, card = 348, step = 358;
 const out = [];
 const esc = s => s.replaceAll('&','&amp;').replaceAll('<','&lt;');
 const r = (x,y,w,h,fill,stroke='none',radius=9) =>
@@ -31,28 +31,27 @@ t(pad+16,49,'STAR CITIZEN / УПРАВЛЕНИЕ КОРАБЛЁМ',16,'#62d9f4',
 t(pad+16,87,'DualSense Edge',38,'#edf5fd',700);
 t(W-pad,85,'ПРОФИЛЬ CDFv2',21,'#62d9f4',700,'end');
 r(pad,110,W-pad*2,259,'#0d1c2b','#2a4458',14);
-out.push(`<g transform="translate(767 118) scale(.48)">${control}</g>`);
-t(60,143,'КАК НАЖИМАТЬ',16,'#62d9f4',700);
-t(60,173,'Без метки нажатия: нажать один раз',17,'#d9e7f4');
+out.push(`<g transform="translate(540 123) scale(.45)">${control}</g>`);
+t(44,143,'КАК НАЖИМАТЬ',16,'#62d9f4',700);
+t(44,173,'Без метки нажатия: нажать один раз',17,'#d9e7f4');
 [['X2','Двойное нажатие'],['H','Удержание'],['LONG','Длительное удержание'],
  ['CLICK','Нажатие стика'],['CLICK_TAP','Короткое нажатие стика'],
- ['STD','Назначение по умолчанию, не из экспорта CDFv2']].forEach(([key,def],i) => legend(key,def,60,201+i*27));
-t(1245,143,'МОДИФИКАТОР И РЕЖИМЫ',16,'#62d9f4',700);
+ ['STD','По умолчанию, не из экспорта']].forEach(([key,def],i) => legend(key,def,44,201+i*27));
+t(918,143,'МОДИФИКАТОР И РЕЖИМЫ',16,'#62d9f4',700);
 ['M1','IM','SC','MG','ML','QT','EA','VIEW'].forEach((key,i) => {
-  const x=1245+Math.floor(i/4)*318, y=179+i%4*39;
+  const x=918+Math.floor(i/4)*264, y=179+i%4*39;
   badge(x,y,key);
-  t(x+66,y,chips[key][1],17,'#d9e7f4');
+  t(x+58,y,({IM:'Взаимодействие',SC:'Сканирование',MG:'Добыча'})[key] || chips[key][1],17,'#d9e7f4');
 });
 
-function action(a,x,y,w) {
+function action(a,x,y) {
   out.push('<g data-action="true">');
-  t(x,y,a.label,17);
-  let right=x+w;
-  for (const key of [...a.keys].reverse()) {
-    right-=widths[key];
-    badge(right,y,key);
-    right-=5;
+  let left=x;
+  for (const key of a.keys) {
+    badge(left,y,key);
+    left+=widths[key]+5;
   }
+  t(left+(a.keys.length ? 6 : 0),y,a.label,17);
   out.push('</g>');
 }
 let y=386;
@@ -65,12 +64,12 @@ for(let first=0;first<rows.length;first+=4){
     const {b,acts}=batch[col], x=pad+col*step, w=wide ? W-pad*2 : card;
     out.push(`<g data-control="${b.id}">`);
     r(x,y,w,h,'#101d2a','#294353',12);
-    t(x+14,y+27,b.label+' / '+b.name,18,'#62d9f4',700);
-    line(x+14,y+38,w-28,'#344c60');
+    t(x+12,y+27,b.label+' / '+b.name,18,'#62d9f4',700);
+    line(x+12,y+38,w-24,'#344c60');
     acts.forEach((a,i) => {
-      const ax=x+14+(wide ? i*620 : 0), ay=y+61+(wide ? 0 : i*31);
-      if (i>0 && !wide) line(x+14,ay-21,w-28,'#23394a');
-      action(a,ax,ay,wide ? 566 : w-28);
+      const ax=x+12+(wide ? i*470 : 0), ay=y+61+(wide ? 0 : i*31);
+      if (i>0 && !wide) line(x+12,ay-21,w-24,'#23394a');
+      action(a,ax,ay);
     });
     out.push('</g>');
   }

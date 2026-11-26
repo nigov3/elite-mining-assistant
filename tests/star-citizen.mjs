@@ -16,6 +16,8 @@ assert.equal(compact('l2').map(a => a.group).join(' '), '0 1 2 3 3 3');
 assert.equal(compact('square').map(a => a.group).join(' '), '1 3 3');
 assert.equal(compact('down').map(a => a.group + ':' + a.gesture).join(' '), '0:0 0:1 0:2 1:0 2:0');
 assert.equal([...svg.matchAll(/data-action="true"/g)].length, 64);
+assert(svg.includes('width="1470" height="1476"'));
+assert.match(svg, /<g data-action="true">\n<rect.*\n<text.*>M1<\/text>\n<text.*>Снизить лимит скорости<\/text>/);
 const display = context.starCitizenDisplayTags;
 assert.equal(display('M1 H STD', 'Открыть карту звёзд').join(' '), 'H M1 STD');
 assert.equal(display('X2', 'Запросить посадку').join(' '), 'X2');
