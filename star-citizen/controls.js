@@ -3,13 +3,7 @@
 
   const asset = new URL('./', document.currentScript.src);
   const bindings = globalThis.starCitizenFlightBindings;
-  const conditions = {
-    M1: 'Зажми L1', IM: 'Взаимодействие', SC: 'Сканирование',
-    MG: 'Добыча', ML: 'Ракетный режим', EA: 'Арена',
-    VIEW: 'Свободный обзор', QT: 'Квантовый режим', CLICK: 'Нажать стик',
-    H: 'Удерживать', LONG: 'Долго удерживать', TAP: 'Короткое нажатие',
-    X2: 'Двойное нажатие', STD: 'По умолчанию'
-  };
+  const conditions = globalThis.starCitizenActionBadges;
   const node = (tag, text, className) => {
     const el = document.createElement(tag);
     if (text) el.textContent = text;
@@ -40,8 +34,8 @@
         <div class="sc-reference">
           <details>
             <summary>Шпаргалка CDFv2 целиком на русском</summary>
-            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=outline" target="_blank" rel="noopener">
-              <img width="2360" height="1380" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
+            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=cards" target="_blank" rel="noopener">
+              <img width="1680" height="2523" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
             </a>
           </details>
           <details>
@@ -78,10 +72,15 @@
       el('#sc-actions').replaceChildren(...binding.actions.map(([tags, action]) => {
         const li = node('li');
         li.append(node('span', action, 'sc-action'));
-        const badges = tags ? tags.split(' ').map(key => conditions[key]) : [];
+        const badges = globalThis.starCitizenDisplayTags(tags, action);
         if (badges.length) {
           const row = node('div', '', 'sc-badges');
-          badges.forEach(badge => row.append(node('span', badge)));
+          badges.forEach(key => {
+            const [label, description] = conditions[key];
+            const badge = node('span', description ? label + ' · ' + description : label);
+            badge.dataset.scBadge = key;
+            row.append(badge);
+          });
           li.append(row);
         }
         return li;
@@ -91,7 +90,7 @@
     }
 
     function buttonFor(binding, hotspot = false) {
-      const button = node('button', hotspot ? '' : binding.label, hotspot ? 'sc-hotspot' : 'sc-button');
+      const button = node('button', hotspot ? '' : (binding.id === 'options' ? 'Пауза' : binding.label), hotspot ? 'sc-hotspot' : 'sc-button');
       button.type = 'button';
       button.dataset.scKey = binding.id;
       button.setAttribute('aria-label', binding.label + ': ' + binding.name);

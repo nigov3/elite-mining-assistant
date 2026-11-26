@@ -10,8 +10,9 @@
 .sc-map .sc-hotspot.sc-stick { width: 10.2%; height: 17.5%; }
 .sc-map .sc-hotspot:hover,.sc-map .sc-hotspot[aria-pressed="true"] { border-color: #ffbb6e; background: #ffad4738; box-shadow: 0 0 0 2px #111c29,0 0 12px #ff9c3977; }
 .sc-map .sc-hotspot:focus-visible { outline: 2px solid white; outline-offset: 3px; }
-.sc-buttons { display: flex; flex-wrap: wrap; gap: 7px; padding-top: 12px; }
-.sc-buttons .sc-button { padding: 6px 12px; min-width: 44px; min-height: 44px; font-weight: 750; }
+.sc-buttons { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 7px; padding-top: 12px; }
+.sc-buttons .sc-button { padding: 6px 3px; min-width: 0; min-height: 44px; font-size: .85rem; line-height: 1.2; font-weight: 750; }
+.sc-buttons .sc-button:last-child { grid-column: 1 / -1; }
 .sc-buttons .sc-button:hover,.sc-buttons .sc-button[aria-pressed="true"] { border-color: var(--sc-accent); color: var(--sc-accent); background: rgba(var(--hud-rgb),.12); }
 .sc-selected { min-height: 230px; padding: 15px 17px; border: 1px solid var(--sc-line); border-radius: 14px; background: rgba(var(--hud-rgb),.04); }
 .sc-selected h3 { margin: 0 0 6px; color: inherit; font-size: clamp(18px,2.15vw,23px); }
@@ -32,3 +33,12 @@
   .sc-selected { min-height: 0; }
 }
 .sc-image-hint { margin: 8px 0 0; font-size: .86rem; }
+.sc-badges span[data-sc-badge] { font-weight: 650; line-height: 1.5; color: var(--sc-chip-ink,inherit); border-color: var(--sc-chip-border,var(--sc-line)); background: var(--sc-chip-bg,rgba(var(--hud-rgb),.06)); }
+.sc-badges [data-sc-badge="M1"] { --sc-chip-ink: #ffbe58; --sc-chip-border: #886734; --sc-chip-bg: #382a19; }
+.sc-badges [data-sc-badge="IM"] { --sc-chip-ink: #d6adff; --sc-chip-border: #785ba2; --sc-chip-bg: #302346; }
+.sc-badges [data-sc-badge="SC"] { --sc-chip-ink: #73e5a1; --sc-chip-border: #428663; --sc-chip-bg: #143525; }
+.sc-badges [data-sc-badge="MG"] { --sc-chip-ink: #ff8ac0; --sc-chip-border: #8e5071; --sc-chip-bg: #382339; }
+.sc-badges [data-sc-badge="ML"] { --sc-chip-ink: #f2e387; --sc-chip-border: #867b43; --sc-chip-bg: #39351f; }
+.sc-badges [data-sc-badge="QT"] { --sc-chip-ink: #52ddd7; --sc-chip-border: #39827f; --sc-chip-bg: #13353a; }
+.sc-badges [data-sc-badge="EA"] { --sc-chip-ink: #9ec8ff; --sc-chip-border: #516c99; --sc-chip-bg: #203451; }
+.sc-badges [data-sc-badge="VIEW"] { --sc-chip-ink: #a7d2da; --sc-chip-border: #597e86; --sc-chip-bg: #20353e; }

@@ -7,6 +7,17 @@ const context = {};
 runInNewContext(read('star-citizen/bindings.js'), context);
 const bindings = context.starCitizenFlightBindings;
 assert.equal(bindings.length, 17);
+assert.equal(bindings.slice(4,8).map(b => b.id).join(' '), 'l3 create options r3');
+const svg = read('star-citizen/dualsense-edge-cdfv2-ru.svg');
+assert.equal([...svg.matchAll(/data-control="([^"]*)"/g)].map(m => m[1]).join(' '),
+  bindings.map(b => b.id).join(' '));
+const display = context.starCitizenDisplayTags;
+assert.equal(display('M1 H STD', 'Открыть карту звёзд').join(' '), 'H M1 STD');
+assert.equal(display('X2', 'Запросить посадку').join(' '), 'X2');
+assert.equal(context.starCitizenActionBadges.X2[0], 'Двойное нажатие');
+assert.equal(context.starCitizenActionBadges.H[0], 'Удержание');
+assert.equal(display('M1 STD', 'Наклон вперёд / назад').join(' '), 'M1 STD');
+assert.equal(display('M1 CLICK TAP', 'Переключить круиз-контроль').join(' '), 'CLICK_TAP M1');
 assert.equal(new Set(bindings.map(binding => binding.id)).size, bindings.length);
 assert.equal(bindings.filter(binding => binding.point).length, 16);
 assert.equal(bindings.flatMap(binding => binding.actions).length, 64);

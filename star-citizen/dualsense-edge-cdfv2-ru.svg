@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2360" height="1380" viewBox="0 0 2360 1380" font-family="DejaVu Sans,sans-serif"><title>Star Citizen: управление полётом DualSense Edge, CDFv2</title><rect width="100%" height="100%" fill="#050a0e"/>
-<text x="50" y="50" font-size="19" fill="#8faec2" font-weight="700">STAR CITIZEN  /  УПРАВЛЕНИЕ КОРАБЛЁМ</text>
-<text x="49" y="103" font-size="43" fill="#e8f4fb" font-weight="750">DualSense Edge</text>
-<text x="1880" y="98" font-size="24" fill="#79d9fb" font-weight="700">ПОЛЁТ  ·  ПРОФИЛЬ CDFv2</text>
-<polyline points="50,120 2310,120" stroke="#324b5d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<g transform="translate(712 470) scale(1.08)">
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="2523" viewBox="0 0 1680 2523" font-family="DejaVu Sans, sans-serif"><title>Star Citizen: управление полётом DualSense Edge, CDFv2</title><rect width="100%" height="100%" fill="#07101c"/>
+<rect x="49" y="43" width="6" height="83" rx="10" fill="#62d9f4" stroke="none"/>
+<text x="69" y="64" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">STAR CITIZEN / УПРАВЛЕНИЕ КОРАБЛЁМ</text>
+<text x="69" y="113" font-size="45" fill="#edf5fd" font-weight="700" text-anchor="start">DualSense Edge</text>
+<text x="1631" y="110" font-size="24" fill="#62d9f4" font-weight="700" text-anchor="end">ПРОФИЛЬ CDFv2</text>
+<rect x="49" y="149" width="1582" height="386" rx="18" fill="#0d1c2b" stroke="#2a4458"/>
+<g transform="translate(579 176) scale(.66)"><defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#0b1c2b"/><stop offset="1" stop-color="#06101c"/></linearGradient>
+<linearGradient id="shell" x2="0" y2="1"><stop stop-color="#f4f8fd"/><stop offset="1" stop-color="#a5b8c8"/></linearGradient>
+<linearGradient id="touch" x2="0" y2="1"><stop stop-color="#313b4a"/><stop offset="1" stop-color="#121c29"/></linearGradient>
+</defs>
 
-<path d="M55 64 Q103 42 184 40 Q252 42 401 48 Q550 42 618 40 Q699 42 747 64 Q795 133 802 273 Q808 430 775 453 Q746 480 716 440 L605 324 Q566 284 514 283 H288 Q236 284 197 324 L86 440 Q56 480 27 453 Q-6 430 0 273 Q7 133 55 64Z" fill="#080f15" stroke="#b9d5e6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M90 52 Q117 15 170 13 H218 Q233 13 239 42 M563 42 Q569 13 584 13 H632 Q685 15 712 52" fill="#0a141d" stroke="#b9d5e6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M55 73 Q101 45 197 43 L242 48 L226 76 Q125 60 72 101Z" fill="#0a141d" stroke="#b9d5e6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M747 73 Q701 45 605 43 L560 48 L576 76 Q677 60 730 101Z" fill="#0a141d" stroke="#b9d5e6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M196 230 Q240 169 276 131 L526 131 Q562 169 606 230 Q626 258 645 333 L605 324 Q566 284 514 283 H288 Q236 284 197 324 L157 367 Q174 276 196 230Z" fill="#0a141d" stroke="#6b889c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M256 53 Q257 40 276 42 H526 Q545 40 546 53 L532 151 Q529 162 515 163 H287 Q273 162 270 151Z" fill="#080f15" stroke="#62e0f9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M55 64 Q103 42 184 40 Q252 42 401 48 Q550 42 618 40 Q699 42 747 64 Q795 133 802 273 Q808 430 775 453 Q746 480 716 440 L605 324 Q566 284 514 283 H288 Q236 284 197 324 L86 440 Q56 480 27 453 Q-6 430 0 273 Q7 133 55 64Z" fill="url(#shell)" stroke="#7c9eb7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M90 52 Q117 15 170 13 H218 Q233 13 239 42 M563 42 Q569 13 584 13 H632 Q685 15 712 52" fill="#263b50" stroke="#739bb6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M55 73 Q101 45 197 43 L242 48 L226 76 Q125 60 72 101Z" fill="#304657" stroke="#6898b4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M747 73 Q701 45 605 43 L560 48 L576 76 Q677 60 730 101Z" fill="#304657" stroke="#6898b4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196 230 Q240 169 276 131 L526 131 Q562 169 606 230 Q626 258 645 333 L605 324 Q566 284 514 283 H288 Q236 284 197 324 L157 367 Q174 276 196 230Z" fill="#172432" stroke="#6b889c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M256 53 Q257 40 276 42 H526 Q545 40 546 53 L532 151 Q529 162 515 163 H287 Q273 162 270 151Z" fill="url(#touch)" stroke="#62e0f9" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="380" cy="181" r="1.15" fill="#5b7388" stroke="none" stroke-width="1"/>
 <circle cx="380" cy="187" r="1.15" fill="#5b7388" stroke="none" stroke-width="1"/>
 <circle cx="380" cy="193" r="1.15" fill="#5b7388" stroke="none" stroke-width="1"/>
@@ -46,178 +51,488 @@
 <rect x="378" y="159" width="46" height="3" rx="1" fill="#62e0f9" stroke="none" stroke-width="1"/>
 <rect x="229" y="82" width="14" height="25" rx="5" fill="#13202e" stroke="none" stroke-width="1"/>
 <rect x="559" y="82" width="14" height="25" rx="5" fill="#13202e" stroke="none" stroke-width="1"/>
-<text x="222" y="123" font-size="15" fill="#a3c5da" font-weight="700" text-anchor="middle">Create</text>
-<text x="582" y="123" font-size="15" fill="#a3c5da" font-weight="700" text-anchor="middle">Options</text>
+<text x="222" y="123" font-size="15" fill="#162a3c" font-weight="700" text-anchor="middle">Create</text>
+<text x="582" y="123" font-size="15" fill="#162a3c" font-weight="700" text-anchor="middle">Options</text>
 <text x="167" y="35" font-size="19" fill="#62e0f9" font-weight="700" text-anchor="middle">L2</text>
 <text x="635" y="35" font-size="19" fill="#62e0f9" font-weight="700" text-anchor="middle">R2</text>
 <text x="118" y="74" font-size="18" fill="#62e0f9" font-weight="700" text-anchor="middle">L1</text>
 <text x="684" y="74" font-size="18" fill="#62e0f9" font-weight="700" text-anchor="middle">R1</text>
-<rect x="135" y="115" width="32" height="32" rx="6" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<rect x="135" y="115" width="32" height="32" rx="6" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="151" y="138" font-size="21" fill="#62e0f9" font-weight="700" text-anchor="middle">↑</text>
-<rect x="101" y="149" width="32" height="32" rx="6" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<rect x="101" y="149" width="32" height="32" rx="6" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="117" y="172" font-size="21" fill="#62e0f9" font-weight="700" text-anchor="middle">←</text>
-<rect x="135" y="183" width="32" height="32" rx="6" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<rect x="135" y="183" width="32" height="32" rx="6" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="151" y="206" font-size="21" fill="#62e0f9" font-weight="700" text-anchor="middle">↓</text>
-<rect x="169" y="149" width="32" height="32" rx="6" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<rect x="169" y="149" width="32" height="32" rx="6" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="185" y="172" font-size="21" fill="#62e0f9" font-weight="700" text-anchor="middle">→</text>
-<circle cx="650" cy="131" r="17" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<circle cx="650" cy="131" r="17" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="650" y="139" font-size="25" fill="#62e0f9" font-weight="700" text-anchor="middle">△</text>
-<circle cx="616" cy="165" r="17" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<circle cx="616" cy="165" r="17" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="616" y="173" font-size="25" fill="#62e0f9" font-weight="700" text-anchor="middle">□</text>
-<circle cx="650" cy="199" r="17" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<circle cx="650" cy="199" r="17" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="650" y="207" font-size="25" fill="#62e0f9" font-weight="700" text-anchor="middle">×</text>
-<circle cx="684" cy="165" r="17" fill="#0a141d" stroke="#4f6b81" stroke-width="1.5"/>
+<circle cx="684" cy="165" r="17" fill="#172638" stroke="#4f6b81" stroke-width="1.5"/>
 <text x="684" y="173" font-size="25" fill="#62e0f9" font-weight="700" text-anchor="middle">○</text>
 <circle cx="292" cy="227" r="45" fill="#101923" stroke="#627c91" stroke-width="3"/>
-<circle cx="292" cy="227" r="35" fill="#0a141d" stroke="#111a25" stroke-width="3"/>
-<circle cx="292" cy="227" r="27" fill="#0a141d" stroke="#4e6378" stroke-width="1"/>
+<circle cx="292" cy="227" r="35" fill="#263649" stroke="#111a25" stroke-width="3"/>
+<circle cx="292" cy="227" r="27" fill="#283e50" stroke="#4e6378" stroke-width="1"/>
 <text x="292" y="234" font-size="20" fill="#62e0f9" font-weight="700" text-anchor="middle">L3</text>
 <rect x="271" y="268" width="42" height="26" rx="9" fill="#101923" stroke="#52687d" stroke-width="1"/>
 <text x="292" y="286" font-size="12" fill="#a7bbcd" font-weight="700" text-anchor="middle">Fn</text>
 <circle cx="510" cy="227" r="45" fill="#101923" stroke="#627c91" stroke-width="3"/>
-<circle cx="510" cy="227" r="35" fill="#0a141d" stroke="#111a25" stroke-width="3"/>
-<circle cx="510" cy="227" r="27" fill="#0a141d" stroke="#4e6378" stroke-width="1"/>
+<circle cx="510" cy="227" r="35" fill="#263649" stroke="#111a25" stroke-width="3"/>
+<circle cx="510" cy="227" r="27" fill="#283e50" stroke="#4e6378" stroke-width="1"/>
 <text x="510" y="234" font-size="20" fill="#62e0f9" font-weight="700" text-anchor="middle">R3</text>
 <rect x="489" y="268" width="42" height="26" rx="9" fill="#101923" stroke="#52687d" stroke-width="1"/>
 <text x="510" y="286" font-size="12" fill="#a7bbcd" font-weight="700" text-anchor="middle">Fn</text>
 <circle cx="401" cy="241" r="16" fill="#111a24" stroke="#435c6f" stroke-width="1"/>
 <text x="401" y="245" font-size="10" fill="#b2c9db" font-weight="700" text-anchor="middle">PS</text>
-<rect x="392" y="266" width="18" height="6" rx="3" fill="#728ea2" stroke="none" stroke-width="1"/>
-
+<rect x="392" y="266" width="18" height="6" rx="3" fill="#728ea2" stroke="none" stroke-width="1"/></g>
+<text x="78" y="201" font-size="17" fill="#62d9f4" font-weight="700" text-anchor="start">ЛЕВЫЙ СТИК</text>
+<text x="78" y="240" font-size="21" fill="#edf5fd" font-weight="400" text-anchor="start">Крен: наклон влево / вправо</text>
+<text x="78" y="273" font-size="21" fill="#edf5fd" font-weight="400" text-anchor="start">Тяга: наклон вперёд / назад</text>
+<text x="78" y="306" font-size="21" fill="#edf5fd" font-weight="400" text-anchor="start">Форсаж: нажатие L3</text>
+<text x="78" y="339" font-size="21" fill="#edf5fd" font-weight="400" text-anchor="start">L1 + наклон: смещение вбок</text>
+<text x="78" y="372" font-size="21" fill="#edf5fd" font-weight="400" text-anchor="start">или подъём / спуск</text>
+<text x="1163" y="190" font-size="17" fill="#62d9f4" font-weight="700" text-anchor="start">ЦВЕТНЫЕ ОБОЗНАЧЕНИЯ</text>
+<rect x="1163" y="204" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1185" y="222" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="1237" y="222" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Удерживать L1</text>
+<rect x="1163" y="236" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="1182.5" y="254" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+<text x="1237" y="254" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Режим взаимодействия</text>
+<rect x="1163" y="268" width="40" height="25" rx="6" fill="#143525" stroke="#73e5a1"/>
+<text x="1183" y="286" font-size="15" fill="#73e5a1" font-weight="700" text-anchor="middle">SC</text>
+<text x="1237" y="286" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Режим сканирования</text>
+<rect x="1163" y="300" width="46" height="25" rx="6" fill="#382339" stroke="#ff8ac0"/>
+<text x="1186" y="318" font-size="15" fill="#ff8ac0" font-weight="700" text-anchor="middle">MG</text>
+<text x="1237" y="318" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Режим добычи</text>
+<rect x="1163" y="332" width="43" height="25" rx="6" fill="#39351f" stroke="#f2e387"/>
+<text x="1184.5" y="350" font-size="15" fill="#f2e387" font-weight="700" text-anchor="middle">ML</text>
+<text x="1237" y="350" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Ракетный режим</text>
+<rect x="1163" y="364" width="41" height="25" rx="6" fill="#13353a" stroke="#52ddd7"/>
+<text x="1183.5" y="382" font-size="15" fill="#52ddd7" font-weight="700" text-anchor="middle">QT</text>
+<text x="1237" y="382" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Квантовый режим</text>
+<rect x="1163" y="396" width="40" height="25" rx="6" fill="#203451" stroke="#9ec8ff"/>
+<text x="1183" y="414" font-size="15" fill="#9ec8ff" font-weight="700" text-anchor="middle">EA</text>
+<text x="1237" y="414" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Арена</text>
+<rect x="1163" y="428" width="62" height="25" rx="6" fill="#20353e" stroke="#a7d2da"/>
+<text x="1194" y="446" font-size="15" fill="#a7d2da" font-weight="700" text-anchor="middle">VIEW</text>
+<text x="1237" y="446" font-size="18" fill="#e2edf7" font-weight="400" text-anchor="start">Свободный обзор</text>
+<text x="1163" y="490" font-size="16" fill="#a9c4d7" font-weight="400" text-anchor="start">«По умолчанию» — из настроек игры 4.10,</text>
+<text x="1163" y="513" font-size="16" fill="#a9c4d7" font-weight="400" text-anchor="start">не записано в экспорте CDFv2.</text>
+<g data-control="l2">
+<rect x="49" y="557" width="382" height="474" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="65" y="588" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">L2 / Левый курок</text>
+<path d="M65 600h350" stroke="#294353"/>
+<text x="65" y="622" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Огонь группы оружия 2</text>
+<rect x="65" y="629" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="647" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<text x="65" y="686" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Пустить ракету</text>
+<rect x="65" y="693" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="711" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="693" width="43" height="25" rx="6" fill="#39351f" stroke="#f2e387"/>
+<text x="189.5" y="711" font-size="15" fill="#f2e387" font-weight="700" text-anchor="middle">ML</text>
+<text x="65" y="750" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Уменьшить угол сканирования</text>
+<rect x="65" y="757" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="775" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="757" width="40" height="25" rx="6" fill="#143525" stroke="#73e5a1"/>
+<text x="188" y="775" font-size="15" fill="#73e5a1" font-weight="700" text-anchor="middle">SC</text>
+<rect x="215" y="757" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="288" y="775" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="65" y="814" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Уменьшить мощность лазера</text>
+<text x="65" y="836" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">добычи</text>
+<rect x="65" y="843" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="861" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="843" width="46" height="25" rx="6" fill="#382339" stroke="#ff8ac0"/>
+<text x="191" y="861" font-size="15" fill="#ff8ac0" font-weight="700" text-anchor="middle">MG</text>
+<rect x="221" y="843" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="294" y="861" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="65" y="900" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Снизить лимит скорости</text>
+<rect x="65" y="907" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="925" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="907" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="190" y="925" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="65" y="964" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Отдалить</text>
+<rect x="65" y="971" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="989" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="971" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="187.5" y="989" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
 </g>
-<text x="49" y="178" font-size="23" fill="#ffbc58" font-weight="750">L1 + R1  /  оба бампера</text>
-<text x="49" y="207" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Включить / выключить ракетный режим</tspan></text>
-<text x="49" y="232" font-size="18" xml:space="preserve"><tspan fill="#fa91c6" font-weight="750">MG</tspan><tspan fill="#dcebf5" font-weight="400">  Сменить лазер добычи</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="49" y="257" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Запустить / отменить самоуничтожение</tspan><tspan fill="#abc0d0" font-weight="650">  [H+]</tspan></text>
-<polyline points="702,334 702,350 826,428 892,500" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="892" cy="500" r="4" fill="#c1e0ef"/>
-<text x="520" y="160" font-size="23" fill="#86dcfa" font-weight="750">L2</text>
-<text x="520" y="189" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Огонь группы оружия 2</tspan></text>
-<text x="520" y="214" font-size="18" xml:space="preserve"><tspan fill="#f4de85" font-weight="750">ML</tspan><tspan fill="#dcebf5" font-weight="400">  Пустить ракету</tspan></text>
-<text x="520" y="239" font-size="18" xml:space="preserve"><tspan fill="#73e5a1" font-weight="750">SC</tspan><tspan fill="#dcebf5" font-weight="400">  Уменьшить угол сканирования</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="520" y="264" font-size="18" xml:space="preserve"><tspan fill="#fa91c6" font-weight="750">MG</tspan><tspan fill="#dcebf5" font-weight="400">  Уменьшить мощность лазера добычи</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="520" y="289" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Снизить лимит скорости</tspan></text>
-<text x="520" y="314" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Отдалить</tspan></text>
-<polyline points="919,251 919,380 968,404 968,576" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="968" cy="576" r="4" fill="#c1e0ef"/>
-<text x="952" y="147" font-size="23" fill="#86dcfa" font-weight="750">Create</text>
-<text x="952" y="176" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Круговое меню действий (PIT)</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="952" y="201" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Открыть mobiGlas</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="952" y="226" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Открыть карту звёзд</tspan><tspan fill="#abc0d0" font-weight="650">  [H] †</tspan></text>
-<polyline points="1243,299 1243,382 1319,414 1324,576" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1324" cy="576" r="4" fill="#c1e0ef"/>
-<text x="1290" y="221" font-size="23" fill="#86dcfa" font-weight="750">Options</text>
-<text x="1290" y="250" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Пауза / настройки</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1290" y="275" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#a2caff" font-weight="750">  EA</tspan><tspan fill="#dcebf5" font-weight="400">  Таблица результатов</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="1620,307 1516,307 1430,382 1398,500" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1398" cy="500" r="4" fill="#c1e0ef"/>
-<text x="1620" y="153" font-size="23" fill="#86dcfa" font-weight="750">R2</text>
-<text x="1620" y="182" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Огонь группы оружия 1</tspan></text>
-<text x="1620" y="207" font-size="18" xml:space="preserve"><tspan fill="#73e5a1" font-weight="750">SC</tspan><tspan fill="#dcebf5" font-weight="400">  Увеличить угол сканирования</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1620" y="232" font-size="18" xml:space="preserve"><tspan fill="#fa91c6" font-weight="750">MG</tspan><tspan fill="#dcebf5" font-weight="400">  Увеличить мощность лазера добычи</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1620" y="257" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Повысить лимит скорости</tspan></text>
-<text x="1620" y="282" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Приблизить</tspan></text>
-<polyline points="652,447 720,447 839,546" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="839" cy="546" r="4" fill="#c1e0ef"/>
-<text x="466" y="398" font-size="23" fill="#ffbc58" font-weight="750">L1</text>
-<text x="466" y="427" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Модификатор для сочетаний</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<polyline points="1654,414 1587,414 1525,478 1451,546" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1451" cy="546" r="4" fill="#c1e0ef"/>
-<text x="1664" y="384" font-size="23" fill="#86dcfa" font-weight="750">R1</text>
-<text x="1664" y="413" font-size="18" xml:space="preserve"><tspan fill="#f4de85" font-weight="750">ML</tspan><tspan fill="#dcebf5" font-weight="400">  Следующий тип ракет</tspan></text>
-<text x="1664" y="438" font-size="18" xml:space="preserve"><tspan fill="#fa91c6" font-weight="750">MG</tspan><tspan fill="#dcebf5" font-weight="400">  Включить / выключить лазер добычи</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1664" y="463" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Импульс радара</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="1664" y="488" font-size="18" xml:space="preserve"><tspan fill="#73e5a1" font-weight="750">SC</tspan><tspan fill="#dcebf5" font-weight="400">  Сканировать цель</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="1664" y="513" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Выбрать объект</tspan></text>
-<polyline points="548,487 568,487 630,581 715,581 785,661 1027,715" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1027" cy="715" r="4" fill="#c1e0ef"/>
-<text x="52" y="464" font-size="23" fill="#86dcfa" font-weight="750">L3  /  левый стик</text>
-<text x="52" y="493" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Форсаж</tspan><tspan fill="#abc0d0" font-weight="650">  [стик] †</tspan></text>
-<text x="52" y="518" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Наклон влево / вправо: крен</tspan></text>
-<text x="52" y="543" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Наклон вперёд / назад: тяга</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="52" y="568" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Переключить круиз-контроль</tspan><tspan fill="#abc0d0" font-weight="650">  [стик]</tspan></text>
-<text x="52" y="593" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Наклон вперёд / назад: подъём / спуск</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="52" y="618" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Наклон влево / вправо: боковое смещение</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="460,758 588,758 658,675 696,675 875,611" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="875" cy="611" r="4" fill="#c1e0ef"/>
-<text x="52" y="727" font-size="23" fill="#86dcfa" font-weight="750">↑</text>
-<text x="52" y="756" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Выбрать цель под прицелом</tspan></text>
-<text x="52" y="781" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Захватить ближайшего противника</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="52" y="806" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Экран корабля: вверх</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="460,881 600,881 663,796 710,796 838,648" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="838" cy="648" r="4" fill="#c1e0ef"/>
-<text x="52" y="851" font-size="23" fill="#86dcfa" font-weight="750">←</text>
-<text x="52" y="880" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Следующая подсистема цели</tspan></text>
-<text x="52" y="905" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Сбросить выбор подсистемы</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="52" y="930" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Следующая дружественная цель</tspan></text>
-<text x="52" y="955" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Экран корабля: влево</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="1768,577 1693,577 1655,615 1545,615 1414,611" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1414" cy="611" r="4" fill="#c1e0ef"/>
-<text x="1780" y="546" font-size="23" fill="#86dcfa" font-weight="750">△</text>
-<text x="1780" y="575" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Открыть режим взаимодействия</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="1780" y="600" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Сменить вид камеры</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="1787,700 1680,700 1633,653 1510,653 1451,648" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1451" cy="648" r="4" fill="#c1e0ef"/>
-<text x="1800" y="671" font-size="23" fill="#86dcfa" font-weight="750">○</text>
-<text x="1800" y="700" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Переключить режим наведения</tspan></text>
-<text x="1800" y="725" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Переключить режим без автоторможения</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="1800" y="750" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Выйти из кресла</tspan></text>
-<text x="1800" y="775" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Катапультироваться</tspan><tspan fill="#abc0d0" font-weight="650">  [H+]</tspan></text>
-<polyline points="1768,861 1670,861 1575,768 1515,768 1377,648" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1377" cy="648" r="4" fill="#c1e0ef"/>
-<text x="1780" y="837" font-size="23" fill="#86dcfa" font-weight="750">□</text>
-<text x="1780" y="866" font-size="18" xml:space="preserve"><tspan fill="#a2caff" font-weight="750">EA</tspan><tspan fill="#dcebf5" font-weight="400">  Возродиться</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1780" y="891" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Включить / выключить квантовый режим</tspan></text>
-<text x="1780" y="916" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#69dcd5" font-weight="750">  QT</tspan><tspan fill="#dcebf5" font-weight="400">  Запустить квантовый переход</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<polyline points="1780,1006 1652,1006 1567,936 1515,936 1414,685" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1414" cy="685" r="4" fill="#c1e0ef"/>
-<text x="1792" y="982" font-size="23" fill="#86dcfa" font-weight="750">×</text>
-<text x="1792" y="1011" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Выпустить контрмеру (ложную цель)</tspan></text>
-<text x="1792" y="1036" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Посмотреть назад</tspan><tspan fill="#abc0d0" font-weight="650">  [H] †</tspan></text>
-<polyline points="578,1067 578,1034 764,930 832,930 875,685" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="875" cy="685" r="4" fill="#c1e0ef"/>
-<text x="320" y="1085" font-size="23" fill="#86dcfa" font-weight="750">↓</text>
-<text x="320" y="1114" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Выпустить / убрать шасси</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="320" y="1139" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Запросить посадку у диспетчера</tspan><tspan fill="#abc0d0" font-weight="650">  [2]</tspan></text>
-<text x="320" y="1164" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Автопосадка</tspan><tspan fill="#abc0d0" font-weight="650">  [H] †</tspan></text>
-<text x="320" y="1189" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Включить / выключить фары</tspan></text>
-<text x="320" y="1214" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Экран корабля: вниз</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="914,1068 914,960 979,893 912,648" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="912" cy="648" r="4" fill="#c1e0ef"/>
-<text x="802" y="1085" font-size="23" fill="#86dcfa" font-weight="750">→</text>
-<text x="802" y="1114" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Включить / выключить режим сканирования</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="802" y="1139" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Включить / выключить добычу</tspan></text>
-<text x="802" y="1164" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Сменить основной режим полёта</tspan><tspan fill="#abc0d0" font-weight="650">  [H]</tspan></text>
-<text x="802" y="1189" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Экран корабля: вправо</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<polyline points="1340,1055 1340,941 1263,859 1263,715" stroke="#526c7e" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="1263" cy="715" r="4" fill="#c1e0ef"/>
-<text x="1348" y="1066" font-size="23" fill="#86dcfa" font-weight="750">R3  /  правый стик</text>
-<text x="1348" y="1095" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Наклон влево / вправо: поворот носа</tspan></text>
-<text x="1348" y="1120" font-size="18" xml:space="preserve"><tspan fill="#dcebf5" font-weight="400">Наклон вверх / вниз: тангаж</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1348" y="1145" font-size="18" xml:space="preserve"><tspan fill="#a7d2da" font-weight="750">VIEW</tspan><tspan fill="#dcebf5" font-weight="400">  Наклон влево / вправо: обзор</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1348" y="1170" font-size="18" xml:space="preserve"><tspan fill="#a7d2da" font-weight="750">VIEW</tspan><tspan fill="#dcebf5" font-weight="400">  Наклон вверх / вниз: обзор</tspan><tspan fill="#abc0d0" font-weight="650">  †</tspan></text>
-<text x="1348" y="1195" font-size="18" xml:space="preserve"><tspan fill="#ffbc58" font-weight="750">M1</tspan><tspan fill="#dcebf5" font-weight="400">  Затормозить корабль</tspan><tspan fill="#abc0d0" font-weight="650">  [стик]</tspan></text>
-<text x="1348" y="1220" font-size="18" xml:space="preserve"><tspan fill="#d6adff" font-weight="750">IM</tspan><tspan fill="#dcebf5" font-weight="400">  Сфокусироваться</tspan><tspan fill="#abc0d0" font-weight="650">  [стик]</tspan></text>
-<polyline points="50,1248 2310,1248" stroke="#324b5d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="49" y="1284" font-size="19" fill="#ffbc58" font-weight="750">M1</text>
-<text x="92" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Зажать L1</text>
-<text x="290" y="1284" font-size="19" fill="#d6adff" font-weight="750">IM</text>
-<text x="333" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Взаимодействие</text>
-<text x="585" y="1284" font-size="19" fill="#73e5a1" font-weight="750">SC</text>
-<text x="628" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Сканирование</text>
-<text x="864" y="1284" font-size="19" fill="#fa91c6" font-weight="750">MG</text>
-<text x="907" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Добыча</text>
-<text x="1063" y="1284" font-size="19" fill="#f4de85" font-weight="750">ML</text>
-<text x="1106" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Ракеты</text>
-<text x="1255" y="1284" font-size="19" fill="#69dcd5" font-weight="750">QT</text>
-<text x="1298" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Квантовый режим</text>
-<text x="1583" y="1284" font-size="19" fill="#a2caff" font-weight="750">EA</text>
-<text x="1626" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Арена</text>
-<text x="1769" y="1284" font-size="19" fill="#a7d2da" font-weight="750">VIEW</text>
-<text x="1833" y="1284" font-size="18" fill="#dcebf5" font-weight="400">Свободный обзор</text>
-<text x="49" y="1332" font-size="18" fill="#abc0d0" font-weight="400">[2] Двойное нажатие</text>
-<text x="345" y="1332" font-size="18" fill="#abc0d0" font-weight="400">[H] Удерживать</text>
-<text x="588" y="1332" font-size="18" fill="#abc0d0" font-weight="400">[H+] Долго удерживать</text>
-<text x="922" y="1332" font-size="18" fill="#abc0d0" font-weight="400">[стик] Нажать стик</text>
-<text x="1230" y="1332" font-size="18" fill="#abc0d0" font-weight="400">† По умолчанию (вне экспорта)</text>
+<g data-control="l1">
+<rect x="449" y="557" width="382" height="474" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="465" y="588" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">L1 / Левый бампер</text>
+<path d="M465 600h350" stroke="#294353"/>
+<text x="465" y="622" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Модификатор для сочетаний</text>
+<rect x="465" y="629" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="524.5" y="647" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+</g>
+<g data-control="r1">
+<rect x="849" y="557" width="382" height="474" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="865" y="588" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">R1 / Правый бампер</text>
+<path d="M865 600h350" stroke="#294353"/>
+<text x="865" y="622" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Следующий тип ракет</text>
+<rect x="865" y="629" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="647" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="629" width="43" height="25" rx="6" fill="#39351f" stroke="#f2e387"/>
+<text x="989.5" y="647" font-size="15" fill="#f2e387" font-weight="700" text-anchor="middle">ML</text>
+<text x="865" y="686" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить лазер</text>
+<text x="865" y="708" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">добычи</text>
+<rect x="865" y="715" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="956" y="733" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="1054" y="715" width="46" height="25" rx="6" fill="#382339" stroke="#ff8ac0"/>
+<text x="1077" y="733" font-size="15" fill="#ff8ac0" font-weight="700" text-anchor="middle">MG</text>
+<rect x="865" y="746" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="938" y="764" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="865" y="803" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Импульс радара</text>
+<rect x="865" y="810" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="924.5" y="828" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<text x="865" y="867" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сканировать цель</text>
+<rect x="865" y="874" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="924.5" y="892" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="991" y="874" width="40" height="25" rx="6" fill="#143525" stroke="#73e5a1"/>
+<text x="1011" y="892" font-size="15" fill="#73e5a1" font-weight="700" text-anchor="middle">SC</text>
+<text x="865" y="931" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Выбрать объект</text>
+<rect x="865" y="938" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="956" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="938" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="987.5" y="956" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+</g>
+<g data-control="r2">
+<rect x="1249" y="557" width="382" height="474" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="1265" y="588" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">R2 / Правый курок</text>
+<path d="M1265 600h350" stroke="#294353"/>
+<text x="1265" y="622" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Огонь группы оружия 1</text>
+<rect x="1265" y="629" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="647" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<text x="1265" y="686" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Увеличить угол сканирования</text>
+<rect x="1265" y="693" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="711" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="693" width="40" height="25" rx="6" fill="#143525" stroke="#73e5a1"/>
+<text x="1388" y="711" font-size="15" fill="#73e5a1" font-weight="700" text-anchor="middle">SC</text>
+<rect x="1415" y="693" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1488" y="711" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="750" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Увеличить мощность лазера</text>
+<text x="1265" y="772" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">добычи</text>
+<rect x="1265" y="779" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="797" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="779" width="46" height="25" rx="6" fill="#382339" stroke="#ff8ac0"/>
+<text x="1391" y="797" font-size="15" fill="#ff8ac0" font-weight="700" text-anchor="middle">MG</text>
+<rect x="1421" y="779" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1494" y="797" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="836" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Повысить лимит скорости</text>
+<rect x="1265" y="843" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="861" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="843" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1390" y="861" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="1265" y="900" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Приблизить</text>
+<rect x="1265" y="907" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="925" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="907" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="1387.5" y="925" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+</g>
+<g data-control="l3">
+<rect x="49" y="1049" width="382" height="465" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="65" y="1080" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">L3 / Левый стик</text>
+<path d="M65 1092h350" stroke="#294353"/>
+<text x="65" y="1114" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Форсаж</text>
+<rect x="65" y="1121" width="149" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="139.5" y="1139" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие стика</text>
+<rect x="221" y="1121" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="294" y="1139" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="65" y="1178" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон влево / вправо: крен</text>
+<text x="65" y="1211" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон вперёд / назад: тяга</text>
+<rect x="65" y="1218" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="138" y="1236" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="65" y="1275" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Переключить круиз-контроль</text>
+<rect x="65" y="1282" width="235" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="182.5" y="1300" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие стика</text>
+<rect x="307" y="1282" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="329" y="1300" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="65" y="1339" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон вперёд / назад: подъём /</text>
+<text x="65" y="1361" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">спуск</text>
+<rect x="65" y="1368" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="87" y="1386" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="116" y="1368" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="189" y="1386" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="65" y="1425" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон влево / вправо: боковое</text>
+<text x="65" y="1447" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">смещение</text>
+<rect x="65" y="1454" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="87" y="1472" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="116" y="1454" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="189" y="1472" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="create">
+<rect x="449" y="1049" width="382" height="465" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="465" y="1080" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">Create / Меню действий</text>
+<path d="M465 1092h350" stroke="#294353"/>
+<text x="465" y="1114" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Круговое меню действий (PIT)</text>
+<rect x="465" y="1121" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="513" y="1139" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="568" y="1121" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="641" y="1139" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="465" y="1178" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Открыть mobiGlas</text>
+<rect x="465" y="1185" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="556" y="1203" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="654" y="1185" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="676" y="1203" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="465" y="1216" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="538" y="1234" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="465" y="1273" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Открыть карту звёзд</text>
+<rect x="465" y="1280" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="524.5" y="1298" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="591" y="1280" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="613" y="1298" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="642" y="1280" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="715" y="1298" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="options">
+<rect x="849" y="1049" width="382" height="465" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="865" y="1080" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">Options / Пауза</text>
+<path d="M865 1092h350" stroke="#294353"/>
+<text x="865" y="1114" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Пауза / настройки</text>
+<rect x="865" y="1121" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="1139" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="1121" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1041" y="1139" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="865" y="1178" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Таблица результатов</text>
+<rect x="865" y="1185" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="1203" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="1185" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="990" y="1203" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="1019" y="1185" width="40" height="25" rx="6" fill="#203451" stroke="#9ec8ff"/>
+<text x="1039" y="1203" font-size="15" fill="#9ec8ff" font-weight="700" text-anchor="middle">EA</text>
+<rect x="1066" y="1185" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1139" y="1203" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="r3">
+<rect x="1249" y="1049" width="382" height="465" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="1265" y="1080" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">R3 / Правый стик</text>
+<path d="M1265 1092h350" stroke="#294353"/>
+<text x="1265" y="1114" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон влево / вправо: поворот</text>
+<text x="1265" y="1136" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">носа</text>
+<text x="1265" y="1169" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон вверх / вниз: тангаж</text>
+<rect x="1265" y="1176" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1338" y="1194" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="1233" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон влево / вправо: обзор</text>
+<rect x="1265" y="1240" width="62" height="25" rx="6" fill="#20353e" stroke="#a7d2da"/>
+<text x="1296" y="1258" font-size="15" fill="#a7d2da" font-weight="700" text-anchor="middle">VIEW</text>
+<rect x="1334" y="1240" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1407" y="1258" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="1297" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Наклон вверх / вниз: обзор</text>
+<rect x="1265" y="1304" width="62" height="25" rx="6" fill="#20353e" stroke="#a7d2da"/>
+<text x="1296" y="1322" font-size="15" fill="#a7d2da" font-weight="700" text-anchor="middle">VIEW</text>
+<rect x="1334" y="1304" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1407" y="1322" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="1361" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Затормозить корабль</text>
+<rect x="1265" y="1368" width="149" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1339.5" y="1386" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие стика</text>
+<rect x="1421" y="1368" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1443" y="1386" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="1265" y="1425" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сфокусироваться</text>
+<rect x="1265" y="1432" width="235" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1382.5" y="1450" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие стика</text>
+<rect x="1507" y="1432" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="1526.5" y="1450" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+</g>
+<g data-control="triangle">
+<rect x="49" y="1532" width="382" height="346" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="65" y="1563" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">△ / Треугольник</text>
+<path d="M65 1575h350" stroke="#294353"/>
+<text x="65" y="1597" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Открыть режим взаимодействия</text>
+<rect x="65" y="1604" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="124.5" y="1622" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<text x="65" y="1661" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сменить вид камеры</text>
+<rect x="65" y="1668" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="156" y="1686" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="254" y="1668" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="276" y="1686" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="65" y="1699" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="138" y="1717" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="circle">
+<rect x="449" y="1532" width="382" height="346" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="465" y="1563" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">○ / Круг</text>
+<path d="M465 1575h350" stroke="#294353"/>
+<text x="465" y="1597" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Переключить режим наведения</text>
+<rect x="465" y="1604" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="556" y="1622" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<text x="465" y="1661" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Переключить режим без</text>
+<text x="465" y="1683" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">автоторможения</text>
+<rect x="465" y="1690" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="524.5" y="1708" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<text x="465" y="1747" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Выйти из кресла</text>
+<rect x="465" y="1754" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="556" y="1772" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="654" y="1754" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="676" y="1772" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="465" y="1811" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Катапультироваться</text>
+<rect x="465" y="1818" width="228" height="25" rx="6" fill="#3b2631" stroke="#f9b2b5"/>
+<text x="579" y="1836" font-size="15" fill="#f9b2b5" font-weight="700" text-anchor="middle">Длительное удержание</text>
+<rect x="700" y="1818" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="722" y="1836" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+</g>
+<g data-control="square">
+<rect x="849" y="1532" width="382" height="346" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="865" y="1563" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">□ / Квадрат</text>
+<path d="M865 1575h350" stroke="#294353"/>
+<text x="865" y="1597" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Возродиться</text>
+<rect x="865" y="1604" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="1622" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="1604" width="40" height="25" rx="6" fill="#203451" stroke="#9ec8ff"/>
+<text x="988" y="1622" font-size="15" fill="#9ec8ff" font-weight="700" text-anchor="middle">EA</text>
+<rect x="1015" y="1604" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1088" y="1622" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="865" y="1661" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить квантовый</text>
+<text x="865" y="1683" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">режим</text>
+<rect x="865" y="1690" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="956" y="1708" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="1054" y="1690" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1076" y="1708" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="865" y="1747" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Запустить квантовый переход</text>
+<rect x="865" y="1754" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="924.5" y="1772" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="991" y="1754" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1013" y="1772" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="1042" y="1754" width="41" height="25" rx="6" fill="#13353a" stroke="#52ddd7"/>
+<text x="1062.5" y="1772" font-size="15" fill="#52ddd7" font-weight="700" text-anchor="middle">QT</text>
+</g>
+<g data-control="cross">
+<rect x="1249" y="1532" width="382" height="346" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="1265" y="1563" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">× / Крестик</text>
+<path d="M1265 1575h350" stroke="#294353"/>
+<text x="1265" y="1597" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Выпустить контрмеру (ложную</text>
+<text x="1265" y="1619" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">цель)</text>
+<rect x="1265" y="1626" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="1644" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<text x="1265" y="1683" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Посмотреть назад</text>
+<rect x="1265" y="1690" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1324.5" y="1708" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="1391" y="1690" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1413" y="1708" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<rect x="1442" y="1690" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1515" y="1708" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="up">
+<rect x="49" y="1896" width="382" height="388" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="65" y="1927" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">↑ / Крестовина вверх</text>
+<path d="M65 1939h350" stroke="#294353"/>
+<text x="65" y="1961" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Выбрать цель под прицелом</text>
+<rect x="65" y="1968" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="156" y="1986" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<text x="65" y="2025" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Захватить ближайшего противника</text>
+<rect x="65" y="2032" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="124.5" y="2050" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="191" y="2032" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="213" y="2050" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="65" y="2089" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Экран корабля: вверх</text>
+<rect x="65" y="2096" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="113" y="2114" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="168" y="2096" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="187.5" y="2114" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+<rect x="214" y="2096" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="287" y="2114" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="left">
+<rect x="449" y="1896" width="382" height="388" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="465" y="1927" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">← / Крестовина влево</text>
+<path d="M465 1939h350" stroke="#294353"/>
+<text x="465" y="1961" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Следующая подсистема цели</text>
+<rect x="465" y="1968" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="556" y="1986" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<text x="465" y="2025" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сбросить выбор подсистемы</text>
+<rect x="465" y="2032" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="524.5" y="2050" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<text x="465" y="2089" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Следующая дружественная цель</text>
+<rect x="465" y="2096" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="556" y="2114" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="654" y="2096" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="676" y="2114" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="465" y="2153" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Экран корабля: влево</text>
+<rect x="465" y="2160" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="513" y="2178" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="568" y="2160" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="587.5" y="2178" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+<rect x="614" y="2160" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="687" y="2178" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="down">
+<rect x="849" y="1896" width="382" height="388" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="865" y="1927" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">↓ / Крестовина вниз</text>
+<path d="M865 1939h350" stroke="#294353"/>
+<text x="865" y="1961" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Выпустить / убрать шасси</text>
+<rect x="865" y="1968" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="956" y="1986" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="1054" y="1968" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1127" y="1986" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="865" y="2025" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Запросить посадку у диспетчера</text>
+<rect x="865" y="2032" width="173" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="951.5" y="2050" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Двойное нажатие</text>
+<text x="865" y="2089" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Автопосадка</text>
+<rect x="865" y="2096" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="924.5" y="2114" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="991" y="2096" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1064" y="2114" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="865" y="2153" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить фары</text>
+<rect x="865" y="2160" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="2178" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="2160" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="990" y="2178" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="865" y="2217" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Экран корабля: вниз</text>
+<rect x="865" y="2224" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="913" y="2242" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="968" y="2224" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="987.5" y="2242" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+<rect x="1014" y="2224" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1087" y="2242" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="right">
+<rect x="1249" y="1896" width="382" height="388" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="1265" y="1927" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">→ / Крестовина вправо</text>
+<path d="M1265 1939h350" stroke="#294353"/>
+<text x="1265" y="1961" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить режим</text>
+<text x="1265" y="1983" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">сканирования</text>
+<rect x="1265" y="1990" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="2008" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="1990" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1441" y="2008" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1265" y="2047" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить добычу</text>
+<rect x="1265" y="2054" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1356" y="2072" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="1454" y="2054" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1476" y="2072" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="1265" y="2111" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сменить основной режим полёта</text>
+<rect x="1265" y="2118" width="119" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1324.5" y="2136" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Удержание</text>
+<rect x="1391" y="2118" width="44" height="25" rx="6" fill="#382a19" stroke="#ffbe58"/>
+<text x="1413" y="2136" font-size="15" fill="#ffbe58" font-weight="700" text-anchor="middle">M1</text>
+<text x="1265" y="2175" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Экран корабля: вправо</text>
+<rect x="1265" y="2182" width="96" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="1313" y="2200" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Нажатие</text>
+<rect x="1368" y="2182" width="39" height="25" rx="6" fill="#302346" stroke="#d6adff"/>
+<text x="1387.5" y="2200" font-size="15" fill="#d6adff" font-weight="700" text-anchor="middle">IM</text>
+<rect x="1414" y="2182" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="1487" y="2200" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+</g>
+<g data-control="missile-mode">
+<rect x="49" y="2302" width="1582" height="163" rx="12" fill="#101d2a" stroke="#294353"/>
+<text x="65" y="2333" font-size="19" fill="#62d9f4" font-weight="700" text-anchor="start">L1 + R1 / Оба бампера</text>
+<path d="M65 2345h1550" stroke="#294353"/>
+<text x="65" y="2367" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Включить / выключить ракетный</text>
+<text x="65" y="2389" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">режим</text>
+<rect x="65" y="2396" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="156" y="2414" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<text x="585" y="2367" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Сменить лазер добычи</text>
+<rect x="585" y="2374" width="182" height="25" rx="6" fill="#223142" stroke="#d5e1ee"/>
+<text x="676" y="2392" font-size="15" fill="#d5e1ee" font-weight="700" text-anchor="middle">Короткое нажатие</text>
+<rect x="774" y="2374" width="46" height="25" rx="6" fill="#382339" stroke="#ff8ac0"/>
+<text x="797" y="2392" font-size="15" fill="#ff8ac0" font-weight="700" text-anchor="middle">MG</text>
+<rect x="585" y="2405" width="146" height="25" rx="6" fill="#1f2d3b" stroke="#bbcbdc"/>
+<text x="658" y="2423" font-size="15" fill="#bbcbdc" font-weight="700" text-anchor="middle">По умолчанию</text>
+<text x="1105" y="2367" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">Запустить / отменить</text>
+<text x="1105" y="2389" font-size="18" fill="#edf5fd" font-weight="400" text-anchor="start">самоуничтожение</text>
+<rect x="1105" y="2396" width="228" height="25" rx="6" fill="#3b2631" stroke="#f9b2b5"/>
+<text x="1219" y="2414" font-size="15" fill="#f9b2b5" font-weight="700" text-anchor="middle">Длительное удержание</text>
+</g>
+<text x="49" y="2494" font-size="17" fill="#a9c4d7" font-weight="700" text-anchor="start">Xbox → PS5: A = ×   B = ○   X = □   Y = △</text>
 </svg>
