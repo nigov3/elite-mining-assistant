@@ -294,9 +294,9 @@ function renderMainGuideCard(entry){
  return card;
 }
 async function showGuides(){
- content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters guide-filters"><input id="guide-q" aria-label="Поиск корабля или гайда" placeholder="Поиск корабля или гайда"><select id="guide-category" aria-label="Категория"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role" aria-label="Специализация"><option value="">Все специализации</option></select></div><p id="guide-count" role="status"></p><section class="guide-catalog-group" aria-labelledby="guide-ships-title" hidden><h3 id="guide-ships-title">Досье кораблей</h3><p class="muted">Выбери корабль, затем роль.</p><div id="guide-ships" class="guide-grid"></div></section><section class="guide-catalog-group" aria-labelledby="guide-main-title" hidden><h3 id="guide-main-title">Основные гайды</h3><div id="guide-main" class="guide-grid"></div></section>';
+ content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters guide-filters"><input id="guide-q" aria-label="Поиск корабля или гайда" placeholder="Поиск корабля или гайда"><select id="guide-category" aria-label="Категория"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role" aria-label="Специализация"><option value="">Все специализации</option></select></div><p id="guide-count" role="status"></p><details id="guide-dossiers" class="guide-catalog-group guide-dossiers" hidden><summary class="guide-dossiers-summary"><span>Досье кораблей</span></summary><div class="guide-dossiers-body"><p class="muted">Выбери корабль, затем роль.</p><div id="guide-ships" class="guide-grid"></div></div></details><section class="guide-catalog-group" aria-labelledby="guide-main-title" hidden><h3 id="guide-main-title">Основные гайды</h3><div id="guide-main" class="guide-grid"></div></section>';
  const q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');
- const shipsGrid=document.getElementById('guide-ships'),mainGrid=document.getElementById('guide-main');
+ const dossiers=document.getElementById('guide-dossiers'),shipsGrid=document.getElementById('guide-ships'),mainGrid=document.getElementById('guide-main');
  count.textContent='Загрузка каталога…';
  try{
   const entries=await loadGuideCatalog();
@@ -309,7 +309,8 @@ async function showGuides(){
   function draw(){
    const {ships,main}=filterGuideCatalog(catalog,q.value,cat.value,role.value);
    count.textContent=ships.length||main.length?'Корабли: '+ships.length+' · Основные гайды: '+main.length:'Ничего не найдено. Попробуй другой запрос или фильтр.';
-   shipsGrid.parentElement.hidden=!ships.length;
+   dossiers.hidden=!ships.length;
+   if(ships.length&&(requestedShip||q.value.trim()||role.value||cat.value==='Корабли'))dossiers.open=true;
    mainGrid.parentElement.hidden=!main.length;
    shipsGrid.replaceChildren(...ships.map(ship=>{
     const card=renderShipCard(ship,role.value,openShips.has(ship.title)||Boolean(q.value.trim()&&ships.length===1));

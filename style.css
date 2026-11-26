@@ -123,6 +123,13 @@ body.overlay-mode .hero h2{font-size:22px;margin:3px 0}
 .guide-catalog-group{margin:20px 0 28px}
 .guide-catalog-group h3{margin:0 0 6px}
 .guide-catalog-group p{margin:0 0 12px}
+.guide-dossiers{border:1px solid var(--hud-border);border-radius:12px}
+.guide-dossiers-summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:50px;padding:12px 14px;color:var(--hud);font-weight:700;cursor:pointer;list-style:none}
+.guide-dossiers-summary::-webkit-details-marker{display:none}
+.guide-dossiers-summary::after{content:'';width:8px;height:8px;margin:0 3px 4px 0;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+.guide-dossiers[open]>.guide-dossiers-summary::after{transform:rotate(225deg);margin-bottom:-3px}
+.guide-dossiers-summary:focus-visible{outline:2px solid var(--hud);outline-offset:-2px;border-radius:11px}
+.guide-dossiers-body{padding:0 12px 12px}
 .guide-card h4{margin:0;font-size:16px}
 #guide-ships{align-items:start;grid-template-columns:repeat(auto-fill,minmax(min(100%,244px),1fr));gap:10px}
 .guide-ship{min-width:0;border:1px solid var(--hud-border);border-radius:10px;background:rgba(var(--hud-rgb),.045)}
