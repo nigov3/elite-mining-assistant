@@ -28,14 +28,15 @@
             <p class="sc-kicker" id="sc-binding-key"></p>
             <h3 id="sc-binding-title"></h3>
             <ul id="sc-actions"></ul>
+            <p class="muted sc-input-key">Без метки нажатия: нажать один раз. 2×: дважды. «Долго»: длительное удержание. «Клик»: нажатие стика.</p>
           </section>
         </div>
-        <p class="muted sc-note">Явные назначения взяты из экспорта CDFv2. Пометка «По умолчанию» означает, что действие не записано в экспорте и показано по стандартным настройкам игры 4.10. Тачпад, Fn и задние кнопки в экспорте не назначены.</p>
+        <p class="muted sc-note">Явные назначения взяты из экспорта CDFv2. Пометка «†» означает, что действие не записано в экспорте и показано по стандартным настройкам игры 4.10. Тачпад, Fn и задние кнопки в экспорте не назначены.</p>
         <div class="sc-reference">
           <details>
             <summary>Шпаргалка CDFv2 целиком на русском</summary>
-            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=cards" target="_blank" rel="noopener">
-              <img width="1680" height="2523" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
+            <a data-sc-image="dualsense-edge-cdfv2-ru.svg?v=compact" target="_blank" rel="noopener">
+              <img width="1940" height="1476" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
             </a>
           </details>
           <details>
@@ -69,15 +70,19 @@
     function pick(binding) {
       el('#sc-binding-key').textContent = binding.label;
       el('#sc-binding-title').textContent = binding.name;
-      el('#sc-actions').replaceChildren(...binding.actions.map(([tags, action]) => {
+      el('#sc-actions').replaceChildren(...globalThis.starCitizenCompactActions(binding).map(action => {
         const li = node('li');
-        li.append(node('span', action, 'sc-action'));
-        const badges = globalThis.starCitizenDisplayTags(tags, action);
-        if (badges.length) {
+        const label = node('span', action.label, 'sc-action');
+        label.title = action.full;
+        label.setAttribute('aria-label', action.full);
+        li.append(label);
+        if (action.keys.length) {
           const row = node('div', '', 'sc-badges');
-          badges.forEach(key => {
-            const [label, description] = conditions[key];
-            const badge = node('span', description ? label + ' · ' + description : label);
+          action.keys.forEach(key => {
+            const [name, description] = conditions[key];
+            const badge = node('span', globalThis.starCitizenCompactLabels[key] || name);
+            badge.title = description ? name + ': ' + description : name;
+            badge.setAttribute('aria-label', badge.title);
             badge.dataset.scBadge = key;
             row.append(badge);
           });

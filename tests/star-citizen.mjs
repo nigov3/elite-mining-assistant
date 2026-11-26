@@ -11,6 +11,11 @@ assert.equal(bindings.slice(4,8).map(b => b.id).join(' '), 'l3 create options r3
 const svg = read('star-citizen/dualsense-edge-cdfv2-ru.svg');
 assert.equal([...svg.matchAll(/data-control="([^"]*)"/g)].map(m => m[1]).join(' '),
   bindings.map(b => b.id).join(' '));
+const compact = id => context.starCitizenCompactActions(bindings.find(b => b.id === id));
+assert.equal(compact('l2').map(a => a.group).join(' '), '0 1 2 3 3 3');
+assert.equal(compact('square').map(a => a.group).join(' '), '1 3 3');
+assert.equal(compact('down').map(a => a.group + ':' + a.gesture).join(' '), '0:0 0:1 0:2 1:0 2:0');
+assert.equal([...svg.matchAll(/data-action="true"/g)].length, 64);
 const display = context.starCitizenDisplayTags;
 assert.equal(display('M1 H STD', 'Открыть карту звёзд').join(' '), 'H M1 STD');
 assert.equal(display('X2', 'Запросить посадку').join(' '), 'X2');
@@ -24,9 +29,9 @@ assert.equal(bindings.flatMap(binding => binding.actions).length, 64);
 for (const binding of bindings) {
   if (binding.point) assert(binding.point[0] > 0 && binding.point[0] < 822 &&
     binding.point[1] > 0 && binding.point[1] < 480);
-  for (const [tags, action] of binding.actions) {
+  for (const [tags, action, concise] of binding.actions) {
     assert(!tags || tags.split(' ').every(tag => ['M1','IM','SC','MG','ML','EA','VIEW','QT','CLICK','H','LONG','TAP','X2','STD'].includes(tag)));
-    assert(action.length > 0);
+    assert(action.length > 0 && concise.length > 0);
   }
 }
 assert(bindings.find(binding => binding.id === 'square').actions.some(([, action]) => action.includes('квантовый')));
