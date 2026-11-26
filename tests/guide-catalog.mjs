@@ -5,7 +5,9 @@ import { runInNewContext } from 'node:vm';
 const app = readFileSync('app.js', 'utf8');
 const entries = JSON.parse(readFileSync('data/blackbox-guides.json', 'utf8'));
 const functions = app.slice(app.indexOf('function splitGuideCatalog('),app.indexOf('function guideElement('));
+const aliases = readFileSync('guide-search.js','utf8');
 const result = runInNewContext(`
+  ${aliases}
   const dossierPath='/ship-dossiers/';
   ${functions}
   const catalog=splitGuideCatalog(entries);
@@ -16,6 +18,7 @@ const result = runInNewContext(`
    anaconda:catalog.ships.find(ship=>ship.title==='Anaconda').guides.length,
    explore:filterGuideCatalog(catalog,'','Корабли','Исследование').ships,
    search:filterGuideCatalog(catalog,'  mandalay   исследование ', '', '').ships,
+   alias:filterGuideCatalog(catalog,'монделай исследование', '', '').ships,
    engineers:filterGuideCatalog(catalog,'','Инженеры',''),
    empty:filterGuideCatalog(catalog,':definitely no match:', '', '').ships.length
   })
@@ -30,6 +33,8 @@ assert(result.explore.every(ship=>ship.guides.some(e=>e.role==='Исследов
 assert.equal(result.search.length,1);
 assert.equal(result.search[0].title,'Mandalay');
 assert.equal(result.search[0].guides.length,2);
+assert.equal(result.alias.length,1);
+assert.equal(result.alias[0].title,'Mandalay');
 assert.equal(result.engineers.ships.length,0);
 assert.equal(result.engineers.main.length,9);
 assert.equal(result.empty,0);

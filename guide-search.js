@@ -15,7 +15,7 @@ function guideWordsMatch(query,candidate){
  }));
 }
 const guideShipAliases={
- 'Anaconda':'анаконда', 'Mandalay':'мандалай манделай мандалей', 'Caspian Explorer':'каспиан эксплорер',
+ 'Anaconda':'анаконда', 'Mandalay':'мандалай манделай мандалей монделай мондалай', 'Caspian Explorer':'каспиан эксплорер',
  'Cobra Mk III':'кобра мк 3 cobra mk 3 кобра мк iii', 'Cobra Mk IV':'кобра мк 4 cobra mk 4 кобра мк iv',
  'Cobra Mk V':'кобра мк 5 cobra mk 5 кобра мк v', 'Corsair':'корсар', 'Asp Explorer':'асп эксплорер',
  'Asp Scout':'асп скаут', 'Diamondback Explorer':'даймондбэк эксплорер дбэк dbx',
@@ -40,8 +40,8 @@ const activityGuide='guides/systems/activity-guides/';
 const galaxyGuide='guides/systems/galaxy-and-power-systems/';
 const pilotGuide='guides/systems/new-pilot-and-interface/';
 const guideSearchTopics=[
- [engineeringManual+'modules.html','module-guardian-fsd-booster','Ускоритель FSD Стражей','фсд стражей|guardian fsd|guardian fsd booster|бустер фсд стражей|фсд бустер|ускоритель фсд|ускоритель стражей|гфсдб'],
- [engineeringManual+'checklist.html','step-build-guardian-fsd-booster','Как получить ускоритель FSD Стражей','разблокировать фсд стражей|разблокировка фсд стражей|получить фсд стражей|получение фсд стражей|открыть фсд стражей|разблокировать ускоритель стражей|открыть ускоритель фсд стражей|получить ускоритель фсд стражей|разблокировать ускоритель фсд стражей|unlock guardian fsd booster'],
+ [engineeringManual+'modules.html','module-guardian-fsd-booster','Ускоритель FSD Стражей','фсд стражей|guardian fsd|guardian fsd booster|бустер фсд стражей|фсд бустер|ускоритель фсд|усилитель фсд стражей|ускоритель стражей|гфсдб'],
+ [engineeringManual+'checklist.html','step-build-guardian-fsd-booster','Как получить ускоритель FSD Стражей','разблокировать фсд стражей|разблокировка фсд стражей|получить фсд стражей|получение фсд стражей|открыть фсд стражей|разблокировать ускоритель стражей|открыть ускоритель фсд стражей|получить ускоритель фсд стражей|разблокировать ускоритель фсд стражей|получить усилитель фсд стражей|разблокировать усилитель фсд стражей|открыть усилитель фсд стражей|unlock guardian fsd booster'],
  [engineeringManual+'modules.html','module-frame-shift-drive','Рамочно-сместительный двигатель (FSD)','фсд|рсд|fsd|frame shift drive|гипердвигатель|двигатель sco|двигатель фсд|рамочно сместительный привод'],
  [engineeringManual+'blueprints.html','blueprint-group-frame-shift-drive','Инженерные улучшения FSD','инженерка фсд|улучшение фсд|улучшить фсд|увеличенная дальность фсд|улучшать fsd|fsd increased range|прокачать фсд'],
  [activityGuide+'mining.html','section-core-gameplay-mechanics','Основы добычи: кольца и подрыв ядер','александрит|alexandrite|пейнит|painite|опалы бездны|монацит|подрыв астероидов|взрывать астероиды|подорвать астероид|подрыв ядра|подрыв ядер|глубинная добыча|core mining|лазерная добыча|добыча астероидов|зоны концентрации|хотспот|анализатор импульсных волн|сейсмические заряды'],
@@ -120,6 +120,12 @@ function rankCompanionGuides(catalog,sections,rawQuery,max=6){
    return query.length===words.length&&guideWordsMatch(query,words);
   });
   if(matched)add(entry,title,section,135);
+ }
+ // Without “FSD”, this can also refer to Guardian reinforcement modules. Keep those matches,
+ // and include the relevant FSD unlock steps as a clearly named alternative.
+ if(phrase==='усилитель стражей'){
+  const checklist=articlesByPath.get(engineeringManual+'checklist.html');
+  if(checklist)add(checklist,'Как получить ускоритель FSD Стражей','step-build-guardian-fsd-booster',(ranked.get(checklist.path)?.score||39)+1);
  }
  return [...ranked.values()].sort((a,b)=>b.score-a.score||a.title.localeCompare(b.title,'ru')).slice(0,max);
 }

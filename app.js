@@ -313,7 +313,7 @@ function splitGuideCatalog(entries){
 function filterGuideCatalog(catalog,query,category,role){
  const terms=query.trim().toLowerCase().split(/\s+/).filter(Boolean);
  const matches=entry=>(!category||entry.category===category)&&(!role||entry.role===role)&&
-  terms.every(term=>(entry.title+' '+entry.role+' '+entry.category).toLowerCase().includes(term));
+  terms.every(term=>(entry.title+' '+(guideShipAliases[entry.title]||'')+' '+entry.role+' '+entry.category).toLowerCase().includes(term));
  return {ships:catalog.ships.filter(ship=>ship.guides.some(matches)),main:catalog.main.filter(matches)};
 }
 function guideElement(tag,className,text){
