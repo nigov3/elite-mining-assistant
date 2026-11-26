@@ -5,7 +5,10 @@
   const bindings = globalThis.starCitizenFlightBindings;
   const conditions = {
     M1: 'Зажми L1', IM: 'Взаимодействие', SC: 'Сканирование',
-    MG: 'Добыча', ML: 'Ракетный режим', EA: 'Арена'
+    MG: 'Добыча', ML: 'Ракетный режим', EA: 'Арена',
+    VIEW: 'Свободный обзор', QT: 'Квантовый режим', CLICK: 'Нажать стик',
+    H: 'Удерживать', LONG: 'Долго удерживать', TAP: 'Короткое нажатие',
+    X2: 'Двойное нажатие', STD: 'По умолчанию'
   };
   const node = (tag, text, className) => {
     const el = document.createElement(tag);
@@ -19,7 +22,7 @@
       <section class="sc-flight" aria-labelledby="sc-title">
         <p class="sc-kicker">STAR CITIZEN / УПРАВЛЕНИЕ</p>
         <h2 id="sc-title">Полёт на DualSense Edge</h2>
-        <p class="muted sc-intro">Выбери кнопку на схеме или в списке, чтобы посмотреть её действия и сочетания по-русски.</p>
+        <p class="muted sc-intro">Профиль <strong>CDFv2</strong>. Выбери кнопку или стик, чтобы увидеть действия и сочетания по-русски.</p>
         <div class="sc-layout">
           <div class="sc-visual">
             <div class="sc-map" role="group" aria-label="Интерактивная схема геймпада">
@@ -33,12 +36,12 @@
             <ul id="sc-actions"></ul>
           </section>
         </div>
-        <p class="muted sc-note">Это схема полёта с игрового скриншота, а не профиль для импорта. У тачпада, Fn и задних кнопок отдельные назначения на скриншоте не указаны.</p>
+        <p class="muted sc-note">Явные назначения взяты из экспорта CDFv2. Пометка «По умолчанию» означает, что действие не записано в экспорте и показано по стандартным настройкам игры 4.10. Тачпад, Fn и задние кнопки в экспорте не назначены.</p>
         <div class="sc-reference">
           <details>
-            <summary>Шпаргалка целиком на русском</summary>
-            <a data-sc-image="star-citizen-dualsense-edge-ru.webp" target="_blank" rel="noopener">
-              <img width="2000" height="1660" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
+            <summary>Шпаргалка CDFv2 целиком на русском</summary>
+            <a data-sc-image="dualsense-edge-cdfv2-ru.svg" target="_blank" rel="noopener">
+              <img width="1680" height="2267" loading="lazy" alt="Полная русская схема полёта для DualSense Edge">
             </a>
           </details>
           <details>
@@ -74,10 +77,8 @@
       el('#sc-binding-title').textContent = binding.name;
       el('#sc-actions').replaceChildren(...binding.actions.map(([tags, action]) => {
         const li = node('li');
-        const hold = action.endsWith('*');
-        li.append(node('span', hold ? action.slice(0,-1) : action, 'sc-action'));
+        li.append(node('span', action, 'sc-action'));
         const badges = tags ? tags.split(' ').map(key => conditions[key]) : [];
-        if (hold) badges.push('Удерживай кнопку');
         if (badges.length) {
           const row = node('div', '', 'sc-badges');
           badges.forEach(badge => row.append(node('span', badge)));
