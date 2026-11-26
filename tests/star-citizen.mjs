@@ -24,7 +24,11 @@ const actionsOf = id => bindings.find(binding => binding.id === id).actions;
 assert(actionsOf('l3').some(([tags,label]) => !tags && label.includes('крен')));
 assert(actionsOf('l3').some(([tags,label]) => tags === 'STD' && label.includes('тяга')));
 assert(actionsOf('l3').some(([tags,label]) => tags === 'CLICK STD' && label === 'Форсаж'));
-assert(actionsOf('down').some(([tags,label]) => tags === 'X2' && label.includes('диспетчера')));
+assert(actionsOf('down')[0][1].includes('шасси'));
+assert(actionsOf('down')[1][0] === 'X2' && actionsOf('down')[1][1].includes('диспетчера'));
+assert(actionsOf('down')[2][1] === 'Автопосадка');
+assert(actionsOf('down')[3][0] === 'M1');
+assert(actionsOf('down')[4][0].startsWith('IM'));
 assert(actionsOf('missile-mode').some(([tags,label]) => tags === 'LONG' && label.includes('самоуничтожение')));
 assert.equal(bindings.flatMap(binding => binding.actions).filter(([tags]) =>
   tags.split(' ').includes('STD')).length, 28);
