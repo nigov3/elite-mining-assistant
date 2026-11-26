@@ -81,3 +81,54 @@
 
   schedule();
 })();
+
+/* Companion bridge: this shared entry point also runs on the engineering manuals.
+   Leave Black Box styles, scripts and section jumps inside the document. */
+(function(){
+  var script=document.currentScript;
+  if(!script||location.protocol==='file:')return;
+  var site=new URL('../../../',script.src);
+  var guides=new URL('blackbox/guides/',site);
+  var here=new URL(location.href);
+  if(here.origin!==guides.origin||!here.pathname.startsWith(guides.pathname))return;
+
+  function routeFor(url,theme){
+    if(url.origin!==guides.origin||!url.pathname.startsWith(guides.pathname))return null;
+    var name=url.pathname.slice(guides.pathname.length)||'index.html';
+    if(!/^(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html$/i.test(name))return null;
+    var reader=new URL(theme+'/',site);
+    reader.searchParams.set('guide','guides/'+name);
+    if(url.hash){
+      var section=url.hash.slice(1);
+      try{section=decodeURIComponent(section)}catch(_){}
+      reader.searchParams.set('section',section);
+    }
+    reader.hash='guides';
+    return reader;
+  }
+
+  var theme=here.searchParams.get('companion')==='light'?'light':'dark';
+  if(window.top===window){
+    var reader=routeFor(here,theme);
+    if(reader)location.replace(reader.href);
+    return;
+  }
+  // Only rewire an article explicitly embedded by Companion.
+  if(!here.searchParams.has('companion'))return;
+  document.documentElement.classList.add('companion-embedded');
+  document.querySelectorAll('a[href]').forEach(function(link){
+    var href=link.getAttribute('href');
+    if(!href||href.startsWith('#'))return;
+    var url;
+    try{url=new URL(href,here)}catch(_){return}
+    if(url.origin===here.origin&&url.pathname===here.pathname&&url.hash)return;
+    var reader=routeFor(url,theme);
+    if(reader){
+      link.href=reader.href;
+      if(link.target!=='_blank')link.target='_top';
+    }else if(url.origin!==here.origin&&/^https?:$/.test(url.protocol)){
+      link.target='_blank';
+      link.relList.add('noopener','noreferrer');
+    }
+  });
+})();

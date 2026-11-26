@@ -2,11 +2,12 @@
 import { readFileSync } from 'node:fs';
 import { strict as assert } from 'node:assert';
 import { execFileSync } from 'node:child_process';
+import './guide-reader.mjs';
 const js = readFileSync('app.js', 'utf8');
 const css = readFileSync('style.css', 'utf8');
 execFileSync(process.execPath, ['--check', 'app.js'], { stdio: 'inherit' });
 for (const tab of ['resources','galaxy','trade','routes','wiki','mining']) {
-  assert(js.includes("show('"+tab+"')"), 'Missing tab: '+tab);
+  assert(js.includes("navigateSection('"+tab+"')"), 'Missing tab: '+tab);
 }
 assert(!js.includes("document.getElementById('mining-resource')"), 'Galaxy initialization crash regression');
 assert(js.includes("'Металлические':'Metallic'"), 'Metallic ring mapping regression');

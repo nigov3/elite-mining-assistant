@@ -2,26 +2,41 @@ const raw="Золото|Gold|47610|Металлические, металлоо�
 const resources=raw.split('\n').map(line=>line.split('|'));let descending=true,tab='resources';
 const root=document.getElementById('app');root.innerHTML='<header class="site-header"><div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><div class="brand-kicker">COMMANDER INTERFACE <span class="live-dot"></span> ONLINE</div><h1>ELITE <span>DANGEROUS</span></h1><div class="brand-subtitle">COMPANION / НАВИГАЦИОННАЯ КОНСОЛЬ</div></div></div><nav><a id="theme-switch" class="theme-switch" href="../light/">☀️ Светлая тема</a></nav></header><section class="hero"><div class="hero-content"><div class="eyebrow"><span class="live-dot"></span> PILOT&#39;S OPERATIONS CENTER <span class="hero-line"></span> CMDR // 3300</div><h2>Твоя галактика.<br><em>Твои правила.</em></h2><p>Добыча ресурсов, маршруты, торговля и знания — в одной командной консоли.</p><div class="hero-metrics"><div><strong>35</strong><span>РЕСУРСОВ</span></div><div><strong>08</strong><span>РАЗДЕЛОВ</span></div><div><strong>∞</strong><span>ВОЗМОЖНОСТЕЙ</span></div></div></div><div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-planet"></div><div class="orbit-cross">+</div></div><div class="hero-coordinate">GALACTIC GRID // 00.00.00</div></section><div class="section-label"><span>01 / НАВИГАЦИЯ</span><span class="section-line"></span><span>ВЫБЕРИ МОДУЛЬ</span></div><div class="tabs" role="navigation" aria-label="Разделы сайта"><button id="res" class="active">Ресурсы</button></div><section class="panel" id="content"></section><footer class="site-footer"><span>✦ ELITE DANGEROUS COMPANION</span><span>UNOFFICIAL COMMUNITY TOOL · NOT AFFILIATED WITH FRONTIER</span></footer>';
 const switcher=document.getElementById('theme-switch');if(document.body.dataset.theme==='light'){switcher.href='../dark/';switcher.textContent='🌙 Тёмная тема'}
-const content=document.getElementById('content');document.getElementById('res').onclick=()=>show('resources');
-const galaxyTab=document.createElement('button');galaxyTab.id='galaxy';galaxyTab.textContent='✧ Галактика';document.querySelector('.tabs').appendChild(galaxyTab);galaxyTab.onclick=()=>show('galaxy');
-const tradeTab=document.createElement('button');tradeTab.id='trade';tradeTab.textContent='◈ Торговля';document.querySelector('.tabs').appendChild(tradeTab);tradeTab.onclick=()=>show('trade');
-const routesTab=document.createElement('button');routesTab.id='routes';routesTab.textContent='⌁ Маршруты';document.querySelector('.tabs').appendChild(routesTab);routesTab.onclick=()=>show('routes');
-const wikiTab=document.createElement('button');wikiTab.id='wiki';wikiTab.textContent='▤ База знаний';document.querySelector('.tabs').appendChild(wikiTab);wikiTab.onclick=()=>show('wiki');
-const miningTab=document.createElement('button');miningTab.id='mining';miningTab.textContent='⚒ Точки добычи';document.querySelector('.tabs').appendChild(miningTab);miningTab.onclick=()=>show('mining');
-const exoTab=document.createElement('button');exoTab.textContent='✧ Экзобиология';document.querySelector('.tabs').appendChild(exoTab);exoTab.onclick=()=>show('exo');
-const guidesTab=document.createElement('button');guidesTab.textContent='▤ Гайды';document.querySelector('.tabs').appendChild(guidesTab);guidesTab.onclick=()=>show('guides');
-function syncGuidesLink(which){
- const url=new URL(location.href);
- if(which==='guides'&&url.hash!=='#guides'){url.hash='guides';history.replaceState(null,'',url)}
- else if(which!=='guides'&&url.hash==='#guides'){url.hash='';history.replaceState(null,'',url)}
- const alternate=new URL(switcher.href);alternate.hash=which==='guides'?'guides':'';switcher.href=alternate.href;
+const content=document.getElementById('content');document.getElementById('res').onclick=()=>navigateSection('resources');
+const galaxyTab=document.createElement('button');galaxyTab.id='galaxy';galaxyTab.textContent='✧ Галактика';document.querySelector('.tabs').appendChild(galaxyTab);galaxyTab.onclick=()=>navigateSection('galaxy');
+const tradeTab=document.createElement('button');tradeTab.id='trade';tradeTab.textContent='◈ Торговля';document.querySelector('.tabs').appendChild(tradeTab);tradeTab.onclick=()=>navigateSection('trade');
+const routesTab=document.createElement('button');routesTab.id='routes';routesTab.textContent='⌁ Маршруты';document.querySelector('.tabs').appendChild(routesTab);routesTab.onclick=()=>navigateSection('routes');
+const wikiTab=document.createElement('button');wikiTab.id='wiki';wikiTab.textContent='▤ База знаний';document.querySelector('.tabs').appendChild(wikiTab);wikiTab.onclick=()=>navigateSection('wiki');
+const miningTab=document.createElement('button');miningTab.id='mining';miningTab.textContent='⚒ Точки добычи';document.querySelector('.tabs').appendChild(miningTab);miningTab.onclick=()=>navigateSection('mining');
+const exoTab=document.createElement('button');exoTab.textContent='✧ Экзобиология';document.querySelector('.tabs').appendChild(exoTab);exoTab.onclick=()=>navigateSection('exo');
+const guidesTab=document.createElement('button');guidesTab.textContent='▤ Гайды';document.querySelector('.tabs').appendChild(guidesTab);guidesTab.onclick=()=>navigateSection('guides');
+const companionSections=new Set(['resources','galaxy','trade','routes','wiki','mining','exo','guides']);
+const guidePathPattern=/^guides\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html$/i;
+function sectionFromLocation(){
+ const section=location.hash.slice(1);
+ return companionSections.has(section)?section:'resources';
 }
-window.addEventListener('hashchange',()=>{if(location.hash==='#guides'&&tab!=='guides')show('guides')});
-function show(which){tab=which;syncGuidesLink(which);guidesTab.classList.toggle('active',which==='guides');exoTab.classList.toggle('active',which==='exo');galaxyTab.classList.toggle('active',which==='galaxy');miningTab.classList.toggle('active',which==='mining');tradeTab.classList.toggle('active',which==='trade');routesTab.classList.toggle('active',which==='routes');wikiTab.classList.toggle('active',which==='wiki');document.getElementById('res').classList.toggle('active',which==='resources');if(which==='guides'){showGuides();return}if(which==='exo'){showExo();return}if(which==='galaxy'){showGalaxy();return}if(which==='mining'){showMining();return}if(which==='trade'){showTrade();return}if(which==='routes'){showRoutes();return}if(which==='wiki'){showWiki();return}
+function sectionUrl(which,keepGuide=false){
+ const url=new URL(location.href);
+ if(!keepGuide||which!=='guides'){url.searchParams.delete('guide');url.searchParams.delete('section')}
+ url.hash=which==='resources'?'':which;
+ return url;
+}
+function navigateSection(which){
+ if(document.body.classList.contains('guide-view'))location.assign(sectionUrl(which).href);
+ else show(which);
+}
+function syncSectionLink(which){
+ const url=sectionUrl(which,true);
+ if(url.href!==location.href)history.replaceState(null,'',url);
+ const alternate=new URL(switcher.href);alternate.hash=url.hash;
+ alternate.search=url.search;switcher.href=alternate.href;
+}
+window.addEventListener('hashchange',()=>show(sectionFromLocation()));
+function show(which){tab=which;syncSectionLink(which);document.body.classList.remove('guide-view');guidesTab.classList.toggle('active',which==='guides');exoTab.classList.toggle('active',which==='exo');galaxyTab.classList.toggle('active',which==='galaxy');miningTab.classList.toggle('active',which==='mining');tradeTab.classList.toggle('active',which==='trade');routesTab.classList.toggle('active',which==='routes');wikiTab.classList.toggle('active',which==='wiki');document.getElementById('res').classList.toggle('active',which==='resources');if(which==='guides'){const route=new URL(location.href);const guide=route.searchParams.get('guide');if(guide)showGuideReader(guide,route.searchParams.get('section'));else showGuides();return}if(which==='exo'){showExo();return}if(which==='galaxy'){showGalaxy();return}if(which==='mining'){showMining();return}if(which==='trade'){showTrade();return}if(which==='routes'){showRoutes();return}if(which==='wiki'){showWiki();return}
 content.innerHTML='<h2>Справочник ресурсов</h2><input id="q" style="width:100%" placeholder="Поиск по русскому или английскому названию"><div class="filters"><select id="cat"><option value="">Все категории</option><option>Металлы</option><option>Минералы</option><option>Химикаты</option></select><select id="ring"><option value="">Все кольца</option><option>Металлические</option><option>Металлообогащённые</option><option>Каменные</option><option>Ледяные</option></select><button id="sort">Дорогие сначала</button></div><p class="muted" id="count"></p><div class="tablewrap"><table><thead><tr><th>Ресурс</th><th class="price">Кр./т</th><th>Кольца и добыча</th></tr></thead><tbody id="rows"></tbody></table></div><button id="copy" style="margin-top:18px">Скопировать таблицу</button><small class="muted">* Пометка «проверить» в исходных данных. Цены справочные, не текущие рыночные.</small>';['q','cat','ring'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));document.getElementById('sort').onclick=()=>{descending=!descending;document.getElementById('sort').textContent=descending?'Дорогие сначала':'Дешёвые сначала';render()};document.getElementById('copy').onclick=()=>{const list=filtered();navigator.clipboard.writeText(list.map(r=>r.join('\t')).join('\n')).then(()=>alert('Скопировано')).catch(()=>alert('Не удалось скопировать'))};render()}
 function filtered(){const q=document.getElementById('q').value.toLowerCase(),c=document.getElementById('cat').value,r=document.getElementById('ring').value;return resources.filter(x=>(!q||(x[0]+' '+x[1]).toLowerCase().includes(q))&&(!c||x[5]===c)&&(!r||x[3].split(', ').includes(r))).sort((a,b)=>descending?Number(b[2])-Number(a[2]):Number(a[2])-Number(b[2]))}
 function render(){const list=filtered();document.getElementById('count').textContent='Найдено: '+list.length+' из '+resources.length;document.getElementById('rows').innerHTML=list.map(x=>'<tr><td><strong>'+x[0]+'</strong><div class="sub">'+x[1]+'</div></td><td class="price"><span class="price-tag '+(Number(x[2])>=100000?'price-high':Number(x[2])>=30000?'price-mid':'price-low')+'">'+Number(x[2]).toLocaleString('ru-RU')+'</span></td><td>'+x[3]+'<div class="sub">'+(x[4]||'Не указано')+'</div></td></tr>').join('')}
-show(location.hash==='#guides'?'guides':'resources');
 function showGalaxy(){
  content.innerHTML='<h2>Галактика</h2><p class="muted">Исследуй галактику на карте EDAstro и проверяй данные звёздных систем в EDSM.</p><div class="filters"><input id="sysname" placeholder="Например, Sol или Colonia" aria-label="Звёздная система"><button id="sysfind">Найти в EDSM</button></div><div id="sysresult" aria-live="polite"></div><p><a href="https://www.edsm.net/" target="_blank" rel="noopener noreferrer">EDSM ↗</a> · <a href="https://edastro.com/galmap/" target="_blank" rel="noopener noreferrer">Полная карта EDAstro ↗</a></p><iframe id="galaxyframe" title="Интерактивная карта галактики EDAstro" src="https://edastro.com/galmap/" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:72vh;min-height:480px;border:1px solid #475467;border-radius:12px;background:#101722"></iframe><small class="muted">EDSM и EDAstro используют неполные пользовательские данные. Если карта не появляется, открой её по ссылке выше.</small>';
  const field=(parent,label,value)=>{if(value===undefined||value===null||value==='')return;const row=document.createElement('p');row.style.margin='8px 0';const strong=document.createElement('strong');strong.textContent=label+': ';row.append(strong,document.createTextNode(String(value)));parent.append(row)};
@@ -223,94 +238,35 @@ async function renderGuideProgress(status,entries){
   if(status.isConnected)status.textContent='Не удалось загрузить прогресс перевода. Каталог доступен ниже.';
  }
 }
-async function showGuides(){content.innerHTML='<h2>Гайды</h2><p class="muted">Каталог E:D Black Box. Руководства в оформлении Companion.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters"><input id="guide-q" placeholder="Поиск корабля или гайда"><select id="guide-category"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role"><option value="">Все специализации</option></select></div><p id="guide-count"></p><div id="guide-rows" class="guide-grid">Загрузка…</div>';const rows=document.getElementById('guide-rows'),q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');try{const res=await fetch('../data/blackbox-guides.json?v=1');if(!res.ok)throw Error(res.status);const entries=await res.json();if(!rows.isConnected)return;renderGuideProgress(progress,entries);for(const r of new Set(entries.map(e=>e.role).filter(Boolean)))role.add(new Option(r,r));function draw(){rows.replaceChildren();const list=entries.filter(e=>(!cat.value||e.category===cat.value)&&(!role.value||e.role===role.value)&&(e.title+' '+e.role+' '+e.category).toLowerCase().includes(q.value.trim().toLowerCase()));count.textContent='Найдено: '+list.length+' из '+entries.length;for(const e of list){const a=document.createElement('article');a.className='exo-card guide-card';const k=document.createElement('div');k.className='exo-genus';k.textContent=e.category;const h=document.createElement('h3');h.textContent=e.title;const p=document.createElement('p');p.textContent=e.role;const link=document.createElement('a');link.className='guide-link';link.href='../blackbox/'+e.path;link.textContent='Открыть руководство';link.onclick=ev=>{ev.preventDefault();openCompanionGuide(e,entries)};a.append(k,h,p,link);rows.append(a)}}if(!rows.isConnected)return;q.oninput=draw;cat.onchange=draw;role.onchange=draw;draw()}catch(e){rows.textContent='Не удалось загрузить каталог: '+e.message;progress.textContent='Прогресс недоступен без каталога.'}}
+async function showGuides(){content.innerHTML='<h2>Гайды</h2><p class="muted">Русские переводы E:D Black Box с оригинальным оформлением статей.</p><section class="guide-progress" aria-labelledby="guide-progress-title"><h3 id="guide-progress-title">Ход перевода</h3><p class="muted">Сначала основные руководства, затем досье отдельных кораблей.</p><div id="guide-progress-status" aria-live="polite">Загрузка прогресса…</div></section><div class="filters"><input id="guide-q" placeholder="Поиск корабля или гайда"><select id="guide-category"><option value="">Все категории</option><option>Корабли</option><option>Инженеры</option><option>Игровые механики</option></select><select id="guide-role"><option value="">Все специализации</option></select></div><p id="guide-count"></p><div id="guide-rows" class="guide-grid">Загрузка…</div>';const rows=document.getElementById('guide-rows'),q=document.getElementById('guide-q'),cat=document.getElementById('guide-category'),role=document.getElementById('guide-role'),count=document.getElementById('guide-count'),progress=document.getElementById('guide-progress-status');try{const res=await fetch('../data/blackbox-guides.json?v=1');if(!res.ok)throw Error(res.status);const entries=await res.json();if(!rows.isConnected)return;renderGuideProgress(progress,entries);for(const r of new Set(entries.map(e=>e.role).filter(Boolean)))role.add(new Option(r,r));function draw(){rows.replaceChildren();const list=entries.filter(e=>(!cat.value||e.category===cat.value)&&(!role.value||e.role===role.value)&&(e.title+' '+e.role+' '+e.category).toLowerCase().includes(q.value.trim().toLowerCase()));count.textContent='Найдено: '+list.length+' из '+entries.length;for(const e of list){const a=document.createElement('article');a.className='exo-card guide-card';const k=document.createElement('div');k.className='exo-genus';k.textContent=e.category;const h=document.createElement('h3');h.textContent=e.title;const p=document.createElement('p');p.textContent=e.role;const link=document.createElement('a');link.className='guide-link';link.href=guideReaderUrl(e.path);link.textContent='Открыть руководство';a.append(k,h,p,link);rows.append(a)}}if(!rows.isConnected)return;q.oninput=draw;cat.onchange=draw;role.onchange=draw;draw()}catch(e){rows.textContent='Не удалось загрузить каталог: '+e.message;progress.textContent='Прогресс недоступен без каталога.'}}
 
-function scrollCompanionGuide(root, fragment) {
- if (!fragment) return false;
- let id = fragment.replace(/^#/, '');
- try { id = decodeURIComponent(id); } catch (_) {}
- const target = [...root.querySelectorAll('[id]')].find(el => el.id === id);
- if (!target) return false;
- target.scrollIntoView({block:'start'});
- return true;
+// Full Black Box documents keep their own styles, scripts and relative assets.
+function guideReaderUrl(path, section){
+ const url=sectionUrl('guides');
+ if(path)url.searchParams.set('guide',path);
+ if(section)url.searchParams.set('section',section);
+ return url.href;
 }
 
-async function copyCompanionBuild(payload) {
- if (!payload) throw Error('Пустая сборка');
- if (navigator.clipboard?.writeText) {
-  try { await navigator.clipboard.writeText(payload); return; } catch (_) {}
+function showGuideReader(path,section){
+ document.body.classList.add('guide-view');
+ const bar=document.createElement('div');bar.className='guide-reader-bar';
+ const back=document.createElement('a');back.className='guide-reader-back';back.href=guideReaderUrl();back.textContent='← Все гайды';
+ bar.append(back);
+ content.replaceChildren(bar);
+ if(!guidePathPattern.test(path)){
+  const error=document.createElement('p');error.textContent='Не удалось открыть руководство. Выбери его в каталоге.';
+  content.append(error);return;
  }
- const input = document.createElement('textarea');
- input.value = payload;
- input.readOnly = true;
- input.style.cssText = 'position:fixed;left:-9999px;top:0';
- const previous = document.activeElement;
- document.body.append(input);
- try {
-  input.select();
-  if (!document.execCommand('copy')) throw Error('Нет доступа к буферу обмена');
- } finally {
-  input.remove();
-  previous?.focus?.({preventScroll:true});
- }
+ const original=document.createElement('a');original.href=new URL(path,'https://edblackbox.com/');original.target='_blank';original.rel='noopener noreferrer';original.textContent='Оригинал E:D Black Box ↗';
+ bar.append(original);
+ const url=new URL('../blackbox/'+path,location.href);
+ url.searchParams.set('companion',document.body.dataset.theme==='light'?'light':'dark');
+ if(section)url.hash=section;
+ const frame=document.createElement('iframe');
+ frame.className='guide-reader-frame';frame.title='Руководство E:D Black Box';frame.allow='clipboard-write';
+ frame.src=url;
+ content.append(frame);
 }
 
-async function openCompanionGuide(entry,entries,fragment=''){
- const root=document.createElement('article');root.className='companion-guide';
- const back=document.createElement('button');back.type='button';back.textContent='← Все гайды';back.onclick=showGuides;
- const title=document.createElement('h2');title.textContent=[entry.title,entry.role].filter(Boolean).join(' — ');
- const status=document.createElement('p');status.className='muted';status.setAttribute('aria-live','polite');status.textContent='Загрузка…';
- const note=document.createElement('p');note.className='muted';note.setAttribute('role','status');note.hidden=true;
- content.replaceChildren(back,title,status,note,root);
- const destinations=new Map(entries.map(e=>[new URL('../blackbox/'+e.path,location.href).pathname,e]));
- try{
- const url=new URL('../blackbox/'+entry.path,location.href);
- const response=await fetch(url);if(!response.ok)throw Error(response.status);
- const doc=new DOMParser().parseFromString(await response.text(),'text/html');
- if(!root.isConnected)return;
- const parts=doc.querySelectorAll('.v-body,.stat-grid,section[id]');
- if(!parts.length)throw Error('Формат руководства пока не поддерживается');
- status.textContent='Источник: E:D Black Box · '+(/^ru(?:-|$)/i.test(doc.documentElement.lang)?'русский перевод':'перевод может быть неполным');
- const toc=document.createElement('nav');toc.className='companion-guide-toc';root.append(toc);
- const copiedLabels=new WeakMap();
- root.addEventListener('click',async ev=>{
-  const button=ev.target?.closest?.('button.lex-copy[data-slef]');
-  if(!button||!root.contains(button))return;
-  ev.preventDefault();
-  if(!copiedLabels.has(button))copiedLabels.set(button,button.innerHTML);
-  button.disabled=true;
-  try{
-   await copyCompanionBuild(button.getAttribute('data-slef'));
-   button.textContent='Скопировано';
-   note.hidden=false;note.textContent='Сборка SLEF скопирована.';
-   setTimeout(()=>{if(button.isConnected)button.innerHTML=copiedLabels.get(button)},1500);
-  }catch(_){
-   note.hidden=false;note.textContent='Не удалось скопировать сборку. Можно открыть её по ссылке Coriolis или EDSY.';
-  }finally{button.disabled=false}
- });
- for(const part of parts){
- if(part.parentElement.closest('.v-body,.stat-grid,section[id]'))continue;
- const node=part.cloneNode(true);node.querySelectorAll('script,style,iframe,object,embed,form').forEach(x=>x.remove());
- for(const el of [node,...node.querySelectorAll('*')]){for(const attr of [...el.attributes])if(/^on/i.test(attr.name)||attr.name==='style')el.removeAttribute(attr.name)}
- for(const img of node.querySelectorAll('img[src]')){img.src=new URL(img.getAttribute('src'),url).href;img.loading='lazy'}
- for(const a of node.querySelectorAll('a[href]')){
-  const dest=new URL(a.getAttribute('href'),url);
-  if(!['http:','https:'].includes(dest.protocol)){a.removeAttribute('href');continue}
-  const match=dest.origin===url.origin?destinations.get(dest.pathname):null;
-  a.href=dest.href;
-  if(match)a.onclick=ev=>{
-   if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey)return;
-   if(dest.pathname===url.pathname&&dest.hash){
-    if(scrollCompanionGuide(root,dest.hash))ev.preventDefault();
-    return;
-   }
-   ev.preventDefault();openCompanionGuide(match,entries,dest.hash);
-  };
- }
- const card=document.createElement('div');card.className='exo-card companion-guide-section';card.append(node);root.append(card);
- const heading=node.querySelector('h2');if(node.id&&heading){const jump=document.createElement('button');jump.type='button';jump.textContent=heading.textContent;jump.onclick=()=>scrollCompanionGuide(root,'#'+encodeURIComponent(node.id));toc.append(jump)}
- }
- const source=document.createElement('a');source.href='https://edblackbox.com/'+entry.path;source.textContent='Оригинал E:D Black Box ↗';source.target='_blank';source.rel='noopener noreferrer';root.append(source);
- if(fragment&& !scrollCompanionGuide(root,fragment))title.scrollIntoView({block:'start'});
- }catch(e){if(root.isConnected)status.textContent='Не удалось открыть руководство: '+e.message}
-}
+show(sectionFromLocation());

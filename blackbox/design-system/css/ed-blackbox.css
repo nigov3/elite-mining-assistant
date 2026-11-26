@@ -920,3 +920,13 @@ nav.toc a:focus-visible,.permalink:focus-visible,[tabindex]:focus-visible{
 .bp-table .total{color:var(--amber);font-weight:500}
 .bp-table .matname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:680px){.bp-ctx{grid-template-columns:1fr}.bp-card-tag{display:none}.bp-table col.c-num{width:16%}.bp-table col.c-cat{width:22%}}
+
+/* In the Companion reader, keep the guide navigation compact on phones. */
+@media(max-width:620px){
+  .companion-embedded .site-header .brand,.companion-embedded .site-header .nav-sep{display:none}
+  .companion-embedded .site-header .hdr-inner{padding-block:var(--space-4);gap:var(--space-4)}
+  .companion-embedded .site-nav{width:100%;justify-content:space-between;gap:var(--space-2)}
+  .companion-embedded .site-nav a{padding:var(--space-3) var(--space-1);letter-spacing:.5px}
+  .companion-embedded h1.title{overflow-wrap:anywhere}
+  .companion-embedded h1.title .role{display:table;max-width:100%;margin:var(--space-6) 0 0;line-height:1.2}
+}

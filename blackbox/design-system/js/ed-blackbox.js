@@ -134,8 +134,9 @@
     var b=e.target.closest&&e.target.closest('.lex-copy'); if(!b) return;
     e.preventDefault();
     var data=b.getAttribute('data-slef')||'';
-    var ok=function(){toast('SLEF copied to clipboard');};
-    var fail=function(){toast('Copy failed — select and copy manually');};
+    var ru=/^ru(?:-|$)/i.test(document.documentElement.lang);
+    var ok=function(){toast(ru?'Сборка SLEF скопирована':'SLEF copied to clipboard');};
+    var fail=function(){toast(ru?'Не удалось скопировать сборку':'Copy failed — select and copy manually');};
     if(navigator.clipboard&&navigator.clipboard.writeText){
       navigator.clipboard.writeText(data).then(ok,fail);
     }else{
