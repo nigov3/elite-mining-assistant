@@ -6,6 +6,7 @@ import './guide-reader.mjs';
 import './guide-catalog.mjs';
 import './guide-search.mjs';
 import "./star-citizen.mjs";
+import './star-citizen-ships.mjs';
 const js = readFileSync('app.js', 'utf8');
 const css = readFileSync('style.css', 'utf8');
 execFileSync(process.execPath, ['--check', 'app.js'], { stdio: 'inherit' });

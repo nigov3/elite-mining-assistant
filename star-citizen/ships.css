@@ -1,0 +1,22 @@
+.sc-section-nav { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
+.sc-section-nav a { display:inline-flex; align-items:center; min-height:44px; padding:7px 12px; border:1px solid var(--hud-border); border-radius:8px; text-decoration:none; }
+.sc-section-nav a[aria-current] { color:var(--hud); background:rgba(var(--hud-rgb),.1); }
+.sc-catalog-filters { display:grid; grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr)); gap:10px; margin-bottom:18px; }
+.sc-catalog-filters label { display:grid; gap:5px; min-width:0; }
+.sc-catalog-filters input,.sc-catalog-filters select { width:100%; min-width:0; }
+.sc-catalog-table { overflow-x:auto; border:1px solid var(--hud-border); border-radius:10px; }
+.sc-catalog-table table { min-width:710px; }
+.sc-catalog-table thead button,.sc-catalog-table tbody button { border:0; background:none; color:inherit; padding:5px 0; text-align:left; box-shadow:none; font-weight:650; }
+.sc-catalog-table tbody button { text-decoration:underline; text-underline-offset:3px; }
+.sc-catalog-table tbody th small { display:block; font-weight:400; opacity:.8; }
+.sc-catalog-table tr:last-child td,.sc-catalog-table tr:last-child th { border-bottom:0; }
+.sc-catalog-pages { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin-top:12px; }
+.sc-catalog-pages button:disabled { opacity:.5; cursor:default; }
+body .sc-ship-detail { width:min(560px,calc(100% - 32px)); max-height:85dvh; overflow:auto; border:1px solid var(--hud-border); border-radius:12px; padding:16px; color:#182230; background:#fff; }
+body[data-theme=dark] .sc-ship-detail { color:#f1f5f9; background:#192334; }
+.sc-ship-detail::backdrop { background:rgba(0,0,0,.62); }
+.sc-ship-detail form { display:flex; justify-content:flex-end; }
+.sc-ship-detail dl { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); margin:0; }
+.sc-ship-detail dt,.sc-ship-detail dd { margin:0; padding:6px; border-bottom:1px solid var(--hud-border); overflow-wrap:anywhere; }
+@media(max-width:740px) { .sc-catalog-filters { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:380px) { .sc-catalog-filters { grid-template-columns:minmax(0,1fr); } }

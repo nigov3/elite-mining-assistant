@@ -14,6 +14,9 @@
   function mount(container) {
     container.innerHTML = `
       <section class="sc-flight" aria-labelledby="sc-title">
+        <nav class="sc-section-nav" aria-label="Разделы Star Citizen">
+          <a href="#star-citizen" aria-current="page">Управление</a><a href="#star-citizen-ships">Корабли и техника</a>
+        </nav>
         <p class="sc-kicker">STAR CITIZEN / УПРАВЛЕНИЕ</p>
         <h2 id="sc-title">Полёт на DualSense Edge</h2>
         <p class="muted sc-intro">Профиль <strong>CDFv2</strong>. Выбери кнопку или стик, чтобы увидеть действия и сочетания по-русски.</p>
